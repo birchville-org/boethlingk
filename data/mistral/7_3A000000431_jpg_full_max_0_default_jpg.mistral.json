@@ -1,0 +1,280 @@
+{
+  "source": "data/img_cache/7_3A000000431_jpg_full_max_0_default_jpg.jpg",
+  "model": "mistral-ocr-latest",
+  "markdown": "8, 1, 27.\n\n431\n\n8, 1, 16. 17. 18.\n\nग्रामो वां स्वम्, जनपदो नौ स्वम्; ग्रामो वां दीयते, जनपदो नौ दीयते; ग्रामो वां पश्यति,\nजनपदो नौ पश्यति.\n\n## बहुवचनस्य वस्नसो ॥ २१ ॥\n\nFür dieselben Casus im Pl. werden in demselben Falle वम् und नम् sub-\nstituirt.\n\nग्रामो वः स्वम्, जनपदो नः स्वम्; ग्रामो वो दीयते, जनपदो नौ दीयते; ग्रामो वः पश्यति,\nजनपदो नः पश्यति.\n\n## तेमयावेकवचनस्य ॥ २२ ॥\n\nFür den Genetiv und Dativ Sg. werden in demselben Falle ते und मे\nsubstituirt.\n\nग्रामस्ते स्वम्, ग्रामो मे स्वम्; ग्रामस्ते दीयते, ग्रामो मे दीयते.\n\n## त्वामो द्वितीयायाः ॥ २३ ॥\n\nFür den Accusativ Sg. werden in demselben Falle त्वा und मा substituirt.\n\nग्रामस्त्वा पश्यति, ग्रामो मा पश्यति.\n\n## न चवाहाहिवयुक्ते ॥ २४ ॥\n\nIn Verbindung mit च, वा, ह, श्रद् und एव finden die genannten Substitutio-\nnen nicht statt.\n\nग्रामस्तव च स्वम्, ग्रामो मम च स्वम्, युवयोश्च स्वम्, श्रावयोश्च स्वम्, युष्माकं च स्वम्, श्रस्माकं\nच स्वम् u. s. w. Eben so ग्रामस्तव वा स्वम्, ग्रामस्तव ह स्वम्, ग्रामस्तवाह स्वम्, ग्रामस्तवैव\nस्वम् u. s. w.\n\n## पश्यार्थेश्चानालोचने ॥ २५ ॥\n\nAuch nicht in Verbindung mit Verben des Sehens, wenn nicht ein sinn-\nliches Sehen gemeint ist.\n\nग्रामस्तव स्वं समीद्यागतः, ग्रामस्तभ्यं दीयमानं समीद्यागतः, ग्रामस्त्वां समीद्यागतः u. s. w.\nDagegen ग्रामस्त्वा पश्यति.\n\n## सपूर्वायाः प्रथमाया विभाषा ॥ २६ ॥\n\nWenn das Pronomen auf einen Nominativ folgt, dem noch ein Wort\nvorangeht, dann können die genannten Substitutionen stattfinden.\n\nग्रामे कम्बलस्तव oder ते स्वम्, ग्रामे कम्बलस्तुभ्यं oder ते दीयते, ग्रामे छात्रास्त्वां oder\nत्वा पश्यन्ति u. s. w. Dagegen sagt man stets कम्बलस्ते स्वम् und कम्बलो ग्रामे ते स्वम्.\n\n## तिठो गोचादीनि कुत्सनाभीक्ष्ययोः ॥ २७ ॥\n\nगोत्र u. s. w. sind nach einem Verbum finitum unbetont, wenn ein Tadel\noder eine Wiederholung ausgedrückt wird.\n\nपचति गोत्रम्, पचति पचति गोत्रम्; जल्पति ब्रुवम्, जल्पति जल्पति ब्रुवम् u. s. w.\n\nUNIVERSITÄTS-\nBIBLIOTHEK\nHEIDELBERG\n\n© Universitätsbibliothek Heidelberg\nhttp://digi.ub.uni-heidelberg.de/diglit/boehtlingk1887/0457\n\ngefördert durch\nBaden-Württemberg\n",
+  "usage_info": {
+    "pages_processed": 1,
+    "doc_size_bytes": 620587
+  },
+  "pages": [
+    {
+      "index": 0,
+      "markdown": "8, 1, 27.\n\n431\n\n8, 1, 16. 17. 18.\n\nग्रामो वां स्वम्, जनपदो नौ स्वम्; ग्रामो वां दीयते, जनपदो नौ दीयते; ग्रामो वां पश्यति,\nजनपदो नौ पश्यति.\n\n## बहुवचनस्य वस्नसो ॥ २१ ॥\n\nFür dieselben Casus im Pl. werden in demselben Falle वम् und नम् sub-\nstituirt.\n\nग्रामो वः स्वम्, जनपदो नः स्वम्; ग्रामो वो दीयते, जनपदो नौ दीयते; ग्रामो वः पश्यति,\nजनपदो नः पश्यति.\n\n## तेमयावेकवचनस्य ॥ २२ ॥\n\nFür den Genetiv und Dativ Sg. werden in demselben Falle ते und मे\nsubstituirt.\n\nग्रामस्ते स्वम्, ग्रामो मे स्वम्; ग्रामस्ते दीयते, ग्रामो मे दीयते.\n\n## त्वामो द्वितीयायाः ॥ २३ ॥\n\nFür den Accusativ Sg. werden in demselben Falle त्वा und मा substituirt.\n\nग्रामस्त्वा पश्यति, ग्रामो मा पश्यति.\n\n## न चवाहाहिवयुक्ते ॥ २४ ॥\n\nIn Verbindung mit च, वा, ह, श्रद् und एव finden die genannten Substitutio-\nnen nicht statt.\n\nग्रामस्तव च स्वम्, ग्रामो मम च स्वम्, युवयोश्च स्वम्, श्रावयोश्च स्वम्, युष्माकं च स्वम्, श्रस्माकं\nच स्वम् u. s. w. Eben so ग्रामस्तव वा स्वम्, ग्रामस्तव ह स्वम्, ग्रामस्तवाह स्वम्, ग्रामस्तवैव\nस्वम् u. s. w.\n\n## पश्यार्थेश्चानालोचने ॥ २५ ॥\n\nAuch nicht in Verbindung mit Verben des Sehens, wenn nicht ein sinn-\nliches Sehen gemeint ist.\n\nग्रामस्तव स्वं समीद्यागतः, ग्रामस्तभ्यं दीयमानं समीद्यागतः, ग्रामस्त्वां समीद्यागतः u. s. w.\nDagegen ग्रामस्त्वा पश्यति.\n\n## सपूर्वायाः प्रथमाया विभाषा ॥ २६ ॥\n\nWenn das Pronomen auf einen Nominativ folgt, dem noch ein Wort\nvorangeht, dann können die genannten Substitutionen stattfinden.\n\nग्रामे कम्बलस्तव oder ते स्वम्, ग्रामे कम्बलस्तुभ्यं oder ते दीयते, ग्रामे छात्रास्त्वां oder\nत्वा पश्यन्ति u. s. w. Dagegen sagt man stets कम्बलस्ते स्वम् und कम्बलो ग्रामे ते स्वम्.\n\n## तिठो गोचादीनि कुत्सनाभीक्ष्ययोः ॥ २७ ॥\n\nगोत्र u. s. w. sind nach einem Verbum finitum unbetont, wenn ein Tadel\noder eine Wiederholung ausgedrückt wird.\n\nपचति गोत्रम्, पचति पचति गोत्रम्; जल्पति ब्रुवम्, जल्पति जल्पति ब्रुवम् u. s. w.\n\nUNIVERSITÄTS-\nBIBLIOTHEK\nHEIDELBERG\n\n© Universitätsbibliothek Heidelberg\nhttp://digi.ub.uni-heidelberg.de/diglit/boehtlingk1887/0457\n\ngefördert durch\nBaden-Württemberg",
+      "images": [],
+      "dimensions": {
+        "dpi": 200,
+        "height": 2218,
+        "width": 1348
+      },
+      "tables": [],
+      "hyperlinks": [],
+      "header": null,
+      "footer": null,
+      "confidence_scores": null,
+      "blocks": [
+        {
+          "top_left_x": 524,
+          "top_left_y": 129,
+          "bottom_right_x": 627,
+          "bottom_right_y": 162,
+          "content": "8, 1, 27.",
+          "confidence_scores": null,
+          "type": "header"
+        },
+        {
+          "top_left_x": 1086,
+          "top_left_y": 127,
+          "bottom_right_x": 1143,
+          "bottom_right_y": 160,
+          "content": "431",
+          "confidence_scores": null,
+          "type": "header"
+        },
+        {
+          "top_left_x": 993,
+          "top_left_y": 198,
+          "bottom_right_x": 1225,
+          "bottom_right_y": 235,
+          "content": "8, 1, 16. 17. 18.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 92,
+          "top_left_y": 238,
+          "bottom_right_x": 1143,
+          "bottom_right_y": 317,
+          "content": "ग्रामो वां स्वम्, जनपदो नौ स्वम्; ग्रामो वां दीयते, जनपदो नौ दीयते; ग्रामो वां पश्यति,\nजनपदो नौ पश्यति.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 88,
+          "top_left_y": 324,
+          "bottom_right_x": 572,
+          "bottom_right_y": 391,
+          "content": "## बहुवचनस्य वस्नसो ॥ २१ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 26,
+          "top_left_y": 391,
+          "bottom_right_x": 1146,
+          "bottom_right_y": 475,
+          "content": "Für dieselben Casus im Pl. werden in demselben Falle वम् und नम् sub-\nstituirt.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 88,
+          "top_left_y": 482,
+          "bottom_right_x": 1146,
+          "bottom_right_y": 564,
+          "content": "ग्रामो वः स्वम्, जनपदो नः स्वम्; ग्रामो वो दीयते, जनपदो नौ दीयते; ग्रामो वः पश्यति,\nजनपदो नः पश्यति.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 84,
+          "top_left_y": 577,
+          "bottom_right_x": 533,
+          "bottom_right_y": 637,
+          "content": "## तेमयावेकवचनस्य ॥ २२ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 22,
+          "top_left_y": 642,
+          "bottom_right_x": 1147,
+          "bottom_right_y": 726,
+          "content": "Für den Genetiv und Dativ Sg. werden in demselben Falle ते und मे\nsubstituirt.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 119,
+          "top_left_y": 735,
+          "bottom_right_x": 797,
+          "bottom_right_y": 779,
+          "content": "ग्रामस्ते स्वम्, ग्रामो मे स्वम्; ग्रामस्ते दीयते, ग्रामो मे दीयते.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 81,
+          "top_left_y": 790,
+          "bottom_right_x": 533,
+          "bottom_right_y": 853,
+          "content": "## त्वामो द्वितीयायाः ॥ २३ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 22,
+          "top_left_y": 857,
+          "bottom_right_x": 1143,
+          "bottom_right_y": 901,
+          "content": "Für den Accusativ Sg. werden in demselben Falle त्वा und मा substituirt.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 120,
+          "top_left_y": 904,
+          "bottom_right_x": 526,
+          "bottom_right_y": 944,
+          "content": "ग्रामस्त्वा पश्यति, ग्रामो मा पश्यति.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 81,
+          "top_left_y": 952,
+          "bottom_right_x": 510,
+          "bottom_right_y": 1019,
+          "content": "## न चवाहाहिवयुक्ते ॥ २४ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 19,
+          "top_left_y": 1019,
+          "bottom_right_x": 1139,
+          "bottom_right_y": 1101,
+          "content": "In Verbindung mit च, वा, ह, श्रद् und एव finden die genannten Substitutio-\nnen nicht statt.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 84,
+          "top_left_y": 1110,
+          "bottom_right_x": 1143,
+          "bottom_right_y": 1232,
+          "content": "ग्रामस्तव च स्वम्, ग्रामो मम च स्वम्, युवयोश्च स्वम्, श्रावयोश्च स्वम्, युष्माकं च स्वम्, श्रस्माकं\nच स्वम् u. s. w. Eben so ग्रामस्तव वा स्वम्, ग्रामस्तव ह स्वम्, ग्रामस्तवाह स्वम्, ग्रामस्तवैव\nस्वम् u. s. w.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 82,
+          "top_left_y": 1237,
+          "bottom_right_x": 560,
+          "bottom_right_y": 1297,
+          "content": "## पश्यार्थेश्चानालोचने ॥ २५ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 19,
+          "top_left_y": 1303,
+          "bottom_right_x": 1139,
+          "bottom_right_y": 1392,
+          "content": "Auch nicht in Verbindung mit Verben des Sehens, wenn nicht ein sinn-\nliches Sehen gemeint ist.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 86,
+          "top_left_y": 1397,
+          "bottom_right_x": 1139,
+          "bottom_right_y": 1476,
+          "content": "ग्रामस्तव स्वं समीद्यागतः, ग्रामस्तभ्यं दीयमानं समीद्यागतः, ग्रामस्त्वां समीद्यागतः u. s. w.\nDagegen ग्रामस्त्वा पश्यति.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 82,
+          "top_left_y": 1485,
+          "bottom_right_x": 708,
+          "bottom_right_y": 1550,
+          "content": "## सपूर्वायाः प्रथमाया विभाषा ॥ २६ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 22,
+          "top_left_y": 1550,
+          "bottom_right_x": 1139,
+          "bottom_right_y": 1636,
+          "content": "Wenn das Pronomen auf einen Nominativ folgt, dem noch ein Wort\nvorangeht, dann können die genannten Substitutionen stattfinden.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 84,
+          "top_left_y": 1641,
+          "bottom_right_x": 1139,
+          "bottom_right_y": 1725,
+          "content": "ग्रामे कम्बलस्तव oder ते स्वम्, ग्रामे कम्बलस्तुभ्यं oder ते दीयते, ग्रामे छात्रास्त्वां oder\nत्वा पश्यन्ति u. s. w. Dagegen sagt man stets कम्बलस्ते स्वम् und कम्बलो ग्रामे ते स्वम्.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 82,
+          "top_left_y": 1732,
+          "bottom_right_x": 826,
+          "bottom_right_y": 1798,
+          "content": "## तिठो गोचादीनि कुत्सनाभीक्ष्ययोः ॥ २७ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 19,
+          "top_left_y": 1796,
+          "bottom_right_x": 1138,
+          "bottom_right_y": 1883,
+          "content": "गोत्र u. s. w. sind nach einem Verbum finitum unbetont, wenn ein Tadel\noder eine Wiederholung ausgedrückt wird.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 119,
+          "top_left_y": 1887,
+          "bottom_right_x": 1015,
+          "bottom_right_y": 1936,
+          "content": "पचति गोत्रम्, पचति पचति गोत्रम्; जल्पति ब्रुवम्, जल्पति जल्पति ब्रुवम् u. s. w.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 15,
+          "top_left_y": 2134,
+          "bottom_right_x": 132,
+          "bottom_right_y": 2205,
+          "content": "UNIVERSITÄTS-\nBIBLIOTHEK\nHEIDELBERG",
+          "confidence_scores": null,
+          "type": "footer"
+        },
+        {
+          "top_left_x": 416,
+          "top_left_y": 2178,
+          "bottom_right_x": 923,
+          "bottom_right_y": 2216,
+          "content": "© Universitätsbibliothek Heidelberg\nhttp://digi.ub.uni-heidelberg.de/diglit/boehtlingk1887/0457",
+          "confidence_scores": null,
+          "type": "footer"
+        },
+        {
+          "top_left_x": 1189,
+          "top_left_y": 2123,
+          "bottom_right_x": 1329,
+          "bottom_right_y": 2214,
+          "content": "gefördert durch\nBaden-Württemberg",
+          "confidence_scores": null,
+          "type": "footer"
+        }
+      ]
+    }
+  ]
+}

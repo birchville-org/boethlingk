@@ -1,0 +1,316 @@
+{
+  "source": "data/img_cache/7_3A000000400_jpg_full_max_0_default_jpg.jpg",
+  "model": "mistral-ocr-latest",
+  "markdown": "400\n\n7, 2, 103.\n\n6, 4, 1.\n\nकिमः कः ॥ १०३ ॥\n\nFür किम् wird क substituirt.\n\nकः, कौ, के.\n\nकु तिहोः ॥ १०४ ॥\n\nVor einer mit त् und ह् anlautenden Casusendung wird कु für किम् substituirt.\n\nकुतः, कुत्र, कुह.\n\nकाति ॥ १०५ ॥\n\nVor der Casusendung व (s. 5, 3, 12) wird क्व für किम् substituirt.\n\nक्व + अ ergibt nach 6, 1, 97 wieder क्व.\n\nतदोः सः सावनन्ययोः ॥ १०६ ॥\n\nFür das nicht — auslautende त् und द् von त्यद् und seinen Genossen wird im Nomin. Sg. स् substituirt.\n\nस्यः, सः, गयः, असो. Zur Substitution von अ für द् in त्यद्, तद् und गतद् s. 7, 2, 102. Zum श्री in असो s. das folgende Sūtra.\n\nअदस ओ सुलोपश्च ॥ १०७ ॥\n\nFür das स् von अदस् wird श्री substituirt, worauf das स् des Nominativs abfällt.\n\nइदमो सः ॥ १०८ ॥\n\nFür das म् von इदम् wird im Nomin. Sg. म् (nicht अ nach 7, 2, 102) substituirt.\n\nइयम्, अयम्. Die Casusendung fällt nach 6, 1, 68 ab. Zum य् s. 7, 2, 110.\n\nदश्च ॥ १०९ ॥\n\nAuch für das द् von इदम् wird म् vor einer Casusendung substituirt.\n\nइमो, इमे, इमम्, इमान्. Für das म् von इदम् wird nach 7, 2, 102 अ substituirt, इम + अ + अम् gibt nach 6, 1, 97. 107 इमम्.\n\nयः सो ॥ ११० ॥\n\nIm Nomin. Sg. wird य् für das द् in इदम् substituirt.\n\nइयम्. Vgl. 7, 2, 108.\n\nइदो ऽय् पुंसि ॥ १११ ॥\n\nIm Nomin. Sg. masc. wird अय् für इद् substituirt.\n\nअयम्. Vgl. 7, 2, 108.\n\nUNIVERSITÄTS-\nBIBLIOTHEK\nHEIDELBERG\n\n© Universitätsbibliothek Heidelberg\nhttp://digi.ub.uni-heidelberg.de/diglit/boehtlingk1887/0426\n\ngelördert durch\nBaden-Württemberg\n",
+  "usage_info": {
+    "pages_processed": 1,
+    "doc_size_bytes": 465159
+  },
+  "pages": [
+    {
+      "index": 0,
+      "markdown": "400\n\n7, 2, 103.\n\n6, 4, 1.\n\nकिमः कः ॥ १०३ ॥\n\nFür किम् wird क substituirt.\n\nकः, कौ, के.\n\nकु तिहोः ॥ १०४ ॥\n\nVor einer mit त् und ह् anlautenden Casusendung wird कु für किम् substituirt.\n\nकुतः, कुत्र, कुह.\n\nकाति ॥ १०५ ॥\n\nVor der Casusendung व (s. 5, 3, 12) wird क्व für किम् substituirt.\n\nक्व + अ ergibt nach 6, 1, 97 wieder क्व.\n\nतदोः सः सावनन्ययोः ॥ १०६ ॥\n\nFür das nicht — auslautende त् und द् von त्यद् und seinen Genossen wird im Nomin. Sg. स् substituirt.\n\nस्यः, सः, गयः, असो. Zur Substitution von अ für द् in त्यद्, तद् und गतद् s. 7, 2, 102. Zum श्री in असो s. das folgende Sūtra.\n\nअदस ओ सुलोपश्च ॥ १०७ ॥\n\nFür das स् von अदस् wird श्री substituirt, worauf das स् des Nominativs abfällt.\n\nइदमो सः ॥ १०८ ॥\n\nFür das म् von इदम् wird im Nomin. Sg. म् (nicht अ nach 7, 2, 102) substituirt.\n\nइयम्, अयम्. Die Casusendung fällt nach 6, 1, 68 ab. Zum य् s. 7, 2, 110.\n\nदश्च ॥ १०९ ॥\n\nAuch für das द् von इदम् wird म् vor einer Casusendung substituirt.\n\nइमो, इमे, इमम्, इमान्. Für das म् von इदम् wird nach 7, 2, 102 अ substituirt, इम + अ + अम् gibt nach 6, 1, 97. 107 इमम्.\n\nयः सो ॥ ११० ॥\n\nIm Nomin. Sg. wird य् für das द् in इदम् substituirt.\n\nइयम्. Vgl. 7, 2, 108.\n\nइदो ऽय् पुंसि ॥ १११ ॥\n\nIm Nomin. Sg. masc. wird अय् für इद् substituirt.\n\nअयम्. Vgl. 7, 2, 108.\n\nUNIVERSITÄTS-\nBIBLIOTHEK\nHEIDELBERG\n\n© Universitätsbibliothek Heidelberg\nhttp://digi.ub.uni-heidelberg.de/diglit/boehtlingk1887/0426\n\ngelördert durch\nBaden-Württemberg",
+      "images": [],
+      "dimensions": {
+        "dpi": 200,
+        "height": 2218,
+        "width": 1344
+      },
+      "tables": [],
+      "hyperlinks": [],
+      "header": null,
+      "footer": null,
+      "confidence_scores": null,
+      "blocks": [
+        {
+          "top_left_x": 192,
+          "top_left_y": 102,
+          "bottom_right_x": 252,
+          "bottom_right_y": 135,
+          "content": "400",
+          "confidence_scores": null,
+          "type": "header"
+        },
+        {
+          "top_left_x": 692,
+          "top_left_y": 107,
+          "bottom_right_x": 815,
+          "bottom_right_y": 142,
+          "content": "7, 2, 103.",
+          "confidence_scores": null,
+          "type": "header"
+        },
+        {
+          "top_left_x": 110,
+          "top_left_y": 175,
+          "bottom_right_x": 218,
+          "bottom_right_y": 213,
+          "content": "6, 4, 1.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 252,
+          "top_left_y": 220,
+          "bottom_right_x": 585,
+          "bottom_right_y": 275,
+          "content": "किमः कः ॥ १०३ ॥",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 192,
+          "top_left_y": 282,
+          "bottom_right_x": 615,
+          "bottom_right_y": 324,
+          "content": "Für किम् wird क substituirt.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 292,
+          "top_left_y": 331,
+          "bottom_right_x": 429,
+          "bottom_right_y": 371,
+          "content": "कः, कौ, के.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 252,
+          "top_left_y": 389,
+          "bottom_right_x": 573,
+          "bottom_right_y": 455,
+          "content": "कु तिहोः ॥ १०४ ॥",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 191,
+          "top_left_y": 453,
+          "bottom_right_x": 1312,
+          "bottom_right_y": 537,
+          "content": "Vor einer mit त् und ह् anlautenden Casusendung wird कु für किम् substituirt.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 292,
+          "top_left_y": 551,
+          "bottom_right_x": 474,
+          "bottom_right_y": 593,
+          "content": "कुतः, कुत्र, कुह.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 252,
+          "top_left_y": 606,
+          "bottom_right_x": 519,
+          "bottom_right_y": 659,
+          "content": "काति ॥ १०५ ॥",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 191,
+          "top_left_y": 666,
+          "bottom_right_x": 1188,
+          "bottom_right_y": 710,
+          "content": "Vor der Casusendung व (s. 5, 3, 12) wird क्व für किम् substituirt.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 291,
+          "top_left_y": 719,
+          "bottom_right_x": 786,
+          "bottom_right_y": 753,
+          "content": "क्व + अ ergibt nach 6, 1, 97 wieder क्व.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 250,
+          "top_left_y": 775,
+          "bottom_right_x": 800,
+          "bottom_right_y": 830,
+          "content": "तदोः सः सावनन्ययोः ॥ १०६ ॥",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 188,
+          "top_left_y": 837,
+          "bottom_right_x": 1312,
+          "bottom_right_y": 926,
+          "content": "Für das nicht — auslautende त् und द् von त्यद् und seinen Genossen wird im Nomin. Sg. स् substituirt.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 257,
+          "top_left_y": 935,
+          "bottom_right_x": 1312,
+          "bottom_right_y": 1012,
+          "content": "स्यः, सः, गयः, असो. Zur Substitution von अ für द् in त्यद्, तद् und गतद् s. 7, 2, 102. Zum श्री in असो s. das folgende Sūtra.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 250,
+          "top_left_y": 1030,
+          "bottom_right_x": 751,
+          "bottom_right_y": 1099,
+          "content": "अदस ओ सुलोपश्च ॥ १०७ ॥",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 188,
+          "top_left_y": 1095,
+          "bottom_right_x": 1312,
+          "bottom_right_y": 1179,
+          "content": "Für das स् von अदस् wird श्री substituirt, worauf das स् des Nominativs abfällt.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 252,
+          "top_left_y": 1197,
+          "bottom_right_x": 581,
+          "bottom_right_y": 1252,
+          "content": "इदमो सः ॥ १०८ ॥",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 188,
+          "top_left_y": 1257,
+          "bottom_right_x": 1312,
+          "bottom_right_y": 1341,
+          "content": "Für das म् von इदम् wird im Nomin. Sg. म् (nicht अ nach 7, 2, 102) substituirt.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 291,
+          "top_left_y": 1350,
+          "bottom_right_x": 1203,
+          "bottom_right_y": 1394,
+          "content": "इयम्, अयम्. Die Casusendung fällt nach 6, 1, 68 ab. Zum य् s. 7, 2, 110.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 252,
+          "top_left_y": 1410,
+          "bottom_right_x": 488,
+          "bottom_right_y": 1459,
+          "content": "दश्च ॥ १०९ ॥",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 191,
+          "top_left_y": 1463,
+          "bottom_right_x": 1226,
+          "bottom_right_y": 1508,
+          "content": "Auch für das द् von इदम् wird म् vor einer Casusendung substituirt.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 257,
+          "top_left_y": 1514,
+          "bottom_right_x": 1309,
+          "bottom_right_y": 1599,
+          "content": "इमो, इमे, इमम्, इमान्. Für das म् von इदम् wird nach 7, 2, 102 अ substituirt, इम + अ + अम् gibt nach 6, 1, 97. 107 इमम्.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 252,
+          "top_left_y": 1610,
+          "bottom_right_x": 533,
+          "bottom_right_y": 1667,
+          "content": "यः सो ॥ ११० ॥",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 191,
+          "top_left_y": 1674,
+          "bottom_right_x": 992,
+          "bottom_right_y": 1718,
+          "content": "Im Nomin. Sg. wird य् für das द् in इदम् substituirt.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 292,
+          "top_left_y": 1723,
+          "bottom_right_x": 557,
+          "bottom_right_y": 1763,
+          "content": "इयम्. Vgl. 7, 2, 108.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 252,
+          "top_left_y": 1778,
+          "bottom_right_x": 646,
+          "bottom_right_y": 1843,
+          "content": "इदो ऽय् पुंसि ॥ १११ ॥",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 191,
+          "top_left_y": 1841,
+          "bottom_right_x": 936,
+          "bottom_right_y": 1885,
+          "content": "Im Nomin. Sg. masc. wird अय् für इद् substituirt.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 292,
+          "top_left_y": 1889,
+          "bottom_right_x": 557,
+          "bottom_right_y": 1929,
+          "content": "अयम्. Vgl. 7, 2, 108.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 15,
+          "top_left_y": 2140,
+          "bottom_right_x": 130,
+          "bottom_right_y": 2205,
+          "content": "UNIVERSITÄTS-\nBIBLIOTHEK\nHEIDELBERG",
+          "confidence_scores": null,
+          "type": "footer"
+        },
+        {
+          "top_left_x": 414,
+          "top_left_y": 2178,
+          "bottom_right_x": 920,
+          "bottom_right_y": 2216,
+          "content": "© Universitätsbibliothek Heidelberg\nhttp://digi.ub.uni-heidelberg.de/diglit/boehtlingk1887/0426",
+          "confidence_scores": null,
+          "type": "footer"
+        },
+        {
+          "top_left_x": 1185,
+          "top_left_y": 2123,
+          "bottom_right_x": 1325,
+          "bottom_right_y": 2214,
+          "content": "gelördert durch\nBaden-Württemberg",
+          "confidence_scores": null,
+          "type": "footer"
+        }
+      ]
+    }
+  ]
+}

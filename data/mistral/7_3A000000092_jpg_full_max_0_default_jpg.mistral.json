@@ -1,0 +1,343 @@
+{
+  "source": "data/img_cache/7_3A000000092_jpg_full_max_0_default_jpg.jpg",
+  "model": "mistral-ocr-latest",
+  "markdown": "92\n\n3, 1, 143.\n\n3, 1, 1. 2. 3. 91—94.\n\nविभाषा ग्रहः ॥ १४३ ॥\n\nNach ग्रह nicht nothwendig.\n\nग्राह oder ग्रह.\n\nगेहे कः ॥ १४४ ॥\n\nIn der Bedeutung „Haus“ tritt =अ an ग्रह.\n\nग्रहम्.\n\nशिल्पिनि ध्वन् ॥ १४५ ॥\n\nDas Suffix ∠_अक mit dem Femininum auf ξ bildet Bezeichnungen von Gewerbsleuten.\n\nनर्तक und नर्तकी, खनक und खनकी, रजक und रजकी.\n\nगस्थकन् ॥ १४६ ॥\n\nAn गा (गै) „singen“ tritt in dieser Bedeutung ∠थक.\n\nगाथक\n\nगयुट् च ॥ १४७ ॥\n\nAuch ±अन mit dem Femininum auf ξ.\n\nगायन, गायनी. Vgl. 7, 3, 33.\n\nहृष्त्र चौहिकालयोः ॥ १४८ ॥\n\nDasselbe Suffix tritt auch an हा zur Bezeichnung einer Reisart und eines Zeitabschnittes (Jahr).\n\nहायेन, aber हायने in den accentuirten Texten.\n\nप्रसुत्वः समभिहारे वुन् ॥ १४९ ॥\n\nNach पु, स् und लू wird ∠अक angefügt, um eine Wiederholung der Thätigkeit zu bezeichnen.\n\nप्रवक, सरक, लवक. Kāçikā bemerkt, dass in einer Hdschr. सु st. स् gelesen wird mit dem Beispiel सवक.\n\nआशिषि च ॥ १५० ॥\n\nDasselbe Suffix drückt auch einen Wunsch aus.\n\nजीवक „Einer, dem man langes Leben wünscht“.\n\n॥ इति तृतीयस्याध्यायस्य प्रथमः पाठः ॥\n\nUNIVERSITÄTS-\n\nBIBLIOTHEK\n\nHEIDELBERG\n\n© Universitätsbibliothek Heidelberg\n\nhttp://digi.ub.uni-heidelberg.de/diglit/boehtlingk1887/0118\n\ngefördert durch\n\nBaden-Württemberg\n",
+  "usage_info": {
+    "pages_processed": 1,
+    "doc_size_bytes": 443468
+  },
+  "pages": [
+    {
+      "index": 0,
+      "markdown": "92\n\n3, 1, 143.\n\n3, 1, 1. 2. 3. 91—94.\n\nविभाषा ग्रहः ॥ १४३ ॥\n\nNach ग्रह nicht nothwendig.\n\nग्राह oder ग्रह.\n\nगेहे कः ॥ १४४ ॥\n\nIn der Bedeutung „Haus“ tritt =अ an ग्रह.\n\nग्रहम्.\n\nशिल्पिनि ध्वन् ॥ १४५ ॥\n\nDas Suffix ∠_अक mit dem Femininum auf ξ bildet Bezeichnungen von Gewerbsleuten.\n\nनर्तक und नर्तकी, खनक und खनकी, रजक und रजकी.\n\nगस्थकन् ॥ १४६ ॥\n\nAn गा (गै) „singen“ tritt in dieser Bedeutung ∠थक.\n\nगाथक\n\nगयुट् च ॥ १४७ ॥\n\nAuch ±अन mit dem Femininum auf ξ.\n\nगायन, गायनी. Vgl. 7, 3, 33.\n\nहृष्त्र चौहिकालयोः ॥ १४८ ॥\n\nDasselbe Suffix tritt auch an हा zur Bezeichnung einer Reisart und eines Zeitabschnittes (Jahr).\n\nहायेन, aber हायने in den accentuirten Texten.\n\nप्रसुत्वः समभिहारे वुन् ॥ १४९ ॥\n\nNach पु, स् und लू wird ∠अक angefügt, um eine Wiederholung der Thätigkeit zu bezeichnen.\n\nप्रवक, सरक, लवक. Kāçikā bemerkt, dass in einer Hdschr. सु st. स् gelesen wird mit dem Beispiel सवक.\n\nआशिषि च ॥ १५० ॥\n\nDasselbe Suffix drückt auch einen Wunsch aus.\n\nजीवक „Einer, dem man langes Leben wünscht“.\n\n॥ इति तृतीयस्याध्यायस्य प्रथमः पाठः ॥\n\nUNIVERSITÄTS-\n\nBIBLIOTHEK\n\nHEIDELBERG\n\n© Universitätsbibliothek Heidelberg\n\nhttp://digi.ub.uni-heidelberg.de/diglit/boehtlingk1887/0118\n\ngefördert durch\n\nBaden-Württemberg",
+      "images": [],
+      "dimensions": {
+        "dpi": 200,
+        "height": 2247,
+        "width": 1373
+      },
+      "tables": [],
+      "hyperlinks": [],
+      "header": null,
+      "footer": null,
+      "confidence_scores": null,
+      "blocks": [
+        {
+          "top_left_x": 159,
+          "top_left_y": 117,
+          "bottom_right_x": 199,
+          "bottom_right_y": 148,
+          "content": "92",
+          "confidence_scores": null,
+          "type": "header"
+        },
+        {
+          "top_left_x": 662,
+          "top_left_y": 117,
+          "bottom_right_x": 779,
+          "bottom_right_y": 151,
+          "content": "3, 1, 143.",
+          "confidence_scores": null,
+          "type": "header"
+        },
+        {
+          "top_left_x": 76,
+          "top_left_y": 187,
+          "bottom_right_x": 378,
+          "bottom_right_y": 227,
+          "content": "3, 1, 1. 2. 3. 91—94.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 217,
+          "top_left_y": 238,
+          "bottom_right_x": 610,
+          "bottom_right_y": 292,
+          "content": "विभाषा ग्रहः ॥ १४३ ॥",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 158,
+          "top_left_y": 299,
+          "bottom_right_x": 574,
+          "bottom_right_y": 342,
+          "content": "Nach ग्रह nicht nothwendig.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 257,
+          "top_left_y": 349,
+          "bottom_right_x": 432,
+          "bottom_right_y": 385,
+          "content": "ग्राह oder ग्रह.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 217,
+          "top_left_y": 400,
+          "bottom_right_x": 514,
+          "bottom_right_y": 459,
+          "content": "गेहे कः ॥ १४४ ॥",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 157,
+          "top_left_y": 466,
+          "bottom_right_x": 812,
+          "bottom_right_y": 506,
+          "content": "In der Bedeutung „Haus“ tritt =अ an ग्रह.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 257,
+          "top_left_y": 517,
+          "bottom_right_x": 330,
+          "bottom_right_y": 553,
+          "content": "ग्रहम्.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 217,
+          "top_left_y": 569,
+          "bottom_right_x": 642,
+          "bottom_right_y": 634,
+          "content": "शिल्पिनि ध्वन् ॥ १४५ ॥",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 155,
+          "top_left_y": 630,
+          "bottom_right_x": 1282,
+          "bottom_right_y": 715,
+          "content": "Das Suffix ∠_अक mit dem Femininum auf ξ bildet Bezeichnungen von Gewerbsleuten.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 256,
+          "top_left_y": 722,
+          "bottom_right_x": 902,
+          "bottom_right_y": 762,
+          "content": "नर्तक und नर्तकी, खनक und खनकी, रजक und रजकी.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 217,
+          "top_left_y": 778,
+          "bottom_right_x": 533,
+          "bottom_right_y": 837,
+          "content": "गस्थकन् ॥ १४६ ॥",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 158,
+          "top_left_y": 837,
+          "bottom_right_x": 936,
+          "bottom_right_y": 879,
+          "content": "An गा (गै) „singen“ tritt in dieser Bedeutung ∠थक.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 258,
+          "top_left_y": 891,
+          "bottom_right_x": 337,
+          "bottom_right_y": 922,
+          "content": "गाथक",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 217,
+          "top_left_y": 942,
+          "bottom_right_x": 520,
+          "bottom_right_y": 1001,
+          "content": "गयुट् च ॥ १४७ ॥",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 159,
+          "top_left_y": 999,
+          "bottom_right_x": 755,
+          "bottom_right_y": 1039,
+          "content": "Auch ±अन mit dem Femininum auf ξ.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 258,
+          "top_left_y": 1046,
+          "bottom_right_x": 601,
+          "bottom_right_y": 1082,
+          "content": "गायन, गायनी. Vgl. 7, 3, 33.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 217,
+          "top_left_y": 1102,
+          "bottom_right_x": 700,
+          "bottom_right_y": 1158,
+          "content": "हृष्त्र चौहिकालयोः ॥ १४८ ॥",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 158,
+          "top_left_y": 1158,
+          "bottom_right_x": 1286,
+          "bottom_right_y": 1251,
+          "content": "Dasselbe Suffix tritt auch an हा zur Bezeichnung einer Reisart und eines Zeitabschnittes (Jahr).",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 260,
+          "top_left_y": 1262,
+          "bottom_right_x": 836,
+          "bottom_right_y": 1302,
+          "content": "हायेन, aber हायने in den accentuirten Texten.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 220,
+          "top_left_y": 1318,
+          "bottom_right_x": 774,
+          "bottom_right_y": 1388,
+          "content": "प्रसुत्वः समभिहारे वुन् ॥ १४९ ॥",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 159,
+          "top_left_y": 1377,
+          "bottom_right_x": 1286,
+          "bottom_right_y": 1469,
+          "content": "Nach पु, स् und लू wird ∠अक angefügt, um eine Wiederholung der Thätigkeit zu bezeichnen.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 227,
+          "top_left_y": 1471,
+          "bottom_right_x": 1288,
+          "bottom_right_y": 1556,
+          "content": "प्रवक, सरक, लवक. Kāçikā bemerkt, dass in einer Hdschr. सु st. स् gelesen wird mit dem Beispiel सवक.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 223,
+          "top_left_y": 1577,
+          "bottom_right_x": 587,
+          "bottom_right_y": 1631,
+          "content": "आशिषि च ॥ १५० ॥",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 164,
+          "top_left_y": 1635,
+          "bottom_right_x": 899,
+          "bottom_right_y": 1676,
+          "content": "Dasselbe Suffix drückt auch einen Wunsch aus.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 263,
+          "top_left_y": 1682,
+          "bottom_right_x": 874,
+          "bottom_right_y": 1723,
+          "content": "जीवक „Einer, dem man langes Leben wünscht“.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 480,
+          "top_left_y": 1766,
+          "bottom_right_x": 972,
+          "bottom_right_y": 1808,
+          "content": "॥ इति तृतीयस्याध्यायस्य प्रथमः पाठः ॥",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 15,
+          "top_left_y": 2168,
+          "bottom_right_x": 133,
+          "bottom_right_y": 2193,
+          "content": "UNIVERSITÄTS-",
+          "confidence_scores": null,
+          "type": "footer"
+        },
+        {
+          "top_left_x": 15,
+          "top_left_y": 2193,
+          "bottom_right_x": 114,
+          "bottom_right_y": 2211,
+          "content": "BIBLIOTHEK",
+          "confidence_scores": null,
+          "type": "footer"
+        },
+        {
+          "top_left_x": 15,
+          "top_left_y": 2211,
+          "bottom_right_x": 114,
+          "bottom_right_y": 2229,
+          "content": "HEIDELBERG",
+          "confidence_scores": null,
+          "type": "footer"
+        },
+        {
+          "top_left_x": 554,
+          "top_left_y": 2204,
+          "bottom_right_x": 825,
+          "bottom_right_y": 2227,
+          "content": "© Universitätsbibliothek Heidelberg",
+          "confidence_scores": null,
+          "type": "footer"
+        },
+        {
+          "top_left_x": 425,
+          "top_left_y": 2225,
+          "bottom_right_x": 937,
+          "bottom_right_y": 2247,
+          "content": "http://digi.ub.uni-heidelberg.de/diglit/boehtlingk1887/0118",
+          "confidence_scores": null,
+          "type": "footer"
+        },
+        {
+          "top_left_x": 1211,
+          "top_left_y": 2150,
+          "bottom_right_x": 1311,
+          "bottom_right_y": 2171,
+          "content": "gefördert durch",
+          "confidence_scores": null,
+          "type": "footer"
+        },
+        {
+          "top_left_x": 1212,
+          "top_left_y": 2220,
+          "bottom_right_x": 1351,
+          "bottom_right_y": 2240,
+          "content": "Baden-Württemberg",
+          "confidence_scores": null,
+          "type": "footer"
+        }
+      ]
+    }
+  ]
+}

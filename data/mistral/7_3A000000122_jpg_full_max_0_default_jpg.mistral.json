@@ -1,0 +1,343 @@
+{
+  "source": "data/img_cache/7_3A000000122_jpg_full_max_0_default_jpg.jpg",
+  "model": "mistral-ocr-latest",
+  "markdown": "122\n\n3, 3, 73.\n\n3, 1, 1. 2. 3. 91—94.\n\nआडि युद्धे ॥ ७३ ॥\n\nDesgleichen, wenn आ vorangeht, in der Bedeutung „Kampf“.\n\nआहवः, aber आहवायः in einer anderen Bedeutung.\n\nनिपानमाहावः ॥ ७४ ॥\n\nआहाव ist eine unregelmässige Bildung in der Bedeutung „Tränke“.\n\nभावे अनुपसर्गस्य ॥ ७५ ॥\n\nVon हवा wird, wenn keine Präposition vorangeht, das Nomen act. durch\nअ gebildet.\n\nहवः, aber आहवायः.\n\nहनश्च वधः ॥ ७६ ॥\n\nDesgleichen von हन्, wobei वध substituirt wird.\n\nवधः.\n\nसूतो घनः ॥ ७७ ॥\n\nघन bezeichnet eine feste Masse.\n\nअन्तर्धनो देशे ॥ ७८ ॥\n\nअन्तर्धन eine Oertlichkeit.\n\nअगरिकदेशे प्रघणः प्रघाणश्च ॥ ७९ ॥\n\nप्रघणा und प्रघाणा bezeichnen einen Theil des Hauses.\n\nउद्भनो अत्याधानम् ॥ ८० ॥\n\nउद्भन ist die Werkbank eines Zimmermanns (worauf Etwas gelegt wird).\n\nअपघनो उद्भम् ॥ ८१ ॥\n\nअपघन ein Körpertheil.\n\nकरणे अयोविदुषु ॥ ८२ ॥\n\nIn Verbindung mit अयम्, वि und दु bezeichnet घन ein Werkzeug.\n\nअयोघनः, विघनः, दुघनः oder दुघणः.\n\nस्तम्बे क च ॥ ८३ ॥\n\nIn Verbindung mit स्तम्ब kann an हन् auch = अ treten.\n\nस्तम्बघः oder स्तम्बघनः.\n\nपरो घः ॥ ८४ ॥\n\nIn Verbindung mit परि wird परिघ gebildet.\n\nUNIVERSITÄTS-\nBIBLIOTHEK\nHEIDELBERG\n\n© Universitätsbibliothek Heidelberg\nhttp://digi.ub.uni-heidelberg.de/diglit/boehlingk1887/0148\n\ngefördert durch\nBaden-Württemberg\n",
+  "usage_info": {
+    "pages_processed": 1,
+    "doc_size_bytes": 472944
+  },
+  "pages": [
+    {
+      "index": 0,
+      "markdown": "122\n\n3, 3, 73.\n\n3, 1, 1. 2. 3. 91—94.\n\nआडि युद्धे ॥ ७३ ॥\n\nDesgleichen, wenn आ vorangeht, in der Bedeutung „Kampf“.\n\nआहवः, aber आहवायः in einer anderen Bedeutung.\n\nनिपानमाहावः ॥ ७४ ॥\n\nआहाव ist eine unregelmässige Bildung in der Bedeutung „Tränke“.\n\nभावे अनुपसर्गस्य ॥ ७५ ॥\n\nVon हवा wird, wenn keine Präposition vorangeht, das Nomen act. durch\nअ gebildet.\n\nहवः, aber आहवायः.\n\nहनश्च वधः ॥ ७६ ॥\n\nDesgleichen von हन्, wobei वध substituirt wird.\n\nवधः.\n\nसूतो घनः ॥ ७७ ॥\n\nघन bezeichnet eine feste Masse.\n\nअन्तर्धनो देशे ॥ ७८ ॥\n\nअन्तर्धन eine Oertlichkeit.\n\nअगरिकदेशे प्रघणः प्रघाणश्च ॥ ७९ ॥\n\nप्रघणा und प्रघाणा bezeichnen einen Theil des Hauses.\n\nउद्भनो अत्याधानम् ॥ ८० ॥\n\nउद्भन ist die Werkbank eines Zimmermanns (worauf Etwas gelegt wird).\n\nअपघनो उद्भम् ॥ ८१ ॥\n\nअपघन ein Körpertheil.\n\nकरणे अयोविदुषु ॥ ८२ ॥\n\nIn Verbindung mit अयम्, वि und दु bezeichnet घन ein Werkzeug.\n\nअयोघनः, विघनः, दुघनः oder दुघणः.\n\nस्तम्बे क च ॥ ८३ ॥\n\nIn Verbindung mit स्तम्ब kann an हन् auch = अ treten.\n\nस्तम्बघः oder स्तम्बघनः.\n\nपरो घः ॥ ८४ ॥\n\nIn Verbindung mit परि wird परिघ gebildet.\n\nUNIVERSITÄTS-\nBIBLIOTHEK\nHEIDELBERG\n\n© Universitätsbibliothek Heidelberg\nhttp://digi.ub.uni-heidelberg.de/diglit/boehlingk1887/0148\n\ngefördert durch\nBaden-Württemberg",
+      "images": [],
+      "dimensions": {
+        "dpi": 200,
+        "height": 2221,
+        "width": 1382
+      },
+      "tables": [],
+      "hyperlinks": [],
+      "header": null,
+      "footer": null,
+      "confidence_scores": null,
+      "blocks": [
+        {
+          "top_left_x": 174,
+          "top_left_y": 107,
+          "bottom_right_x": 234,
+          "bottom_right_y": 140,
+          "content": "122",
+          "confidence_scores": null,
+          "type": "header"
+        },
+        {
+          "top_left_x": 682,
+          "top_left_y": 111,
+          "bottom_right_x": 789,
+          "bottom_right_y": 145,
+          "content": "3, 3, 73.",
+          "confidence_scores": null,
+          "type": "header"
+        },
+        {
+          "top_left_x": 91,
+          "top_left_y": 178,
+          "bottom_right_x": 394,
+          "bottom_right_y": 218,
+          "content": "3, 1, 1. 2. 3. 91—94.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 235,
+          "top_left_y": 222,
+          "bottom_right_x": 559,
+          "bottom_right_y": 289,
+          "content": "आडि युद्धे ॥ ७३ ॥",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 173,
+          "top_left_y": 289,
+          "bottom_right_x": 1115,
+          "bottom_right_y": 331,
+          "content": "Desgleichen, wenn आ vorangeht, in der Bedeutung „Kampf“.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 275,
+          "top_left_y": 336,
+          "bottom_right_x": 909,
+          "bottom_right_y": 371,
+          "content": "आहवः, aber आहवायः in einer anderen Bedeutung.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 235,
+          "top_left_y": 389,
+          "bottom_right_x": 642,
+          "bottom_right_y": 445,
+          "content": "निपानमाहावः ॥ ७४ ॥",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 173,
+          "top_left_y": 451,
+          "bottom_right_x": 1204,
+          "bottom_right_y": 498,
+          "content": "आहाव ist eine unregelmässige Bildung in der Bedeutung „Tränke“.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 234,
+          "top_left_y": 507,
+          "bottom_right_x": 664,
+          "bottom_right_y": 576,
+          "content": "भावे अनुपसर्गस्य ॥ ७५ ॥",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 173,
+          "top_left_y": 576,
+          "bottom_right_x": 1302,
+          "bottom_right_y": 663,
+          "content": "Von हवा wird, wenn keine Präposition vorangeht, das Nomen act. durch\nअ gebildet.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 277,
+          "top_left_y": 669,
+          "bottom_right_x": 523,
+          "bottom_right_y": 705,
+          "content": "हवः, aber आहवायः.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 235,
+          "top_left_y": 720,
+          "bottom_right_x": 573,
+          "bottom_right_y": 774,
+          "content": "हनश्च वधः ॥ ७६ ॥",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 176,
+          "top_left_y": 778,
+          "bottom_right_x": 899,
+          "bottom_right_y": 823,
+          "content": "Desgleichen von हन्, wobei वध substituirt wird.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 278,
+          "top_left_y": 829,
+          "bottom_right_x": 343,
+          "bottom_right_y": 863,
+          "content": "वधः.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 237,
+          "top_left_y": 878,
+          "bottom_right_x": 556,
+          "bottom_right_y": 949,
+          "content": "सूतो घनः ॥ ७७ ॥",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 176,
+          "top_left_y": 949,
+          "bottom_right_x": 667,
+          "bottom_right_y": 983,
+          "content": "घन bezeichnet eine feste Masse.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 237,
+          "top_left_y": 1000,
+          "bottom_right_x": 617,
+          "bottom_right_y": 1063,
+          "content": "अन्तर्धनो देशे ॥ ७८ ॥",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 176,
+          "top_left_y": 1067,
+          "bottom_right_x": 551,
+          "bottom_right_y": 1105,
+          "content": "अन्तर्धन eine Oertlichkeit.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 237,
+          "top_left_y": 1121,
+          "bottom_right_x": 869,
+          "bottom_right_y": 1183,
+          "content": "अगरिकदेशे प्रघणः प्रघाणश्च ॥ ७९ ॥",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 174,
+          "top_left_y": 1187,
+          "bottom_right_x": 960,
+          "bottom_right_y": 1227,
+          "content": "प्रघणा und प्रघाणा bezeichnen einen Theil des Hauses.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 237,
+          "top_left_y": 1249,
+          "bottom_right_x": 689,
+          "bottom_right_y": 1307,
+          "content": "उद्भनो अत्याधानम् ॥ ८० ॥",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 174,
+          "top_left_y": 1309,
+          "bottom_right_x": 1302,
+          "bottom_right_y": 1354,
+          "content": "उद्भन ist die Werkbank eines Zimmermanns (worauf Etwas gelegt wird).",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 237,
+          "top_left_y": 1363,
+          "bottom_right_x": 634,
+          "bottom_right_y": 1423,
+          "content": "अपघनो उद्भम् ॥ ८१ ॥",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 176,
+          "top_left_y": 1425,
+          "bottom_right_x": 519,
+          "bottom_right_y": 1465,
+          "content": "अपघन ein Körpertheil.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 237,
+          "top_left_y": 1483,
+          "bottom_right_x": 656,
+          "bottom_right_y": 1556,
+          "content": "करणे अयोविदुषु ॥ ८२ ॥",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 176,
+          "top_left_y": 1554,
+          "bottom_right_x": 1151,
+          "bottom_right_y": 1598,
+          "content": "In Verbindung mit अयम्, वि und दु bezeichnet घन ein Werkzeug.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 278,
+          "top_left_y": 1598,
+          "bottom_right_x": 714,
+          "bottom_right_y": 1645,
+          "content": "अयोघनः, विघनः, दुघनः oder दुघणः.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 237,
+          "top_left_y": 1656,
+          "bottom_right_x": 562,
+          "bottom_right_y": 1712,
+          "content": "स्तम्बे क च ॥ ८३ ॥",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 176,
+          "top_left_y": 1719,
+          "bottom_right_x": 991,
+          "bottom_right_y": 1761,
+          "content": "In Verbindung mit स्तम्ब kann an हन् auch = अ treten.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 278,
+          "top_left_y": 1767,
+          "bottom_right_x": 569,
+          "bottom_right_y": 1801,
+          "content": "स्तम्बघः oder स्तम्बघनः.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 237,
+          "top_left_y": 1819,
+          "bottom_right_x": 508,
+          "bottom_right_y": 1876,
+          "content": "परो घः ॥ ८४ ॥",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 176,
+          "top_left_y": 1883,
+          "bottom_right_x": 818,
+          "bottom_right_y": 1925,
+          "content": "In Verbindung mit परि wird परिघ gebildet.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 15,
+          "top_left_y": 2137,
+          "bottom_right_x": 136,
+          "bottom_right_y": 2203,
+          "content": "UNIVERSITÄTS-\nBIBLIOTHEK\nHEIDELBERG",
+          "confidence_scores": null,
+          "type": "footer"
+        },
+        {
+          "top_left_x": 426,
+          "top_left_y": 2179,
+          "bottom_right_x": 945,
+          "bottom_right_y": 2221,
+          "content": "© Universitätsbibliothek Heidelberg\nhttp://digi.ub.uni-heidelberg.de/diglit/boehlingk1887/0148",
+          "confidence_scores": null,
+          "type": "footer"
+        },
+        {
+          "top_left_x": 1219,
+          "top_left_y": 2123,
+          "bottom_right_x": 1363,
+          "bottom_right_y": 2217,
+          "content": "gefördert durch\nBaden-Württemberg",
+          "confidence_scores": null,
+          "type": "footer"
+        }
+      ]
+    }
+  ]
+}

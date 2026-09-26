@@ -1,0 +1,406 @@
+{
+  "source": "data/img_cache/7_3A000000337_jpg_full_max_0_default_jpg.jpg",
+  "model": "mistral-ocr-latest",
+  "markdown": "6, 3, 24.\n\n337\n\n6, 3, 1.\n\n### विभाषा वर्षेश्वरशरवरात् ॥ १६ ॥\n\nNach वर्ष, वर, शर und वर nicht nothwendig.\n\nवर्षज oder वर्षज, वरज oder वरज, शरज oder शरज, वरज oder वरज.\n\n### घकालतनेषु कालनास्रः ॥ १७ ॥\n\nDesgleichen nach einer Zeitbezeichnung vor den Suffixen तर् und तम, vor काल und vor dem Suffix तन.\n\nपूर्वोक्षोतरे oder पूर्वोक्षातरे, पूर्वोक्षोतमे oder पूर्वोक्षातमे; पूर्वोक्षोकाने oder पूर्वोक्षाकाने. पूर्वोक्षोतने oder पूर्वोक्षातने. Vgl. 4, 3, 23.\n\n### शयवासवासिष्वकालात् ॥ १८ ॥\n\nAuch vor शय, वास und वासिन्, wenn das vorangehende Wort keine Zeitbezeichnung ist.\n\nखेशय oder खशय, ग्रामेवास oder ग्रामवास, ग्रामेवासिन् oder ग्रामवासिन्; dagegen nur पूर्वोक्षाशय.\n\n### नेन्सिडवध्नातिषु च ॥ १९ ॥\n\nVor einem auf इन् auslautenden Stamme, vor सिद्ध und vor einem von बन्ध abgeleiteten Worte erhält sich die Locativendung nicht.\n\nस्यगिडलशायिन्, सांकाश्यसिद्ध, चक्रबन्धक. Ausnahme zu 6, 3, 14.\n\n### स्ये च भाषायाम् ॥ २० ॥\n\nAuch nicht vor स्य in der Umgangssprache.\n\nसमस्य, विषमस्य, कूटस्य, पर्वतस्य; dagegen श्राखरेष्ठ im Veda. Ausnahme zu 6, 3, 14.\n\n### षष्ठ्या आक्रोशे ॥ २१ ॥\n\nDie Genetivendung erhält sich, wenn durch das Compositum eine Beschimpfung ausgedrückt wird.\n\nचौरस्यकुलम्, वृषलस्यकुलम्.\n\n### पुत्रे ऽन्यतरस्याम् ॥ २२ ॥\n\nVor पुत्र in eben diesem Falle nicht nothwendig.\n\nदास्याःपुत्र oder दासीपुत्र, वृषल्याःपुत्र oder वृषलीपुत्र.\n\n### ऋतो विद्यायोनिसंवन्धेभ्यः ॥ २३ ॥\n\nNach einem auf ऋ auslautenden Stamme, der einen Studiengenossen oder Blutsverwandten bezeichnet, fällt die Genetivendung nicht ab.\n\nज्ञोतुरन्तेवासिन्, ज्ञोतुःपुत्र; पितुरन्तेवासिन्, पितुःपुत्र.\n\n### विभाषा स्वसुपत्योः ॥ २४ ॥\n\n† 6, 3, 1.\n\nNach eben solchen Stämmen vor स्वस् und पति nicht nothwendig.\n\nमातुःस्वस, मातुःस्वस, oder मातृस्वस; पितुःस्वस, पितुःस्वस, oder पितृस्वस (vgl. 8, 3, 84. 85);\n\nदुहितुःपति oder दुहितृपति, ननान्दुःपति oder ननान्दृपति.\n\nPāṇini's Grammatik\n\n43\n\nUNIVERSITÄTS-\n\nBIBLIOTHEK\n\nHEIDELBERG\n\n© Universitätsbibliothek Heidelberg\n\nhttp://digi.ub.uni-heidelberg.de/diglit/boehtlingk1887/0363\n\ngefördert durch\n\nHIV\n\nBaden-Württemberg\n",
+  "usage_info": {
+    "pages_processed": 1,
+    "doc_size_bytes": 622421
+  },
+  "pages": [
+    {
+      "index": 0,
+      "markdown": "6, 3, 24.\n\n337\n\n6, 3, 1.\n\n### विभाषा वर्षेश्वरशरवरात् ॥ १६ ॥\n\nNach वर्ष, वर, शर und वर nicht nothwendig.\n\nवर्षज oder वर्षज, वरज oder वरज, शरज oder शरज, वरज oder वरज.\n\n### घकालतनेषु कालनास्रः ॥ १७ ॥\n\nDesgleichen nach einer Zeitbezeichnung vor den Suffixen तर् und तम, vor काल und vor dem Suffix तन.\n\nपूर्वोक्षोतरे oder पूर्वोक्षातरे, पूर्वोक्षोतमे oder पूर्वोक्षातमे; पूर्वोक्षोकाने oder पूर्वोक्षाकाने. पूर्वोक्षोतने oder पूर्वोक्षातने. Vgl. 4, 3, 23.\n\n### शयवासवासिष्वकालात् ॥ १८ ॥\n\nAuch vor शय, वास und वासिन्, wenn das vorangehende Wort keine Zeitbezeichnung ist.\n\nखेशय oder खशय, ग्रामेवास oder ग्रामवास, ग्रामेवासिन् oder ग्रामवासिन्; dagegen nur पूर्वोक्षाशय.\n\n### नेन्सिडवध्नातिषु च ॥ १९ ॥\n\nVor einem auf इन् auslautenden Stamme, vor सिद्ध und vor einem von बन्ध abgeleiteten Worte erhält sich die Locativendung nicht.\n\nस्यगिडलशायिन्, सांकाश्यसिद्ध, चक्रबन्धक. Ausnahme zu 6, 3, 14.\n\n### स्ये च भाषायाम् ॥ २० ॥\n\nAuch nicht vor स्य in der Umgangssprache.\n\nसमस्य, विषमस्य, कूटस्य, पर्वतस्य; dagegen श्राखरेष्ठ im Veda. Ausnahme zu 6, 3, 14.\n\n### षष्ठ्या आक्रोशे ॥ २१ ॥\n\nDie Genetivendung erhält sich, wenn durch das Compositum eine Beschimpfung ausgedrückt wird.\n\nचौरस्यकुलम्, वृषलस्यकुलम्.\n\n### पुत्रे ऽन्यतरस्याम् ॥ २२ ॥\n\nVor पुत्र in eben diesem Falle nicht nothwendig.\n\nदास्याःपुत्र oder दासीपुत्र, वृषल्याःपुत्र oder वृषलीपुत्र.\n\n### ऋतो विद्यायोनिसंवन्धेभ्यः ॥ २३ ॥\n\nNach einem auf ऋ auslautenden Stamme, der einen Studiengenossen oder Blutsverwandten bezeichnet, fällt die Genetivendung nicht ab.\n\nज्ञोतुरन्तेवासिन्, ज्ञोतुःपुत्र; पितुरन्तेवासिन्, पितुःपुत्र.\n\n### विभाषा स्वसुपत्योः ॥ २४ ॥\n\n† 6, 3, 1.\n\nNach eben solchen Stämmen vor स्वस् und पति nicht nothwendig.\n\nमातुःस्वस, मातुःस्वस, oder मातृस्वस; पितुःस्वस, पितुःस्वस, oder पितृस्वस (vgl. 8, 3, 84. 85);\n\nदुहितुःपति oder दुहितृपति, ननान्दुःपति oder ननान्दृपति.\n\nPāṇini's Grammatik\n\n43\n\nUNIVERSITÄTS-\n\nBIBLIOTHEK\n\nHEIDELBERG\n\n© Universitätsbibliothek Heidelberg\n\nhttp://digi.ub.uni-heidelberg.de/diglit/boehtlingk1887/0363\n\ngefördert durch\n\nHIV\n\nBaden-Württemberg",
+      "images": [],
+      "dimensions": {
+        "dpi": 200,
+        "height": 2217,
+        "width": 1336
+      },
+      "tables": [],
+      "hyperlinks": [],
+      "header": null,
+      "footer": null,
+      "confidence_scores": null,
+      "blocks": [
+        {
+          "top_left_x": 540,
+          "top_left_y": 126,
+          "bottom_right_x": 642,
+          "bottom_right_y": 160,
+          "content": "6, 3, 24.",
+          "confidence_scores": null,
+          "type": "header"
+        },
+        {
+          "top_left_x": 1094,
+          "top_left_y": 118,
+          "bottom_right_x": 1151,
+          "bottom_right_y": 151,
+          "content": "337",
+          "confidence_scores": null,
+          "type": "header"
+        },
+        {
+          "top_left_x": 1127,
+          "top_left_y": 191,
+          "bottom_right_x": 1230,
+          "bottom_right_y": 231,
+          "content": "6, 3, 1.",
+          "confidence_scores": null,
+          "type": "header"
+        },
+        {
+          "top_left_x": 104,
+          "top_left_y": 235,
+          "bottom_right_x": 647,
+          "bottom_right_y": 291,
+          "content": "### विभाषा वर्षेश्वरशरवरात् ॥ १६ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 47,
+          "top_left_y": 293,
+          "bottom_right_x": 686,
+          "bottom_right_y": 333,
+          "content": "Nach वर्ष, वर, शर und वर nicht nothwendig.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 140,
+          "top_left_y": 335,
+          "bottom_right_x": 958,
+          "bottom_right_y": 375,
+          "content": "वर्षज oder वर्षज, वरज oder वरज, शरज oder शरज, वरज oder वरज.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 102,
+          "top_left_y": 386,
+          "bottom_right_x": 633,
+          "bottom_right_y": 444,
+          "content": "### घकालतनेषु कालनास्रः ॥ १७ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 43,
+          "top_left_y": 437,
+          "bottom_right_x": 1151,
+          "bottom_right_y": 526,
+          "content": "Desgleichen nach einer Zeitbezeichnung vor den Suffixen तर् und तम, vor काल und vor dem Suffix तन.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 104,
+          "top_left_y": 526,
+          "bottom_right_x": 1151,
+          "bottom_right_y": 617,
+          "content": "पूर्वोक्षोतरे oder पूर्वोक्षातरे, पूर्वोक्षोतमे oder पूर्वोक्षातमे; पूर्वोक्षोकाने oder पूर्वोक्षाकाने. पूर्वोक्षोतने oder पूर्वोक्षातने. Vgl. 4, 3, 23.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 99,
+          "top_left_y": 626,
+          "bottom_right_x": 642,
+          "bottom_right_y": 679,
+          "content": "### शयवासवासिष्वकालात् ॥ १८ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 36,
+          "top_left_y": 672,
+          "bottom_right_x": 1150,
+          "bottom_right_y": 766,
+          "content": "Auch vor शय, वास und वासिन्, wenn das vorangehende Wort keine Zeitbezeichnung ist.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 100,
+          "top_left_y": 766,
+          "bottom_right_x": 1151,
+          "bottom_right_y": 854,
+          "content": "खेशय oder खशय, ग्रामेवास oder ग्रामवास, ग्रामेवासिन् oder ग्रामवासिन्; dagegen nur पूर्वोक्षाशय.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 96,
+          "top_left_y": 861,
+          "bottom_right_x": 558,
+          "bottom_right_y": 923,
+          "content": "### नेन्सिडवध्नातिषु च ॥ १९ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 36,
+          "top_left_y": 914,
+          "bottom_right_x": 1150,
+          "bottom_right_y": 1003,
+          "content": "Vor einem auf इन् auslautenden Stamme, vor सिद्ध und vor einem von बन्ध abgeleiteten Worte erhält sich die Locativendung nicht.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 134,
+          "top_left_y": 1008,
+          "bottom_right_x": 903,
+          "bottom_right_y": 1050,
+          "content": "स्यगिडलशायिन्, सांकाश्यसिद्ध, चक्रबन्धक. Ausnahme zu 6, 3, 14.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 95,
+          "top_left_y": 1059,
+          "bottom_right_x": 510,
+          "bottom_right_y": 1114,
+          "content": "### स्ये च भाषायाम् ॥ २० ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 36,
+          "top_left_y": 1112,
+          "bottom_right_x": 693,
+          "bottom_right_y": 1152,
+          "content": "Auch nicht vor स्य in der Umgangssprache.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 131,
+          "top_left_y": 1154,
+          "bottom_right_x": 1149,
+          "bottom_right_y": 1201,
+          "content": "समस्य, विषमस्य, कूटस्य, पर्वतस्य; dagegen श्राखरेष्ठ im Veda. Ausnahme zu 6, 3, 14.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 95,
+          "top_left_y": 1205,
+          "bottom_right_x": 479,
+          "bottom_right_y": 1261,
+          "content": "### षष्ठ्या आक्रोशे ॥ २१ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 33,
+          "top_left_y": 1256,
+          "bottom_right_x": 1146,
+          "bottom_right_y": 1349,
+          "content": "Die Genetivendung erhält sich, wenn durch das Compositum eine Beschimpfung ausgedrückt wird.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 134,
+          "top_left_y": 1354,
+          "bottom_right_x": 440,
+          "bottom_right_y": 1400,
+          "content": "चौरस्यकुलम्, वृषलस्यकुलम्.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 95,
+          "top_left_y": 1405,
+          "bottom_right_x": 503,
+          "bottom_right_y": 1465,
+          "content": "### पुत्रे ऽन्यतरस्याम् ॥ २२ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 36,
+          "top_left_y": 1458,
+          "bottom_right_x": 757,
+          "bottom_right_y": 1507,
+          "content": "Vor पुत्र in eben diesem Falle nicht nothwendig.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 131,
+          "top_left_y": 1505,
+          "bottom_right_x": 734,
+          "bottom_right_y": 1551,
+          "content": "दास्याःपुत्र oder दासीपुत्र, वृषल्याःपुत्र oder वृषलीपुत्र.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 94,
+          "top_left_y": 1556,
+          "bottom_right_x": 681,
+          "bottom_right_y": 1613,
+          "content": "### ऋतो विद्यायोनिसंवन्धेभ्यः ॥ २३ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 33,
+          "top_left_y": 1607,
+          "bottom_right_x": 1146,
+          "bottom_right_y": 1695,
+          "content": "Nach einem auf ऋ auslautenden Stamme, der einen Studiengenossen oder Blutsverwandten bezeichnet, fällt die Genetivendung nicht ab.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 131,
+          "top_left_y": 1700,
+          "bottom_right_x": 714,
+          "bottom_right_y": 1751,
+          "content": "ज्ञोतुरन्तेवासिन्, ज्ञोतुःपुत्र; पितुरन्तेवासिन्, पितुःपुत्र.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 95,
+          "top_left_y": 1755,
+          "bottom_right_x": 558,
+          "bottom_right_y": 1813,
+          "content": "### विभाषा स्वसुपत्योः ॥ २४ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 1139,
+          "top_left_y": 1753,
+          "bottom_right_x": 1266,
+          "bottom_right_y": 1795,
+          "content": "† 6, 3, 1.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 36,
+          "top_left_y": 1802,
+          "bottom_right_x": 1006,
+          "bottom_right_y": 1844,
+          "content": "Nach eben solchen Stämmen vor स्वस् und पति nicht nothwendig.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 131,
+          "top_left_y": 1846,
+          "bottom_right_x": 1146,
+          "bottom_right_y": 1895,
+          "content": "मातुःस्वस, मातुःस्वस, oder मातृस्वस; पितुःस्वस, पितुःस्वस, oder पितृस्वस (vgl. 8, 3, 84. 85);",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 100,
+          "top_left_y": 1893,
+          "bottom_right_x": 756,
+          "bottom_right_y": 1937,
+          "content": "दुहितुःपति oder दुहितृपति, ननान्दुःपति oder ननान्दृपति.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 78,
+          "top_left_y": 1933,
+          "bottom_right_x": 301,
+          "bottom_right_y": 1960,
+          "content": "Pāṇini's Grammatik",
+          "confidence_scores": null,
+          "type": "footer"
+        },
+        {
+          "top_left_x": 954,
+          "top_left_y": 1929,
+          "bottom_right_x": 983,
+          "bottom_right_y": 1953,
+          "content": "43",
+          "confidence_scores": null,
+          "type": "footer"
+        },
+        {
+          "top_left_x": 15,
+          "top_left_y": 2139,
+          "bottom_right_x": 130,
+          "bottom_right_y": 2164,
+          "content": "UNIVERSITÄTS-",
+          "confidence_scores": null,
+          "type": "footer"
+        },
+        {
+          "top_left_x": 15,
+          "top_left_y": 2164,
+          "bottom_right_x": 110,
+          "bottom_right_y": 2181,
+          "content": "BIBLIOTHEK",
+          "confidence_scores": null,
+          "type": "footer"
+        },
+        {
+          "top_left_x": 15,
+          "top_left_y": 2181,
+          "bottom_right_x": 112,
+          "bottom_right_y": 2199,
+          "content": "HEIDELBERG",
+          "confidence_scores": null,
+          "type": "footer"
+        },
+        {
+          "top_left_x": 538,
+          "top_left_y": 2177,
+          "bottom_right_x": 802,
+          "bottom_right_y": 2197,
+          "content": "© Universitätsbibliothek Heidelberg",
+          "confidence_scores": null,
+          "type": "footer"
+        },
+        {
+          "top_left_x": 413,
+          "top_left_y": 2195,
+          "bottom_right_x": 911,
+          "bottom_right_y": 2215,
+          "content": "http://digi.ub.uni-heidelberg.de/diglit/boehtlingk1887/0363",
+          "confidence_scores": null,
+          "type": "footer"
+        },
+        {
+          "top_left_x": 1178,
+          "top_left_y": 2124,
+          "bottom_right_x": 1276,
+          "bottom_right_y": 2142,
+          "content": "gefördert durch",
+          "confidence_scores": null,
+          "type": "footer"
+        },
+        {
+          "top_left_x": 1217,
+          "top_left_y": 2144,
+          "bottom_right_x": 1276,
+          "bottom_right_y": 2186,
+          "content": "HIV",
+          "confidence_scores": null,
+          "type": "footer"
+        },
+        {
+          "top_left_x": 1180,
+          "top_left_y": 2190,
+          "bottom_right_x": 1313,
+          "bottom_right_y": 2210,
+          "content": "Baden-Württemberg",
+          "confidence_scores": null,
+          "type": "footer"
+        }
+      ]
+    }
+  ]
+}

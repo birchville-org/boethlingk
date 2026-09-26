@@ -1,0 +1,415 @@
+{
+  "source": "data/img_cache/7_3A000000282_jpg_full_max_0_default_jpg.jpg",
+  "model": "mistral-ocr-latest",
+  "markdown": "282\n\n5, 4, 151.\n\n3, 1, 1. 2. 3. 4, 1, 1. 76. 5, 4, 68.\n\n## उरः प्रभृतिभ्यः कष् ॥ १५१ ॥\n\nAn उरस् u. s. w. wird am Ende eines Bahuvrihi क् angefügt.\n\nव्यूढोरस्क, प्रियसर्पिष्क u. s. w.\n\n## इनः स्त्रियाम् ॥ १५२ ॥\n\nAuch an einen auf इन् ausgehenden Bahuvrihi im Femininum.\n\nबहुदगिडका und बहुच्छत्रिका शाला, बहुस्वामिका नगरी, बहुवाग्मिका सभा.\n\n## नद्युतश्च ॥ १५३ ॥\n\nAuch an einen Bahuvrihi, dessen letztes Glied mit dem Femininsuffix ई\noder ऊ versehen ist oder auf ऋ auslautet.\n\nबहुकुमारीको देशः, बहुब्रतबन्धूकः, बहुकर्त्रकः.\n\n## शेषाडिभाषा ॥ १५४ ॥\n\nAn alle übrigen, nicht besonders besprochenen Bahuvrihi kann क् angefügt\nwerden.\n\nबहुखट्व, खट्वक oder खट्वाक, बहुवीगा, वीगाक oder वीगाक u. s. w.\n\n## न संज्ञायाम् ॥ १५५ ॥\n\nWenn ein Name gebildet wird, tritt kein क् im Bahuvrihi an.\n\nविश्वदेवः, विश्वयशाः.\n\n## ईयसश्च ॥ १५६ ॥\n\nAuch nicht an das Suffix ईयस.\n\nबहुश्रेयान् = बहवी श्रेयांसो ऽस्य, बहुश्रेयसी (sic) = बह्व्यः श्रेयस्यो ऽस्य.\n\n## वन्दिते भ्रातुः ॥ १५७ ॥\n\nAuch nicht an भ्रातृ, wenn dieser gelobt wird.\n\nसुभ्रातृ „einen guten Bruder habend“, aber मूर्खभ्रातृक und दुष्टभ्रातृक.\n\n## चूतश्छन्दसि ॥ १५८ ॥\n\nAuch nicht an einen auf ऋ auslautenden Stamm im Veda.\n\nहतमातृ, हतपितृ, हतस्वस, सुहोतृ.\n\n## नाडीतन्त्योः स्वाङ्गे ॥ १५९ ॥\n\nAuch nicht an नाडी und तन्त्री, wenn sie Körpertheile bezeichnen.\n\nबहुनाडिः कायः, बहुतन्त्रीर्पिवा; aber बहुनाडीकः स्तम्भः und बहुतन्त्रीका वीगा.\n\n†3,1,1.2.3.\n\n†4, 1, 1. 76.\n\n†5, 4, 68.\n\n## निष्प्रवाणिश्च ॥ १६० ॥\n\nAuch निष्प्रवाणि gehört hierher.\n\n॥ इति पञ्चमस्याध्यायस्य चतुर्थः पादौ अध्यायश्च समाप्तः ॥\n\nUNIVERSITÄTS-\n\nBIBLIOTHEK\n\nHEIDELBERG\n\n© Universitätsbibliothek Heidelberg\n\nhttp://digi.ub.uni-heidelberg.de/diglit/boehtlingk1887/0308\n\ngefördert durch\n\nBaden-Württemberg\n",
+  "usage_info": {
+    "pages_processed": 1,
+    "doc_size_bytes": 566701
+  },
+  "pages": [
+    {
+      "index": 0,
+      "markdown": "282\n\n5, 4, 151.\n\n3, 1, 1. 2. 3. 4, 1, 1. 76. 5, 4, 68.\n\n## उरः प्रभृतिभ्यः कष् ॥ १५१ ॥\n\nAn उरस् u. s. w. wird am Ende eines Bahuvrihi क् angefügt.\n\nव्यूढोरस्क, प्रियसर्पिष्क u. s. w.\n\n## इनः स्त्रियाम् ॥ १५२ ॥\n\nAuch an einen auf इन् ausgehenden Bahuvrihi im Femininum.\n\nबहुदगिडका und बहुच्छत्रिका शाला, बहुस्वामिका नगरी, बहुवाग्मिका सभा.\n\n## नद्युतश्च ॥ १५३ ॥\n\nAuch an einen Bahuvrihi, dessen letztes Glied mit dem Femininsuffix ई\noder ऊ versehen ist oder auf ऋ auslautet.\n\nबहुकुमारीको देशः, बहुब्रतबन्धूकः, बहुकर्त्रकः.\n\n## शेषाडिभाषा ॥ १५४ ॥\n\nAn alle übrigen, nicht besonders besprochenen Bahuvrihi kann क् angefügt\nwerden.\n\nबहुखट्व, खट्वक oder खट्वाक, बहुवीगा, वीगाक oder वीगाक u. s. w.\n\n## न संज्ञायाम् ॥ १५५ ॥\n\nWenn ein Name gebildet wird, tritt kein क् im Bahuvrihi an.\n\nविश्वदेवः, विश्वयशाः.\n\n## ईयसश्च ॥ १५६ ॥\n\nAuch nicht an das Suffix ईयस.\n\nबहुश्रेयान् = बहवी श्रेयांसो ऽस्य, बहुश्रेयसी (sic) = बह्व्यः श्रेयस्यो ऽस्य.\n\n## वन्दिते भ्रातुः ॥ १५७ ॥\n\nAuch nicht an भ्रातृ, wenn dieser gelobt wird.\n\nसुभ्रातृ „einen guten Bruder habend“, aber मूर्खभ्रातृक und दुष्टभ्रातृक.\n\n## चूतश्छन्दसि ॥ १५८ ॥\n\nAuch nicht an einen auf ऋ auslautenden Stamm im Veda.\n\nहतमातृ, हतपितृ, हतस्वस, सुहोतृ.\n\n## नाडीतन्त्योः स्वाङ्गे ॥ १५९ ॥\n\nAuch nicht an नाडी und तन्त्री, wenn sie Körpertheile bezeichnen.\n\nबहुनाडिः कायः, बहुतन्त्रीर्पिवा; aber बहुनाडीकः स्तम्भः und बहुतन्त्रीका वीगा.\n\n†3,1,1.2.3.\n\n†4, 1, 1. 76.\n\n†5, 4, 68.\n\n## निष्प्रवाणिश्च ॥ १६० ॥\n\nAuch निष्प्रवाणि gehört hierher.\n\n॥ इति पञ्चमस्याध्यायस्य चतुर्थः पादौ अध्यायश्च समाप्तः ॥\n\nUNIVERSITÄTS-\n\nBIBLIOTHEK\n\nHEIDELBERG\n\n© Universitätsbibliothek Heidelberg\n\nhttp://digi.ub.uni-heidelberg.de/diglit/boehtlingk1887/0308\n\ngefördert durch\n\nBaden-Württemberg",
+      "images": [],
+      "dimensions": {
+        "dpi": 200,
+        "height": 2220,
+        "width": 1365
+      },
+      "tables": [],
+      "hyperlinks": [],
+      "header": null,
+      "footer": null,
+      "confidence_scores": null,
+      "blocks": [
+        {
+          "top_left_x": 156,
+          "top_left_y": 122,
+          "bottom_right_x": 213,
+          "bottom_right_y": 156,
+          "content": "282",
+          "confidence_scores": null,
+          "type": "header"
+        },
+        {
+          "top_left_x": 668,
+          "top_left_y": 122,
+          "bottom_right_x": 783,
+          "bottom_right_y": 156,
+          "content": "5, 4, 151.",
+          "confidence_scores": null,
+          "type": "header"
+        },
+        {
+          "top_left_x": 72,
+          "top_left_y": 193,
+          "bottom_right_x": 538,
+          "bottom_right_y": 233,
+          "content": "3, 1, 1. 2. 3. 4, 1, 1. 76. 5, 4, 68.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 215,
+          "top_left_y": 240,
+          "bottom_right_x": 691,
+          "bottom_right_y": 302,
+          "content": "## उरः प्रभृतिभ्यः कष् ॥ १५१ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 157,
+          "top_left_y": 300,
+          "bottom_right_x": 1060,
+          "bottom_right_y": 344,
+          "content": "An उरस् u. s. w. wird am Ende eines Bahuvrihi क् angefügt.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 256,
+          "top_left_y": 344,
+          "bottom_right_x": 601,
+          "bottom_right_y": 391,
+          "content": "व्यूढोरस्क, प्रियसर्पिष्क u. s. w.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 216,
+          "top_left_y": 398,
+          "bottom_right_x": 605,
+          "bottom_right_y": 456,
+          "content": "## इनः स्त्रियाम् ॥ १५२ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 157,
+          "top_left_y": 456,
+          "bottom_right_x": 1112,
+          "bottom_right_y": 500,
+          "content": "Auch an einen auf इन् ausgehenden Bahuvrihi im Femininum.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 256,
+          "top_left_y": 500,
+          "bottom_right_x": 1114,
+          "bottom_right_y": 551,
+          "content": "बहुदगिडका und बहुच्छत्रिका शाला, बहुस्वामिका नगरी, बहुवाग्मिका सभा.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 217,
+          "top_left_y": 564,
+          "bottom_right_x": 515,
+          "bottom_right_y": 620,
+          "content": "## नद्युतश्च ॥ १५३ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 157,
+          "top_left_y": 611,
+          "bottom_right_x": 1286,
+          "bottom_right_y": 702,
+          "content": "Auch an einen Bahuvrihi, dessen letztes Glied mit dem Femininsuffix ई\noder ऊ versehen ist oder auf ऋ auslautet.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 260,
+          "top_left_y": 704,
+          "bottom_right_x": 788,
+          "bottom_right_y": 758,
+          "content": "बहुकुमारीको देशः, बहुब्रतबन्धूकः, बहुकर्त्रकः.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 224,
+          "top_left_y": 764,
+          "bottom_right_x": 604,
+          "bottom_right_y": 822,
+          "content": "## शेषाडिभाषा ॥ १५४ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 160,
+          "top_left_y": 822,
+          "bottom_right_x": 1290,
+          "bottom_right_y": 918,
+          "content": "An alle übrigen, nicht besonders besprochenen Bahuvrihi kann क् angefügt\nwerden.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 264,
+          "top_left_y": 918,
+          "bottom_right_x": 1120,
+          "bottom_right_y": 971,
+          "content": "बहुखट्व, खट्वक oder खट्वाक, बहुवीगा, वीगाक oder वीगाक u. s. w.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 224,
+          "top_left_y": 984,
+          "bottom_right_x": 596,
+          "bottom_right_y": 1040,
+          "content": "## न संज्ञायाम् ॥ १५५ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 167,
+          "top_left_y": 1040,
+          "bottom_right_x": 1107,
+          "bottom_right_y": 1084,
+          "content": "Wenn ein Name gebildet wird, tritt kein क् im Bahuvrihi an.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 266,
+          "top_left_y": 1089,
+          "bottom_right_x": 529,
+          "bottom_right_y": 1129,
+          "content": "विश्वदेवः, विश्वयशाः.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 228,
+          "top_left_y": 1142,
+          "bottom_right_x": 519,
+          "bottom_right_y": 1198,
+          "content": "## ईयसश्च ॥ १५६ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 168,
+          "top_left_y": 1198,
+          "bottom_right_x": 641,
+          "bottom_right_y": 1238,
+          "content": "Auch nicht an das Suffix ईयस.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 266,
+          "top_left_y": 1236,
+          "bottom_right_x": 1085,
+          "bottom_right_y": 1289,
+          "content": "बहुश्रेयान् = बहवी श्रेयांसो ऽस्य, बहुश्रेयसी (sic) = बह्व्यः श्रेयस्यो ऽस्य.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 231,
+          "top_left_y": 1293,
+          "bottom_right_x": 622,
+          "bottom_right_y": 1358,
+          "content": "## वन्दिते भ्रातुः ॥ १५७ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 171,
+          "top_left_y": 1353,
+          "bottom_right_x": 857,
+          "bottom_right_y": 1396,
+          "content": "Auch nicht an भ्रातृ, wenn dieser gelobt wird.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 268,
+          "top_left_y": 1396,
+          "bottom_right_x": 1101,
+          "bottom_right_y": 1449,
+          "content": "सुभ्रातृ „einen guten Bruder habend“, aber मूर्खभ्रातृक und दुष्टभ्रातृक.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 232,
+          "top_left_y": 1456,
+          "bottom_right_x": 613,
+          "bottom_right_y": 1513,
+          "content": "## चूतश्छन्दसि ॥ १५८ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 172,
+          "top_left_y": 1509,
+          "bottom_right_x": 1068,
+          "bottom_right_y": 1553,
+          "content": "Auch nicht an einen auf ऋ auslautenden Stamm im Veda.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 273,
+          "top_left_y": 1560,
+          "bottom_right_x": 661,
+          "bottom_right_y": 1607,
+          "content": "हतमातृ, हतपितृ, हतस्वस, सुहोतृ.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 234,
+          "top_left_y": 1611,
+          "bottom_right_x": 723,
+          "bottom_right_y": 1671,
+          "content": "## नाडीतन्त्योः स्वाङ्गे ॥ १५९ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 175,
+          "top_left_y": 1660,
+          "bottom_right_x": 1150,
+          "bottom_right_y": 1707,
+          "content": "Auch nicht an नाडी und तन्त्री, wenn sie Körpertheile bezeichnen.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 273,
+          "top_left_y": 1704,
+          "bottom_right_x": 1193,
+          "bottom_right_y": 1760,
+          "content": "बहुनाडिः कायः, बहुतन्त्रीर्पिवा; aber बहुनाडीकः स्तम्भः und बहुतन्त्रीका वीगा.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 12,
+          "top_left_y": 1778,
+          "bottom_right_x": 174,
+          "bottom_right_y": 1816,
+          "content": "†3,1,1.2.3.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 12,
+          "top_left_y": 1816,
+          "bottom_right_x": 178,
+          "bottom_right_y": 1851,
+          "content": "†4, 1, 1. 76.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 36,
+          "top_left_y": 1851,
+          "bottom_right_x": 165,
+          "bottom_right_y": 1884,
+          "content": "†5, 4, 68.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 238,
+          "top_left_y": 1767,
+          "bottom_right_x": 634,
+          "bottom_right_y": 1820,
+          "content": "## निष्प्रवाणिश्च ॥ १६० ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 178,
+          "top_left_y": 1820,
+          "bottom_right_x": 635,
+          "bottom_right_y": 1862,
+          "content": "Auch निष्प्रवाणि gehört hierher.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 383,
+          "top_left_y": 1889,
+          "bottom_right_x": 1094,
+          "bottom_right_y": 1938,
+          "content": "॥ इति पञ्चमस्याध्यायस्य चतुर्थः पादौ अध्यायश्च समाप्तः ॥",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 15,
+          "top_left_y": 2142,
+          "bottom_right_x": 133,
+          "bottom_right_y": 2167,
+          "content": "UNIVERSITÄTS-",
+          "confidence_scores": null,
+          "type": "footer"
+        },
+        {
+          "top_left_x": 15,
+          "top_left_y": 2167,
+          "bottom_right_x": 112,
+          "bottom_right_y": 2184,
+          "content": "BIBLIOTHEK",
+          "confidence_scores": null,
+          "type": "footer"
+        },
+        {
+          "top_left_x": 15,
+          "top_left_y": 2184,
+          "bottom_right_x": 115,
+          "bottom_right_y": 2202,
+          "content": "HEIDELBERG",
+          "confidence_scores": null,
+          "type": "footer"
+        },
+        {
+          "top_left_x": 551,
+          "top_left_y": 2178,
+          "bottom_right_x": 821,
+          "bottom_right_y": 2200,
+          "content": "© Universitätsbibliothek Heidelberg",
+          "confidence_scores": null,
+          "type": "footer"
+        },
+        {
+          "top_left_x": 421,
+          "top_left_y": 2198,
+          "bottom_right_x": 932,
+          "bottom_right_y": 2218,
+          "content": "http://digi.ub.uni-heidelberg.de/diglit/boehtlingk1887/0308",
+          "confidence_scores": null,
+          "type": "footer"
+        },
+        {
+          "top_left_x": 1204,
+          "top_left_y": 2124,
+          "bottom_right_x": 1304,
+          "bottom_right_y": 2144,
+          "content": "gefördert durch",
+          "confidence_scores": null,
+          "type": "footer"
+        },
+        {
+          "top_left_x": 1205,
+          "top_left_y": 2193,
+          "bottom_right_x": 1343,
+          "bottom_right_y": 2213,
+          "content": "Baden-Württemberg",
+          "confidence_scores": null,
+          "type": "footer"
+        }
+      ]
+    }
+  ]
+}

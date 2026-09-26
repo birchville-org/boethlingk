@@ -1,0 +1,253 @@
+{
+  "source": "data/img_cache/7_3A000000012_jpg_full_max_0_default_jpg.jpg",
+  "model": "mistral-ocr-latest",
+  "markdown": "12\n\n1, 2, 3.\n\n## विभाषोर्गीः ॥ ३ ॥\n\nNach ऊर्गु facultativ.\n\nऊर्गुविता ohne Guna oder ऊर्गाविता mit Guna.\n\n## सार्वधातुकमपित् ॥ ४ ॥\n\nEin sārvadhātuka genanntes Suffix (s. 3, 4, 113), das nicht प् zum stummen Laute hat, wird so angesehen, als wenn es ein ङ् zum stummen Laute hätte.\n\nकुरुतः, कुर्वन्ति, चितुतः, चिन्वन्ति, aber करोति, weil das Suffix तिप् heisst.\n\n## असंयोगाह्निट् कित् ॥ ५ ॥\n\nEine Personalendung des Perfects, die nicht प् zum stummen Laute hat, gilt für ein Suffix mit stummem क्, vorausgesetzt, dass die Wurzel nicht auf Doppelconsonanz auslautet.\n\nEin Suffix mit stummem क् bedingt gleichfalls die schwächste Form der Wurzel, hat aber noch andere Eigenthümlichkeiten. Beispiele zu unserm Sūtra: बिभिदतुः, चिच्छिदतुः, ईजुः von यज्, aber सस्रंसे, दध्वंसे trotz 6, 4, 24.\n\n## इन्धिभवतिभ्यां च ॥ ६ ॥\n\nDesgleichen nach इन्ध् (trotz der Doppelconsonanz) und भू (hier auch vor einem Suffix, welches प् zum stummen Laute hat).\n\nईधे mit Ausfall des न् und बभूव, बभूविथ ohne Guna.\n\n## मृडमृद्गुधकुष्क्रिशवद्वसः क्का ॥ ७ ॥\n\nNach मड्, मद्, गुध्, कुए, क्रिश्, वद् und वस् gilt das Suffix des Absolutivs _ = त्वा für ein Suffix mit stummem क्.\n\nDas Suffix त्वा hat schon von Hause aus ein stummes क्, dieses wird ihm aber 1, 2, 18 förmlich und 1, 2, 26 facultativ wieder abgesprochen. Unser Sūtra enthält demnach eine Ausnahme zu jenen zwei späteren. Die Absolutive der genannten Wurzeln lauten: मडित्वा, मदित्वा, गुधित्वा, कुषित्वा, क्रिशित्वा, उदित्वा und उषित्वा.\n\n## रुद्विदमुषयहिस्वपिप्रच्छः संश्र ॥ ८ ॥\n\nNach रुद्, विद्, सुष्, ग्रह्, स्वप् und प्रक् hat auch das Desiderativ-Suffix _ = स (सन्) stummes क्.\n\nरुदित्वा und रुरुदियति, विदित्वा und विविदियति, सुषित्वा und सुषुपियति, ग्रहीत्वा und जिघत्तति, सुप्त्वा und सुषुप्सति, एष्ठ्वा und पिऐच्छियति. Nach 1, 2, 26 könnten त्वा und सन् nach रुद्, विद् und सुष् कित् sein, nach unserm Sūtra müssen sie es sein; nach 1, 2, 18 dürfte त्वा nach ग्रह् nicht कित् sein; nach स्वप् und प्रक् wäre त्वा auch ohne unser Sūtra कित्, nicht aber सन्.\n\nUNIVERSITÄTS-\nBIBLIOTHEK\nHEIDELBERG\n\n© Universitätsbibliothek Heidelberg\n\nhttp://digi.ub.uni-heidelberg.de/diglit/boehtlingk1887/0038\n\ngefördert durch\n\nBaden-Württemberg\n",
+  "usage_info": {
+    "pages_processed": 1,
+    "doc_size_bytes": 658935
+  },
+  "pages": [
+    {
+      "index": 0,
+      "markdown": "12\n\n1, 2, 3.\n\n## विभाषोर्गीः ॥ ३ ॥\n\nNach ऊर्गु facultativ.\n\nऊर्गुविता ohne Guna oder ऊर्गाविता mit Guna.\n\n## सार्वधातुकमपित् ॥ ४ ॥\n\nEin sārvadhātuka genanntes Suffix (s. 3, 4, 113), das nicht प् zum stummen Laute hat, wird so angesehen, als wenn es ein ङ् zum stummen Laute hätte.\n\nकुरुतः, कुर्वन्ति, चितुतः, चिन्वन्ति, aber करोति, weil das Suffix तिप् heisst.\n\n## असंयोगाह्निट् कित् ॥ ५ ॥\n\nEine Personalendung des Perfects, die nicht प् zum stummen Laute hat, gilt für ein Suffix mit stummem क्, vorausgesetzt, dass die Wurzel nicht auf Doppelconsonanz auslautet.\n\nEin Suffix mit stummem क् bedingt gleichfalls die schwächste Form der Wurzel, hat aber noch andere Eigenthümlichkeiten. Beispiele zu unserm Sūtra: बिभिदतुः, चिच्छिदतुः, ईजुः von यज्, aber सस्रंसे, दध्वंसे trotz 6, 4, 24.\n\n## इन्धिभवतिभ्यां च ॥ ६ ॥\n\nDesgleichen nach इन्ध् (trotz der Doppelconsonanz) und भू (hier auch vor einem Suffix, welches प् zum stummen Laute hat).\n\nईधे mit Ausfall des न् und बभूव, बभूविथ ohne Guna.\n\n## मृडमृद्गुधकुष्क्रिशवद्वसः क्का ॥ ७ ॥\n\nNach मड्, मद्, गुध्, कुए, क्रिश्, वद् und वस् gilt das Suffix des Absolutivs _ = त्वा für ein Suffix mit stummem क्.\n\nDas Suffix त्वा hat schon von Hause aus ein stummes क्, dieses wird ihm aber 1, 2, 18 förmlich und 1, 2, 26 facultativ wieder abgesprochen. Unser Sūtra enthält demnach eine Ausnahme zu jenen zwei späteren. Die Absolutive der genannten Wurzeln lauten: मडित्वा, मदित्वा, गुधित्वा, कुषित्वा, क्रिशित्वा, उदित्वा und उषित्वा.\n\n## रुद्विदमुषयहिस्वपिप्रच्छः संश्र ॥ ८ ॥\n\nNach रुद्, विद्, सुष्, ग्रह्, स्वप् und प्रक् hat auch das Desiderativ-Suffix _ = स (सन्) stummes क्.\n\nरुदित्वा und रुरुदियति, विदित्वा und विविदियति, सुषित्वा und सुषुपियति, ग्रहीत्वा und जिघत्तति, सुप्त्वा und सुषुप्सति, एष्ठ्वा und पिऐच्छियति. Nach 1, 2, 26 könnten त्वा und सन् nach रुद्, विद् und सुष् कित् sein, nach unserm Sūtra müssen sie es sein; nach 1, 2, 18 dürfte त्वा nach ग्रह् nicht कित् sein; nach स्वप् und प्रक् wäre त्वा auch ohne unser Sūtra कित्, nicht aber सन्.\n\nUNIVERSITÄTS-\nBIBLIOTHEK\nHEIDELBERG\n\n© Universitätsbibliothek Heidelberg\n\nhttp://digi.ub.uni-heidelberg.de/diglit/boehtlingk1887/0038\n\ngefördert durch\n\nBaden-Württemberg",
+      "images": [],
+      "dimensions": {
+        "dpi": 200,
+        "height": 2247,
+        "width": 1373
+      },
+      "tables": [],
+      "hyperlinks": [],
+      "header": null,
+      "footer": null,
+      "confidence_scores": null,
+      "blocks": [
+        {
+          "top_left_x": 151,
+          "top_left_y": 108,
+          "bottom_right_x": 190,
+          "bottom_right_y": 142,
+          "content": "12",
+          "confidence_scores": null,
+          "type": "header"
+        },
+        {
+          "top_left_x": 665,
+          "top_left_y": 108,
+          "bottom_right_x": 756,
+          "bottom_right_y": 142,
+          "content": "1, 2, 3.",
+          "confidence_scores": null,
+          "type": "header"
+        },
+        {
+          "top_left_x": 212,
+          "top_left_y": 180,
+          "bottom_right_x": 532,
+          "bottom_right_y": 241,
+          "content": "## विभाषोर्गीः ॥ ३ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 150,
+          "top_left_y": 250,
+          "bottom_right_x": 458,
+          "bottom_right_y": 297,
+          "content": "Nach ऊर्गु facultativ.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 249,
+          "top_left_y": 299,
+          "bottom_right_x": 822,
+          "bottom_right_y": 349,
+          "content": "ऊर्गुविता ohne Guna oder ऊर्गाविता mit Guna.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 209,
+          "top_left_y": 358,
+          "bottom_right_x": 624,
+          "bottom_right_y": 427,
+          "content": "## सार्वधातुकमपित् ॥ ४ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 148,
+          "top_left_y": 427,
+          "bottom_right_x": 1282,
+          "bottom_right_y": 565,
+          "content": "Ein sārvadhātuka genanntes Suffix (s. 3, 4, 113), das nicht प् zum stummen Laute hat, wird so angesehen, als wenn es ein ङ् zum stummen Laute hätte.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 249,
+          "top_left_y": 567,
+          "bottom_right_x": 1138,
+          "bottom_right_y": 619,
+          "content": "कुरुतः, कुर्वन्ति, चितुतः, चिन्वन्ति, aber करोति, weil das Suffix तिप् heisst.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 212,
+          "top_left_y": 628,
+          "bottom_right_x": 667,
+          "bottom_right_y": 693,
+          "content": "## असंयोगाह्निट् कित् ॥ ५ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 151,
+          "top_left_y": 695,
+          "bottom_right_x": 1285,
+          "bottom_right_y": 837,
+          "content": "Eine Personalendung des Perfects, die nicht प् zum stummen Laute hat, gilt für ein Suffix mit stummem क्, vorausgesetzt, dass die Wurzel nicht auf Doppelconsonanz auslautet.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 219,
+          "top_left_y": 843,
+          "bottom_right_x": 1285,
+          "bottom_right_y": 978,
+          "content": "Ein Suffix mit stummem क् bedingt gleichfalls die schwächste Form der Wurzel, hat aber noch andere Eigenthümlichkeiten. Beispiele zu unserm Sūtra: बिभिदतुः, चिच्छिदतुः, ईजुः von यज्, aber सस्रंसे, दध्वंसे trotz 6, 4, 24.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 216,
+          "top_left_y": 987,
+          "bottom_right_x": 631,
+          "bottom_right_y": 1048,
+          "content": "## इन्धिभवतिभ्यां च ॥ ६ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 154,
+          "top_left_y": 1053,
+          "bottom_right_x": 1288,
+          "bottom_right_y": 1145,
+          "content": "Desgleichen nach इन्ध् (trotz der Doppelconsonanz) und भू (hier auch vor einem Suffix, welches प् zum stummen Laute hat).",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 257,
+          "top_left_y": 1149,
+          "bottom_right_x": 924,
+          "bottom_right_y": 1197,
+          "content": "ईधे mit Ausfall des न् und बभूव, बभूविथ ohne Guna.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 219,
+          "top_left_y": 1212,
+          "bottom_right_x": 856,
+          "bottom_right_y": 1282,
+          "content": "## मृडमृद्गुधकुष्क्रिशवद्वसः क्का ॥ ७ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 157,
+          "top_left_y": 1278,
+          "bottom_right_x": 1291,
+          "bottom_right_y": 1374,
+          "content": "Nach मड्, मद्, गुध्, कुए, क्रिश्, वद् und वस् gilt das Suffix des Absolutivs _ = त्वा für ein Suffix mit stummem क्.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 225,
+          "top_left_y": 1377,
+          "bottom_right_x": 1293,
+          "bottom_right_y": 1547,
+          "content": "Das Suffix त्वा hat schon von Hause aus ein stummes क्, dieses wird ihm aber 1, 2, 18 förmlich und 1, 2, 26 facultativ wieder abgesprochen. Unser Sūtra enthält demnach eine Ausnahme zu jenen zwei späteren. Die Absolutive der genannten Wurzeln lauten: मडित्वा, मदित्वा, गुधित्वा, कुषित्वा, क्रिशित्वा, उदित्वा und उषित्वा.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 223,
+          "top_left_y": 1561,
+          "bottom_right_x": 867,
+          "bottom_right_y": 1631,
+          "content": "## रुद्विदमुषयहिस्वपिप्रच्छः संश्र ॥ ८ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 161,
+          "top_left_y": 1628,
+          "bottom_right_x": 1293,
+          "bottom_right_y": 1725,
+          "content": "Nach रुद्, विद्, सुष्, ग्रह्, स्वप् und प्रक् hat auch das Desiderativ-Suffix _ = स (सन्) stummes क्.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 228,
+          "top_left_y": 1723,
+          "bottom_right_x": 1297,
+          "bottom_right_y": 1939,
+          "content": "रुदित्वा und रुरुदियति, विदित्वा und विविदियति, सुषित्वा und सुषुपियति, ग्रहीत्वा und जिघत्तति, सुप्त्वा und सुषुप्सति, एष्ठ्वा und पिऐच्छियति. Nach 1, 2, 26 könnten त्वा und सन् nach रुद्, विद् und सुष् कित् sein, nach unserm Sūtra müssen sie es sein; nach 1, 2, 18 dürfte त्वा nach ग्रह् nicht कित् sein; nach स्वप् und प्रक् wäre त्वा auch ohne unser Sūtra कित्, nicht aber सन्.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 15,
+          "top_left_y": 2168,
+          "bottom_right_x": 133,
+          "bottom_right_y": 2231,
+          "content": "UNIVERSITÄTS-\nBIBLIOTHEK\nHEIDELBERG",
+          "confidence_scores": null,
+          "type": "footer"
+        },
+        {
+          "top_left_x": 555,
+          "top_left_y": 2204,
+          "bottom_right_x": 826,
+          "bottom_right_y": 2227,
+          "content": "© Universitätsbibliothek Heidelberg",
+          "confidence_scores": null,
+          "type": "footer"
+        },
+        {
+          "top_left_x": 423,
+          "top_left_y": 2225,
+          "bottom_right_x": 937,
+          "bottom_right_y": 2245,
+          "content": "http://digi.ub.uni-heidelberg.de/diglit/boehtlingk1887/0038",
+          "confidence_scores": null,
+          "type": "footer"
+        },
+        {
+          "top_left_x": 1209,
+          "top_left_y": 2150,
+          "bottom_right_x": 1311,
+          "bottom_right_y": 2171,
+          "content": "gefördert durch",
+          "confidence_scores": null,
+          "type": "footer"
+        },
+        {
+          "top_left_x": 1211,
+          "top_left_y": 2220,
+          "bottom_right_x": 1351,
+          "bottom_right_y": 2243,
+          "content": "Baden-Württemberg",
+          "confidence_scores": null,
+          "type": "footer"
+        }
+      ]
+    }
+  ]
+}

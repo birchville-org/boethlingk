@@ -1,0 +1,334 @@
+{
+  "source": "data/img_cache/7_3A000000385_jpg_full_max_0_default_jpg.jpg",
+  "model": "mistral-ocr-latest",
+  "markdown": "7, 1, 94.\n\n385\n\n6, 4, 1.\n\nWir erhalten demnach mit Berücksichtigung von 7, 1, 85 fg. für den Nomin. Sg. die Stämme पन्या, मन्या und ऋभुता, für die übrigen starken Casus: पन्यन्, मन्यन् und ऋभुतन्. Die starken Casus lauten also: पन्याः, पन्यानौ, पन्यानः, पन्यानम्; मन्याः, मन्यानौ, मन्यानः, मन्यानम्; ऋभुताः, ऋभुतागौ, ऋभुतागाः, ऋभुतागाम्. ऋभुतन् kann nach 6, 4, 9 auch die Kürze bewahren.\n\n## भस्य टेलोपः ॥ ८८ ॥\n\nVor den vocalisch anlautenden schwachen Casusendungen (vor denen der Stamm nach 1, 4, 18 bha heisst) fällt in den genannten Stämmen der letzte Vocal mit dem darauf folgenden Consonanten ab.\n\nपथः, पथा, पथे; मयः, मथा, मथे; ऋभुतः, ऋभुता, ऋभुते.\n\n## पुंसो ऽसुङ् ॥ ८९ ॥\n\nFür den Auslaut von पुंस wird in den starken Casus श्रस् substituirt.\n\nDer Anusvāra in पुंस ist für म् substituirt, da dieser Stamm von पा mit dem unādi-Suffix डुम्सुन् gebildet ist. Das उ im Substitut deutet an, dass nach श्र in den starken Casus nach 7, 1, 70 न् einzuschalten ist. Auf diese Weise erklären sich पुमान्, पुमांसौ und पुमांसः.\n\n## गोतो शित् ॥ ९० ॥\n\nNach गो sind die Endungen der starken Casus शित्, d. i. bewirken die Substitution von Vṛddhi für श्रो.\n\nगौः, गावी, गावः. Pāṇini hat die Form गोतः vorgezogen, um anzudeuten, dass die Regel sich nicht auf das gekürzte गु im Bahuvrīhi erstreckt.\n\n## शलुन्नसो वा ॥ ९१ ॥\n\nDie Endung der letzten (unserer ersten) Person Sg. im Perfect _+अ_ braucht nicht शित् zu sein (d. i. Vṛddhi zu bewirken).\n\nश्रहं पपाच् oder पपच्, श्रहं चकार oder चकर.\n\n## सख्युरसंवुडौ ॥ ९२ ॥\n\nNach सखि sind die Endungen der starken Casus mit Ausnahme des Vocat. Sg. शित्, d. i. erfordern die Substitution von Vṛddhi für den Auslaut.\n\nसखायौ, सखायः; aber सखे. Vgl. das folgende Sūtra.\n\n## श्रनङ् सौ ॥ ९३ ॥\n\nIm Nominativ Sg. wird श्रन् für इ substituirt.\n\nसखा. Der Vocat. Sg. ist auch hier ausgeschlossen.\n\n## ऋुदुशनस्पुरुदंशोऽनेहसां च ॥ ९४ ॥\n\nAuch für den Auslaut ऋ, sowie für den von उशनस्, पुरुदंशस् und श्रनेहस् wird im Nomin. Sg. श्रन् substituirt.\n\nकर्ता, माता, पिता, भ्राता; उशना, पुरुदंशा, श्रनेहा. Auch hier ist der Vocat. Sg. ausgeschlossen.\n\nPāṇini's Grammatik.\n\n49\n\nUNIVERSITÄTS-\n\nBIBLIOTHEK\n\nHEIDELBERG\n\n© Universitätsbibliothek Heidelberg\n\nhttp://digi.ub.uni-heidelberg.de/diglit/boehtlingk1887/0411\n\ngefördert durch\n\nBaden-Württemberg\n",
+  "usage_info": {
+    "pages_processed": 1,
+    "doc_size_bytes": 651252
+  },
+  "pages": [
+    {
+      "index": 0,
+      "markdown": "7, 1, 94.\n\n385\n\n6, 4, 1.\n\nWir erhalten demnach mit Berücksichtigung von 7, 1, 85 fg. für den Nomin. Sg. die Stämme पन्या, मन्या und ऋभुता, für die übrigen starken Casus: पन्यन्, मन्यन् und ऋभुतन्. Die starken Casus lauten also: पन्याः, पन्यानौ, पन्यानः, पन्यानम्; मन्याः, मन्यानौ, मन्यानः, मन्यानम्; ऋभुताः, ऋभुतागौ, ऋभुतागाः, ऋभुतागाम्. ऋभुतन् kann nach 6, 4, 9 auch die Kürze bewahren.\n\n## भस्य टेलोपः ॥ ८८ ॥\n\nVor den vocalisch anlautenden schwachen Casusendungen (vor denen der Stamm nach 1, 4, 18 bha heisst) fällt in den genannten Stämmen der letzte Vocal mit dem darauf folgenden Consonanten ab.\n\nपथः, पथा, पथे; मयः, मथा, मथे; ऋभुतः, ऋभुता, ऋभुते.\n\n## पुंसो ऽसुङ् ॥ ८९ ॥\n\nFür den Auslaut von पुंस wird in den starken Casus श्रस् substituirt.\n\nDer Anusvāra in पुंस ist für म् substituirt, da dieser Stamm von पा mit dem unādi-Suffix डुम्सुन् gebildet ist. Das उ im Substitut deutet an, dass nach श्र in den starken Casus nach 7, 1, 70 न् einzuschalten ist. Auf diese Weise erklären sich पुमान्, पुमांसौ und पुमांसः.\n\n## गोतो शित् ॥ ९० ॥\n\nNach गो sind die Endungen der starken Casus शित्, d. i. bewirken die Substitution von Vṛddhi für श्रो.\n\nगौः, गावी, गावः. Pāṇini hat die Form गोतः vorgezogen, um anzudeuten, dass die Regel sich nicht auf das gekürzte गु im Bahuvrīhi erstreckt.\n\n## शलुन्नसो वा ॥ ९१ ॥\n\nDie Endung der letzten (unserer ersten) Person Sg. im Perfect _+अ_ braucht nicht शित् zu sein (d. i. Vṛddhi zu bewirken).\n\nश्रहं पपाच् oder पपच्, श्रहं चकार oder चकर.\n\n## सख्युरसंवुडौ ॥ ९२ ॥\n\nNach सखि sind die Endungen der starken Casus mit Ausnahme des Vocat. Sg. शित्, d. i. erfordern die Substitution von Vṛddhi für den Auslaut.\n\nसखायौ, सखायः; aber सखे. Vgl. das folgende Sūtra.\n\n## श्रनङ् सौ ॥ ९३ ॥\n\nIm Nominativ Sg. wird श्रन् für इ substituirt.\n\nसखा. Der Vocat. Sg. ist auch hier ausgeschlossen.\n\n## ऋुदुशनस्पुरुदंशोऽनेहसां च ॥ ९४ ॥\n\nAuch für den Auslaut ऋ, sowie für den von उशनस्, पुरुदंशस् und श्रनेहस् wird im Nomin. Sg. श्रन् substituirt.\n\nकर्ता, माता, पिता, भ्राता; उशना, पुरुदंशा, श्रनेहा. Auch hier ist der Vocat. Sg. ausgeschlossen.\n\nPāṇini's Grammatik.\n\n49\n\nUNIVERSITÄTS-\n\nBIBLIOTHEK\n\nHEIDELBERG\n\n© Universitätsbibliothek Heidelberg\n\nhttp://digi.ub.uni-heidelberg.de/diglit/boehtlingk1887/0411\n\ngefördert durch\n\nBaden-Württemberg",
+      "images": [],
+      "dimensions": {
+        "dpi": 200,
+        "height": 2217,
+        "width": 1336
+      },
+      "tables": [],
+      "hyperlinks": [],
+      "header": null,
+      "footer": null,
+      "confidence_scores": null,
+      "blocks": [
+        {
+          "top_left_x": 530,
+          "top_left_y": 124,
+          "bottom_right_x": 634,
+          "bottom_right_y": 155,
+          "content": "7, 1, 94.",
+          "confidence_scores": null,
+          "type": "header"
+        },
+        {
+          "top_left_x": 1083,
+          "top_left_y": 113,
+          "bottom_right_x": 1141,
+          "bottom_right_y": 146,
+          "content": "385",
+          "confidence_scores": null,
+          "type": "header"
+        },
+        {
+          "top_left_x": 1118,
+          "top_left_y": 184,
+          "bottom_right_x": 1220,
+          "bottom_right_y": 222,
+          "content": "6, 4, 1.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 91,
+          "top_left_y": 226,
+          "bottom_right_x": 1143,
+          "bottom_right_y": 428,
+          "content": "Wir erhalten demnach mit Berücksichtigung von 7, 1, 85 fg. für den Nomin. Sg. die Stämme पन्या, मन्या und ऋभुता, für die übrigen starken Casus: पन्यन्, मन्यन् und ऋभुतन्. Die starken Casus lauten also: पन्याः, पन्यानौ, पन्यानः, पन्यानम्; मन्याः, मन्यानौ, मन्यानः, मन्यानम्; ऋभुताः, ऋभुतागौ, ऋभुतागाः, ऋभुतागाम्. ऋभुतन् kann nach 6, 4, 9 auch die Kürze bewahren.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 87,
+          "top_left_y": 435,
+          "bottom_right_x": 436,
+          "bottom_right_y": 490,
+          "content": "## भस्य टेलोपः ॥ ८८ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 25,
+          "top_left_y": 486,
+          "bottom_right_x": 1147,
+          "bottom_right_y": 624,
+          "content": "Vor den vocalisch anlautenden schwachen Casusendungen (vor denen der Stamm nach 1, 4, 18 bha heisst) fällt in den genannten Stämmen der letzte Vocal mit dem darauf folgenden Consonanten ab.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 124,
+          "top_left_y": 626,
+          "bottom_right_x": 762,
+          "bottom_right_y": 675,
+          "content": "पथः, पथा, पथे; मयः, मथा, मथे; ऋभुतः, ऋभुता, ऋभुते.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 88,
+          "top_left_y": 677,
+          "bottom_right_x": 405,
+          "bottom_right_y": 743,
+          "content": "## पुंसो ऽसुङ् ॥ ८९ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 29,
+          "top_left_y": 732,
+          "bottom_right_x": 1055,
+          "bottom_right_y": 779,
+          "content": "Für den Auslaut von पुंस wird in den starken Casus श्रस् substituirt.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 94,
+          "top_left_y": 777,
+          "bottom_right_x": 1151,
+          "bottom_right_y": 945,
+          "content": "Der Anusvāra in पुंस ist für म् substituirt, da dieser Stamm von पा mit dem unādi-Suffix डुम्सुन् gebildet ist. Das उ im Substitut deutet an, dass nach श्र in den starken Casus nach 7, 1, 70 न् einzuschalten ist. Auf diese Weise erklären sich पुमान्, पुमांसौ und पुमांसः.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 91,
+          "top_left_y": 948,
+          "bottom_right_x": 424,
+          "bottom_right_y": 1001,
+          "content": "## गोतो शित् ॥ ९० ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 29,
+          "top_left_y": 994,
+          "bottom_right_x": 1151,
+          "bottom_right_y": 1087,
+          "content": "Nach गो sind die Endungen der starken Casus शित्, d. i. bewirken die Substitution von Vṛddhi für श्रो.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 98,
+          "top_left_y": 1087,
+          "bottom_right_x": 1151,
+          "bottom_right_y": 1172,
+          "content": "गौः, गावी, गावः. Pāṇini hat die Form गोतः vorgezogen, um anzudeuten, dass die Regel sich nicht auf das gekürzte गु im Bahuvrīhi erstreckt.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 94,
+          "top_left_y": 1178,
+          "bottom_right_x": 451,
+          "bottom_right_y": 1236,
+          "content": "## शलुन्नसो वा ॥ ९१ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 32,
+          "top_left_y": 1225,
+          "bottom_right_x": 1155,
+          "bottom_right_y": 1318,
+          "content": "Die Endung der letzten (unserer ersten) Person Sg. im Perfect _+अ_ braucht nicht शित् zu sein (d. i. Vṛddhi zu bewirken).",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 132,
+          "top_left_y": 1325,
+          "bottom_right_x": 654,
+          "bottom_right_y": 1358,
+          "content": "श्रहं पपाच् oder पपच्, श्रहं चकार oder चकर.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 95,
+          "top_left_y": 1363,
+          "bottom_right_x": 447,
+          "bottom_right_y": 1434,
+          "content": "## सख्युरसंवुडौ ॥ ९२ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 36,
+          "top_left_y": 1423,
+          "bottom_right_x": 1158,
+          "bottom_right_y": 1518,
+          "content": "Nach सखि sind die Endungen der starken Casus mit Ausnahme des Vocat. Sg. शित्, d. i. erfordern die Substitution von Vṛddhi für den Auslaut.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 136,
+          "top_left_y": 1520,
+          "bottom_right_x": 777,
+          "bottom_right_y": 1560,
+          "content": "सखायौ, सखायः; aber सखे. Vgl. das folgende Sūtra.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 99,
+          "top_left_y": 1562,
+          "bottom_right_x": 401,
+          "bottom_right_y": 1624,
+          "content": "## श्रनङ् सौ ॥ ९३ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 40,
+          "top_left_y": 1620,
+          "bottom_right_x": 722,
+          "bottom_right_y": 1662,
+          "content": "Im Nominativ Sg. wird श्रन् für इ substituirt.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 139,
+          "top_left_y": 1664,
+          "bottom_right_x": 777,
+          "bottom_right_y": 1700,
+          "content": "सखा. Der Vocat. Sg. ist auch hier ausgeschlossen.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 102,
+          "top_left_y": 1704,
+          "bottom_right_x": 695,
+          "bottom_right_y": 1771,
+          "content": "## ऋुदुशनस्पुरुदंशोऽनेहसां च ॥ ९४ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 40,
+          "top_left_y": 1755,
+          "bottom_right_x": 1161,
+          "bottom_right_y": 1851,
+          "content": "Auch für den Auslaut ऋ, sowie für den von उशनस्, पुरुदंशस् und श्रनेहस् wird im Nomin. Sg. श्रन् substituirt.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 114,
+          "top_left_y": 1851,
+          "bottom_right_x": 1162,
+          "bottom_right_y": 1931,
+          "content": "कर्ता, माता, पिता, भ्राता; उशना, पुरुदंशा, श्रनेहा. Auch hier ist der Vocat. Sg. ausgeschlossen.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 88,
+          "top_left_y": 1935,
+          "bottom_right_x": 324,
+          "bottom_right_y": 1962,
+          "content": "Pāṇini's Grammatik.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 971,
+          "top_left_y": 1933,
+          "bottom_right_x": 1002,
+          "bottom_right_y": 1957,
+          "content": "49",
+          "confidence_scores": null,
+          "type": "footer"
+        },
+        {
+          "top_left_x": 15,
+          "top_left_y": 2139,
+          "bottom_right_x": 130,
+          "bottom_right_y": 2164,
+          "content": "UNIVERSITÄTS-",
+          "confidence_scores": null,
+          "type": "footer"
+        },
+        {
+          "top_left_x": 15,
+          "top_left_y": 2164,
+          "bottom_right_x": 110,
+          "bottom_right_y": 2181,
+          "content": "BIBLIOTHEK",
+          "confidence_scores": null,
+          "type": "footer"
+        },
+        {
+          "top_left_x": 15,
+          "top_left_y": 2181,
+          "bottom_right_x": 112,
+          "bottom_right_y": 2201,
+          "content": "HEIDELBERG",
+          "confidence_scores": null,
+          "type": "footer"
+        },
+        {
+          "top_left_x": 538,
+          "top_left_y": 2177,
+          "bottom_right_x": 804,
+          "bottom_right_y": 2197,
+          "content": "© Universitätsbibliothek Heidelberg",
+          "confidence_scores": null,
+          "type": "footer"
+        },
+        {
+          "top_left_x": 412,
+          "top_left_y": 2195,
+          "bottom_right_x": 911,
+          "bottom_right_y": 2215,
+          "content": "http://digi.ub.uni-heidelberg.de/diglit/boehtlingk1887/0411",
+          "confidence_scores": null,
+          "type": "footer"
+        },
+        {
+          "top_left_x": 1178,
+          "top_left_y": 2124,
+          "bottom_right_x": 1276,
+          "bottom_right_y": 2142,
+          "content": "gefördert durch",
+          "confidence_scores": null,
+          "type": "footer"
+        },
+        {
+          "top_left_x": 1180,
+          "top_left_y": 2190,
+          "bottom_right_x": 1313,
+          "bottom_right_y": 2213,
+          "content": "Baden-Württemberg",
+          "confidence_scores": null,
+          "type": "footer"
+        }
+      ]
+    }
+  ]
+}

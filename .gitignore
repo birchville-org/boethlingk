@@ -1,0 +1,56 @@
+# Virtual environments
+.venv/
+venv/
+venv_kraken/
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# OS / Editor artifacts
+.DS_Store
+__pycache__/
+*.py[cod]
+.idea/
+.vscode/
+
+# Heavy training models and perplexity dumps
+models/
+pplx/
+.planning/
+
+# Heavy data caches and binary datasets
+data/img_cache/
+data/output/
+data/synthetic*
+data/ground-truth*
+data/gt*
+data/v7*
+data/page*.md
+data/alto/
+data/hocr_cache/
+data/html/
+data/kraken/
+*.arrow
+*.db
+*.log
+*.pdf
+*.txt
+data/*.png
+data/*.jpg
+data/*.hocr
+
+# Ignore intermediate data files
+data/*.json
+data/*.bak
+data/tei/*
+Boethlingk_Paninis_Grammatik_comp.md
+
+# Whitelist canonical & final data files
+!data/ashtadhyayi_complete_boethlingk1887.json
+!data/tei/boehtlingk1887_p5.xml
+!data/mistral/
+!data/mistral/**
+!data/sutras.json
+!data/shiva_sutras.json

@@ -1,0 +1,325 @@
+{
+  "source": "data/img_cache/7_3A000000381_jpg_full_max_0_default_jpg.jpg",
+  "model": "mistral-ocr-latest",
+  "markdown": "7, 1, 64.\n\n381\n\n6, 4, 1.\n\n# श्रीयामरयोऽहन्दसि ॥ ५६ ॥\n\nIm Veda auch nach श्री und यामरग्नी.\n\nश्रीशाम् und यामरग्नीनाम्.\n\n# गोः पादान्ते ॥ ५७ ॥\n\nNach गो am Ende eines Stollens.\n\nगोनाम्, aber ausnahmsweise auch गवाम an dieser Stelle.\n\n# इदितो नुम् धातोः ॥ ५८ ॥\n\nIn einer Wurzel, die इ zum stummen Laut hat, wird nach dem Wurzel-vocal न् eingefügt.\n\nकुगिडत्, कुगिडतुम् und कुगिडतव्य von कुडि. Für न् wird zunächst nach 8, 3, 24 Anu-svāra substituirt, für diesen nach 8, 4, 58 ein dem nachfolgenden Consonanten homogener Nasal.\n\n# शे मुचादीनाम् ॥ ५९ ॥\n\nIn मुच् u. s. w. vor dem Präsenscharakter ख.\n\nसुज्वति, लुम्यति, विन्दति, लिम्यति, सिज्वति, कन्तति, खिन्दति und पिंशति.\n\n# मस्जिनशोफ्फेलि ॥ ६० ॥\n\nIn मस्ज् und नश् vor einem consonantisch (jedoch nicht mit einem Halb-vocal oder Nasal) anlautenden Suffix.\n\nमङ्ग्, मङ्गुम्, मङ्गव्य; नंष्ट्र, नंष्टुम्, नंष्टव्य; aber मज्जन, मग्न und नशित्. Vgl. 6, 4, 32.\n\n# रधिजभोरचि ॥ ६१ ॥\n\nIn रध् und जभ् vor einem vocalisch anlautenden Suffix.\n\nरन्धयति, रन्धक, साधुरन्धिन्, रन्धो वर्तते; जम्भयति, जम्भक, साधुजम्भिन्, जम्भम् Absol., जम्भो वर्तते. Dagegen रद्ध् und जम्भ.\n\n# नेद्वलिटि रधेः ॥ ६२ ॥\n\nIn रध् nicht vor einem mit dem Augment इ anlautenden Suffix, jedoch auch hier im Perfect.\n\nरधित्, रधितुम्, रधितव्य; aber ररन्धिव, ररन्धिम.\n\n# रभेरशवलिटोः ॥ ६३ ॥\n\nIn रभ् wird न् vor einem vocalisch anlautenden Suffix eingeschoben, jedoch nicht vor dem Präsenscharakter ख् und im Perfect.\n\nखा रभयति, खारभक, साध्वारभिन्, खारभम् Absol., खारभो वर्तते; dagegen खा रभते, खा रेभे.\n\n# लभेख ॥ ६४ ॥\n\nEben so verhält es sich mit लभ्.\n\nलभयति, लभक, साधुलभिन्, लभम Absol., लभो वर्तते; dagegen लभते, लेभे.\n\nUNIVERSITÄTS-BIBLIOTHEK HEIDELBERG\n\n© Universitätsbibliothek Heidelberg http://digi.ub.uni-heidelberg.de/diglit/boehtlingk1887/0407\n\ngefördert durch Baden-Württemberg\n",
+  "usage_info": {
+    "pages_processed": 1,
+    "doc_size_bytes": 583766
+  },
+  "pages": [
+    {
+      "index": 0,
+      "markdown": "7, 1, 64.\n\n381\n\n6, 4, 1.\n\n# श्रीयामरयोऽहन्दसि ॥ ५६ ॥\n\nIm Veda auch nach श्री und यामरग्नी.\n\nश्रीशाम् und यामरग्नीनाम्.\n\n# गोः पादान्ते ॥ ५७ ॥\n\nNach गो am Ende eines Stollens.\n\nगोनाम्, aber ausnahmsweise auch गवाम an dieser Stelle.\n\n# इदितो नुम् धातोः ॥ ५८ ॥\n\nIn einer Wurzel, die इ zum stummen Laut hat, wird nach dem Wurzel-vocal न् eingefügt.\n\nकुगिडत्, कुगिडतुम् und कुगिडतव्य von कुडि. Für न् wird zunächst nach 8, 3, 24 Anu-svāra substituirt, für diesen nach 8, 4, 58 ein dem nachfolgenden Consonanten homogener Nasal.\n\n# शे मुचादीनाम् ॥ ५९ ॥\n\nIn मुच् u. s. w. vor dem Präsenscharakter ख.\n\nसुज्वति, लुम्यति, विन्दति, लिम्यति, सिज्वति, कन्तति, खिन्दति und पिंशति.\n\n# मस्जिनशोफ्फेलि ॥ ६० ॥\n\nIn मस्ज् und नश् vor einem consonantisch (jedoch nicht mit einem Halb-vocal oder Nasal) anlautenden Suffix.\n\nमङ्ग्, मङ्गुम्, मङ्गव्य; नंष्ट्र, नंष्टुम्, नंष्टव्य; aber मज्जन, मग्न und नशित्. Vgl. 6, 4, 32.\n\n# रधिजभोरचि ॥ ६१ ॥\n\nIn रध् und जभ् vor einem vocalisch anlautenden Suffix.\n\nरन्धयति, रन्धक, साधुरन्धिन्, रन्धो वर्तते; जम्भयति, जम्भक, साधुजम्भिन्, जम्भम् Absol., जम्भो वर्तते. Dagegen रद्ध् und जम्भ.\n\n# नेद्वलिटि रधेः ॥ ६२ ॥\n\nIn रध् nicht vor einem mit dem Augment इ anlautenden Suffix, jedoch auch hier im Perfect.\n\nरधित्, रधितुम्, रधितव्य; aber ररन्धिव, ररन्धिम.\n\n# रभेरशवलिटोः ॥ ६३ ॥\n\nIn रभ् wird न् vor einem vocalisch anlautenden Suffix eingeschoben, jedoch nicht vor dem Präsenscharakter ख् und im Perfect.\n\nखा रभयति, खारभक, साध्वारभिन्, खारभम् Absol., खारभो वर्तते; dagegen खा रभते, खा रेभे.\n\n# लभेख ॥ ६४ ॥\n\nEben so verhält es sich mit लभ्.\n\nलभयति, लभक, साधुलभिन्, लभम Absol., लभो वर्तते; dagegen लभते, लेभे.\n\nUNIVERSITÄTS-BIBLIOTHEK HEIDELBERG\n\n© Universitätsbibliothek Heidelberg http://digi.ub.uni-heidelberg.de/diglit/boehtlingk1887/0407\n\ngefördert durch Baden-Württemberg",
+      "images": [],
+      "dimensions": {
+        "dpi": 200,
+        "height": 2217,
+        "width": 1336
+      },
+      "tables": [],
+      "hyperlinks": [],
+      "header": null,
+      "footer": null,
+      "confidence_scores": null,
+      "blocks": [
+        {
+          "top_left_x": 526,
+          "top_left_y": 118,
+          "bottom_right_x": 630,
+          "bottom_right_y": 151,
+          "content": "7, 1, 64.",
+          "confidence_scores": null,
+          "type": "header"
+        },
+        {
+          "top_left_x": 1078,
+          "top_left_y": 111,
+          "bottom_right_x": 1133,
+          "bottom_right_y": 144,
+          "content": "381",
+          "confidence_scores": null,
+          "type": "header"
+        },
+        {
+          "top_left_x": 1109,
+          "top_left_y": 184,
+          "bottom_right_x": 1213,
+          "bottom_right_y": 226,
+          "content": "6, 4, 1.",
+          "confidence_scores": null,
+          "type": "header"
+        },
+        {
+          "top_left_x": 79,
+          "top_left_y": 224,
+          "bottom_right_x": 558,
+          "bottom_right_y": 280,
+          "content": "# श्रीयामरयोऽहन्दसि ॥ ५६ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 23,
+          "top_left_y": 282,
+          "bottom_right_x": 546,
+          "bottom_right_y": 317,
+          "content": "Im Veda auch nach श्री und यामरग्नी.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 119,
+          "top_left_y": 324,
+          "bottom_right_x": 409,
+          "bottom_right_y": 368,
+          "content": "श्रीशाम् und यामरग्नीनाम्.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 79,
+          "top_left_y": 373,
+          "bottom_right_x": 431,
+          "bottom_right_y": 431,
+          "content": "# गोः पादान्ते ॥ ५७ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 21,
+          "top_left_y": 431,
+          "bottom_right_x": 531,
+          "bottom_right_y": 468,
+          "content": "Nach गो am Ende eines Stollens.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 116,
+          "top_left_y": 475,
+          "bottom_right_x": 816,
+          "bottom_right_y": 519,
+          "content": "गोनाम्, aber ausnahmsweise auch गवाम an dieser Stelle.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 80,
+          "top_left_y": 526,
+          "bottom_right_x": 531,
+          "bottom_right_y": 590,
+          "content": "# इदितो नुम् धातोः ॥ ५८ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 20,
+          "top_left_y": 581,
+          "bottom_right_x": 1137,
+          "bottom_right_y": 672,
+          "content": "In einer Wurzel, die इ zum stummen Laut hat, wird nach dem Wurzel-vocal न् eingefügt.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 86,
+          "top_left_y": 675,
+          "bottom_right_x": 1139,
+          "bottom_right_y": 794,
+          "content": "कुगिडत्, कुगिडतुम् und कुगिडतव्य von कुडि. Für न् wird zunächst nach 8, 3, 24 Anu-svāra substituirt, für diesen nach 8, 4, 58 ein dem nachfolgenden Consonanten homogener Nasal.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 82,
+          "top_left_y": 803,
+          "bottom_right_x": 473,
+          "bottom_right_y": 870,
+          "content": "# शे मुचादीनाम् ॥ ५९ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 23,
+          "top_left_y": 863,
+          "bottom_right_x": 697,
+          "bottom_right_y": 905,
+          "content": "In मुच् u. s. w. vor dem Präsenscharakter ख.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 119,
+          "top_left_y": 905,
+          "bottom_right_x": 976,
+          "bottom_right_y": 950,
+          "content": "सुज्वति, लुम्यति, विन्दति, लिम्यति, सिज्वति, कन्तति, खिन्दति und पिंशति.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 82,
+          "top_left_y": 956,
+          "bottom_right_x": 491,
+          "bottom_right_y": 1012,
+          "content": "# मस्जिनशोफ्फेलि ॥ ६० ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 20,
+          "top_left_y": 1012,
+          "bottom_right_x": 1139,
+          "bottom_right_y": 1101,
+          "content": "In मस्ज् und नश् vor einem consonantisch (jedoch nicht mit einem Halb-vocal oder Nasal) anlautenden Suffix.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 119,
+          "top_left_y": 1105,
+          "bottom_right_x": 1102,
+          "bottom_right_y": 1154,
+          "content": "मङ्ग्, मङ्गुम्, मङ्गव्य; नंष्ट्र, नंष्टुम्, नंष्टव्य; aber मज्जन, मग्न und नशित्. Vgl. 6, 4, 32.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 82,
+          "top_left_y": 1156,
+          "bottom_right_x": 435,
+          "bottom_right_y": 1212,
+          "content": "# रधिजभोरचि ॥ ६१ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 23,
+          "top_left_y": 1212,
+          "bottom_right_x": 849,
+          "bottom_right_y": 1254,
+          "content": "In रध् und जभ् vor einem vocalisch anlautenden Suffix.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 87,
+          "top_left_y": 1256,
+          "bottom_right_x": 1139,
+          "bottom_right_y": 1340,
+          "content": "रन्धयति, रन्धक, साधुरन्धिन्, रन्धो वर्तते; जम्भयति, जम्भक, साधुजम्भिन्, जम्भम् Absol., जम्भो वर्तते. Dagegen रद्ध् und जम्भ.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 86,
+          "top_left_y": 1345,
+          "bottom_right_x": 476,
+          "bottom_right_y": 1409,
+          "content": "# नेद्वलिटि रधेः ॥ ६२ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 20,
+          "top_left_y": 1405,
+          "bottom_right_x": 1139,
+          "bottom_right_y": 1491,
+          "content": "In रध् nicht vor einem mit dem Augment इ anlautenden Suffix, jedoch auch hier im Perfect.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 120,
+          "top_left_y": 1496,
+          "bottom_right_x": 675,
+          "bottom_right_y": 1542,
+          "content": "रधित्, रधितुम्, रधितव्य; aber ररन्धिव, ररन्धिम.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 86,
+          "top_left_y": 1549,
+          "bottom_right_x": 461,
+          "bottom_right_y": 1607,
+          "content": "# रभेरशवलिटोः ॥ ६३ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 23,
+          "top_left_y": 1602,
+          "bottom_right_x": 1139,
+          "bottom_right_y": 1691,
+          "content": "In रभ् wird न् vor einem vocalisch anlautenden Suffix eingeschoben, jedoch nicht vor dem Präsenscharakter ख् und im Perfect.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 90,
+          "top_left_y": 1693,
+          "bottom_right_x": 1142,
+          "bottom_right_y": 1775,
+          "content": "खा रभयति, खारभक, साध्वारभिन्, खारभम् Absol., खारभो वर्तते; dagegen खा रभते, खा रेभे.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 87,
+          "top_left_y": 1786,
+          "bottom_right_x": 334,
+          "bottom_right_y": 1842,
+          "content": "# लभेख ॥ ६४ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 29,
+          "top_left_y": 1842,
+          "bottom_right_x": 519,
+          "bottom_right_y": 1884,
+          "content": "Eben so verhält es sich mit लभ्.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 122,
+          "top_left_y": 1884,
+          "bottom_right_x": 1028,
+          "bottom_right_y": 1931,
+          "content": "लभयति, लभक, साधुलभिन्, लभम Absol., लभो वर्तते; dagegen लभते, लेभे.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 15,
+          "top_left_y": 2139,
+          "bottom_right_x": 130,
+          "bottom_right_y": 2204,
+          "content": "UNIVERSITÄTS-BIBLIOTHEK HEIDELBERG",
+          "confidence_scores": null,
+          "type": "footer"
+        },
+        {
+          "top_left_x": 412,
+          "top_left_y": 2177,
+          "bottom_right_x": 915,
+          "bottom_right_y": 2217,
+          "content": "© Universitätsbibliothek Heidelberg http://digi.ub.uni-heidelberg.de/diglit/boehtlingk1887/0407",
+          "confidence_scores": null,
+          "type": "footer"
+        },
+        {
+          "top_left_x": 1178,
+          "top_left_y": 2124,
+          "bottom_right_x": 1317,
+          "bottom_right_y": 2213,
+          "content": "gefördert durch Baden-Württemberg",
+          "confidence_scores": null,
+          "type": "footer"
+        }
+      ]
+    }
+  ]
+}

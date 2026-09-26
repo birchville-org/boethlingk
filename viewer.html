@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pāṇini QA-Viewer — Otto Böhtlingk (Leipzig 1887)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Serif+Devanagari:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-base: #0b0f19;
+      --bg-surface: #111827;
+      --bg-card: #1f2937;
+      --bg-elevated: #374151;
+      --border-subtle: #374151;
+      --border-strong: #4b5563;
+      --text-main: #f9fafb;
+      --text-muted: #9ca3af;
+      --text-dim: #6b7280;
+      --accent: #3b82f6;
+      --accent-hover: #2563eb;
+      --accent-glow: rgba(59, 130, 246, 0.25);
+      --success: #10b981;
+      --warning: #f59e0b;
+      --danger: #ef4444;
+      --deva-font: 'Noto Serif Devanagari', serif;
+      --sans-font: 'Inter', system-ui, -apple-system, sans-serif;
+      --mono-font: 'JetBrains Mono', monospace;
+    }
+
+    [data-theme="light"] {
+      --bg-base: #f8fafc;
+      --bg-surface: #ffffff;
+      --bg-card: #f1f5f9;
+      --bg-elevated: #e2e8f0;
+      --border-subtle: #cbd5e1;
+      --border-strong: #94a3b8;
+      --text-main: #0f172a;
+      --text-muted: #475569;
+      --text-dim: #64748b;
+      --accent: #2563eb;
+      --accent-hover: #1d4ed8;
+      --accent-glow: rgba(37, 99, 235, 0.15);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--sans-font);
+      background-color: var(--bg-base);
+      color: var(--text-main);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Header & Navbar */
+    header {
+      background: var(--bg-surface);
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 0.5rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      z-index: 20;
+      flex-shrink: 0;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-weight: 700;
+      font-size: 0.95rem;
+      letter-spacing: -0.01em;
+    }
+
+    .brand-badge {
+      background: var(--accent);
+      color: #fff;
+      font-size: 0.7rem;
+      padding: 0.15rem 0.45rem;
+      border-radius: 4px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .nav-controls {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .nav-btn {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-main);
+      padding: 0.35rem 0.65rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.82rem;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      transition: all 0.15s ease;
+    }
+
+    .nav-btn:hover {
+      background: var(--bg-elevated);
+      border-color: var(--border-strong);
+    }
+
+    .nav-btn:active {
+      transform: scale(0.98);
+    }
+
+    .select-input, .text-input {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-main);
+      padding: 0.35rem 0.55rem;
+      border-radius: 6px;
+      font-size: 0.82rem;
+      outline: none;
+      transition: border-color 0.15s ease;
+    }
+
+    .select-input:focus, .text-input:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 2px var(--accent-glow);
+    }
+
+    .search-input {
+      width: 170px;
+    }
+
+    .sutra-counter {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      font-variant-numeric: tabular-nums;
+      margin: 0 0.3rem;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    /* Main Split Layout */
+    main {
+      flex: 1;
+      display: flex;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .pane {
+      height: 100%;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .pane-left {
+      flex: 1 1 50%;
+      border-right: 1px solid var(--border-subtle);
+      background: var(--bg-surface);
+      position: relative;
+    }
+
+    .pane-right {
+      flex: 1 1 50%;
+      background: var(--bg-base);
+    }
+
+    /* Splitter */
+    .splitter {
+      width: 6px;
+      background: var(--bg-surface);
+      border-left: 1px solid var(--border-subtle);
+      border-right: 1px solid var(--border-subtle);
+      cursor: col-resize;
+      transition: background 0.2s ease;
+      z-index: 10;
+      flex-shrink: 0;
+    }
+
+    .splitter:hover, .splitter.dragging {
+      background: var(--accent);
+    }
+
+    /* Left Pane: Scan Viewer & Preview */
+    .pane-toolbar {
+      background: var(--bg-card);
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 0.35rem 0.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+      font-size: 0.8rem;
+      flex-shrink: 0;
+    }
+
+    .tab-group {
+      display: flex;
+      gap: 0.3rem;
+    }
+
+    .tab-btn {
+      background: transparent;
+      border: 1px solid transparent;
+      color: var(--text-muted);
+      padding: 0.25rem 0.55rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      cursor: pointer;
+      font-weight: 500;
+    }
+
+    .tab-btn.active {
+      background: var(--bg-surface);
+      color: var(--text-main);
+      border-color: var(--border-subtle);
+    }
+
+    .viewport-container {
+      flex: 1;
+      position: relative;
+      overflow: hidden;
+      background: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: grab;
+      user-select: none;
+    }
+
+    .viewport-container.grabbing {
+      cursor: grabbing;
+    }
+
+    .scan-image {
+      max-width: none;
+      transform-origin: center center;
+      transition: transform 0.05s ease-out;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    }
+
+    .viewport-controls {
+      position: absolute;
+      bottom: 1rem;
+      right: 1rem;
+      background: rgba(17, 24, 39, 0.85);
+      backdrop-filter: blur(8px);
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      padding: 0.25rem;
+      display: flex;
+      gap: 0.25rem;
+      z-index: 5;
+    }
+
+    .preview-card {
+      padding: 1.25rem;
+      overflow-y: auto;
+      height: 100%;
+    }
+
+    .preview-sutra-header {
+      margin-bottom: 1rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .preview-ref-badge {
+      font-family: var(--mono-font);
+      font-size: 0.8rem;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 0.35rem;
+    }
+
+    .preview-deva {
+      font-family: var(--deva-font);
+      font-size: 2.2rem;
+      line-height: 1.3;
+      color: var(--text-main);
+      margin-bottom: 0.4rem;
+      letter-spacing: 0.02em;
+    }
+
+    .preview-iast {
+      font-style: italic;
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .preview-section-title {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-dim);
+      margin-top: 1.25rem;
+      margin-bottom: 0.4rem;
+      font-weight: 600;
+    }
+
+    .preview-translation {
+      font-size: 1.05rem;
+      line-height: 1.6;
+      color: var(--text-main);
+      background: var(--bg-surface);
+      padding: 0.85rem 1rem;
+      border-left: 3px solid var(--accent);
+      border-radius: 0 6px 6px 0;
+      margin-bottom: 1rem;
+    }
+
+    .preview-commentary {
+      font-size: 0.95rem;
+      line-height: 1.7;
+      color: var(--text-muted);
+      white-space: pre-wrap;
+      background: var(--bg-surface);
+      padding: 1rem;
+      border-radius: 6px;
+      border: 1px solid var(--border-subtle);
+    }
+
+    /* Right Pane: Editor */
+    .editor-container {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      overflow-y: auto;
+      padding: 1rem;
+      gap: 1rem;
+    }
+
+    /* Snippet Toolbar */
+    .snippet-toolbar {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 8px;
+      padding: 0.4rem 0.6rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem;
+      align-items: center;
+    }
+
+    .snippet-group-title {
+      font-size: 0.7rem;
+      color: var(--text-dim);
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-right: 0.2rem;
+    }
+
+    .snippet-btn {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-main);
+      font-size: 0.82rem;
+      padding: 0.2rem 0.45rem;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.1s ease;
+      font-family: var(--deva-font);
+    }
+
+    .snippet-btn.latin {
+      font-family: var(--sans-font);
+    }
+
+    .snippet-btn:hover {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+    }
+
+    /* Edit Fields */
+    .field-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+
+    .field-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .edit-input, .edit-textarea {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 6px;
+      color: var(--text-main);
+      padding: 0.6rem 0.75rem;
+      font-size: 0.95rem;
+      outline: none;
+      transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .edit-input.deva {
+      font-family: var(--deva-font);
+      font-size: 1.4rem;
+    }
+
+    .edit-textarea {
+      font-family: var(--sans-font);
+      line-height: 1.6;
+      resize: vertical;
+      min-height: 80px;
+    }
+
+    .edit-textarea.commentary {
+      min-height: 180px;
+      font-family: var(--mono-font);
+      font-size: 0.88rem;
+    }
+
+    .edit-input:focus, .edit-textarea:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 2px var(--accent-glow);
+    }
+
+    /* Action Buttons */
+    .save-btn {
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1.25rem;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 0.85rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: background 0.2s ease, transform 0.1s ease;
+    }
+
+    .save-btn:hover {
+      background: var(--accent-hover);
+    }
+
+    .save-btn.blinking-repair {
+      background: var(--warning) !important;
+      color: #000 !important;
+    }
+
+    .save-btn.saved-success {
+      background: var(--success) !important;
+    }
+
+    .badge-dirty {
+      background: var(--warning);
+      color: #000;
+      font-size: 0.7rem;
+      padding: 0.1rem 0.35rem;
+      border-radius: 3px;
+      font-weight: 600;
+      display: none;
+    }
+
+    /* Modal / Fallback file loader */
+    .modal-overlay {
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(4px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 100;
+    }
+
+    .modal-box {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 2rem;
+      max-width: 480px;
+      width: 90%;
+      text-align: center;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    }
+
+    .modal-title {
+      font-size: 1.2rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .modal-desc {
+      color: var(--text-muted);
+      font-size: 0.88rem;
+      line-height: 1.5;
+      margin-bottom: 1.5rem;
+    }
+
+    .file-drop-zone {
+      border: 2px dashed var(--border-strong);
+      border-radius: 8px;
+      padding: 2rem 1rem;
+      cursor: pointer;
+      transition: border-color 0.2s ease, background 0.2s ease;
+      margin-bottom: 1rem;
+    }
+
+    .file-drop-zone:hover {
+      border-color: var(--accent);
+      background: var(--accent-glow);
+    }
+
+    /* Toast Notification */
+    .toast {
+      position: fixed;
+      bottom: 1.5rem;
+      right: 1.5rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-main);
+      padding: 0.6rem 1rem;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+      transform: translateY(100px);
+      opacity: 0;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      z-index: 200;
+    }
+
+    .toast.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation Header -->
+  <header>
+    <div class="brand">
+      <span>Pāṇini 1887</span>
+      <span class="brand-badge">QA-Viewer</span>
+    </div>
+
+    <div class="nav-controls">
+      <button class="nav-btn" id="prevBtn" title="Vorheriges Sūtra (Alt + Links)">← Zurück</button>
+      
+      <select class="select-input" id="adhyayaSelect" title="Adhyāya wählen">
+        <option value="all">Alle Adhyāyas</option>
+        <option value="0">Śiva-Sūtras (14)</option>
+        <option value="1">Adhyāya 1 (351)</option>
+        <option value="2">Adhyāya 2 (268)</option>
+        <option value="3">Adhyāya 3 (631)</option>
+        <option value="4">Adhyāya 4 (635)</option>
+        <option value="5">Adhyāya 5 (555)</option>
+        <option value="6">Adhyāya 6 (736)</option>
+        <option value="7">Adhyāya 7 (438)</option>
+        <option value="8">Adhyāya 8 (369)</option>
+      </select>
+
+      <select class="select-input" id="padaSelect" title="Pāda wählen">
+        <option value="all">Alle Pādas</option>
+        <option value="1">Pāda 1</option>
+        <option value="2">Pāda 2</option>
+        <option value="3">Pāda 3</option>
+        <option value="4">Pāda 4</option>
+      </select>
+
+      <input type="text" class="text-input search-input" id="jumpInput" placeholder="Sprung (z.B. 6.1.87)..." title="Direktsprung zu Sūtra">
+
+      <button class="nav-btn" id="nextBtn" title="Nächstes Sūtra (Alt + Rechts)">Weiter →</button>
+
+      <span class="sutra-counter" id="sutraCounter">Lade Sūtras...</span>
+      <span class="badge-dirty" id="dirtyBadge">Geändert</span>
+    </div>
+
+    <div class="header-actions">
+      <input type="text" class="text-input" id="searchInput" placeholder="Volltextsuche..." style="width: 130px;">
+      <button class="nav-btn" id="fsSaveBtn" title="Direkt in Datei speichern (File System API)">💾 Datei-Export</button>
+      <button class="nav-btn" id="themeToggleBtn" title="Hell/Dunkel Umschalten">🌓</button>
+    </div>
+  </header>
+
+  <!-- Split Pane Body -->
+  <main id="mainContainer">
+    <!-- Left Pane: Scan Image / Rendered Preview -->
+    <div class="pane pane-left" id="leftPane">
+      <div class="pane-toolbar">
+        <div class="tab-group">
+          <button class="tab-btn active" id="tabScan">Originalscan (UB Heidelberg)</button>
+          <button class="tab-btn" id="tabPreview">Kompakte Vorschau</button>
+        </div>
+        <div id="pageInfoDisplay" style="color: var(--text-muted); font-size: 0.78rem;">Seite: -</div>
+      </div>
+
+      <!-- Viewport: Image Canvas with Zoom & Pan -->
+      <div class="viewport-container" id="viewport">
+        <img class="scan-image" id="scanImg" src="" alt="Faksimile der Buchseite" draggable="false">
+        <div class="viewport-controls">
+          <button class="nav-btn" id="zoomInBtn" title="Vergrößern">+</button>
+          <button class="nav-btn" id="zoomOutBtn" title="Verkleinern">−</button>
+          <button class="nav-btn" id="zoomFitBtn" title="Anpassen">Einpassen</button>
+          <button class="nav-btn" id="zoom100Btn" title="Originalgröße">100%</button>
+        </div>
+      </div>
+
+      <!-- Rendered Preview Card (hidden by default) -->
+      <div class="preview-card" id="previewCard" style="display: none;">
+        <div class="preview-sutra-header">
+          <div class="preview-ref-badge" id="prevBadge">1.1.1</div>
+          <div class="preview-deva" id="prevDeva">-</div>
+          <div class="preview-iast" id="prevIast">-</div>
+        </div>
+        <div class="preview-section-title">Deutsche Übersetzung (Otto Böhtlingk)</div>
+        <div class="preview-translation" id="prevTrans">-</div>
+        <div class="preview-section-title">Philologischer Kommentar & Noten</div>
+        <div class="preview-commentary" id="prevComm">-</div>
+      </div>
+    </div>
+
+    <!-- Draggable Divider -->
+    <div class="splitter" id="splitter"></div>
+
+    <!-- Right Pane: QA Editor -->
+    <div class="pane pane-right" id="rightPane">
+      <div class="pane-toolbar">
+        <span style="font-weight: 600;">Sūtra-Editor & QA</span>
+        <button class="save-btn" id="saveBtn" title="Speichern & Auto-Repair (Cmd + S)">
+          <span>Speichern</span>
+          <span style="font-size: 0.7rem; opacity: 0.8;">⌘S</span>
+        </button>
+      </div>
+
+      <div class="editor-container">
+        <!-- Snippet Bar -->
+        <div class="snippet-toolbar">
+          <span class="snippet-group-title">Dandas:</span>
+          <button class="snippet-btn" data-insert="॥">॥</button>
+          <button class="snippet-btn" data-insert="।">।</button>
+          <button class="snippet-btn" data-insert="ऽ">ऽ</button>
+          <button class="snippet-btn" data-insert="°">°</button>
+
+          <span class="snippet-group-title" style="margin-left: 0.5rem;">IAST:</span>
+          <button class="snippet-btn latin" data-insert="ā">ā</button>
+          <button class="snippet-btn latin" data-insert="ī">ī</button>
+          <button class="snippet-btn latin" data-insert="ū">ū</button>
+          <button class="snippet-btn latin" data-insert="ṛ">ṛ</button>
+          <button class="snippet-btn latin" data-insert="ṝ">ṝ</button>
+          <button class="snippet-btn latin" data-insert="ṃ">ṃ</button>
+          <button class="snippet-btn latin" data-insert="ḥ">ḥ</button>
+          <button class="snippet-btn latin" data-insert="ṅ">ṅ</button>
+          <button class="snippet-btn latin" data-insert="ñ">ñ</button>
+          <button class="snippet-btn latin" data-insert="ṭ">ṭ</button>
+          <button class="snippet-btn latin" data-insert="ḍ">ḍ</button>
+          <button class="snippet-btn latin" data-insert="ṇ">ṇ</button>
+          <button class="snippet-btn latin" data-insert="ś">ś</button>
+          <button class="snippet-btn latin" data-insert="ṣ">ṣ</button>
+
+          <span class="snippet-group-title" style="margin-left: 0.5rem;">Noten:</span>
+          <button class="snippet-btn latin" data-insert="∠±">∠±</button>
+          <button class="snippet-btn latin" data-insert="∠_">∠_</button>
+          <button class="snippet-btn latin" data-insert="v. l.">v. l.</button>
+          <button class="snippet-btn latin" data-insert="Kāç.">Kāç.</button>
+          <button class="snippet-btn latin" data-insert="RV.">RV.</button>
+        </div>
+
+        <!-- Editable Form -->
+        <div class="field-group">
+          <label class="field-label" for="editDeva">
+            <span>Sūtra (Devanagari)</span>
+            <span id="canonicalMatchBadge" style="color: var(--success); font-size: 0.72rem;">✓ Kanonisch verifiziert</span>
+          </label>
+          <input type="text" class="edit-input deva" id="editDeva">
+        </div>
+
+        <div class="field-group">
+          <label class="field-label" for="editIast">IAST Transliteration</label>
+          <input type="text" class="edit-input" id="editIast">
+        </div>
+
+        <div class="field-group">
+          <label class="field-label" for="editTrans">Deutsche Übersetzung</label>
+          <textarea class="edit-textarea" id="editTrans"></textarea>
+        </div>
+
+        <div class="field-group" style="flex: 1;">
+          <label class="field-label" for="editComm">Philologischer Kommentar & Beispiele</label>
+          <textarea class="edit-textarea commentary" id="editComm"></textarea>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Fallback Modal for direct file loading -->
+  <div class="modal-overlay" id="fileModal">
+    <div class="modal-box">
+      <h3 class="modal-title">Pāṇini-Datensatz laden</h3>
+      <p class="modal-desc">
+        Falls die Datei aufgrund von Browser-CORS-Restriktionen nicht automatisch geladen werden konnte, bitte die Datei 
+        <code>data/ashtadhyayi_complete_boethlingk1887.json</code> hier auswählen.
+      </p>
+      <div class="file-drop-zone" id="dropZone">
+        Hier klicken oder JSON-Datei hineinziehen
+        <input type="file" id="fileInput" accept=".json" style="display: none;">
+      </div>
+      <p style="font-size: 0.75rem; color: var(--text-dim);">
+        Tipp: Mit <code>python3 -m http.server 8000</code> im Projektordner lädt die Anwendung automatisch ohne Auswahldialog.
+      </p>
+    </div>
+  </div>
+
+  <div class="toast" id="toast">Änderungen gespeichert</div>
+
+  <script>
+    // --- Application State ---
+    let state = {
+      dataset: null,
+      sutras: [],
+      filteredIndices: [],
+      currentIndex: 0,
+      zoom: 1.0,
+      panX: 0,
+      panY: 0,
+      isDragging: false,
+      dragStartX: 0,
+      dragStartY: 0,
+      activeField: null,
+      editedSutras: {}, // local changes by ref
+    };
+
+    // Load local edits from localStorage
+    try {
+      const saved = localStorage.getItem("boethlingk_qa_edits");
+      if (saved) {
+        state.editedSutras = JSON.parse(saved);
+      }
+    } catch (e) {
+      console.warn("Could not load local storage edits", e);
+    }
+
+    // --- DOM Elements ---
+    const elements = {
+      prevBtn: document.getElementById("prevBtn"),
+      nextBtn: document.getElementById("nextBtn"),
+      adhyayaSelect: document.getElementById("adhyayaSelect"),
+      padaSelect: document.getElementById("padaSelect"),
+      jumpInput: document.getElementById("jumpInput"),
+      searchInput: document.getElementById("searchInput"),
+      sutraCounter: document.getElementById("sutraCounter"),
+      dirtyBadge: document.getElementById("dirtyBadge"),
+      saveBtn: document.getElementById("saveBtn"),
+      fsSaveBtn: document.getElementById("fsSaveBtn"),
+      themeToggleBtn: document.getElementById("themeToggleBtn"),
+      tabScan: document.getElementById("tabScan"),
+      tabPreview: document.getElementById("tabPreview"),
+      viewport: document.getElementById("viewport"),
+      previewCard: document.getElementById("previewCard"),
+      scanImg: document.getElementById("scanImg"),
+      pageInfoDisplay: document.getElementById("pageInfoDisplay"),
+      zoomInBtn: document.getElementById("zoomInBtn"),
+      zoomOutBtn: document.getElementById("zoomOutBtn"),
+      zoomFitBtn: document.getElementById("zoomFitBtn"),
+      zoom100Btn: document.getElementById("zoom100Btn"),
+      splitter: document.getElementById("splitter"),
+      leftPane: document.getElementById("leftPane"),
+      rightPane: document.getElementById("rightPane"),
+      mainContainer: document.getElementById("mainContainer"),
+      fileModal: document.getElementById("fileModal"),
+      dropZone: document.getElementById("dropZone"),
+      fileInput: document.getElementById("fileInput"),
+      toast: document.getElementById("toast"),
+      editDeva: document.getElementById("editDeva"),
+      editIast: document.getElementById("editIast"),
+      editTrans: document.getElementById("editTrans"),
+      editComm: document.getElementById("editComm"),
+      canonicalMatchBadge: document.getElementById("canonicalMatchBadge"),
+      prevBadge: document.getElementById("prevBadge"),
+      prevDeva: document.getElementById("prevDeva"),
+      prevIast: document.getElementById("prevIast"),
+      prevTrans: document.getElementById("prevTrans"),
+      prevComm: document.getElementById("prevComm"),
+    };
+
+    // --- Data Loading ---
+    async function loadDataset() {
+      try {
+        const resp = await fetch("data/ashtadhyayi_complete_boethlingk1887.json");
+        if (!resp.ok) throw new Error("HTTP error " + resp.status);
+        const data = await resp.json();
+        initData(data);
+      } catch (err) {
+        console.warn("Direct fetch failed, showing manual load modal:", err);
+        elements.fileModal.style.display = "flex";
+      }
+    }
+
+    function initData(data) {
+      state.dataset = data;
+      // Combine shiva sutras + ashtadhyayi sutras
+      const shiva = data.shiva_sutras || [];
+      const mainSutras = data.sutras || [];
+      state.sutras = [...shiva, ...mainSutras];
+
+      // Merge local storage edits
+      state.sutras.forEach(s => {
+        if (state.editedSutras[s.ref]) {
+          Object.assign(s, state.editedSutras[s.ref]);
+          s._isEdited = true;
+        }
+      });
+
+      applyFilter();
+      elements.fileModal.style.display = "none";
+      showToast(`${state.sutras.length} Sūtras geladen`);
+    }
+
+    // --- Filtering & Navigation ---
+    function applyFilter() {
+      const aVal = elements.adhyayaSelect.value;
+      const pVal = elements.padaSelect.value;
+      const q = elements.searchInput.value.trim().toLowerCase();
+
+      state.filteredIndices = [];
+      for (let i = 0; i < state.sutras.length; i++) {
+        const s = state.sutras[i];
+        if (aVal !== "all") {
+          const aNum = parseInt(aVal, 10);
+          if (s.adhyaya !== aNum) continue;
+        }
+        if (pVal !== "all") {
+          const pNum = parseInt(pVal, 10);
+          if (s.pada !== pNum) continue;
+        }
+        if (q) {
+          const matchRef = s.ref.toLowerCase().includes(q);
+          const matchDeva = (s.canonical_devanagari || s.sutra_ocr || "").includes(q);
+          const matchIast = (s.canonical_iast || "").toLowerCase().includes(q);
+          const matchTr = (s.translation || "").toLowerCase().includes(q);
+          const matchComm = (s.commentary || "").toLowerCase().includes(q);
+          if (!matchRef && !matchDeva && !matchIast && !matchTr && !matchComm) continue;
+        }
+        state.filteredIndices.push(i);
+      }
+
+      state.currentIndex = 0;
+      renderCurrentSutra();
+    }
+
+    function renderCurrentSutra() {
+      if (state.filteredIndices.length === 0) {
+        elements.sutraCounter.textContent = "0 von 0";
+        elements.editDeva.value = "";
+        elements.editIast.value = "";
+        elements.editTrans.value = "";
+        elements.editComm.value = "";
+        return;
+      }
+
+      const sIndex = state.filteredIndices[state.currentIndex];
+      const s = state.sutras[sIndex];
+
+      elements.sutraCounter.textContent = `[${s.ref}] ${state.currentIndex + 1} von ${state.filteredIndices.length}`;
+      elements.dirtyBadge.style.display = s._isEdited ? "inline-block" : "none";
+
+      // Populate Editor
+      elements.editDeva.value = s.canonical_devanagari || s.sutra_ocr || "";
+      elements.editIast.value = s.canonical_iast || "";
+      elements.editTrans.value = s.translation || "";
+      elements.editComm.value = s.commentary || "";
+
+      // Populate Preview
+      elements.prevBadge.textContent = s.ref;
+      elements.prevDeva.textContent = s.canonical_devanagari || s.sutra_ocr || "";
+      elements.prevIast.textContent = s.canonical_iast || "";
+      elements.prevTrans.textContent = s.translation || "(Keine Übersetzung)";
+      elements.prevComm.textContent = s.commentary || "(Kein Kommentar)";
+
+      // Page Scan Image
+      const pageNum = s.page || 1;
+      elements.pageInfoDisplay.textContent = `Buchseite ${pageNum} / 478`;
+      const imgPath = `data/img_cache/7_3A000000${String(pageNum).padStart(3, '0')}_jpg_full_max_0_default_jpg.jpg`;
+      elements.scanImg.src = imgPath;
+      resetZoomAndPan();
+    }
+
+    function gotoPrev() {
+      if (state.currentIndex > 0) {
+        state.currentIndex--;
+        renderCurrentSutra();
+      }
+    }
+
+    function gotoNext() {
+      if (state.currentIndex < state.filteredIndices.length - 1) {
+        state.currentIndex++;
+        renderCurrentSutra();
+      }
+    }
+
+    function jumpToRef(targetRef) {
+      targetRef = targetRef.trim();
+      const idx = state.sutras.findIndex(s => s.ref.toLowerCase() === targetRef.toLowerCase());
+      if (idx !== -1) {
+        // Reset filter dropdowns to 'all' so the item is visible
+        elements.adhyayaSelect.value = "all";
+        elements.padaSelect.value = "all";
+        elements.searchInput.value = "";
+        applyFilter();
+        const fIdx = state.filteredIndices.indexOf(idx);
+        if (fIdx !== -1) {
+          state.currentIndex = fIdx;
+          renderCurrentSutra();
+        }
+      } else {
+        showToast(`Referenz "${targetRef}" nicht gefunden`);
+      }
+    }
+
+    // --- Silent Auto-Repair on Save (QA Viewer Pattern Standard) ---
+    function autoRepairFields() {
+      let deva = elements.editDeva.value;
+      let iast = elements.editIast.value;
+      let trans = elements.editTrans.value;
+      let comm = elements.editComm.value;
+
+      // 1. Danda normalizations
+      deva = deva.replace(/\|\|/g, "॥").replace(/\|/g, "।");
+      comm = comm.replace(/\|\|/g, "॥").replace(/\|/g, "।");
+
+      // 2. Strip rogue Hebrew/Telugu noise if any slipped through
+      const rogueScripts = /[\u0590-\u05FF\u0C00-\u0C7F]+/g;
+      deva = deva.replace(rogueScripts, "").trim();
+      trans = trans.replace(rogueScripts, "").trim();
+      comm = comm.replace(rogueScripts, "").trim();
+
+      // 3. Normalize multiple consecutive spaces
+      deva = deva.replace(/[ \t]+/g, " ");
+      trans = trans.replace(/[ \t]+/g, " ");
+
+      elements.editDeva.value = deva;
+      elements.editIast.value = iast.trim();
+      elements.editTrans.value = trans;
+      elements.editComm.value = comm;
+
+      return { deva, iast: iast.trim(), trans, comm };
+    }
+
+    function saveCurrentSutra() {
+      if (state.filteredIndices.length === 0) return;
+      const sIndex = state.filteredIndices[state.currentIndex];
+      const s = state.sutras[sIndex];
+
+      // Trigger silent auto repair
+      const repaired = autoRepairFields();
+
+      s.canonical_devanagari = repaired.deva;
+      s.canonical_iast = repaired.iast;
+      s.translation = repaired.trans;
+      s.commentary = repaired.comm;
+      s._isEdited = true;
+
+      // Save to localStorage
+      state.editedSutras[s.ref] = {
+        canonical_devanagari: s.canonical_devanagari,
+        canonical_iast: s.canonical_iast,
+        translation: s.translation,
+        commentary: s.commentary,
+        updated_at: new Date().toISOString(),
+      };
+      try {
+        localStorage.setItem("boethlingk_qa_edits", JSON.stringify(state.editedSutras));
+      } catch (e) {
+        console.warn("Storage quota exceeded", e);
+      }
+
+      elements.dirtyBadge.style.display = "inline-block";
+
+      // Visual feedback: Yellow blink (repair), then green (saved)
+      elements.saveBtn.classList.add("blinking-repair");
+      setTimeout(() => {
+        elements.saveBtn.classList.remove("blinking-repair");
+        elements.saveBtn.classList.add("saved-success");
+        setTimeout(() => {
+          elements.saveBtn.classList.remove("saved-success");
+        }, 600);
+      }, 200);
+
+      renderCurrentSutra();
+    }
+
+    // --- Snippet Insertion ---
+    function insertSnippet(str) {
+      const activeEl = state.activeField || elements.editDeva;
+      if (!activeEl) return;
+      const start = activeEl.selectionStart || 0;
+      const end = activeEl.selectionEnd || 0;
+      const val = activeEl.value;
+      activeEl.value = val.substring(0, start) + str + val.substring(end);
+      activeEl.focus();
+      activeEl.selectionStart = activeEl.selectionEnd = start + str.length;
+    }
+
+    document.querySelectorAll(".snippet-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        insertSnippet(btn.getAttribute("data-insert"));
+      });
+    });
+
+    [elements.editDeva, elements.editIast, elements.editTrans, elements.editComm].forEach(el => {
+      el.addEventListener("focus", () => { state.activeField = el; });
+    });
+
+    // --- Viewport Zoom & Pan ---
+    function updateTransform() {
+      elements.scanImg.style.transform = `translate(${state.panX}px, ${state.panY}px) scale(${state.zoom})`;
+    }
+
+    function resetZoomAndPan() {
+      state.zoom = 0.85;
+      state.panX = 0;
+      state.panY = 0;
+      updateTransform();
+    }
+
+    elements.zoomInBtn.addEventListener("click", () => { state.zoom = Math.min(state.zoom * 1.25, 4.0); updateTransform(); });
+    elements.zoomOutBtn.addEventListener("click", () => { state.zoom = Math.max(state.zoom / 1.25, 0.3); updateTransform(); });
+    elements.zoom100Btn.addEventListener("click", () => { state.zoom = 1.0; state.panX = 0; state.panY = 0; updateTransform(); });
+    elements.zoomFitBtn.addEventListener("click", resetZoomAndPan);
+
+    elements.viewport.addEventListener("wheel", (e) => {
+      e.preventDefault();
+      const delta = e.deltaY < 0 ? 1.1 : 0.9;
+      state.zoom = Math.max(0.3, Math.min(4.0, state.zoom * delta));
+      updateTransform();
+    }, { passive: false });
+
+    elements.viewport.addEventListener("mousedown", (e) => {
+      if (e.target.closest(".viewport-controls")) return;
+      state.isDragging = true;
+      state.dragStartX = e.clientX - state.panX;
+      state.dragStartY = e.clientY - state.panY;
+      elements.viewport.classList.add("grabbing");
+    });
+
+    window.addEventListener("mousemove", (e) => {
+      if (!state.isDragging) return;
+      state.panX = e.clientX - state.dragStartX;
+      state.panY = e.clientY - state.dragStartY;
+      updateTransform();
+    });
+
+    window.addEventListener("mouseup", () => {
+      state.isDragging = false;
+      elements.viewport.classList.remove("grabbing");
+    });
+
+    // --- Splitter Dragging ---
+    let isResizing = false;
+    elements.splitter.addEventListener("mousedown", (e) => {
+      isResizing = true;
+      elements.splitter.classList.add("dragging");
+      document.body.style.userSelect = "none";
+    });
+
+    window.addEventListener("mousemove", (e) => {
+      if (!isResizing) return;
+      const containerWidth = elements.mainContainer.offsetWidth;
+      const newLeftWidth = Math.max(250, Math.min(containerWidth - 250, e.clientX));
+      const leftPercent = (newLeftWidth / containerWidth) * 100;
+      elements.leftPane.style.flex = `0 0 ${leftPercent}%`;
+      elements.rightPane.style.flex = `1 1 auto`;
+    });
+
+    window.addEventListener("mouseup", () => {
+      if (isResizing) {
+        isResizing = false;
+        elements.splitter.classList.remove("dragging");
+        document.body.style.userSelect = "";
+      }
+    });
+
+    // --- File System Access Export / Download ---
+    async function exportDataset() {
+      const fullData = {
+        metadata: state.dataset.metadata || {},
+        shiva_sutras: state.sutras.filter(s => s.adhyaya === 0),
+        sutras: state.sutras.filter(s => s.adhyaya !== 0),
+      };
+      const jsonStr = JSON.stringify(fullData, null, 2);
+
+      if ("showSaveFilePicker" in window) {
+        try {
+          const handle = await window.showSaveFilePicker({
+            suggestedName: "ashtadhyayi_complete_boethlingk1887.json",
+            types: [{ description: "JSON Datensatz", accept: { "application/json": [".json"] } }]
+          });
+          const writable = await handle.createWritable();
+          await writable.write(jsonStr);
+          await writable.close();
+          showToast("Datei erfolgreich gespeichert!");
+          return;
+        } catch (err) {
+          if (err.name === "AbortError") return;
+        }
+      }
+
+      // Fallback: browser download
+      const blob = new Blob([jsonStr], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = "ashtadhyayi_complete_boethlingk1887.json";
+      a.click();
+      URL.revokeObjectURL(url);
+      showToast("Download gestartet");
+    }
+
+    // --- Manual File Load (Dropzone) ---
+    elements.dropZone.addEventListener("click", () => elements.fileInput.click());
+    elements.fileInput.addEventListener("change", (e) => {
+      const file = e.target.files[0];
+      if (file) readFile(file);
+    });
+
+    elements.dropZone.addEventListener("dragover", (e) => { e.preventDefault(); });
+    elements.dropZone.addEventListener("drop", (e) => {
+      e.preventDefault();
+      const file = e.dataTransfer.files[0];
+      if (file) readFile(file);
+    });
+
+    function readFile(file) {
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        try {
+          const data = JSON.parse(e.target.result);
+          initData(data);
+        } catch (err) {
+          alert("Fehler beim Parsen der JSON-Datei: " + err.message);
+        }
+      };
+      reader.readAsText(file);
+    }
+
+    // --- Toast Helper ---
+    function showToast(msg) {
+      elements.toast.textContent = msg;
+      elements.toast.classList.add("show");
+      setTimeout(() => elements.toast.classList.remove("show"), 2200);
+    }
+
+    // --- UI Tabs: Scan vs Preview ---
+    elements.tabScan.addEventListener("click", () => {
+      elements.tabScan.classList.add("active");
+      elements.tabPreview.classList.remove("active");
+      elements.viewport.style.display = "flex";
+      elements.previewCard.style.display = "none";
+    });
+
+    elements.tabPreview.addEventListener("click", () => {
+      elements.tabPreview.classList.add("active");
+      elements.tabScan.classList.remove("active");
+      elements.viewport.style.display = "none";
+      elements.previewCard.style.display = "block";
+    });
+
+    // --- Theme Toggle ---
+    elements.themeToggleBtn.addEventListener("click", () => {
+      const current = document.documentElement.getAttribute("data-theme");
+      const next = current === "light" ? "dark" : "light";
+      document.documentElement.setAttribute("data-theme", next);
+    });
+
+    // --- Keyboard Shortcuts & Events ---
+    window.addEventListener("keydown", (e) => {
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "s") {
+        e.preventDefault();
+        saveCurrentSutra();
+      } else if (e.altKey && e.key === "ArrowLeft") {
+        e.preventDefault();
+        gotoPrev();
+      } else if (e.altKey && e.key === "ArrowRight") {
+        e.preventDefault();
+        gotoNext();
+      }
+    });
+
+    elements.prevBtn.addEventListener("click", gotoPrev);
+    elements.nextBtn.addEventListener("click", gotoNext);
+    elements.saveBtn.addEventListener("click", saveCurrentSutra);
+    elements.fsSaveBtn.addEventListener("click", exportDataset);
+    elements.adhyayaSelect.addEventListener("change", applyFilter);
+    elements.padaSelect.addEventListener("change", applyFilter);
+    elements.searchInput.addEventListener("input", applyFilter);
+
+    elements.jumpInput.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") {
+        jumpToRef(elements.jumpInput.value);
+      }
+    });
+
+    // Start loading
+    loadDataset();
+  </script>
+</body>
+</html>

@@ -1,0 +1,244 @@
+{
+  "source": "data/img_cache/7_3A000000179_jpg_full_max_0_default_jpg.jpg",
+  "model": "mistral-ocr-latest",
+  "markdown": "4, 2, 83.\n\n179\n\n3, 1, 1. 2. 3. 4, 1, 1. 76. 82. 83. 87.\n\n# रोगी ॥ ७८ ॥\n\nAuch an रोगी.\n\nरोगा, आज्ञाकरोना, सैहिकरोगा. Ausnahme zu 4, 2, 74. Der Nominativ wird sehr künstlich erklärt.\n\n# कोपधाच्च ॥ ७९ ॥\n\nDesgleichen an einen vocalisch auslautenden Stamm mit vorangehendem क्.\n\nकार्गोच्छदकः कृपः, कार्गोवेष्टकः, कार्कवाकवम्, त्रैशङ्कवम्. Ausnahme zu 4, 2, 71. 73.\n\nवृजङ्घणकटजिलसेनिरढजगययफकफिञ्जज्यककटको ऽरीहण-कृशाश्वश्येकुमुदकाशतृणप्रेक्षाश्रमसखिसंकाशवलपक्षकर्णसुतंगमप्रग-दिवराहकुमुदादिभ्यः ॥ ८० ॥\n\nIn den angegebenen vier Bedeutungen werden angefügt: ⇨_शक an श्रीहगा u. s. w., ±_ईय an कशाश्व u. s. w., क an ऋष्य u. s. w., इकै an कुमुद u. s. w., इल an काश u. s. w., स an तृण u. s. w., इन् an प्रेत्ता u. s. w., र an श्रमन् u. s. w., ⇨_गय an सखि u. s. w., ±_य an संकाश u. s. w., य an बल u. s. w., ±_श्रायनै an पत्त u. s. w., ⇨_श्रायनि an कर्णै u. s. w., ⇨_इ an सुतंगम u. s. w., ⇨_य an प्रगदिन् u. s. w., ±_कै an वराह u. s. w. und ±_इकै an कुमुद u. s. w.\n\nश्रीरीहणक, काश्वैश्वैय, ऋष्यकै, कुमुदिकै, काशिल, तृणसै, प्रेत्तिन्, श्रमरे, सैश्वैय, सां-काश्यै, बल्यै, पात्तायगै, कोणीयनि, सैंतर्गमि, प्रैगट्य, वाराहकै, कौमुदिकै. Statt प्रगदि wird im Sūtra auch प्रगदिन् gelesen.\n\n# जनपदे लुप् ॥ ८१ ॥\n\nDen Namen eines Reiches erhält man durch Abwerfung jedes Suffixes, indem der Name des Volkes ohne Aenderung des Numerus und Geschlechts zugleich der Name des Reiches ist. Vgl. 1, 2, 51.\n\nपञ्चालाः, कुरवः, मत्स्याः, श्रङ्गाः, वङ्गाः, मगधाः, सुह्माः, पुण्ड्राः.\n\n# वरणादिभ्यश्च ॥ ८२ ॥\n\nAuch nach वरगा u. s. w. wird zur Bezeichnung einer Oertlichkeit das Suffix abgeworfen, ohne dass Numerus oder Geschlecht geändert würde. Vgl. 1, 2, 51.\n\nवरगानामदूरभवनं नगरं वरगाः, शङ्खी, शाल्मलयः.\n\n# शर्कराया वा ॥ ८३ ॥\n\nNach शर्करा nicht nothwendig.\n\nशर्करा, शर्करैम् nach 4, 1, 83, शर्करिकैम् nach 4, 2, 80 (da शर्करा im ersten कुमुदादि aufgeführt wird) und शर्करकैम् gleichfalls nach 4, 2, 80 (da शर्करा auch unter वराहादि erscheint).\n\nUNIVERSITÄTS-BIBLIOTHEK HEIDELBERG\n\n© Universitätsbibliothek Heidelberg http://digi.ub.uni-heidelberg.de/diglit/boehtlingk1887/0205\n\ngefördert durch Beden-Württemberg\n",
+  "usage_info": {
+    "pages_processed": 1,
+    "doc_size_bytes": 600659
+  },
+  "pages": [
+    {
+      "index": 0,
+      "markdown": "4, 2, 83.\n\n179\n\n3, 1, 1. 2. 3. 4, 1, 1. 76. 82. 83. 87.\n\n# रोगी ॥ ७८ ॥\n\nAuch an रोगी.\n\nरोगा, आज्ञाकरोना, सैहिकरोगा. Ausnahme zu 4, 2, 74. Der Nominativ wird sehr künstlich erklärt.\n\n# कोपधाच्च ॥ ७९ ॥\n\nDesgleichen an einen vocalisch auslautenden Stamm mit vorangehendem क्.\n\nकार्गोच्छदकः कृपः, कार्गोवेष्टकः, कार्कवाकवम्, त्रैशङ्कवम्. Ausnahme zu 4, 2, 71. 73.\n\nवृजङ्घणकटजिलसेनिरढजगययफकफिञ्जज्यककटको ऽरीहण-कृशाश्वश्येकुमुदकाशतृणप्रेक्षाश्रमसखिसंकाशवलपक्षकर्णसुतंगमप्रग-दिवराहकुमुदादिभ्यः ॥ ८० ॥\n\nIn den angegebenen vier Bedeutungen werden angefügt: ⇨_शक an श्रीहगा u. s. w., ±_ईय an कशाश्व u. s. w., क an ऋष्य u. s. w., इकै an कुमुद u. s. w., इल an काश u. s. w., स an तृण u. s. w., इन् an प्रेत्ता u. s. w., र an श्रमन् u. s. w., ⇨_गय an सखि u. s. w., ±_य an संकाश u. s. w., य an बल u. s. w., ±_श्रायनै an पत्त u. s. w., ⇨_श्रायनि an कर्णै u. s. w., ⇨_इ an सुतंगम u. s. w., ⇨_य an प्रगदिन् u. s. w., ±_कै an वराह u. s. w. und ±_इकै an कुमुद u. s. w.\n\nश्रीरीहणक, काश्वैश्वैय, ऋष्यकै, कुमुदिकै, काशिल, तृणसै, प्रेत्तिन्, श्रमरे, सैश्वैय, सां-काश्यै, बल्यै, पात्तायगै, कोणीयनि, सैंतर्गमि, प्रैगट्य, वाराहकै, कौमुदिकै. Statt प्रगदि wird im Sūtra auch प्रगदिन् gelesen.\n\n# जनपदे लुप् ॥ ८१ ॥\n\nDen Namen eines Reiches erhält man durch Abwerfung jedes Suffixes, indem der Name des Volkes ohne Aenderung des Numerus und Geschlechts zugleich der Name des Reiches ist. Vgl. 1, 2, 51.\n\nपञ्चालाः, कुरवः, मत्स्याः, श्रङ्गाः, वङ्गाः, मगधाः, सुह्माः, पुण्ड्राः.\n\n# वरणादिभ्यश्च ॥ ८२ ॥\n\nAuch nach वरगा u. s. w. wird zur Bezeichnung einer Oertlichkeit das Suffix abgeworfen, ohne dass Numerus oder Geschlecht geändert würde. Vgl. 1, 2, 51.\n\nवरगानामदूरभवनं नगरं वरगाः, शङ्खी, शाल्मलयः.\n\n# शर्कराया वा ॥ ८३ ॥\n\nNach शर्करा nicht nothwendig.\n\nशर्करा, शर्करैम् nach 4, 1, 83, शर्करिकैम् nach 4, 2, 80 (da शर्करा im ersten कुमुदादि aufgeführt wird) und शर्करकैम् gleichfalls nach 4, 2, 80 (da शर्करा auch unter वराहादि erscheint).\n\nUNIVERSITÄTS-BIBLIOTHEK HEIDELBERG\n\n© Universitätsbibliothek Heidelberg http://digi.ub.uni-heidelberg.de/diglit/boehtlingk1887/0205\n\ngefördert durch Beden-Württemberg",
+      "images": [],
+      "dimensions": {
+        "dpi": 200,
+        "height": 2216,
+        "width": 1319
+      },
+      "tables": [],
+      "hyperlinks": [],
+      "header": null,
+      "footer": null,
+      "confidence_scores": null,
+      "blocks": [
+        {
+          "top_left_x": 555,
+          "top_left_y": 118,
+          "bottom_right_x": 660,
+          "bottom_right_y": 149,
+          "content": "4, 2, 83.",
+          "confidence_scores": null,
+          "type": "header"
+        },
+        {
+          "top_left_x": 1108,
+          "top_left_y": 118,
+          "bottom_right_x": 1163,
+          "bottom_right_y": 149,
+          "content": "179",
+          "confidence_scores": null,
+          "type": "header"
+        },
+        {
+          "top_left_x": 750,
+          "top_left_y": 186,
+          "bottom_right_x": 1250,
+          "bottom_right_y": 226,
+          "content": "3, 1, 1. 2. 3. 4, 1, 1. 76. 82. 83. 87.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 104,
+          "top_left_y": 226,
+          "bottom_right_x": 341,
+          "bottom_right_y": 277,
+          "content": "# रोगी ॥ ७८ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 46,
+          "top_left_y": 282,
+          "bottom_right_x": 267,
+          "bottom_right_y": 317,
+          "content": "Auch an रोगी.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 112,
+          "top_left_y": 322,
+          "bottom_right_x": 1171,
+          "bottom_right_y": 404,
+          "content": "रोगा, आज्ञाकरोना, सैहिकरोगा. Ausnahme zu 4, 2, 74. Der Nominativ wird sehr künstlich erklärt.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 107,
+          "top_left_y": 419,
+          "bottom_right_x": 417,
+          "bottom_right_y": 472,
+          "content": "# कोपधाच्च ॥ ७९ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 45,
+          "top_left_y": 477,
+          "bottom_right_x": 1168,
+          "bottom_right_y": 521,
+          "content": "Desgleichen an einen vocalisch auslautenden Stamm mit vorangehendem क्.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 139,
+          "top_left_y": 521,
+          "bottom_right_x": 1129,
+          "bottom_right_y": 566,
+          "content": "कार्गोच्छदकः कृपः, कार्गोवेष्टकः, कार्कवाकवम्, त्रैशङ्कवम्. Ausnahme zu 4, 2, 71. 73.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 42,
+          "top_left_y": 572,
+          "bottom_right_x": 1171,
+          "bottom_right_y": 774,
+          "content": "वृजङ्घणकटजिलसेनिरढजगययफकफिञ्जज्यककटको ऽरीहण-कृशाश्वश्येकुमुदकाशतृणप्रेक्षाश्रमसखिसंकाशवलपक्षकर्णसुतंगमप्रग-दिवराहकुमुदादिभ्यः ॥ ८० ॥",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 42,
+          "top_left_y": 774,
+          "bottom_right_x": 1171,
+          "bottom_right_y": 1054,
+          "content": "In den angegebenen vier Bedeutungen werden angefügt: ⇨_शक an श्रीहगा u. s. w., ±_ईय an कशाश्व u. s. w., क an ऋष्य u. s. w., इकै an कुमुद u. s. w., इल an काश u. s. w., स an तृण u. s. w., इन् an प्रेत्ता u. s. w., र an श्रमन् u. s. w., ⇨_गय an सखि u. s. w., ±_य an संकाश u. s. w., य an बल u. s. w., ±_श्रायनै an पत्त u. s. w., ⇨_श्रायनि an कर्णै u. s. w., ⇨_इ an सुतंगम u. s. w., ⇨_य an प्रगदिन् u. s. w., ±_कै an वराह u. s. w. und ±_इकै an कुमुद u. s. w.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 106,
+          "top_left_y": 1054,
+          "bottom_right_x": 1168,
+          "bottom_right_y": 1178,
+          "content": "श्रीरीहणक, काश्वैश्वैय, ऋष्यकै, कुमुदिकै, काशिल, तृणसै, प्रेत्तिन्, श्रमरे, सैश्वैय, सां-काश्यै, बल्यै, पात्तायगै, कोणीयनि, सैंतर्गमि, प्रैगट्य, वाराहकै, कौमुदिकै. Statt प्रगदि wird im Sūtra auch प्रगदिन् gelesen.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 104,
+          "top_left_y": 1187,
+          "bottom_right_x": 442,
+          "bottom_right_y": 1251,
+          "content": "# जनपदे लुप् ॥ ८१ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 42,
+          "top_left_y": 1247,
+          "bottom_right_x": 1168,
+          "bottom_right_y": 1386,
+          "content": "Den Namen eines Reiches erhält man durch Abwerfung jedes Suffixes, indem der Name des Volkes ohne Aenderung des Numerus und Geschlechts zugleich der Name des Reiches ist. Vgl. 1, 2, 51.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 141,
+          "top_left_y": 1391,
+          "bottom_right_x": 886,
+          "bottom_right_y": 1435,
+          "content": "पञ्चालाः, कुरवः, मत्स्याः, श्रङ्गाः, वङ्गाः, मगधाः, सुह्माः, पुण्ड्राः.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 104,
+          "top_left_y": 1444,
+          "bottom_right_x": 465,
+          "bottom_right_y": 1497,
+          "content": "# वरणादिभ्यश्च ॥ ८२ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 42,
+          "top_left_y": 1500,
+          "bottom_right_x": 1168,
+          "bottom_right_y": 1639,
+          "content": "Auch nach वरगा u. s. w. wird zur Bezeichnung einer Oertlichkeit das Suffix abgeworfen, ohne dass Numerus oder Geschlecht geändert würde. Vgl. 1, 2, 51.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 143,
+          "top_left_y": 1644,
+          "bottom_right_x": 709,
+          "bottom_right_y": 1686,
+          "content": "वरगानामदूरभवनं नगरं वरगाः, शङ्खी, शाल्मलयः.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 104,
+          "top_left_y": 1693,
+          "bottom_right_x": 457,
+          "bottom_right_y": 1750,
+          "content": "# शर्कराया वा ॥ ८३ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 46,
+          "top_left_y": 1757,
+          "bottom_right_x": 494,
+          "bottom_right_y": 1797,
+          "content": "Nach शर्करा nicht nothwendig.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 108,
+          "top_left_y": 1797,
+          "bottom_right_x": 1168,
+          "bottom_right_y": 1921,
+          "content": "शर्करा, शर्करैम् nach 4, 1, 83, शर्करिकैम् nach 4, 2, 80 (da शर्करा im ersten कुमुदादि aufgeführt wird) und शर्करकैम् gleichfalls nach 4, 2, 80 (da शर्करा auch unter वराहादि erscheint).",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 15,
+          "top_left_y": 2138,
+          "bottom_right_x": 128,
+          "bottom_right_y": 2203,
+          "content": "UNIVERSITÄTS-BIBLIOTHEK HEIDELBERG",
+          "confidence_scores": null,
+          "type": "footer"
+        },
+        {
+          "top_left_x": 407,
+          "top_left_y": 2176,
+          "bottom_right_x": 903,
+          "bottom_right_y": 2216,
+          "content": "© Universitätsbibliothek Heidelberg http://digi.ub.uni-heidelberg.de/diglit/boehtlingk1887/0205",
+          "confidence_scores": null,
+          "type": "footer"
+        },
+        {
+          "top_left_x": 1163,
+          "top_left_y": 2123,
+          "bottom_right_x": 1301,
+          "bottom_right_y": 2212,
+          "content": "gefördert durch Beden-Württemberg",
+          "confidence_scores": null,
+          "type": "footer"
+        }
+      ]
+    }
+  ]
+}

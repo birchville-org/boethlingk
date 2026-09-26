@@ -1,0 +1,316 @@
+{
+  "source": "data/img_cache/7_3A000000205_jpg_full_max_0_default_jpg.jpg",
+  "model": "mistral-ocr-latest",
+  "markdown": "4, 3, 168.\n\n205\n\n3, 1, 1. 2. 3. 4, 1, 1. 76. 82. 83. 87.\n\n# द्रोष्ठ ॥ १६१ ॥\n\nAuch an दु.\n\nद्रौव्यम् nach 6, 1, 213.\n\n# माने वयः ॥ १६२ ॥\n\nवय, wenn ein Maass gemeint ist.\n\nद्रवयम्.\n\n# फले लुक् ॥ १६३ ॥\n\nZur Bezeichnung der Frucht tritt kein Suffix an.\n\nश्रामलकम् ist die Frucht der श्रामलकी. Vgl. 1, 2, 49.\n\n# अष्टादिभ्यो ऽण् ॥ १६४ ॥\n\nAn प्लत्त u. s. w. jedoch ±_श्र.\n\nप्लात्तम् u. s. w.\n\n# जम्ब्वा वा ॥ १६५ ॥\n\nAn जम्बू nicht nothwendig.\n\nजाम्बवम् oder जम्बू. Vgl. 1, 2, 49.\n\n# लुप् च ॥ १६६ ॥\n\nAuch Schwund des Suffixes ohne Aenderung des Geschlechts kann bei diesem Worte erfolgen.\n\nजम्बू:. Vgl. 1, 2, 51.\n\n# हरीतक्यादिभ्यश्च ॥ १६७ ॥\n\nSo auch bei हरीतकी u. s. w.\n\nहरीतकी ist auch die Frucht der हरीतकी.\n\n# कंसीयपरशव्ययोर्यत्रज्ञौ लुक् च ॥ १६८ ॥ ॥\n\n†4, 1, 83.\n\nIn der 4, 3, 134 angegebenen Bedeutung tritt +/−य an कंसीय und +/−श्र an परशव्य, wobei die beiden Stämme ihr Suffix einbüssen.\n\nकांस्य und पारशव.\n\n॥ इति चतुर्थस्थाध्यायस्य तृतीयः पाठः ॥\n\nUNIVERSITÄTS-\nBIBLIOTHEK\nHEIDELBERG\n\n© Universitätsbibliothek Heidelberg\nhttp://digi.ub.uni-heidelberg.de/diglit/boehtlingk1887/0231\n\ngefördert durch\nBaden-Württemberg\n",
+  "usage_info": {
+    "pages_processed": 1,
+    "doc_size_bytes": 423166
+  },
+  "pages": [
+    {
+      "index": 0,
+      "markdown": "4, 3, 168.\n\n205\n\n3, 1, 1. 2. 3. 4, 1, 1. 76. 82. 83. 87.\n\n# द्रोष्ठ ॥ १६१ ॥\n\nAuch an दु.\n\nद्रौव्यम् nach 6, 1, 213.\n\n# माने वयः ॥ १६२ ॥\n\nवय, wenn ein Maass gemeint ist.\n\nद्रवयम्.\n\n# फले लुक् ॥ १६३ ॥\n\nZur Bezeichnung der Frucht tritt kein Suffix an.\n\nश्रामलकम् ist die Frucht der श्रामलकी. Vgl. 1, 2, 49.\n\n# अष्टादिभ्यो ऽण् ॥ १६४ ॥\n\nAn प्लत्त u. s. w. jedoch ±_श्र.\n\nप्लात्तम् u. s. w.\n\n# जम्ब्वा वा ॥ १६५ ॥\n\nAn जम्बू nicht nothwendig.\n\nजाम्बवम् oder जम्बू. Vgl. 1, 2, 49.\n\n# लुप् च ॥ १६६ ॥\n\nAuch Schwund des Suffixes ohne Aenderung des Geschlechts kann bei diesem Worte erfolgen.\n\nजम्बू:. Vgl. 1, 2, 51.\n\n# हरीतक्यादिभ्यश्च ॥ १६७ ॥\n\nSo auch bei हरीतकी u. s. w.\n\nहरीतकी ist auch die Frucht der हरीतकी.\n\n# कंसीयपरशव्ययोर्यत्रज्ञौ लुक् च ॥ १६८ ॥ ॥\n\n†4, 1, 83.\n\nIn der 4, 3, 134 angegebenen Bedeutung tritt +/−य an कंसीय und +/−श्र an परशव्य, wobei die beiden Stämme ihr Suffix einbüssen.\n\nकांस्य und पारशव.\n\n॥ इति चतुर्थस्थाध्यायस्य तृतीयः पाठः ॥\n\nUNIVERSITÄTS-\nBIBLIOTHEK\nHEIDELBERG\n\n© Universitätsbibliothek Heidelberg\nhttp://digi.ub.uni-heidelberg.de/diglit/boehtlingk1887/0231\n\ngefördert durch\nBaden-Württemberg",
+      "images": [],
+      "dimensions": {
+        "dpi": 200,
+        "height": 2216,
+        "width": 1319
+      },
+      "tables": [],
+      "hyperlinks": [],
+      "header": null,
+      "footer": null,
+      "confidence_scores": null,
+      "blocks": [
+        {
+          "top_left_x": 544,
+          "top_left_y": 124,
+          "bottom_right_x": 661,
+          "bottom_right_y": 155,
+          "content": "4, 3, 168.",
+          "confidence_scores": null,
+          "type": "header"
+        },
+        {
+          "top_left_x": 1099,
+          "top_left_y": 131,
+          "bottom_right_x": 1155,
+          "bottom_right_y": 162,
+          "content": "205",
+          "confidence_scores": null,
+          "type": "header"
+        },
+        {
+          "top_left_x": 737,
+          "top_left_y": 197,
+          "bottom_right_x": 1234,
+          "bottom_right_y": 242,
+          "content": "3, 1, 1. 2. 3. 4, 1, 1. 76. 82. 83. 87.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 102,
+          "top_left_y": 226,
+          "bottom_right_x": 346,
+          "bottom_right_y": 284,
+          "content": "# द्रोष्ठ ॥ १६१ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 44,
+          "top_left_y": 288,
+          "bottom_right_x": 218,
+          "bottom_right_y": 337,
+          "content": "Auch an दु.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 140,
+          "top_left_y": 342,
+          "bottom_right_x": 401,
+          "bottom_right_y": 384,
+          "content": "द्रौव्यम् nach 6, 1, 213.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 100,
+          "top_left_y": 399,
+          "bottom_right_x": 437,
+          "bottom_right_y": 461,
+          "content": "# माने वयः ॥ १६२ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 40,
+          "top_left_y": 466,
+          "bottom_right_x": 529,
+          "bottom_right_y": 506,
+          "content": "वय, wenn ein Maass gemeint ist.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 140,
+          "top_left_y": 521,
+          "bottom_right_x": 226,
+          "bottom_right_y": 563,
+          "content": "द्रवयम्.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 100,
+          "top_left_y": 579,
+          "bottom_right_x": 428,
+          "bottom_right_y": 643,
+          "content": "# फले लुक् ॥ १६३ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 38,
+          "top_left_y": 643,
+          "bottom_right_x": 788,
+          "bottom_right_y": 683,
+          "content": "Zur Bezeichnung der Frucht tritt kein Suffix an.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 136,
+          "top_left_y": 697,
+          "bottom_right_x": 786,
+          "bottom_right_y": 736,
+          "content": "श्रामलकम् ist die Frucht der श्रामलकी. Vgl. 1, 2, 49.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 98,
+          "top_left_y": 754,
+          "bottom_right_x": 524,
+          "bottom_right_y": 816,
+          "content": "# अष्टादिभ्यो ऽण् ॥ १६४ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 38,
+          "top_left_y": 819,
+          "bottom_right_x": 474,
+          "bottom_right_y": 858,
+          "content": "An प्लत्त u. s. w. jedoch ±_श्र.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 136,
+          "top_left_y": 874,
+          "bottom_right_x": 321,
+          "bottom_right_y": 912,
+          "content": "प्लात्तम् u. s. w.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 98,
+          "top_left_y": 936,
+          "bottom_right_x": 442,
+          "bottom_right_y": 987,
+          "content": "# जम्ब्वा वा ॥ १६५ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 40,
+          "top_left_y": 989,
+          "bottom_right_x": 434,
+          "bottom_right_y": 1031,
+          "content": "An जम्बू nicht nothwendig.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 136,
+          "top_left_y": 1043,
+          "bottom_right_x": 555,
+          "bottom_right_y": 1087,
+          "content": "जाम्बवम् oder जम्बू. Vgl. 1, 2, 49.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 98,
+          "top_left_y": 1105,
+          "bottom_right_x": 384,
+          "bottom_right_y": 1165,
+          "content": "# लुप् च ॥ १६६ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 36,
+          "top_left_y": 1165,
+          "bottom_right_x": 1155,
+          "bottom_right_y": 1251,
+          "content": "Auch Schwund des Suffixes ohne Aenderung des Geschlechts kann bei diesem Worte erfolgen.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 136,
+          "top_left_y": 1267,
+          "bottom_right_x": 388,
+          "bottom_right_y": 1307,
+          "content": "जम्बू:. Vgl. 1, 2, 51.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 98,
+          "top_left_y": 1324,
+          "bottom_right_x": 539,
+          "bottom_right_y": 1382,
+          "content": "# हरीतक्यादिभ्यश्च ॥ १६७ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 36,
+          "top_left_y": 1386,
+          "bottom_right_x": 457,
+          "bottom_right_y": 1424,
+          "content": "So auch bei हरीतकी u. s. w.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 133,
+          "top_left_y": 1440,
+          "bottom_right_x": 644,
+          "bottom_right_y": 1480,
+          "content": "हरीतकी ist auch die Frucht der हरीतकी.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 98,
+          "top_left_y": 1497,
+          "bottom_right_x": 809,
+          "bottom_right_y": 1568,
+          "content": "# कंसीयपरशव्ययोर्यत्रज्ञौ लुक् च ॥ १६८ ॥ ॥",
+          "confidence_scores": null,
+          "type": "title"
+        },
+        {
+          "top_left_x": 1149,
+          "top_left_y": 1519,
+          "bottom_right_x": 1275,
+          "bottom_right_y": 1559,
+          "content": "†4, 1, 83.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 33,
+          "top_left_y": 1564,
+          "bottom_right_x": 1149,
+          "bottom_right_y": 1650,
+          "content": "In der 4, 3, 134 angegebenen Bedeutung tritt +/−य an कंसीय und +/−श्र an परशव्य, wobei die beiden Stämme ihr Suffix einbüssen.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 132,
+          "top_left_y": 1661,
+          "bottom_right_x": 353,
+          "bottom_right_y": 1699,
+          "content": "कांस्य und पारशव.",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 347,
+          "top_left_y": 1763,
+          "bottom_right_x": 833,
+          "bottom_right_y": 1812,
+          "content": "॥ इति चतुर्थस्थाध्यायस्य तृतीयः पाठः ॥",
+          "confidence_scores": null,
+          "type": "text"
+        },
+        {
+          "top_left_x": 15,
+          "top_left_y": 2138,
+          "bottom_right_x": 128,
+          "bottom_right_y": 2203,
+          "content": "UNIVERSITÄTS-\nBIBLIOTHEK\nHEIDELBERG",
+          "confidence_scores": null,
+          "type": "footer"
+        },
+        {
+          "top_left_x": 407,
+          "top_left_y": 2176,
+          "bottom_right_x": 900,
+          "bottom_right_y": 2214,
+          "content": "© Universitätsbibliothek Heidelberg\nhttp://digi.ub.uni-heidelberg.de/diglit/boehtlingk1887/0231",
+          "confidence_scores": null,
+          "type": "footer"
+        },
+        {
+          "top_left_x": 1163,
+          "top_left_y": 2123,
+          "bottom_right_x": 1301,
+          "bottom_right_y": 2212,
+          "content": "gefördert durch\nBaden-Württemberg",
+          "confidence_scores": null,
+          "type": "footer"
+        }
+      ]
+    }
+  ]
+}
