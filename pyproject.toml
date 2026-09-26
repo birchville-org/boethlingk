@@ -1,0 +1,26 @@
+[project]
+name = "boethlingk"
+version = "1.0.0"
+description = "Digitization, canonical alignment, TEI-P5 edition and 1:1 Sandwich PDF of Otto von Böhtlingk's Pāṇini (Leipzig 1887)"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "lxml>=5.1.0",
+    "pymupdf>=1.24.0",
+    "mistralai>=1.0.0",
+    "tqdm>=4.66.0",
+    "urllib3>=2.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "mkdocs-material>=9.5.0",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["scripts"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

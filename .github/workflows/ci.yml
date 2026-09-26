@@ -1,0 +1,58 @@
+name: CI Validation
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'data/**'
+      - 'scripts/**'
+      - 'schemas/**'
+      - 'pyproject.toml'
+      - 'requirements.txt'
+      - '.github/workflows/ci.yml'
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  validate:
+    name: Validate TEI-P5 XML & Master Dataset
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Validate Master Dataset Integrity
+        run: |
+          python3 -c "
+          import json, sys
+          with open('data/ashtadhyayi_complete_boethlingk1887.json', encoding='utf-8') as f:
+              data = json.load(f)
+          shiva = data.get('shiva_sutras', [])
+          sutras = data.get('sutras', [])
+          print(f'Shiva Sutras: {len(shiva)}, Astadhyayi Sutras: {len(sutras)}')
+          assert len(shiva) == 14, f'Expected 14 Shiva sutras, got {len(shiva)}'
+          assert len(sutras) == 3983, f'Expected 3983 Astadhyayi sutras, got {len(sutras)}'
+          refs = [s.get('ref') for s in sutras]
+          assert len(refs) == len(set(refs)), 'Duplicate sutra refs detected!'
+          print('>>> Master Dataset integrity check: 100% PASSED (3997 total sutras) <<<')
+          "
+
+      - name: Generate TEI-P5 XML and Validate against RelaxNG Schema
+        run: |
+          python3 scripts/generate_tei_p5.py \
+            --input data/ashtadhyayi_complete_boethlingk1887.json \
+            --output data/tei/boehtlingk1887_p5.xml \
+            --schema schemas/tei_all.rng

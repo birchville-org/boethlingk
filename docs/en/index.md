@@ -27,7 +27,7 @@ This project provides end-to-end historical digitization, multimodal AI OCR (`mi
    * 50 Corrigenda entries from pages 477–478 embedded in `<back>`.
 
 3. **Searchable 1:1 Sandwich PDF:**
-   * File: `data/output/boehtlingk1887_sandwich.pdf` (278.16 MB, 478 pages)
+   * Download: [Release v1.0.0 Asset (`boehtlingk1887_sandwich.pdf`)](https://github.com/birchville-org/boethlingk/releases/download/v1.0.0/boehtlingk1887_sandwich.pdf) (278.16 MB, 478 pages)
    * Visual layer: Untouched historical facsimiles (1:1 pixel resolution).
    * Text layer: Invisible vector text layer (PDF Rendering Mode 3) with 14,267 text blocks placed at exact pixel coordinates.
    * 42 hierarchical PDF bookmarks (Śiva-Sūtras, 8 Adhyāyas, 32 Pādas, Corrigenda).

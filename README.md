@@ -21,10 +21,11 @@ Digitalisat-Vorlage: Universitätsbibliothek Heidelberg ([Bibliotheca Palatina](
   - 478 `<pb>`-Seitenumbrüche mit direkter Verknüpfung zu den IIIF-Vollbildern der UB Heidelberg.
   - 50 Corrigenda-Einträge der Seiten 477–478 in `<back>`.
 
-- **Durchsuchbares 1:1 Sandwich-PDF:**
-  - [`data/output/boehtlingk1887_sandwich.pdf`](data/output/boehtlingk1887_sandwich.pdf) (278,16 MB, 478 Seiten)
-  - Hintergrund: Verlustfreie Originalscans (1:1 Pixelauflösung).
-  - Vordergrund: Unsichtbare Vektor-Textebene (PDF Rendering Mode 3, Unicode / Arial Unicode) auf exakten Pixelkoordinaten.
+- **Durchsuchbares 1:1 Sandwich-PDF (278 MB, 478 Seiten):**
+  - 📥 **Download:** [Release v1.0.0 Asset (`boehtlingk1887_sandwich.pdf`)](https://github.com/birchville-org/boethlingk/releases/download/v1.0.0/boehtlingk1887_sandwich.pdf)
+  - *(Hinweis: Da die PDF-Datei 278 MB umfasst, ist sie im Git-Repository ignoriert und wird über das GitHub-Release bereitgestellt oder kann lokal assembliert werden).*
+  - Hintergrund: Verlustfreie Originalscans der UB Heidelberg (1:1 Pixelauflösung).
+  - Vordergrund: Unsichtbare Vektor-Textebene (PDF Rendering Mode 3, Unicode / Arial Unicode) auf 14.267 Textblöcken.
   - 42 hierarchische PDF-Bookmarks (Śiva-Sūtras, 8 Adhyāyas, 32 Pādas, Nachträge).
 
 - **Interaktiver QA-Viewer:**
@@ -32,28 +33,103 @@ Digitalisat-Vorlage: Universitätsbibliothek Heidelberg ([Bibliotheca Palatina](
 
 ---
 
-## 2. Pipeline-Skripte (`scripts/`)
+## 2. Schnelleinstieg: Nur die Daten nutzen
 
-| Skript | Beschreibung |
-| :--- | :--- |
-| [`scripts/mistral_ocr.py`](scripts/mistral_ocr.py) | Client für die Mistral OCR API (`mistral-ocr-latest`). |
-| [`scripts/batch_ocr_runner.py`](scripts/batch_ocr_runner.py) | Batch-Runner für OCR-Erfassung über mehrere Seiten. |
-| [`scripts/align_mistral_sutras.py`](scripts/align_mistral_sutras.py) | Kanonischer Abgleich der OCR-Ergebnisse gegen die Aṣṭādhyāyī-Referenzdatenbank. |
-| [`scripts/generate_tei_p5.py`](scripts/generate_tei_p5.py) | Erzeugt die TEI-P5 XML-Edition und validiert sie gegen RelaxNG. |
-| [`scripts/build_sandwich_pdf.py`](scripts/build_sandwich_pdf.py) | Assembliert das 1:1 Sandwich-PDF aus Faksimiles und OCR-Koordinatenblöcken. |
+Für wissenschaftliche Analysen und Weiterverarbeitung sind die kuratierten Datensätze direkt ohne Pipeline-Ausführung nutzbar:
+
+```python
+import json
+
+# Master-Datensatz einlesen (UTF-8)
+with open("data/ashtadhyayi_complete_boethlingk1887.json", encoding="utf-8") as f:
+    data = json.load(f)
+
+shiva_sutras = data["shiva_sutras"]  # 14 Śiva-Sūtras
+sutras = data["sutras"]              # 3.983 Aṣṭādhyāyī-Sūtras
+print(f"Geladene Sūtras gesamt: {len(shiva_sutras) + len(sutras)}")  # 3997
+
+# Erstes Aṣṭādhyāyī-Sūtra (1.1.1)
+first_sutra = sutras[0]
+print(f"Referenz:   {first_sutra['ref']}")
+print(f"Devanāgarī: {first_sutra['canonical_devanagari']}")
+print(f"IAST:       {first_sutra['canonical_iast']}")
+print(f"Deutsch:    {first_sutra['translation']}")
+print(f"Buchseite:  {first_sutra['page']}")
+```
 
 ---
 
-## 3. Ausführung
+## 3. Installation & Voraussetzungen
+
+- **Python:** `>= 3.12`
+- **Paketmanager:** `uv` (empfohlen) oder Standard-`pip`
 
 ```bash
-# TEI-P5 XML generieren und validieren
-uv run --with lxml python3 scripts/generate_tei_p5.py \
+# Mit uv (automatische venv-Verwaltung):
+uv sync
+
+# Alternativ mit pip:
+pip install -r requirements.txt
+```
+
+---
+
+## 4. Pipeline: Von den Scans zum Ergebnis
+
+Die vollständige Digitalisierungsstrecke gliedert sich in fünf aufeinander aufbauende Stufen:
+
+```
+[IIIF UB Heidelberg] ──> scripts/download_scans.py ──> [data/img_cache/]
+                                                              │
+[Mistral OCR API]    ──> scripts/batch_ocr_runner.py ──> [data/mistral/] (im Repo enthalten)
+                                                              │
+[Referenzdaten]      ──> scripts/align_mistral_sutras.py ──> [data/ashtadhyayi_complete_boethlingk1887.json]
+                                                              │
+                     ┌────────────────────────────────────────┴────────────────────────────────────────┐
+                     ▼                                                                                 ▼
+     scripts/generate_tei_p5.py                                                        scripts/build_sandwich_pdf.py
+                     │                                                                                 │
+                     ▼                                                                                 ▼
+      [data/tei/boehtlingk1887_p5.xml]                                               [data/output/boehtlingk1887_sandwich.pdf]
+```
+
+### Schritt 1: Original-Scans herunterladen (IIIF)
+Lädt die 478 Vollauflösungs-Faksimiles der UB Heidelberg in den lokalen Cache `data/img_cache/`:
+
+```bash
+python3 scripts/download_scans.py --start 1 --end 478 --concurrency 4
+```
+
+### Schritt 2: OCR-Extraktion (Optional)
+> ℹ️ **Dieser Schritt ist optional!** Alle 478 OCR-Ergebnisse (JSON mit Bounding-Boxen und Markdown) sind bereits vollständig in [`data/mistral/`](data/mistral/) im Repository hinterlegt. Ein API-Key wird nur benötigt, wenn die OCR erneut über Mistral AI generiert werden soll.
+
+```bash
+# Nur nötig bei Neu-Generierung:
+export MISTRAL_API_KEY="ihr_mistral_api_key"
+python3 scripts/batch_ocr_runner.py 1 478
+```
+
+### Schritt 3: Kanonisches Alignment & Konsolidierung
+Gleicht die OCR-Texte gegen die kanonische Sūtra-Referenzdatenbank ([`data/sutras.json`](data/sutras.json) und [`data/shiva_sutras.json`](data/shiva_sutras.json)) ab:
+
+```bash
+python3 scripts/align_mistral_sutras.py
+```
+
+### Schritt 4: TEI-P5 XML generieren und gegen RelaxNG validieren
+Erstellt die TEI-P5-XML-Edition und validiert das Dokument automatisch gegen das TEI All RelaxNG Schema ([`schemas/tei_all.rng`](schemas/tei_all.rng)):
+
+```bash
+python3 scripts/generate_tei_p5.py \
   --input data/ashtadhyayi_complete_boethlingk1887.json \
   --output data/tei/boehtlingk1887_p5.xml \
   --schema schemas/tei_all.rng
+```
 
-# 1:1 Sandwich-PDF kompilieren
+### Schritt 5: 1:1 Sandwich-PDF kompilieren
+Kombiniert die Scans aus `data/img_cache/` mit den Bounding-Boxen aus `data/mistral/` zu einem durchsuchbaren Vektor-PDF:
+
+```bash
 python3 scripts/build_sandwich_pdf.py \
   --img-dir data/img_cache \
   --mistral-dir data/mistral \
@@ -63,14 +139,20 @@ python3 scripts/build_sandwich_pdf.py \
 
 ---
 
-## 4. Dokumentation & Wiki
+## 5. Externe Quellen & Lizenzen
 
-Die ausführliche Dokumentation ist zweisprachig (Deutsch / Englisch) verfügbar:
+- **Digitalisat & Primärquelle:** Otto von Böhtlingk, *Pâṇini's Grammatik*, 2. Auflage, Leipzig: Verlag von H. Haessel 1887. Gemeinfrei (Public Domain).
+- **Faksimile-Vorlagen:** Universitätsbibliothek Heidelberg ([Bibliotheca Palatina](https://digi.ub.uni-heidelberg.de/diglit/boehtlingk1887)).
+- **Englische Vergleichsausgabe ([`extern/`](extern/)):** Srisa Chandra Vasu, *The Ashṭādhyāyī of Pāṇini*, Allahabad: The Panini Office 1891 (Bände I–VIII). Gemeinfrei (Public Domain).
+- **Eigener Code & TEI-Encoding:** Lizenziert unter der [MIT-Lizenz](LICENSE).
+
+---
+
+## 6. Dokumentation & Wiki
+
 - **Online-Dokumentation (GitHub Pages):** [birchville-org.github.io/boethlingk](https://birchville-org.github.io/boethlingk/)
+  - Die Dateien unter [`docs/`](docs/) bilden den Quellbestand für MkDocs Material und die Web-Dokumentation.
 - **GitHub Wiki:** [github.com/birchville-org/boethlingk/wiki](https://github.com/birchville-org/boethlingk/wiki)
+  - Der Ordner [`wiki/`](wiki/) dient als lokaler Spiegel für das GitHub-Wiki-Repository.
   - 🇩🇪 [Startseite (DE)](https://github.com/birchville-org/boethlingk/wiki/Home) | [Wissenschaftliche Fallstudie (DE)](https://github.com/birchville-org/boethlingk/wiki/Case-Study-Boethlingk-Panini-1887)
   - 🇬🇧 [Home (EN)](https://github.com/birchville-org/boethlingk/wiki/Home-en) | [Scholarly Case Study (EN)](https://github.com/birchville-org/boethlingk/wiki/Case-Study-Boethlingk-Panini-1887-en)
-- **Lokale Dokumentation:**
-  - 🇩🇪 [docs/de/](docs/de/) (Fallstudie, Datenarchitektur, Pipeline-Entscheidungen, Konventionen)
-  - 🇬🇧 [docs/en/](docs/en/) (Case Study, Data Architecture, Pipeline Decisions, Conventions)
-

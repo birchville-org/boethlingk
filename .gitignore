@@ -38,6 +38,7 @@ data/kraken/
 *.log
 *.pdf
 *.txt
+!requirements.txt
 data/*.png
 data/*.jpg
 data/*.hocr
