@@ -1,5 +1,7 @@
 # Welcome to the Böhtlingk Pāṇini Project Wiki
 
+> ℹ️ **Case Study:** The `boethlingk` project is a comprehensive reference case study for the book digitization pipeline **[AlexandriaSandwich](https://github.com/birchville-org/AlexandriaSandwich)**. It demonstrates OCR processing of complex multi-script typography, canonical alignment, and the production of 1:1 sandwich PDFs and TEI-P5 XML editions.
+
 This wiki documents the scholarly preservation, complete AI OCR digitization, canonical consolidation, and digital edition of **Otto von Böhtlingk's Pâṇini's Grammatik (Leipzig 1887)** based on facsimiles from Heidelberg University Library.
 
 ---

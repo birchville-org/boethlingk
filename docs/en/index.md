@@ -7,6 +7,8 @@
 ![Sandwich PDF](https://img.shields.io/badge/PDF-1%3A1%20Sandwich-orange)
 ![Alignment](https://img.shields.io/badge/Sūtras-3%2C997%20(100%25)-brightgreen)
 
+> ℹ️ **Case Study:** This project serves as an end-to-end reference case study for the open-source book digitization pipeline **[AlexandriaSandwich](https://github.com/birchville-org/AlexandriaSandwich)**.
+
 This project provides end-to-end historical digitization, multimodal AI OCR (`mistral-ocr-latest`), seamless canonical alignment against the Aṣṭādhyāyī Sūtrapāṭha, and standards-compliant digital edition artifacts for Otto von Böhtlingk's landmark 1887 edition, based on digital facsimiles from Heidelberg University Library.
 
 ---

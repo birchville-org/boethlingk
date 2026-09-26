@@ -1,6 +1,8 @@
 # Fallstudie & Verfahrensdokumentation: Pāṇinis Grammatik (Otto von Böhtlingk, 1887)
 
 > **Vollständige historische Digitalisierung, kanonischer Text-Abgleich und Erzeugung von durchsuchbarem Sandwich-Material für 3.997 Sūtras auf 478 Buchseiten.**
+>
+> *Dieses Projekt ist eine Referenz-Fallstudie (Case Study) zur Buch-Digitalisierungs-Pipeline [AlexandriaSandwich](https://github.com/birchville-org/AlexandriaSandwich).*
 
 ---
 

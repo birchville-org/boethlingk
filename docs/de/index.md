@@ -7,6 +7,8 @@
 ![Sandwich PDF](https://img.shields.io/badge/PDF-1%3A1%20Sandwich-orange)
 ![Alignment](https://img.shields.io/badge/Sūtras-3.997%20(100%25)-brightgreen)
 
+> ℹ️ **Case Study:** Dieses Projekt ist eine Referenz-Fallstudie zur Open-Source-Digitalisierungs-Pipeline **[AlexandriaSandwich](https://github.com/birchville-org/AlexandriaSandwich)**.
+
 Dieses Projekt umfasst die vollständige historische Erschließung, multimodale KI-Vollerfassung (Mistral OCR), das lückenlose kanonische Alignment gegen den Aṣṭādhyāyī Sūtrapāṭha sowie die Erstellung standardkonformer digitaler Editionsartefakte für Otto von Böhtlingks maßgebliche Pāṇini-Ausgabe von 1887 auf Basis der Digitalisate der Universitätsbibliothek Heidelberg.
 
 ---

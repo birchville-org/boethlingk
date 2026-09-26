@@ -4,6 +4,8 @@ Wissenschaftliche Digitalisierung, kanonisches Alignment, TEI-P5-Edition und 1:1
 
 Digitalisat-Vorlage: Universitätsbibliothek Heidelberg ([Bibliotheca Palatina](https://digi.ub.uni-heidelberg.de/diglit/boehtlingk1887)).
 
+> ℹ️ **Hinweis:** Das Projekt `boethlingk` ist eine reale, vollständige Fallstudie (*Case Study*) zur Buch-Digitalisierungs-Pipeline [AlexandriaSandwich](https://github.com/birchville-org/AlexandriaSandwich). Es demonstriert die automatisierte OCR-Verarbeitung historischer Dreischriftigkeit (Devanāgarī, Antiqua, IAST), kanonisches Alignment gegen Referenzdatenbanken sowie die Assemblierung von 1:1 Sandwich-PDFs und TEI-P5-XML-Editionen.
+
 ---
 
 ## 1. Ergebnisse & Artefakte

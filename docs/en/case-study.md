@@ -1,6 +1,8 @@
 # Case Study & Pipeline Documentation: Pāṇini's Grammar (Otto von Böhtlingk, 1887)
 
 > **Complete historical digitization, canonical alignment, and generation of searchable sandwich material for 3,997 Sūtras across 478 book pages.**
+>
+> *This project serves as a reference case study for the book digitization pipeline [AlexandriaSandwich](https://github.com/birchville-org/AlexandriaSandwich).*
 
 ---
 
