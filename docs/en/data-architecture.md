@@ -17,7 +17,6 @@ boethlingk/
 │   ├── de/                                      German documentation
 │   └── en/                                      English documentation
 │
-├── extern/                                      Comparative reference editions (Books I–VIII)
 ├── schemas/                                     RelaxNG Schema (tei_all.rng)
 ├── scripts/                                     Pipeline scripts (OCR, Alignment, TEI, PDF)
 ├── viewer.html                                  Standalone QA Viewer (Payer Standard)

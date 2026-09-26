@@ -143,7 +143,7 @@ python3 scripts/build_sandwich_pdf.py \
 
 - **Digitalisat & Primärquelle:** Otto von Böhtlingk, *Pâṇini's Grammatik*, 2. Auflage, Leipzig: Verlag von H. Haessel 1887. Gemeinfrei (Public Domain).
 - **Faksimile-Vorlagen:** Universitätsbibliothek Heidelberg ([Bibliotheca Palatina](https://digi.ub.uni-heidelberg.de/diglit/boehtlingk1887)).
-- **Englische Vergleichsausgabe ([`extern/`](extern/)):** Srisa Chandra Vasu, *The Ashṭādhyāyī of Pāṇini*, Allahabad: The Panini Office 1891 (Bände I–VIII). Gemeinfrei (Public Domain).
+- **Englische Vergleichsausgabe (historische Referenz):** Srisa Chandra Vasu, *The Ashṭādhyāyī of Pāṇini*, Allahabad: The Panini Office 1891 (Bände I–VIII). Gemeinfrei (Public Domain).
 - **Eigener Code & TEI-Encoding:** Lizenziert unter der [MIT-Lizenz](LICENSE).
 
 ---
