@@ -99,7 +99,7 @@ Alle 8 Adhyāyas und die einleitenden Śiva-Sūtras wurden 1:1 gegen die kanonis
 
 ## 5. Das Sandwich-PDF-Verfahren in AlexandriaSandwich
 
-Das fertige Sandwich-PDF wurde über das Skript [scripts/build_sandwich_pdf.py](scripts/build_sandwich_pdf.py) assembliert:
+Das fertige Sandwich-PDF wurde über das Skript [`scripts/build_sandwich_pdf.py`](https://github.com/marcodem/boethlingk/blob/main/scripts/build_sandwich_pdf.py) assembliert:
 * **Zieldatei:** `data/output/boehtlingk1887_sandwich.pdf` (278,16 MB, 478 Seiten)
 * **Visuelle Ebene (Hintergrund):** Die 478 hochauflösenden Primärscans der UB Heidelberg werden verlustfrei eingebunden (1:1 Pixelauflösung).
 * **Unsichtbare Textebene (Vordergrund):** Mittels PDF Text Rendering Mode 3 (*Neither fill nor stroke text*) und Unicode-Font (*Arial Unicode* / *Identity-H*) wurden 14.267 Textblöcke auf ihren exakten Pixelkoordinaten platziert.
@@ -119,7 +119,7 @@ Für die Langzeitarchivierung und Interoperabilität wurde die kanonisch geprüf
 
 ## 7. QA-Viewer (Payer Global Web Editor Standard)
 
-Für die redaktionelle Nachprüfung und dauerhafte Nutzung wurde [viewer.html](viewer.html) implementiert:
+Für die redaktionelle Nachprüfung und dauerhafte Nutzung wurde [`viewer.html`](https://github.com/marcodem/boethlingk/blob/main/viewer.html) implementiert:
 * **Split-Pane:** Links der hochauflösende Originalscan mit flüssigem Zoom & Pan (Drag & Drop mit der Maus); rechts der Sūtra-Editor.
 * **Snippet-Toolbar:** Direkte Einfügemöglichkeit für Dandas (`॥`, `।`, `ऽ`, `°`), IAST-Diakritika und philologische Abkürzungen (`∠±`, `∠_`, `v. l.`, `Kāç.`, `RV.`).
 * **Silent Auto-Repair on Save:** Beim Speichern (`⌘S`) werden Pipes (`||`) stumm zu Dandas (`॥`) gewandelt, doppelte Leerzeichen normalisiert und Störzeichen entfernt; visueller Status über Farbwechsel (Gelb = Auto-Repair, Grün = Gespeichert).

@@ -1,0 +1,63 @@
+site_name: Pāṇini's Grammatik (Böhtlingk 1887)
+site_url: https://marcodem.github.io/boethlingk/
+site_author: Marco Demarmels
+site_description: Wissenschaftliche Digitalisierung, kanonisches Alignment, TEI-P5-Edition und 1:1 Sandwich-PDF (Otto von Böhtlingk, 1887).
+repo_url: https://github.com/marcodem/boethlingk
+repo_name: marcodem/boethlingk
+
+theme:
+  name: material
+  language: de
+  palette:
+    - scheme: default
+      primary: teal
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Wechsel zu dunklem Modus
+    - scheme: slate
+      primary: teal
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Wechsel zu hellem Modus
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+plugins:
+  - search
+  - i18n:
+      docs_structure: folder
+      languages:
+        - locale: de
+          name: Deutsch
+          build: true
+          default: true
+        - locale: en
+          name: English
+          build: true
+
+nav:
+  - Startseite: index.md
+  - Fallstudie: case-study.md
+  - Datenarchitektur: data-architecture.md
+  - Pipeline-Entscheidungen: pipeline-decisions.md
+  - Konventionen: conventions.md
+  - Wiki-Übersicht: wiki-home.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - tables
+  - attr_list

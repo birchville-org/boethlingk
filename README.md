@@ -61,7 +61,14 @@ python3 scripts/build_sandwich_pdf.py \
 
 ---
 
-## 4. Dokumentation
+## 4. Dokumentation & Wiki
 
-Die ausführliche wissenschaftliche Fallstudie und Verfahrensdokumentation befindet sich unter:
-- [docs/Case-Study-Boethlingk-Panini-1887.md](docs/Case-Study-Boethlingk-Panini-1887.md)
+Die ausführliche Dokumentation ist zweisprachig (Deutsch / Englisch) verfügbar:
+- **Online-Dokumentation (GitHub Pages):** [marcodem.github.io/boethlingk](https://marcodem.github.io/boethlingk/)
+- **GitHub Wiki:** [github.com/marcodem/boethlingk/wiki](https://github.com/marcodem/boethlingk/wiki)
+  - 🇩🇪 [Startseite (DE)](https://github.com/marcodem/boethlingk/wiki/Home) | [Wissenschaftliche Fallstudie (DE)](https://github.com/marcodem/boethlingk/wiki/Case-Study-Boethlingk-Panini-1887)
+  - 🇬🇧 [Home (EN)](https://github.com/marcodem/boethlingk/wiki/Home-en) | [Scholarly Case Study (EN)](https://github.com/marcodem/boethlingk/wiki/Case-Study-Boethlingk-Panini-1887-en)
+- **Lokale Dokumentation:**
+  - 🇩🇪 [docs/de/](docs/de/) (Fallstudie, Datenarchitektur, Pipeline-Entscheidungen, Konventionen)
+  - 🇬🇧 [docs/en/](docs/en/) (Case Study, Data Architecture, Pipeline Decisions, Conventions)
+
