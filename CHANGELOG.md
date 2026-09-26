@@ -2,6 +2,28 @@
 
 Alle wesentlichen Änderungen und Meilensteine dieses Projekts werden in dieser Datei dokumentiert.
 
+## [1.1.0] - 2026-09-26
+
+### Added
+* **Automatisiertes Download-Skript für Faksimiles:**
+  * [`scripts/download_scans.py`](scripts/download_scans.py) lädt die 478 hochauflösenden IIIF-Originalscans der UB Heidelberg automatisiert und parallelisiert nach `data/img_cache/`.
+* **Standardisierte Abhängigkeits- und Paketverwaltung:**
+  * `pyproject.toml` (PEP 621), `requirements.txt` und `uv.lock` zur deklarativen Spezifikation der Mindestanforderungen (Python >= 3.12, `lxml`, `pymupdf`, `mistralai`, `tqdm`).
+* **Automatisierte CI-Validierung (`.github/workflows/ci.yml`):**
+  * Kontinuierliche Validierung bei Pushes und PRs: Prüft die Vollständigkeit des Master-Datensatzes (3.997 Sūtras) sowie die 100%ige Konformität der generierten TEI-P5 XML-Edition gegen das offizielle RelaxNG-Schema (`schemas/tei_all.rng`).
+* **Schnelleinstieg für Forschende:**
+  * Kurzanleitung im README zum direkten Einlesen und Abfragen des strukturierten Master-Datensatzes in Python ohne Pipeline-Lauf.
+
+### Changed & Improved
+* **Asset-Links & Download:**
+  * Korrektur aller Dokumentations- und Wiki-Links für das 1:1 Sandwich-PDF auf das offizielle GitHub-Release-Asset (278 MB).
+* **Vollständige 5-Stufen-Pipeline-Dokumentation:**
+  * Durchgängige Dokumentation der Befehlsfolge ("Von den Scans zum Ergebnis") in `README.md`.
+* **Klarstellung zu API-Schlüsseln:**
+  * `.env.example` und Dokumentation heben hervor, dass der Mistral-API-Schlüssel nur für Neu-OCR nötig ist, während fertige OCR-Ergebnisse bereits in `data/mistral/` beiliegen.
+* **Quellen- und Lizenztransparenz:**
+  * Expliziter Quellennachweis für Srisa Chandra Vasus gemeinfreie Ausgabe (1891) im Verzeichnis `extern/` in `LICENSE` und `README.md`.
+
 ## [1.0.0] - 2026-09-26
 
 ### Added

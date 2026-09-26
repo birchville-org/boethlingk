@@ -27,7 +27,7 @@ Dieses Projekt umfasst die vollständige historische Erschließung, multimodale 
    * 50 Corrigenda-Einträge der Seiten 477–478 in `<back>`.
 
 3. **Durchsuchbares 1:1 Sandwich-PDF:**
-   * Download: [Release v1.0.0 Asset (`boehtlingk1887_sandwich.pdf`)](https://github.com/birchville-org/boethlingk/releases/download/v1.0.0/boehtlingk1887_sandwich.pdf) (278,16 MB, 478 Seiten)
+   * Download: [Release Asset (`boehtlingk1887_sandwich.pdf`)](https://github.com/birchville-org/boethlingk/releases/latest/download/boehtlingk1887_sandwich.pdf) (278,16 MB, 478 Seiten)
    * Visuell: Unverändertes Originalscan-Faksimile (1:1 Pixelauflösung).
    * Textebene: Unsichtbare Vektor-Textebene (PDF Rendering Mode 3) mit 14.267 Textblöcken auf exakten Pixelkoordinaten.
    * 42 hierarchische PDF-Bookmarks (Śiva-Sūtras, 8 Adhyāyas, 32 Pādas, Nachträge).

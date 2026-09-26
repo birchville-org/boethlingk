@@ -22,7 +22,7 @@ Digitalisat-Vorlage: Universitätsbibliothek Heidelberg ([Bibliotheca Palatina](
   - 50 Corrigenda-Einträge der Seiten 477–478 in `<back>`.
 
 - **Durchsuchbares 1:1 Sandwich-PDF (278 MB, 478 Seiten):**
-  - 📥 **Download:** [Release v1.0.0 Asset (`boehtlingk1887_sandwich.pdf`)](https://github.com/birchville-org/boethlingk/releases/download/v1.0.0/boehtlingk1887_sandwich.pdf)
+  - 📥 **Download:** [Release Asset (`boehtlingk1887_sandwich.pdf`)](https://github.com/birchville-org/boethlingk/releases/latest/download/boehtlingk1887_sandwich.pdf)
   - *(Hinweis: Da die PDF-Datei 278 MB umfasst, ist sie im Git-Repository ignoriert und wird über das GitHub-Release bereitgestellt oder kann lokal assembliert werden).*
   - Hintergrund: Verlustfreie Originalscans der UB Heidelberg (1:1 Pixelauflösung).
   - Vordergrund: Unsichtbare Vektor-Textebene (PDF Rendering Mode 3, Unicode / Arial Unicode) auf 14.267 Textblöcken.
