@@ -26,9 +26,9 @@ The comprehensive documentation covers:
 
 | Artifact | Repository Path | Description |
 | :--- | :--- | :--- |
-| **TEI-P5 XML** | [`data/tei/boehtlingk1887_p5.xml`](https://github.com/marcodem/boethlingk/blob/main/data/tei/boehtlingk1887_p5.xml) | Schema-valid archival preservation edition |
+| **TEI-P5 XML** | [`data/tei/boehtlingk1887_p5.xml`](https://github.com/birchville-org/boethlingk/blob/main/data/tei/boehtlingk1887_p5.xml) | Schema-valid archival preservation edition |
 | **Sandwich PDF** | `data/output/boehtlingk1887_sandwich.pdf` | Searchable 1:1 Sandwich PDF (278 MB, 478 pages) |
-| **Master Dataset** | [`data/ashtadhyayi_complete_boethlingk1887.json`](https://github.com/marcodem/boethlingk/blob/main/data/ashtadhyayi_complete_boethlingk1887.json) | Structured JSON dataset covering all 3,997 Sūtras |
-| **QA Viewer** | [`viewer.html`](https://github.com/marcodem/boethlingk/blob/main/viewer.html) | Standalone split-pane editor conforming to Payer Standard |
-| **Code Repository** | [marcodem/boethlingk](https://github.com/marcodem/boethlingk) | Complete pipeline scripts and documentation |
-| **Online Docs** | [marcodem.github.io/boethlingk](https://marcodem.github.io/boethlingk/) | Multilingual documentation (Material for MkDocs) |
+| **Master Dataset** | [`data/ashtadhyayi_complete_boethlingk1887.json`](https://github.com/birchville-org/boethlingk/blob/main/data/ashtadhyayi_complete_boethlingk1887.json) | Structured JSON dataset covering all 3,997 Sūtras |
+| **QA Viewer** | [`viewer.html`](https://github.com/birchville-org/boethlingk/blob/main/viewer.html) | Standalone split-pane editor conforming to Payer Standard |
+| **Code Repository** | [birchville-org/boethlingk](https://github.com/birchville-org/boethlingk) | Complete pipeline scripts and documentation |
+| **Online Docs** | [birchville-org.github.io/boethlingk](https://birchville-org.github.io/boethlingk/) | Multilingual documentation (Material for MkDocs) |

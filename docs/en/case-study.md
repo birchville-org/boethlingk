@@ -101,7 +101,7 @@ All 8 Adhyāyas and the introductory Śiva-Sūtras were validated 1:1 against th
 
 ## 5. Sandwich PDF Assembly in AlexandriaSandwich
 
-The complete sandwich PDF was compiled using [`scripts/build_sandwich_pdf.py`](https://github.com/marcodem/boethlingk/blob/main/scripts/build_sandwich_pdf.py):
+The complete sandwich PDF was compiled using [`scripts/build_sandwich_pdf.py`](https://github.com/birchville-org/boethlingk/blob/main/scripts/build_sandwich_pdf.py):
 * **Target File:** `data/output/boehtlingk1887_sandwich.pdf` (278.16 MB, 478 pages)
 * **Visual Layer (Background):** 478 high-resolution primary scans from Heidelberg University Library embedded losslessly (1:1 pixel resolution).
 * **Invisible Text Layer (Foreground):** PDF Text Rendering Mode 3 (*Neither fill nor stroke text*) with Unicode font mapping (*Arial Unicode* / *Identity-H*) places 14,267 text blocks at their exact bounding-box coordinates.
@@ -121,7 +121,7 @@ For archival preservation and digital humanities interoperability, a canonical X
 
 ## 7. QA Viewer (Payer Global Web Editor Standard)
 
-For editorial proofing and local maintenance, [`viewer.html`](https://github.com/marcodem/boethlingk/blob/main/viewer.html) was implemented:
+For editorial proofing and local maintenance, [`viewer.html`](https://github.com/birchville-org/boethlingk/blob/main/viewer.html) was implemented:
 * **Split-Pane:** Left pane displays high-resolution facsimiles with smooth zoom/pan; right pane provides the Sūtra editor.
 * **Snippet Toolbar:** Quick insertion for Dandas (`॥`, `।`, `ऽ`, `°`), IAST diacritics, and scholarly abbreviations (`∠±`, `∠_`, `v. l.`, `Kāç.`, `RV.`).
 * **Silent Auto-Repair on Save:** On save (`⌘S`), pipes (`||`) silently convert to Dandas (`॥`), double whitespace normalizes, and stray symbols purge without intrusive alert modals (visual badge feedback: yellow = auto-repair, green = saved).

@@ -1,9 +1,9 @@
 site_name: Pāṇini's Grammatik (Böhtlingk 1887)
-site_url: https://marcodem.github.io/boethlingk/
+site_url: https://birchville-org.github.io/boethlingk/
 site_author: Marco Demarmels
 site_description: Wissenschaftliche Digitalisierung, kanonisches Alignment, TEI-P5-Edition und 1:1 Sandwich-PDF (Otto von Böhtlingk, 1887).
-repo_url: https://github.com/marcodem/boethlingk
-repo_name: marcodem/boethlingk
+repo_url: https://github.com/birchville-org/boethlingk
+repo_name: birchville-org/boethlingk
 
 theme:
   name: material

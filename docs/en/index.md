@@ -16,12 +16,12 @@ This project provides end-to-end historical digitization, multimodal AI OCR (`mi
 ## ✨ Project Outcomes & Core Artifacts
 
 1. **Canonically Validated Master Dataset (100.0%):**
-   * File: [`data/ashtadhyayi_complete_boethlingk1887.json`](https://github.com/marcodem/boethlingk/blob/main/data/ashtadhyayi_complete_boethlingk1887.json) (2.83 MB)
+   * File: [`data/ashtadhyayi_complete_boethlingk1887.json`](https://github.com/birchville-org/boethlingk/blob/main/data/ashtadhyayi_complete_boethlingk1887.json) (2.83 MB)
    * 3,997 complete Sūtras (14 Śiva-Sūtras + 3,983 Aṣṭādhyāyī-Sūtras, 0 duplicates, 0 gaps).
    * Includes Devanāgarī, academic IAST transliteration, German translation, and philological commentary.
 
 2. **Schema-Valid TEI-P5 XML Edition:**
-   * File: [`data/tei/boehtlingk1887_p5.xml`](https://github.com/marcodem/boethlingk/blob/main/data/tei/boehtlingk1887_p5.xml) (2.90 MB)
+   * File: [`data/tei/boehtlingk1887_p5.xml`](https://github.com/birchville-org/boethlingk/blob/main/data/tei/boehtlingk1887_p5.xml) (2.90 MB)
    * 100% valid against the official TEI All RelaxNG schema (`schemas/tei_all.rng`).
    * 478 `<pb>` page break elements directly linked to Heidelberg University Library IIIF image endpoints.
    * 50 Corrigenda entries from pages 477–478 embedded in `<back>`.
@@ -33,7 +33,7 @@ This project provides end-to-end historical digitization, multimodal AI OCR (`mi
    * 42 hierarchical PDF bookmarks (Śiva-Sūtras, 8 Adhyāyas, 32 Pādas, Corrigenda).
 
 4. **Standalone QA Viewer:**
-   * File: [`viewer.html`](https://github.com/marcodem/boethlingk/blob/main/viewer.html)
+   * File: [`viewer.html`](https://github.com/birchville-org/boethlingk/blob/main/viewer.html)
    * Payer-standard split-pane editor featuring facsimile zoom/pan, snippet toolbar, and local silent auto-repair on save.
 
 ---

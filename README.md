@@ -66,10 +66,10 @@ python3 scripts/build_sandwich_pdf.py \
 ## 4. Dokumentation & Wiki
 
 Die ausführliche Dokumentation ist zweisprachig (Deutsch / Englisch) verfügbar:
-- **Online-Dokumentation (GitHub Pages):** [marcodem.github.io/boethlingk](https://marcodem.github.io/boethlingk/)
-- **GitHub Wiki:** [github.com/marcodem/boethlingk/wiki](https://github.com/marcodem/boethlingk/wiki)
-  - 🇩🇪 [Startseite (DE)](https://github.com/marcodem/boethlingk/wiki/Home) | [Wissenschaftliche Fallstudie (DE)](https://github.com/marcodem/boethlingk/wiki/Case-Study-Boethlingk-Panini-1887)
-  - 🇬🇧 [Home (EN)](https://github.com/marcodem/boethlingk/wiki/Home-en) | [Scholarly Case Study (EN)](https://github.com/marcodem/boethlingk/wiki/Case-Study-Boethlingk-Panini-1887-en)
+- **Online-Dokumentation (GitHub Pages):** [birchville-org.github.io/boethlingk](https://birchville-org.github.io/boethlingk/)
+- **GitHub Wiki:** [github.com/birchville-org/boethlingk/wiki](https://github.com/birchville-org/boethlingk/wiki)
+  - 🇩🇪 [Startseite (DE)](https://github.com/birchville-org/boethlingk/wiki/Home) | [Wissenschaftliche Fallstudie (DE)](https://github.com/birchville-org/boethlingk/wiki/Case-Study-Boethlingk-Panini-1887)
+  - 🇬🇧 [Home (EN)](https://github.com/birchville-org/boethlingk/wiki/Home-en) | [Scholarly Case Study (EN)](https://github.com/birchville-org/boethlingk/wiki/Case-Study-Boethlingk-Panini-1887-en)
 - **Lokale Dokumentation:**
   - 🇩🇪 [docs/de/](docs/de/) (Fallstudie, Datenarchitektur, Pipeline-Entscheidungen, Konventionen)
   - 🇬🇧 [docs/en/](docs/en/) (Case Study, Data Architecture, Pipeline Decisions, Conventions)

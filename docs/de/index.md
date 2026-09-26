@@ -16,12 +16,12 @@ Dieses Projekt umfasst die vollständige historische Erschließung, multimodale 
 ## ✨ Projektergebnisse & Kernartefakte
 
 1. **Kanonisch validierter Master-Datensatz (100,0 %):**
-   * Datei: [`data/ashtadhyayi_complete_boethlingk1887.json`](https://github.com/marcodem/boethlingk/blob/main/data/ashtadhyayi_complete_boethlingk1887.json) (2,83 MB)
+   * Datei: [`data/ashtadhyayi_complete_boethlingk1887.json`](https://github.com/birchville-org/boethlingk/blob/main/data/ashtadhyayi_complete_boethlingk1887.json) (2,83 MB)
    * 3.997 Sūtras lückenlos (14 Śiva-Sūtras + 3.983 Aṣṭādhyāyī-Sūtras, 0 Duplikate, 0 Fehlstellen).
    * Enthält Devanāgarī, wissenschaftliche IAST-Transliteration, deutsche Übersetzung und fortlaufenden Kommentar.
 
 2. **Schema-valide TEI-P5 XML-Edition:**
-   * Datei: [`data/tei/boehtlingk1887_p5.xml`](https://github.com/marcodem/boethlingk/blob/main/data/tei/boehtlingk1887_p5.xml) (2,90 MB)
+   * Datei: [`data/tei/boehtlingk1887_p5.xml`](https://github.com/birchville-org/boethlingk/blob/main/data/tei/boehtlingk1887_p5.xml) (2,90 MB)
    * 100 % valide gegen das offizielle TEI All RelaxNG Schema (`schemas/tei_all.rng`).
    * 478 `<pb>`-Seitenumbrüche mit direkter Verknüpfung zu den IIIF-Vollbildern der UB Heidelberg.
    * 50 Corrigenda-Einträge der Seiten 477–478 in `<back>`.
@@ -33,7 +33,7 @@ Dieses Projekt umfasst die vollständige historische Erschließung, multimodale 
    * 42 hierarchische PDF-Bookmarks (Śiva-Sūtras, 8 Adhyāyas, 32 Pādas, Nachträge).
 
 4. **Autarker QA-Viewer:**
-   * Datei: [`viewer.html`](https://github.com/marcodem/boethlingk/blob/main/viewer.html)
+   * Datei: [`viewer.html`](https://github.com/birchville-org/boethlingk/blob/main/viewer.html)
    * Split-Pane-Editor nach Payer-Standard mit Faksimile-Zoom/Pan, Snippet-Toolbar und lokalem Silent Auto-Repair beim Speichern.
 
 ---
