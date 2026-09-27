@@ -1,12 +1,14 @@
 ### 🇩🇪 Deutsch
 * [[Startseite|Home]]
 * [[Fallstudie|Case-Study-Boethlingk-Panini-1887]]
+* [[Korrektur-Workflow|QA-and-Correction-Workflow]]
 
 ---
 
 ### 🇬🇧 English
 * [[Home|Home-en]]
 * [[Case Study|Case-Study-Boethlingk-Panini-1887-en]]
+* [[QA & Correction Workflow|QA-and-Correction-Workflow-en]]
 
 ---
 
