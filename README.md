@@ -28,6 +28,19 @@ Digitalisat-Vorlage: Universitätsbibliothek Heidelberg ([Bibliotheca Palatina](
   - Vordergrund: Unsichtbare Vektor-Textebene (PDF Rendering Mode 3, Unicode / Arial Unicode) auf 14.267 Textblöcken.
   - 42 hierarchische PDF-Bookmarks (Śiva-Sūtras, 8 Adhyāyas, 32 Pādas, Nachträge).
 
+- **Neu gesetztes Buch-PDF mit modernen Fonts (Typst-Edition, 6,28 MB, 737 Seiten):**
+  - **Fokus & Lesbarkeit:** Im Gegensatz zum faksimiliebasierten 1:1 Sandwich-PDF bietet diese Neuausgabe ein gestochen scharfes, modernes Buchlayout (ISO B5) ohne Scan-Artefakte und Vergilbungen der historischen Vorlage.
+  - **Typografie & Schriften:** Klassischer Leipziger Satz mit moderner Vektortypografie – Antiqua (*Baskerville*, *Times New Roman*) kombiniert mit nativer Devanāgarī (*Devanagari MT*, *Kohinoor Devanagari*) und exaktem IAST-Diakritika-Satz.
+  - **Struktur:** 14 Śiva-Sūtras, alle 3.983 Sūtras (Devanāgarī, IAST, deutsche Übersetzung, philologischer Kommentar), dynamische lebende Kolumnentitel, Titelei, Inhaltsverzeichnis und Anhang mit Corrigenda.
+  - **Ausgabedatei:** `data/output/boethlingk1887_typeset_edition.pdf`
+  - **Herstellung & vorhandene Skripte:**
+    - Voraussetzung: [Typst CLI](https://typst.app/) (`brew install typst`).
+    - Ausführung über das Build-Skript [`scripts/build_typeset_edition.py`](scripts/build_typeset_edition.py):
+      ```bash
+      python3 scripts/build_typeset_edition.py
+      ```
+    - Das Skript strukturiert den Master-Datensatz in [`data/ashtadhyayi_grouped_edition.json`](data/ashtadhyayi_grouped_edition.json) vor und kompiliert das Typst-Template [`scripts/boethlingk1887_edition.typ`](scripts/boethlingk1887_edition.typ) in ca. 1–2 Sekunden zu einem druckreifen 737-seitigen Buch-PDF.
+
 - **Interaktiver QA-Viewer:**
   - [`viewer.html`](viewer.html): Split-Pane-Editor mit Faksimile-Zoom/Pan, Snippet-Toolbar und lokalem Silent Auto-Repair beim Speichern.
 
@@ -63,6 +76,7 @@ print(f"Buchseite:  {first_sutra['page']}")
 
 - **Python:** `>= 3.12`
 - **Paketmanager:** `uv` (empfohlen) oder Standard-`pip`
+- **Typst (für Typst-Buchausgabe):** [Typst CLI](https://typst.app/) (`brew install typst`)
 
 ```bash
 # Mit uv (automatische venv-Verwaltung):
@@ -76,7 +90,7 @@ pip install -r requirements.txt
 
 ## 4. Pipeline: Von den Scans zum Ergebnis
 
-Die vollständige Digitalisierungsstrecke gliedert sich in fünf aufeinander aufbauende Stufen:
+Die vollständige Digitalisierungsstrecke gliedert sich in sechs aufeinander aufbauende Stufen:
 
 ```
 [IIIF UB Heidelberg] ──> scripts/download_scans.py ──> [data/img_cache/]
@@ -85,12 +99,12 @@ Die vollständige Digitalisierungsstrecke gliedert sich in fünf aufeinander auf
                                                               │
 [Referenzdaten]      ──> scripts/align_mistral_sutras.py ──> [data/ashtadhyayi_complete_boethlingk1887.json]
                                                               │
-                     ┌────────────────────────────────────────┴────────────────────────────────────────┐
-                     ▼                                                                                 ▼
-     scripts/generate_tei_p5.py                                                        scripts/build_sandwich_pdf.py
-                     │                                                                                 │
-                     ▼                                                                                 ▼
-      [data/tei/boehtlingk1887_p5.xml]                                               [data/output/boehtlingk1887_sandwich.pdf]
+                     ┌───────────────────────────────────────┼────────────────────────────────────────┐
+                     ▼                                       ▼                                        ▼
+     scripts/generate_tei_p5.py                 scripts/build_sandwich_pdf.py         scripts/build_typeset_edition.py
+                     │                                       │                                        │
+                     ▼                                       ▼                                        ▼
+      [data/tei/boehtlingk1887_p5.xml]       [data/output/boehtlingk1887_sandwich.pdf]  [data/output/boethlingk1887_typeset_edition.pdf]
 ```
 
 ### Schritt 1: Original-Scans herunterladen (IIIF)
@@ -137,6 +151,13 @@ python3 scripts/build_sandwich_pdf.py \
   --output data/output/boehtlingk1887_sandwich.pdf
 ```
 
+### Schritt 6: Neu gesetzte Typst-Buchausgabe kompilieren (Moderner Schriftsatz)
+Generiert die 737-seitige, typografisch neu gesetzte Vektor-Buchausgabe mit modernen Schriftarten:
+
+```bash
+python3 scripts/build_typeset_edition.py
+```
+
 ---
 
 ## 5. Externe Quellen & Lizenzen
@@ -148,11 +169,9 @@ python3 scripts/build_sandwich_pdf.py \
 
 ---
 
-## 6. Dokumentation & Wiki
+## 6. Dokumentation
 
 - **Online-Dokumentation (GitHub Pages):** [birchville-org.github.io/boethlingk](https://birchville-org.github.io/boethlingk/)
-  - Die Dateien unter [`docs/`](docs/) bilden den Quellbestand für MkDocs Material und die Web-Dokumentation.
-- **GitHub Wiki:** [github.com/birchville-org/boethlingk/wiki](https://github.com/birchville-org/boethlingk/wiki)
-  - Der Ordner [`wiki/`](wiki/) dient als lokaler Spiegel für das GitHub-Wiki-Repository.
-  - 🇩🇪 [Startseite (DE)](https://github.com/birchville-org/boethlingk/wiki/Home) | [Wissenschaftliche Fallstudie (DE)](https://github.com/birchville-org/boethlingk/wiki/Case-Study-Boethlingk-Panini-1887)
-  - 🇬🇧 [Home (EN)](https://github.com/birchville-org/boethlingk/wiki/Home-en) | [Scholarly Case Study (EN)](https://github.com/birchville-org/boethlingk/wiki/Case-Study-Boethlingk-Panini-1887-en)
+  - Die Markdown-Dateien unter [`docs/`](docs/) bilden den Quellbestand für MkDocs Material und die zweisprachige Web-Dokumentation.
+  - 🇩🇪 **Deutsch:** [Startseite](https://birchville-org.github.io/boethlingk/) | [Wissenschaftliche Fallstudie](https://birchville-org.github.io/boethlingk/case-study/) | [QA- & Korrektur-Workflow](https://birchville-org.github.io/boethlingk/qa-workflow/)
+  - 🇬🇧 **English:** [Home](https://birchville-org.github.io/boethlingk/en/) | [Scholarly Case Study](https://birchville-org.github.io/boethlingk/en/case-study/) | [QA and Correction Workflow](https://birchville-org.github.io/boethlingk/en/qa-workflow/)

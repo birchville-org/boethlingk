@@ -32,7 +32,14 @@ Dieses Projekt umfasst die vollständige historische Erschließung, multimodale 
    * Textebene: Unsichtbare Vektor-Textebene (PDF Rendering Mode 3) mit 14.267 Textblöcken auf exakten Pixelkoordinaten.
    * 42 hierarchische PDF-Bookmarks (Śiva-Sūtras, 8 Adhyāyas, 32 Pādas, Nachträge).
 
-4. **Autarker QA-Viewer:**
+4. **Neu gesetztes Buch-PDF mit modernen Fonts (Typst-Edition):**
+   * Datei: `data/output/boethlingk1887_typeset_edition.pdf` (6,28 MB, 737 Seiten)
+   * Visuell & Lesbarkeit: Gestochen scharfer, moderner Vektorbuchsatz (ISO B5) ohne Scan-Artefakte und Vergilbungen der historischen Vorlage.
+   * Moderne Schriften: Klassischer Leipziger Satz mit modernen Fonts – Antiqua (*Baskerville*, *Times New Roman*) kombiniert mit nativer Devanāgarī (*Devanagari MT*, *Kohinoor Devanagari*) und vollständigen IAST-Diakritika.
+   * Struktur & Apparat: 14 Śiva-Sūtras, alle 3.983 Sūtras (Devanāgarī, IAST, Übersetzung, Kommentar), dynamische lebende Kolumnentitel, Inhaltsverzeichnis und integrierte Corrigenda.
+   * Skript: Kompiliert in ca. 1–2 Sekunden via [`scripts/build_typeset_edition.py`](https://github.com/birchville-org/boethlingk/blob/main/scripts/build_typeset_edition.py) mit dem Satzsystem Typst.
+
+5. **Autarker QA-Viewer:**
    * Datei: [`viewer.html`](https://github.com/birchville-org/boethlingk/blob/main/viewer.html)
    * Split-Pane-Editor nach Payer-Standard mit Faksimile-Zoom/Pan, Snippet-Toolbar und lokalem Silent Auto-Repair beim Speichern.
 
@@ -60,8 +67,9 @@ Dieses Projekt umfasst die vollständige historische Erschließung, multimodale 
 [Schritt 4: Konsolidierung] ─────────► data/ashtadhyayi_complete_boethlingk1887.json
        │                              (3.997 Sūtras = 100,0 % lückenlos & 0 Duplikate)
        ▼
-[Schritt 5: TEI- & PDF-Assembly] ────► data/tei/boehtlingk1887_p5.xml
-                                      data/output/boehtlingk1887_sandwich.pdf
+[Schritt 5: TEI-, Sandwich- & ───────► data/tei/boehtlingk1887_p5.xml
+            Typst-Assembly]            data/output/boehtlingk1887_sandwich.pdf
+                                       data/output/boethlingk1887_typeset_edition.pdf
 ```
 
 ---
@@ -83,6 +91,11 @@ python3 scripts/build_sandwich_pdf.py \
   --mistral-dir data/mistral \
   --master-json data/ashtadhyayi_complete_boethlingk1887.json \
   --output data/output/boehtlingk1887_sandwich.pdf
+```
+
+### Neu gesetztes Buch-PDF kompilieren (Typst)
+```bash
+python3 scripts/build_typeset_edition.py
 ```
 
 ---

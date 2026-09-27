@@ -119,7 +119,28 @@ For archival preservation and digital humanities interoperability, a canonical X
 
 ---
 
-## 7. QA Viewer (Payer Global Web Editor Standard)
+## 7. Modern Typeset Vector Book Edition (Typst Edition)
+
+While the 1:1 sandwich PDF preserves the authentic historical facsimile, the typeset vector edition provides maximum readability and clarity without the eye fatigue caused by 19th-century print bleed, paper yellowing, or scanner distortion:
+
+* **Target File:** `data/output/boethlingk1887_typeset_edition.pdf` (6.28 MB, 737 pages).
+* **Format & Book Design:** ISO B5 (176 x 250 mm), book layout with dynamic running headers (even pages: work title; odd pages: current section), front matter, and table of contents.
+* **Modern Typefaces:**
+  * **Latin / Antiqua:** *Baskerville* (primary) and *Times New Roman* for balanced proportions and comfortable reading of the German commentary.
+  * **Devanāgarī:** *Devanagari MT* and *Kohinoor Devanagari* for clean ligatures and sharp vector rendering.
+  * **Transliteration:** Full and flawless diacritic rendering across all IAST characters (`ā`, `ī`, `ū`, `ṛ`, `ṝ`, `ḷ`, `ṣ`, `ś`, `ñ`, `ṅ`, `ṭ`, `ḍ`, `ṇ`, `ṃ`, `ḥ`).
+* **Integrated Scholarly Apparatus:** All 50 Corrigenda items from pages 477–478 are compiled into an appendix.
+* **Build Instructions & Scripts:**
+  * Requires the modern typesetting system [Typst](https://typst.app/) (`brew install typst`).
+  * Run the Python build script:
+    ```bash
+    python3 scripts/build_typeset_edition.py
+    ```
+  * The script preprocesses the master dataset into [`data/ashtadhyayi_grouped_edition.json`](https://github.com/birchville-org/boethlingk/blob/main/data/ashtadhyayi_grouped_edition.json) and compiles the Typst template [`scripts/boethlingk1887_edition.typ`](https://github.com/birchville-org/boethlingk/blob/main/scripts/boethlingk1887_edition.typ) in ~1–2 seconds.
+
+---
+
+## 8. QA Viewer (Payer Global Web Editor Standard)
 
 For editorial proofing and local maintenance, [`viewer.html`](https://github.com/birchville-org/boethlingk/blob/main/viewer.html) was implemented:
 * **Split-Pane:** Left pane displays high-resolution facsimiles with smooth zoom/pan; right pane provides the Sūtra editor.

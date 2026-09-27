@@ -119,7 +119,28 @@ Für die Langzeitarchivierung und Interoperabilität wurde die kanonisch geprüf
 
 ---
 
-## 7. QA-Viewer (Payer Global Web Editor Standard)
+## 7. Neu gesetzte Vektor-Buchausgabe mit modernen Schriften (Typst-Edition)
+
+Während das 1:1 Sandwich-PDF das historische Erscheinungsbild der Leipziger Ausgabe originalgetreu bewahrt, dient die typografische Neuausgabe einer optimalen Lesbarkeit ohne Ermüdung durch verwaschenen Druck, Scan-Verzerrungen und vergilbtes Papier:
+
+* **Zieldatei:** `data/output/boethlingk1887_typeset_edition.pdf` (6,28 MB, 737 Seiten).
+* **Format & Buchgestaltung:** ISO B5 (176 x 250 mm), Buchlayout mit lebenden Kolumnentiteln (gerade Seiten: Buchtitel; ungerade Seiten: aktueller Sūtra-Abschnitt) sowie Titelei und Inhaltsverzeichnis.
+* **Moderne Schriftarten:**
+  * **Lateinschrift / Antiqua:** *Baskerville* (primär) und *Times New Roman* für ausgewogene Proportionen und klare Lesbarkeit des deutschen Kommentars.
+  * **Devanāgarī:** *Devanagari MT* und *Kohinoor Devanagari* für harmonische Ligaturen und gestochen scharfen Druck.
+  * **Transliteration:** Nahtlose typografische Einbettung aller IAST-Diakritika (`ā`, `ī`, `ū`, `ṛ`, `ṝ`, `ḷ`, `ṣ`, `ś`, `ñ`, `ṅ`, `ṭ`, `ḍ`, `ṇ`, `ṃ`, `ḥ`).
+* **Integrierter Korrekturapparat:** Die 50 Corrigenda-Einträge der Seiten 477–478 sind als Anhang eingebunden.
+* **Herstellung & Bauanleitung:**
+  * Benötigt das installierte Satzsystem [Typst](https://typst.app/) (`brew install typst`).
+  * Ausführung des Python-Buildskripts:
+    ```bash
+    python3 scripts/build_typeset_edition.py
+    ```
+  * Das Skript transformiert den kanonischen JSON-Master in [`data/ashtadhyayi_grouped_edition.json`](https://github.com/birchville-org/boethlingk/blob/main/data/ashtadhyayi_grouped_edition.json) und kompiliert das Typst-Template [`scripts/boethlingk1887_edition.typ`](https://github.com/birchville-org/boethlingk/blob/main/scripts/boethlingk1887_edition.typ) in ca. 1–2 Sekunden.
+
+---
+
+## 8. QA-Viewer (Payer Global Web Editor Standard)
 
 Für die redaktionelle Nachprüfung und dauerhafte Nutzung wurde [`viewer.html`](https://github.com/birchville-org/boethlingk/blob/main/viewer.html) implementiert:
 * **Split-Pane:** Links der hochauflösende Originalscan mit flüssigem Zoom & Pan (Drag & Drop mit der Maus); rechts der Sūtra-Editor.
