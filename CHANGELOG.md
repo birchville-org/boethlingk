@@ -2,6 +2,25 @@
 
 Alle wesentlichen Änderungen und Meilensteine dieses Projekts werden in dieser Datei dokumentiert.
 
+## [1.2.0] - 2026-09-27
+
+### Added
+* **Vollständige typografische Neuausgabe (Typst-Edition):**
+  * `boethlingk1887_typeset_edition.pdf` (6,28 MB, 737 Seiten). Neu gesetztes, gestochen scharfes Buch-PDF nach klassischem Leipziger Schriftsatz (Devanāgarī, IAST, Übersetzung und philologischer Kommentar), generiert über `scripts/build_typeset_edition.py`.
+* **Erweiterte Wiki-Dokumentation:**
+  * Dedizierte Seiten zu Urheberrecht, Gemeinfreiheit und Provenienz der Heidelberger Scans (`Copyright-and-Provenance.md`).
+  * Ausführlicher QA- und Korrektur-Workflow nach QA-Viewer-Standard (`QA-and-Correction-Workflow.md`).
+
+### Fixed & Cleaned
+* **Vollständige Bereinigung von Bibliotheksstempel-Boilerplate:**
+  * Rückstandsloses Entfernen aller Wasserzeichen- und Stempeltexte («UNIVERSITÄTS-BIBLIOTHEK HEIDELBERG», Förderhinweise, Logo-Fragmente und isolierte Seitenzahlen) aus 443 Sūtras (440 Aṣṭādhyāyī- + 3 Śiva-Sūtras).
+  * Seitenübergreifende Kommentare (z. B. Sūtra 1.1.58) schließen nach der Stempelfilterung wieder nahtlos an.
+  * Integration der FSM-Stempelfilterung in `scripts/align_mistral_sutras.py` und `scripts/build_sandwich_pdf.py`.
+* **Aktualisierung aller Distributions-Artefakte:**
+  * Master-Datensatz (`ashtadhyayi_complete_boethlingk1887.json`), TEI-P5 XML (`boehtlingk1887_p5.xml`), 1:1 Sandwich-PDF (`boehtlingk1887_sandwich.pdf`) und Typst-Neuausgabe synchronisiert.
+* **Repository-Bereinigung:**
+  * Vollständiges Entfernen des `extern/`-Verzeichnisses aus Git zur Reduktion der Repository-Größe um ca. 6,1 MB.
+
 ## [1.1.0] - 2026-09-26
 
 ### Added
