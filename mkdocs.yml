@@ -46,6 +46,8 @@ plugins:
 nav:
   - Startseite: index.md
   - Fallstudie: case-study.md
+  - QA- & Korrektur-Workflow: qa-workflow.md
+  - Urheberrecht & Provenienz: copyright-and-provenance.md
   - Datenarchitektur: data-architecture.md
   - Pipeline-Entscheidungen: pipeline-decisions.md
   - Konventionen: conventions.md
