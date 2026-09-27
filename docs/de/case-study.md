@@ -124,6 +124,7 @@ Für die Langzeitarchivierung und Interoperabilität wurde die kanonisch geprüf
 Während das 1:1 Sandwich-PDF das historische Erscheinungsbild der Leipziger Ausgabe originalgetreu bewahrt, dient die typografische Neuausgabe einer optimalen Lesbarkeit ohne Ermüdung durch verwaschenen Druck, Scan-Verzerrungen und vergilbtes Papier:
 
 * **Zieldatei:** `data/output/boethlingk1887_typeset_edition.pdf` (6,28 MB, 737 Seiten).
+* **Download:** [Release Asset (`boethlingk1887_typeset_edition.pdf`)](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_typeset_edition.pdf) (6,28 MB).
 * **Format & Buchgestaltung:** ISO B5 (176 x 250 mm), Buchlayout mit lebenden Kolumnentiteln (gerade Seiten: Buchtitel; ungerade Seiten: aktueller Sūtra-Abschnitt) sowie Titelei und Inhaltsverzeichnis.
 * **Moderne Schriftarten:**
   * **Lateinschrift / Antiqua:** *Baskerville* (primär) und *Times New Roman* für ausgewogene Proportionen und klare Lesbarkeit des deutschen Kommentars.

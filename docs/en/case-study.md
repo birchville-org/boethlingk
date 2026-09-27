@@ -124,6 +124,7 @@ For archival preservation and digital humanities interoperability, a canonical X
 While the 1:1 sandwich PDF preserves the authentic historical facsimile, the typeset vector edition provides maximum readability and clarity without the eye fatigue caused by 19th-century print bleed, paper yellowing, or scanner distortion:
 
 * **Target File:** `data/output/boethlingk1887_typeset_edition.pdf` (6.28 MB, 737 pages).
+* **Download:** [Release Asset (`boethlingk1887_typeset_edition.pdf`)](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_typeset_edition.pdf) (6.28 MB).
 * **Format & Book Design:** ISO B5 (176 x 250 mm), book layout with dynamic running headers (even pages: work title; odd pages: current section), front matter, and table of contents.
 * **Modern Typefaces:**
   * **Latin / Antiqua:** *Baskerville* (primary) and *Times New Roman* for balanced proportions and comfortable reading of the German commentary.

@@ -29,6 +29,8 @@ Digitalisat-Vorlage: Universitätsbibliothek Heidelberg ([Bibliotheca Palatina](
   - 42 hierarchische PDF-Bookmarks (Śiva-Sūtras, 8 Adhyāyas, 32 Pādas, Nachträge).
 
 - **Neu gesetztes Buch-PDF mit modernen Fonts (Typst-Edition, 6,28 MB, 737 Seiten):**
+  - 📥 **Download:** [Release Asset (`boethlingk1887_typeset_edition.pdf`)](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_typeset_edition.pdf)
+  - *(Hinweis: Binäre PDF-Dateien sind im Git-Repository ignoriert und stehen über die GitHub Releases zum direkten Download bereit oder können lokal assembliert werden).*
   - **Fokus & Lesbarkeit:** Im Gegensatz zum faksimiliebasierten 1:1 Sandwich-PDF bietet diese Neuausgabe ein gestochen scharfes, modernes Buchlayout (ISO B5) ohne Scan-Artefakte und Vergilbungen der historischen Vorlage.
   - **Typografie & Schriften:** Klassischer Leipziger Satz mit moderner Vektortypografie – Antiqua (*Baskerville*, *Times New Roman*) kombiniert mit nativer Devanāgarī (*Devanagari MT*, *Kohinoor Devanagari*) und exaktem IAST-Diakritika-Satz.
   - **Struktur:** 14 Śiva-Sūtras, alle 3.983 Sūtras (Devanāgarī, IAST, deutsche Übersetzung, philologischer Kommentar), dynamische lebende Kolumnentitel, Titelei, Inhaltsverzeichnis und Anhang mit Corrigenda.

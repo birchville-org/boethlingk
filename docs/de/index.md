@@ -33,7 +33,7 @@ Dieses Projekt umfasst die vollständige historische Erschließung, multimodale 
    * 42 hierarchische PDF-Bookmarks (Śiva-Sūtras, 8 Adhyāyas, 32 Pādas, Nachträge).
 
 4. **Neu gesetztes Buch-PDF mit modernen Fonts (Typst-Edition):**
-   * Datei: `data/output/boethlingk1887_typeset_edition.pdf` (6,28 MB, 737 Seiten)
+   * Download: [Release Asset (`boethlingk1887_typeset_edition.pdf`)](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_typeset_edition.pdf) (6,28 MB, 737 Seiten)
    * Visuell & Lesbarkeit: Gestochen scharfer, moderner Vektorbuchsatz (ISO B5) ohne Scan-Artefakte und Vergilbungen der historischen Vorlage.
    * Moderne Schriften: Klassischer Leipziger Satz mit modernen Fonts – Antiqua (*Baskerville*, *Times New Roman*) kombiniert mit nativer Devanāgarī (*Devanagari MT*, *Kohinoor Devanagari*) und vollständigen IAST-Diakritika.
    * Struktur & Apparat: 14 Śiva-Sūtras, alle 3.983 Sūtras (Devanāgarī, IAST, Übersetzung, Kommentar), dynamische lebende Kolumnentitel, Inhaltsverzeichnis und integrierte Corrigenda.

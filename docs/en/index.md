@@ -33,7 +33,7 @@ This project provides end-to-end historical digitization, multimodal AI OCR (`mi
    * 42 hierarchical PDF bookmarks (Śiva-Sūtras, 8 Adhyāyas, 32 Pādas, Corrigenda).
 
 4. **Modern Typeset Book PDF (Typst Edition):**
-   * File: `data/output/boethlingk1887_typeset_edition.pdf` (6.28 MB, 737 pages)
+   * Download: [Release Asset (`boethlingk1887_typeset_edition.pdf`)](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_typeset_edition.pdf) (6.28 MB, 737 pages)
    * Visuals & Readability: Crisp, modern vector book typesetting (ISO B5) free from historical scan noise and paper yellowing.
    * Modern Typography: Classic Leipzig layout with modern font rendering – Antiqua (*Baskerville*, *Times New Roman*) paired with native Devanāgarī (*Devanagari MT*, *Kohinoor Devanagari*) and flawless IAST diacritics.
    * Structure & Apparatus: 14 Śiva-Sūtras, all 3,983 Sūtras (Devanāgarī, IAST, translation, commentary), dynamic running headers, table of contents, and integrated corrigenda.

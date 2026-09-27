@@ -28,7 +28,7 @@ The comprehensive documentation covers:
 | Artifact | Repository Path | Description |
 | :--- | :--- | :--- |
 | **TEI-P5 XML** | [`data/tei/boehtlingk1887_p5.xml`](https://github.com/birchville-org/boethlingk/blob/main/data/tei/boehtlingk1887_p5.xml) | Schema-valid archival preservation edition |
-| **Typeset Edition** | [`data/output/boethlingk1887_typeset_edition.pdf`](https://github.com/birchville-org/boethlingk) | Newly typeset, clean complete book edition (737 pages) |
+| **Typeset Edition** | [Release Asset (6.28 MB)](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_typeset_edition.pdf) | Newly typeset, clean complete book edition (737 pages) |
 | **Sandwich PDF** | [Release Asset (278 MB)](https://github.com/birchville-org/boethlingk/releases/latest/download/boehtlingk1887_sandwich.pdf) | Searchable 1:1 Sandwich PDF (478 pages) |
 | **Master Dataset** | [`data/ashtadhyayi_complete_boethlingk1887.json`](https://github.com/birchville-org/boethlingk/blob/main/data/ashtadhyayi_complete_boethlingk1887.json) | Structured JSON dataset covering all 3,997 Sūtras |
 | **QA Viewer** | [`viewer.html`](https://github.com/birchville-org/boethlingk/blob/main/viewer.html) | Standalone split-pane editor conforming to Payer Standard |
