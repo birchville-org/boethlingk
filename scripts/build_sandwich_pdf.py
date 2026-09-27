@@ -162,7 +162,11 @@ def assemble_sandwich(
         for b in blocks:
             txt = b.get("content", "")
             # Filter Heidelberg digital collection stamp / watermarks
-            if any(w_word in txt for w_word in ["UNIVERSITÄTS", "HEIDELBERG", "digi.ub", "Baden-Württemberg"]):
+            txt_upper = txt.upper()
+            if any(w_word in txt_upper for w_word in [
+                "UNIVERSITÄTS", "HEIDELBERG", "DIGI.UB", "BADEN-WÜRTTEMBERG",
+                "GEFÖRDERT DURCH", "BIBLIOTHEK", "[LOGO]"
+            ]) or txt.strip() in ["B", "b"]:
                 continue
 
             rect = fitz.Rect(b["top_left_x"], b["top_left_y"], b["bottom_right_x"], b["bottom_right_y"])

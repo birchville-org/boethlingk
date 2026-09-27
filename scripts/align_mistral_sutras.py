@@ -107,14 +107,42 @@ def is_colophon_line(line: str) -> bool:
 
 
 def clean_commentary_paragraphs(text: str) -> list[str]:
-    paras = [p.strip() for p in text.split("\n\n")]
+    if not text:
+        return []
+    lines = text.split("\n")
+    cleaned_lines = []
+    in_block = False
+
+    for l in lines:
+        l_str = l.strip()
+        if any(k in l_str.upper() for k in [
+            "UNIVERSITÄTS", "BIBLIOTHEK", "HEIDELBERG",
+            "BADEN-WÜRTTEMBERG", "GEFÖRDERT DURCH", "DIGI.UB",
+            "[LOGO]", "© UNIVERSITÄTSBIBLIOTHEK"
+        ]):
+            in_block = True
+            continue
+        elif in_block:
+            if (re.match(r"^\d+$", l_str) or 
+                re.match(r"^\d{1,2}\s*,\s*\d{1,2}\s*,\s*\d{1,3}\.?$", l_str) or 
+                l_str in ["B", "b", "[LOGO]", ""] or
+                not l_str):
+                continue
+            else:
+                in_block = False
+                cleaned_lines.append(l)
+        else:
+            cleaned_lines.append(l)
+
+    cleaned_text = "\n".join(cleaned_lines)
+    paras = [p.strip() for p in cleaned_text.split("\n\n")]
     cleaned = []
     for p in paras:
         if not p:
             continue
-        lines = [sanitize_text(line.strip()) for line in p.splitlines() if line.strip() and not is_boilerplate(line) and not is_colophon_line(line)]
-        if lines:
-            cleaned.append("\n".join(lines))
+        para_lines = [sanitize_text(line.strip()) for line in p.splitlines() if line.strip() and not is_boilerplate(line) and not is_colophon_line(line)]
+        if para_lines:
+            cleaned.append("\n".join(para_lines))
     return cleaned
 
 
