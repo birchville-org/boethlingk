@@ -5,6 +5,7 @@
 ![Python](https://img.shields.io/badge/python-3.12%2B-blue)
 ![TEI P5](https://img.shields.io/badge/TEI--P5-RelaxNG%20valid-green)
 ![Sandwich PDF](https://img.shields.io/badge/PDF-1%3A1%20Sandwich-orange)
+![EPUB 3](https://img.shields.io/badge/eBook-EPUB%203-purple)
 ![Alignment](https://img.shields.io/badge/Sūtras-3%2C997%20(100%25)-brightgreen)
 
 > ℹ️ **Case Study:** This project serves as an end-to-end reference case study for the open-source book digitization pipeline **[AlexandriaSandwich](https://github.com/birchville-org/AlexandriaSandwich)**.
@@ -39,7 +40,13 @@ This project provides end-to-end historical digitization, multimodal AI OCR (`mi
    * Structure & Apparatus: 14 Śiva-Sūtras, all 3,983 Sūtras (Devanāgarī, IAST, translation, commentary), dynamic running headers, table of contents, and integrated corrigenda.
    * Script: Built in ~1–2 seconds via [`scripts/build_typeset_edition.py`](https://github.com/birchville-org/boethlingk/blob/main/scripts/build_typeset_edition.py) using the Typst typesetting system.
 
-5. **Standalone QA Viewer:**
+5. **Reflowable EPUB 3 eBook with Font Embedding:**
+   * Download: [Release Asset (`boethlingk1887.epub`)](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887.epub) (1.45 MB)
+   * Optimized for mobile e-readers: Standardized EPUB 3 with semantic XHTML5, responsive layout, and hierarchical table of contents (8 Adhyāyas, 32 Pādas).
+   * Embedded fonts: *Noto Serif Devanagari* (Regular/Bold) and *Linux Libertine O* (Regular/Bold/Italic) ensure flawless rendering of all IAST diacritics and Devanagari ligatures on mobile devices and e-readers (Tolino, Apple Books, Kobo).
+   * Script: Generated via [`scripts/export_epub.py`](https://github.com/birchville-org/boethlingk/blob/main/scripts/export_epub.py).
+
+6. **Standalone QA Viewer:**
    * File: [`viewer.html`](https://github.com/birchville-org/boethlingk/blob/main/viewer.html)
    * Payer-standard split-pane editor featuring facsimile zoom/pan, snippet toolbar, and local silent auto-repair on save.
 

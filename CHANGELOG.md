@@ -2,6 +2,15 @@
 
 Alle wesentlichen Änderungen und Meilensteine dieses Projekts werden in dieser Datei dokumentiert.
 
+## [1.3.0] - 2026-09-28
+
+### Added
+* **Reflowable EPUB 3 eBook (`scripts/export_epub.py`):**
+  * `boethlingk1887.epub` (1,45 MB): Vollständige, reflowable EPUB 3 Edition aller 3.997 Sūtras und 50 Corrigenda-Einträge für mobile E-Reader (Tolino, Kobo, Apple Books).
+  * Eingebettete Vektor-Schriften (*Noto Serif Devanagari* Regular/Bold & *Linux Libertine O* Regular/Bold/Italic) für verlustfreie Darstellung komplexer Devanagari-Ligaturen und IAST-Diakritika (`ā`, `ī`, `ū`, `ṛ`, `ṝ`, `ḷ`, `ḹ`, `ṃ`, `ḥ`, `ṅ`, `ñ`, `ṭ`, `ḍ`, `ṇ`, `ś`, `ṣ`).
+  * Zweistufige hierarchische Navigation (`nav.xhtml` und `toc.ncx`) entlang der 8 Adhyāyas und 32 Pādas.
+  * Semantische Strukturierung mit Sūtra-Kopfzeile, deutscher Übersetzung und typografisch abgesetztem philologischem Kommentar.
+
 ## [1.2.0] - 2026-09-27
 
 ### Added

@@ -5,6 +5,7 @@
 ![Python](https://img.shields.io/badge/python-3.12%2B-blue)
 ![TEI P5](https://img.shields.io/badge/TEI--P5-RelaxNG%20valid-green)
 ![Sandwich PDF](https://img.shields.io/badge/PDF-1%3A1%20Sandwich-orange)
+![EPUB 3](https://img.shields.io/badge/eBook-EPUB%203-purple)
 ![Alignment](https://img.shields.io/badge/Sūtras-3.997%20(100%25)-brightgreen)
 
 > ℹ️ **Case Study:** Dieses Projekt ist eine Referenz-Fallstudie zur Open-Source-Digitalisierungs-Pipeline **[AlexandriaSandwich](https://github.com/birchville-org/AlexandriaSandwich)**.
@@ -39,7 +40,13 @@ Dieses Projekt umfasst die vollständige historische Erschließung, multimodale 
    * Struktur & Apparat: 14 Śiva-Sūtras, alle 3.983 Sūtras (Devanāgarī, IAST, Übersetzung, Kommentar), dynamische lebende Kolumnentitel, Inhaltsverzeichnis und integrierte Corrigenda.
    * Skript: Kompiliert in ca. 1–2 Sekunden via [`scripts/build_typeset_edition.py`](https://github.com/birchville-org/boethlingk/blob/main/scripts/build_typeset_edition.py) mit dem Satzsystem Typst.
 
-5. **Autarker QA-Viewer:**
+5. **Reflowable EPUB 3 eBook mit Schrifteinbettung:**
+   * Download: [Release Asset (`boethlingk1887.epub`)](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887.epub) (1,45 MB)
+   * Optimal für mobile E-Reader: Standardisiertes EPUB 3 mit semantischem XHTML5, responsivem Layout und hierarchischem Inhaltsverzeichnis (8 Adhyāyas, 32 Pādas).
+   * Schrifteinbettung: *Noto Serif Devanagari* (Regular/Bold) und *Linux Libertine O* (Regular/Bold/Italic) garantieren die saubere Darstellung aller IAST-Diakritika und Devanāgarī-Ligaturen auf Mobilgeräten und E-Readern (Tolino, Apple Books, Kobo).
+   * Skript: Generiert via [`scripts/export_epub.py`](https://github.com/birchville-org/boethlingk/blob/main/scripts/export_epub.py).
+
+6. **Autarker QA-Viewer:**
    * Datei: [`viewer.html`](https://github.com/birchville-org/boethlingk/blob/main/viewer.html)
    * Split-Pane-Editor nach Payer-Standard mit Faksimile-Zoom/Pan, Snippet-Toolbar und lokalem Silent Auto-Repair beim Speichern.
 

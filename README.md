@@ -28,6 +28,16 @@ Digitalisat-Vorlage: Universitätsbibliothek Heidelberg ([Bibliotheca Palatina](
   - Vordergrund: Unsichtbare Vektor-Textebene (PDF Rendering Mode 3, Unicode / Arial Unicode) auf 14.267 Textblöcken.
   - 42 hierarchische PDF-Bookmarks (Śiva-Sūtras, 8 Adhyāyas, 32 Pādas, Nachträge).
 
+- **Reflowable EPUB 3 eBook mit Schrifteinbettung (1,45 MB):**
+  - 📥 **Download:** [Release Asset (`boethlingk1887.epub`)](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887.epub)
+  - **Optimal für mobile E-Reader:** Standardisiertes EPUB 3 mit semantischem XHTML5, responsivem Layout und hierarchischem Inhaltsverzeichnis (8 Adhyāyas, 32 Pādas).
+  - **Schrifteinbettung:** *Noto Serif Devanagari* (Regular/Bold) und *Linux Libertine O* (Regular/Bold/Italic) garantieren die saubere Darstellung aller IAST-Diakritika und Devanāgarī-Ligaturen auf Mobilgeräten und E-Readern (Tolino, Apple Books, Kobo).
+  - **Ausgabedatei:** `data/output/boethlingk1887.epub`
+  - **Herstellung & vorhandene Skripte:**
+    ```bash
+    python3 scripts/export_epub.py
+    ```
+
 - **Neu gesetztes Buch-PDF mit modernen Fonts (Typst-Edition, 6,28 MB, 737 Seiten):**
   - 📥 **Download:** [Release Asset (`boethlingk1887_typeset_edition.pdf`)](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_typeset_edition.pdf)
   - *(Hinweis: Binäre PDF-Dateien sind im Git-Repository ignoriert und stehen über die GitHub Releases zum direkten Download bereit oder können lokal assembliert werden).*
