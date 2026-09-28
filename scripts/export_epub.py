@@ -233,6 +233,11 @@ def load_dataset(base_dir: Path) -> tuple[list, list, list]:
     return grouped, shiva_sutras, corrigenda
 
 
+def to_deva_num(n: int | str) -> str:
+    digits = "०१२३४५६७८९"
+    return "".join(digits[int(c)] if c.isdigit() else c for c in str(n))
+
+
 def escape_xml(text: str) -> str:
     if not text:
         return ""
@@ -363,7 +368,7 @@ def build_epub(base_dir: Path, output_path: Path):
     <article class="sutra" id="sutra-{ref}">
       <header class="sutra-head">
         <span class="sutra-ref">{ref}</span>
-        <span class="sutra-devanagari">{s_can}</span>
+        <span class="sutra-devanagari">{s_can} ॥ {to_deva_num(s.get("sutra_num", 1))} ॥</span>
         {f'<span class="sutra-iast">{s_iast}</span>' if s_iast else ''}
         <span class="sutra-page">[S. {page}]</span>
       </header>
@@ -423,7 +428,7 @@ def build_epub(base_dir: Path, output_path: Path):
       <article class="sutra" id="sutra-{ref}">
         <header class="sutra-head">
           <span class="sutra-ref">{ref}</span>
-          <span class="sutra-devanagari">{can_dev}</span>
+          <span class="sutra-devanagari">{can_dev} ॥ {to_deva_num(s.get("sutra_num", 0))} ॥</span>
           {f'<span class="sutra-iast">{can_iast}</span>' if can_iast else ''}
           {f'<span class="sutra-page">[S. {page}]</span>' if page else ''}
         </header>

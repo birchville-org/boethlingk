@@ -13,6 +13,11 @@ import time
 from pathlib import Path
 
 
+def to_deva_num(n: int | str) -> str:
+    digits = "०१२३४५६७८९"
+    return "".join(digits[int(c)] if c.isdigit() else c for c in str(n))
+
+
 def prepare_data() -> None:
     """Pre-group master dataset by Adhyāya and Pāda for optimal Typst typesetting."""
     master_path = Path("data/ashtadhyayi_complete_boethlingk1887.json")
@@ -52,7 +57,12 @@ def prepare_data() -> None:
         }
         for p_num in range(1, 5):
             de_p, sa_p = pada_names[p_num]
-            p_sutras = [s for s in sutras if s.get("adhyaya") == a_num and s.get("pada") == p_num]
+            p_sutras = []
+            for s in sutras:
+                if s.get("adhyaya") == a_num and s.get("pada") == p_num:
+                    s_copy = dict(s)
+                    s_copy["sutra_num_deva"] = to_deva_num(s.get("sutra_num", 0))
+                    p_sutras.append(s_copy)
             adh_entry["padas"].append({
                 "num": p_num,
                 "title_de": de_p,

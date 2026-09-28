@@ -14,6 +14,13 @@
 #set par(justify: true, leading: 0.65em)
 
 // =============================================================================
+// Helper: Convert ASCII digits to Devanāgarī numerals
+#let to-deva(num) = {
+  let s = str(num)
+  let map = ("0": "०", "1": "१", "2": "२", "3": "३", "4": "४", "5": "५", "6": "६", "7": "७", "8": "८", "9": "९")
+  s.clusters().map(c => map.at(c, default: c)).join("")
+}
+
 // 1. TITELSEITE & IMPRESSUM
 // =============================================================================
 
@@ -132,7 +139,7 @@
   #block(width: 100%, breakable: false, [
     #align(center)[
       #text(13pt, weight: "bold", font: ("Devanagari MT", "Kohinoor Devanagari"))[
-        #s.at(1) ॥ #s.at(0) ॥
+        #s.at(1) ॥ #to-deva(s.at(0)) ॥
       ]
       #v(-0.25em)
       #text(8.5pt, style: "italic")[
@@ -164,7 +171,7 @@
         // 1. Devanāgarī Sūtra-Kopf (fett zentriert)
         #align(center)[
           #text(12.5pt, weight: "bold", font: ("Devanagari MT", "Kohinoor Devanagari"))[
-            #s.canonical_devanagari ॥ #s.sutra_num ॥
+            #s.canonical_devanagari ॥ #to-deva(s.sutra_num) ॥
           ]
           #v(-0.25em)
           #text(8.5pt, style: "italic")[
