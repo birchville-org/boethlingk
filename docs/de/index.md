@@ -111,6 +111,5 @@ python3 scripts/build_typeset_edition.py
 
 * [Wissenschaftliche Fallstudie (Verfahrensdokumentation)](case-study.md)
 * [Datenarchitektur & Drei-Layer-Modell](data-architecture.md)
-* [Pipeline-Entscheidungen](pipeline-decisions.md)
 * [Konventionen & IIIF-Spezifikation](conventions.md)
 * [Wiki-Übersicht](wiki-home.md)

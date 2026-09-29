@@ -1,85 +1,55 @@
-# Konventionen — boethlingk
+# 📐 Konventionen & Technische Spezifikationen — boethlingk
 
-## Datenbasis
+> Dieses Dokument definiert die Identifikationsschemata, Sprach-Kennzeichnungen und typografischen Konventionen des Projekts `boethlingk`.
 
-Kein lokales Bildarchiv. Alle Bilder und OCR-Daten kommen vom
-IIIF-Server der UB Heidelberg:
+---
 
-  Manifest (v3): https://digi.ub.uni-heidelberg.de/diglit/iiif3/boehtlingk1887/manifest
-  Umfang: 877 Seiten
-  IIIF-Format: v3 (items[])
-  ALTO-XML: pro Seite via canvas.annotations[].id abrufbar
+## 1. Primäre Datenquelle
 
-Bild-URL-Muster (aus Manifest):
-  https://digi.ub.uni-heidelberg.de/iiif/3/boehtlingk1887%3ANNNNNNNNN.jpg/full/max/0/default.jpg
+Alle Faksimile-Bilder stammen über die standardisierte IIIF Image API von der Universitätsbibliothek Heidelberg:
+* **Manifest (v3):** `https://digi.ub.uni-heidelberg.de/diglit/iiif3/boehtlingk1887/manifest`
+* **Gesamtumfang:** 877 Seiten (Buchseiten 1–478 umfassen den Haupttext, die Śiva-Sūtras und die Nachträge)
+* **IIIF-Bild-URL-Muster:**
+  `https://digi.ub.uni-heidelberg.de/iiif/3/boehtlingk1887%3ANNNNNNNNN.jpg/full/max/0/default.jpg`
 
-## ID-Schema
+---
 
-Seitenindex: 0-based, entspricht Position im Manifest (items[index])
-  Seite 0   = Titelblatt
-  Seite 26  = Textseite 1 (label "1")
-  Seite 876 = letzte Seite
+## 2. Identifikations- & Zählschema
 
-Dateinamen:
-  ALTO-XML:     data/alto/alto_{NNNN}.xml      (z.B. alto_0026.xml)
-  TEI pro Band: data/tei/boehtlingk1887.tei.xml (ein Gesamt-TEI)
-  HTML-Ausgabe: data/html/book.html
+### Seitenindex
+* **0-basierter Index** entsprechend der Reihenfolge im IIIF-Manifest (`items[index]`):
+  * Index 0 = Titelblatt
+  * Index 26 = Buchseite 1 (Label `"1"`, Śiva-Sūtras)
+  * Index 27 = Buchseite 2 (Aṣṭādhyāyī 1.1.1)
+  * Index 503 = Buchseite 478 (Ende der Nachträge)
 
-Sutra-Referenz: Adhyaya.Pada.Sutra  →  z.B. "1.1.37"
-  Quelle: Heidelberger Seitenkopf ("1, 1, 37." → normalisiert "1.1.37")
-  Verwendung in TEI: <milestone unit="sutra" n="1.1.37"/>
-  Kreuzreferenz: GRETIL Gottingen (paniniiu.htm)
+### Sūtra-Referenzschema
+* **Struktur:** `Adhyāya.Pāda.Sūtra` (z. B. `1.1.1` bis `8.4.68`)
+  * Im TEI-P5-XML: `<milestone unit="sutra" n="1.1.1"/>` und `<entry xml:id="sutra-1.1.1">`
+  * Im Master-JSON: Identifiziert durch `"ref": "1.1.1"`
+* **Śiva-Sūtras:** Nummeriert von `1` bis `14` (in JSON unter `shiva_sutras`)
 
-## Koordinatensystem (ALTO)
+---
 
-ALTO-Koordinaten beziehen sich auf die Bildgroesse der jeweiligen Seite:
-  alto_page_width  / alto_page_height: Pixelabmessungen (z.B. 2238x3548)
-  hpos / vpos:  Pixel-Koordinaten der Textzeile (oben links)
-  width / height: Abmessungen der Textzeile in Pixeln
+## 3. Sprachkennzeichnung (BCP 47 & TEI)
 
-Beispiel Seite 26 (label "1"):
-  ALTO: 2238 x 3548 Pixel
-  Erste Zeile: hpos=778 vpos=930 (Sanskrit-Sutra, Zeile 1)
+* `de` / `xml:lang="de"`: Deutscher Übersetzungstext und philologische Kommentare von Otto von Böhtlingk.
+* `sa` / `xml:lang="sa"`: Kanonischer Sanskrit-Text in Devanāgarī.
+* `sa-Latn` / `xml:lang="sa-Latn"`: Sanskrit in wissenschaftlicher IAST-Transliteration.
 
-IIIF-Crop-URL pro Zeile (aus fetch.py / iiif_region()):
-  {iiif_service}/pct:{x},{y},{w},{h}/full/0/default.jpg
+---
 
-## TEI-Referenzierung
+## 4. TEI-Seitenreferenzierung
 
-TEI pb-Element pro Seite:
-  <pb n="{label}" facs="{iiif_image_url}"/>
+Jeder Seitenübergang in der TEI-P5-Edition ist mit dem hochauflösenden IIIF-Faksimile der UB Heidelberg verknüpft:
+```xml
+<pb n="1" facs="https://digi.ub.uni-heidelberg.de/iiif/3/boehtlingk1887%3A000000001.jpg/full/max/0/default.jpg"/>
+```
 
-Beispiel:
-  <pb n="1" facs="https://digi.ub.uni-heidelberg.de/iiif/3/boehtlingk1887%3A000000001.jpg/full/max/0/default.jpg"/>
+---
 
-Sutra als milestone:
-  <milestone unit="sutra" n="1.1.1"/>
+## 5. Koordinatensystem & Bounding-Boxen (Sandwich-PDF)
 
-Sprachkennzeichnung:
-  xml:lang="de"         Deutscher Kommentartext (Heidelberger OCR: gut)
-  xml:lang="sa"         Sanskrit Devanagari (korrekt erkannt)
-  xml:lang="sa-x-ocr"  Sanskrit aus OCR (Devanagari als Kauderwelsch, unkorrigiert)
-  xml:lang="sa-Latn"   Sanskrit in IAST-Transliteration (aus GRETIL)
-
-## Zwei-Gleise-Strategie
-
-Gleis A — schnell, Deutsch:
-  pplx/panini_pipeline/ (fetch + segment + render) → data/html/
-  Qualitat: gut fuer deutschen Kommentartext
-  Schwache: Devanagari-OCR unbrauchbar (Heidelberger Artefakt)
-  Einsatz: Smoke-Test, Leseedition Phase 2
-
-Gleis B — Mastertext:
-  data/alto/ → scripts/alto_to_tei.py → data/tei/
-  Ziel: Sutra-verankerte TEI-Edition mit IIIF-Bildlinks
-  Sutra-Devanagari: aus GRETIL-DB einbinden (nicht aus OCR)
-
-## IIIF-Entscheidung
-
-Option A (gewaehlt): IIIF-first, kein lokaler Bild-Download
-  Bilder bleiben auf Heidelberger Server, TEI pb/@facs referenziert direkt
-  Vorteil: kein Speicherplatz, immer aktuell
-  Nachteil: Offline-Betrieb erfordert lokalen IIIF-Mirror
-
-eScriptorium: aufgeschoben — nur falls eigenes OCR-Training fuer Sanskrit
-noetig wird. Erst Sanskrit-Qualitat aus Heidelberger ALTO evaluieren (Phase 2).
+* Mistral OCR (`mistral-ocr-latest`) liefert Bounding Boxes für erkannte Wörter und Zeilenblöcke (`data/mistral/*.mistral.json`).
+* Die Koordinaten werden im Koordinatensystem der Heidelberger Faksimiles (Pixelabmessungen, z. B. 2.238 x 3.548 Pixel) berechnet.
+* Beim PDF-Assembly ([`scripts/build_sandwich_pdf.py`](https://github.com/birchville-org/boethlingk/blob/main/scripts/build_sandwich_pdf.py)) werden die Koordinaten in PDF-Punkte umgerechnet und mit PDF Text Rendering Mode 3 (*Neither fill nor stroke text*) deckungsgleich über die gedruckten Glyphen gelegt.

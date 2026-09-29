@@ -111,6 +111,5 @@ python3 scripts/build_typeset_edition.py
 
 * [Scholarly Case Study & Pipeline Methodology](case-study.md)
 * [Data Architecture & Three-Layer Model](data-architecture.md)
-* [Architectural Pipeline Decisions](pipeline-decisions.md)
 * [Conventions & IIIF Specification](conventions.md)
 * [Wiki Overview](wiki-home.md)
