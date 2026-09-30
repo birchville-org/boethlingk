@@ -18,7 +18,7 @@ Die ausführliche Dokumentation umfasst:
 3. **Kanonisches Alignment:** Lückenloser Abgleich gegen den Aṣṭādhyāyī Sūtrapāṭha (3.997 Sūtras, 0 Duplikate, 0 Lücken).
 4. **Das 1:1 Sandwich-PDF:** Verlustfreie Bildreproduktion mit unsichtbarer Vektortext-Ebene (PDF Text Render Mode 3).
 5. **Wissenschaftliche TEI-P5-Edition:** 100 % schema-valide XML-Edition mit IIIF-Verknüpfungen.
-6. **QA-Viewer:** Webbasierter Split-Pane-Editor mit Faksimile-Zoom und Silent Auto-Repair beim Speichern.
+6. **QA-Viewer & Kuratierungs-Workflow:** Webbasierter Split-Pane-Editor mit Faksimile-Zoom, Silent Auto-Repair beim Speichern sowie Feature-Branch- und Pull-Request-Verfahren für wissenschaftliche Korrekturen.
 
 ---
 

@@ -113,25 +113,77 @@ python3 scripts/build_sandwich_pdf.py \
 
 ---
 
-## 🚀 Step 4: Verify & Commit
+## 🚀 Step 4: Verify, Commit & Pull Request (Curation Workflow)
 
-1. Run local integrity checks:
-   ```bash
-   python3 -c "
-   import json
-   with open('data/ashtadhyayi_complete_boethlingk1887.json', encoding='utf-8') as f:
-       d = json.load(f)
-   assert len(d['shiva_sutras']) == 14
-   assert len(d['sutras']) == 3983
-   print('Integrity: 100% OK')
-   "
-   ```
+The `boethlingk` project is maintained as a **scholarly curated edition** (Curated Edition, directed by Marco Demarmels / birchville-org). To ensure the long-term canonical integrity of the 3,997 sūtras and strict compliance of the TEI-P5 XML edition, all textual corrections, philological refinements, and enhancements must be submitted via **feature branches and Pull Requests (PR)**.
 
-2. Commit and push:
-   ```bash
-   git add data/ashtadhyayi_complete_boethlingk1887.json data/tei/boehtlingk1887_p5.xml
-   git commit -m "fix(sutra): correct reading and commentary for sutra 1.1.4"
-   git push origin main
-   ```
+### 1. Run Local Integrity Checks
+Before committing, verify that no sūtras were dropped or inadvertently modified, and that the TEI-P5 RelaxNG schema validation succeeds:
 
-The GitHub Actions CI pipeline (`.github/workflows/ci.yml`) validates dataset integrity and schema validity automatically on every push.
+```bash
+# a) Check master JSON integrity (exactly 14 Shiva Sutras + 3,983 Astadhyayi Sutras = 3,997):
+python3 -c "
+import json
+with open('data/ashtadhyayi_complete_boethlingk1887.json', encoding='utf-8') as f:
+    d = json.load(f)
+assert len(d['shiva_sutras']) == 14
+assert len(d['sutras']) == 3983
+print('Integrity: 100% OK')
+"
+
+# b) Regenerate and validate TEI-P5 XML against the official RelaxNG schema:
+python3 scripts/generate_tei_p5.py \
+  --input data/ashtadhyayi_complete_boethlingk1887.json \
+  --output data/tei/boehtlingk1887_p5.xml \
+  --schema schemas/tei_all.rng
+```
+
+### 2. Create a Feature Branch & Commit Changes
+Do not commit directly to `main`. Isolate changes within a descriptive feature branch:
+
+```bash
+# Create and checkout a new branch (convention: fix/sutra-<ref> or corr/<topic>)
+git checkout -b fix/sutra-1.1.4
+
+# Stage modified dataset and generated TEI-P5 XML
+git add data/ashtadhyayi_complete_boethlingk1887.json data/tei/boehtlingk1887_p5.xml
+
+# Create a clear, conventional commit message
+git commit -m "fix(sutra): correct reading and commentary for sutra 1.1.4"
+```
+
+### 3. Push Branch & Open a Pull Request (PR)
+Push the branch to the remote repository (or your fork):
+
+```bash
+git push -u origin fix/sutra-1.1.4
+```
+
+Then open a **Pull Request** against branch `main` on GitHub:
+* **Via GitHub Web UI:** Follow the *"Compare & pull request"* prompt that appears automatically after pushing.
+* **Via GitHub CLI (`gh`):**
+  ```bash
+  gh pr create \
+    --title "fix(sutra): correct reading and commentary for sutra 1.1.4" \
+    --body "Philological alignment with Heidelberg UB facsimile page 3: correction in commentary for sutra 1.1.4."
+  ```
+
+> 💡 **Best Practice for Pull Requests:**
+> - **Sūtra Reference (`ref`) & Page:** Specify the affected sūtra reference and book page (e.g., `Sūtra 1.1.4, p. 3`).
+> - **Facsimile Reference:** Include a link to the corresponding Heidelberg UB IIIF facsimile scan.
+> - **Rationale:** Provide a brief explanation of the correction (e.g., resolving an OCR misread of IAST diacritics or Devanāgarī ligatures).
+
+### 4. Automated CI Validation on Pull Requests
+Whenever a Pull Request is opened or updated, the GitHub Actions CI pipeline (`.github/workflows/ci.yml`) automatically executes:
+* **Master Dataset Integrity:** Verifies all 3,997 sūtras for completeness and uniqueness (0 duplicates, 0 gaps).
+* **TEI-P5 RelaxNG Validation:** Validates the generated XML file against the official `schemas/tei_all.rng` schema.
+
+Merging requires all CI checks to pass with green status.
+
+### 5. Curation, Review & Approval
+As the project curator, **Marco Demarmels** philologically and technically reviews submitted changes against the original 1887 print and Heidelberg UB facsimiles:
+1. **Philological Review:** Does the proposed change faithfully represent Böhtlingk's original text and apparatus (Leipzig 1887)?
+2. **Canonical Consistency:** Does canonical numbering, pāda structure, and text model remain unaltered?
+3. **Approval & Merge:** Once approved, the Pull Request is merged into the canonical `main` branch, and updated release artifacts are generated if needed.
+
+*(Note: Direct commits and pushes to `main` are reserved exclusively for the project curator for administrative releases and automated deployment pipelines.)*
