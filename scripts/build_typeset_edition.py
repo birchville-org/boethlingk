@@ -110,6 +110,7 @@ def main() -> None:
     typst_cmd = [
         "typst", "compile",
         "--root", ".",
+        "--font-path", "data/fonts",
         "scripts/boethlingk1887_edition.typ",
         str(args.output),
     ]

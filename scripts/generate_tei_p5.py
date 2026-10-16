@@ -112,6 +112,8 @@ def build_tei_header(root: etree._Element, total_pages: int, total_sutras: int) 
     bibl.text = "Böhtlingk, Otto: Pâṇini's Grammatik, herausgegeben, übersetzt, erläutert und mit verschiedenen Indices versehen. Leipzig: H. Haessel, 1887. "
     ref_digi = make_el("ref", bibl, target="https://digi.ub.uni-heidelberg.de/diglit/boehtlingk1887")
     ref_digi.text = "Digitalisat der Universitätsbibliothek Heidelberg (Signatur: Bibliotheca Palatina)"
+    ref_manifest = make_el("ref", bibl, target="https://digi.ub.uni-heidelberg.de/diglit/iiif/boehtlingk1887/manifest.json", type="iiif-manifest")
+    ref_manifest.text = "IIIF Presentation Manifest"
 
     # Encoding Description
     enc_desc = make_el("encodingDesc", header)

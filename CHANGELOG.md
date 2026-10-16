@@ -2,6 +2,15 @@
 
 Alle wesentlichen Änderungen und Meilensteine dieses Projekts werden in dieser Datei dokumentiert.
 
+## [1.4.0] - 2026-10-16
+
+### Added
+- **AlexandriaSandwich v1.5.0 Integration & IIIF-Faksimile-Verknüpfung:**
+  - `job.config.json` und `iiif_pages.json` integriert mit nativer UB Heidelberg IIIF Presentation v2/v3 Auflösung (`https://digi.ub.uni-heidelberg.de/diglit/iiif/boehtlingk1887/manifest.json`).
+  - Vektor-Neusatz (`boethlingk1887_typeset_edition.pdf`) aktualisiert mit hermetischem OpenType-Font-Vendoring (*Noto Serif Devanagari* und *Linux Libertine O*) sowie interaktiven Originalseiten-Links auf die IIIF-Digitalisate der UB Heidelberg.
+  - Injektion von 42 hierarchischen Lesezeichen (Outlines/Bookmarks) und standardisierten Metadaten in `boethlingk1887_typeset_edition.pdf` und `boehtlingk1887_sandwich.pdf`.
+  - TEI-P5 Edition (`boehtlingk1887_p5.xml`) mit validen IIIF-Manifest-Referenzen in `<sourceDesc>`.
+
 ## [1.3.0] - 2026-09-28
 
 ### Added

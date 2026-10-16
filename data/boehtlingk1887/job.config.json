@@ -1,0 +1,23 @@
+{
+  "$schema": "../../schemas/job.config.schema.json",
+  "title": "Pāṇini's Grammatik",
+  "author": "Pāṇini; Böhtlingk, Otto von   [Hrsg.]",
+  "editor": "",
+  "year": 1887,
+  "publisher": "",
+  "iiif_manifest": "https://digi.ub.uni-heidelberg.de/diglit/iiif/boehtlingk1887/manifest.json",
+  "lang": "deu+eng",
+  "threshold": 50.0,
+  "use_mistral": true,
+  "use_unpaper": true,
+  "skip_preprocess": false,
+  "limit": 0,
+  "heuristics": {
+    "script": "Latin",
+    "two_column": false,
+    "strip_running_headers": true,
+    "strip_page_numbers": true,
+    "strip_library_boilerplates": true,
+    "strip_rogue_scripts": true
+  }
+}

@@ -6,7 +6,7 @@
 )
 
 #set text(
-  font: ("Baskerville", "Times New Roman", "Devanagari MT", "Kohinoor Devanagari"),
+  font: ("Noto Serif Devanagari", "Linux Libertine O", "Libertinus Serif", "Baskerville", "Times New Roman", "Devanagari MT", "Kohinoor Devanagari"),
   size: 10pt,
   lang: "de"
 )
@@ -168,16 +168,30 @@
 
     #for s in pada.sutras [
       #block(width: 100%, breakable: true, [
-        // 1. Devanāgarī Sūtra-Kopf (fett zentriert)
-        #align(center)[
-          #text(12.5pt, weight: "bold", font: ("Devanagari MT", "Kohinoor Devanagari"))[
-            #s.canonical_devanagari ॥ #to-deva(s.sutra_num) ॥
+        // 1. Devanāgarī Sūtra-Kopf (fett zentriert) mit Originalseiten-Referenz
+        #grid(
+          columns: (1fr, auto, 1fr),
+          align: (left, center, right),
+          [],
+          [
+            #align(center)[
+              #text(12.5pt, weight: "bold", font: ("Noto Serif Devanagari", "Linux Libertine O", "Libertinus Serif", "Devanagari MT", "Kohinoor Devanagari"))[
+                #s.canonical_devanagari ॥ #to-deva(s.sutra_num) ॥
+              ]
+              #v(-0.25em)
+              #text(8.5pt, style: "italic")[
+                (#s.ref — #s.canonical_iast)
+              ]
+            ]
+          ],
+          [
+            #if s.page != none [
+              #text(7pt, fill: rgb("#b45309"), weight: "bold")[
+                #link("https://digi.ub.uni-heidelberg.de/diglit/boehtlingk1887/" + str(s.page + 26))[[S. #s.page]]
+              ]
+            ]
           ]
-          #v(-0.25em)
-          #text(8.5pt, style: "italic")[
-            (#s.ref — #s.canonical_iast)
-          ]
-        ]
+        )
 
         // 2. Deutsche Übersetzung (Böhtlingk 1887)
         #if s.translation != "" [

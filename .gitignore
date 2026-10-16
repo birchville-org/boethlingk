@@ -56,4 +56,8 @@ Boethlingk_Paninis_Grammatik_comp.md
 !data/mistral/**
 !data/sutras.json
 !data/shiva_sutras.json
+!data/boehtlingk1887/
+data/boehtlingk1887/iiif_manifest.json
+!data/boehtlingk1887/job.config.json
+!data/boehtlingk1887/iiif_pages.json
 data/fonts/
