@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
 """
-Prepares pre-grouped page data for the dense facsimile edition of Boethlingk 1887.
+scripts/prepare_facsimile_dense_data.py — Prepares pre-grouped page data for the
+dense facsimile edition of Boethlingk 1887.
 Every page 2..476 contains exactly the sutras of the historical original page.
 Includes authentic colophons at the end of every Pada.
+Calculates adaptive typographic profiles per page to maximize visual space utilization
+without causing overflow.
 """
 from __future__ import annotations
 
@@ -28,34 +31,103 @@ pada_ordinals = {
     4: "चतुर्थः पादः",
 }
 
-adh_names = {
-    1: "Erster Adhyāya",
-    2: "Zweiter Adhyāya",
-    3: "Dritter Adhyāya",
-    4: "Vierter Adhyāya",
-    5: "Fünfter Adhyāya",
-    6: "Sechster Adhyāya",
-    7: "Siebenter Adhyāya",
-    8: "Achter Adhyāya",
-}
-
-pada_names = {
-    1: "Erster Pāda",
-    2: "Zweiter Pāda",
-    3: "Dritter Pāda",
-    4: "Vierter Pāda",
-}
-
 adh_romans = {1: "I", 2: "II", 3: "III", 4: "IV", 5: "V", 6: "VI", 7: "VII", 8: "VIII"}
+
+heavy_pages = {
+    8: {"tier": 0, "deva_size": "9.8pt", "body_size": "8.2pt", "body_leading": "0.28em", "comm_size": "7.0pt", "comm_leading": "0.24em", "sutra_spacing": "0.08em"},
+    282: {"tier": 0, "deva_size": "9.8pt", "body_size": "8.2pt", "body_leading": "0.28em", "comm_size": "7.0pt", "comm_leading": "0.24em", "sutra_spacing": "0.08em"},
+    286: {"tier": 0, "deva_size": "9.8pt", "body_size": "8.2pt", "body_leading": "0.28em", "comm_size": "7.0pt", "comm_leading": "0.24em", "sutra_spacing": "0.08em"},
+    378: {"tier": 0, "deva_size": "9.8pt", "body_size": "8.2pt", "body_leading": "0.28em", "comm_size": "7.0pt", "comm_leading": "0.24em", "sutra_spacing": "0.08em"},
+    460: {"tier": 0, "deva_size": "9.8pt", "body_size": "8.2pt", "body_leading": "0.28em", "comm_size": "7.0pt", "comm_leading": "0.24em", "sutra_spacing": "0.08em"},
+}
 
 
 def get_colophon(a: int, p: int) -> str:
     if a == 8 and p == 4:
-        return "॥ इत्यष्टमस्याध्यायस्य चतुर्थः पादः । अध्यायश्च समाप्तः ॥\n॥ इति शब्दानुशासनं समाप्तम् ॥"
+        return "॥ इत्यष्टमस्याध्यायस्य चतुर्थः पादः । अध्यायश्च समाप्तः ॥\n॥ इति शब्दानुशासनम् समाप्तम् ॥"
     elif p == 4:
         return f"॥ इति {adh_ordinals[a]} चतुर्थः पादो ऽध्यायश्च समाप्तः ॥"
     else:
         return f"॥ इति {adh_ordinals[a]} {pada_ordinals[p]} ॥"
+
+
+def calculate_profile(p_num: int, sutras: list[dict]) -> dict:
+    s_count = len(sutras)
+    trans_chars = sum(len(s.get("translation", "")) for s in sutras)
+    comm_chars = sum(len(s.get("commentary", "")) for s in sutras)
+    has_colophon = any(s.get("colophon") for s in sutras)
+    total_chars = trans_chars + comm_chars
+
+    if p_num in [8, 378, 438, 460]:
+        tier = 0
+        deva_size = "9.8pt"
+        body_size = "8.2pt"
+        body_leading = "0.28em"
+        comm_size = "7.0pt"
+        comm_leading = "0.24em"
+        sutra_spacing = "0.08em"
+    elif p_num in [282, 286]:
+        # Extreme 11-sutra pages
+        tier = 0
+        deva_size = "9.6pt"
+        body_size = "8.1pt"
+        body_leading = "0.27em"
+        comm_size = "6.9pt"
+        comm_leading = "0.23em"
+        sutra_spacing = "0.06em"
+    elif p_num == 70 or (s_count >= 11 and total_chars > 800):
+        # 11-sutra pages with short texts
+        tier = 1
+        deva_size = "10.0pt"
+        body_size = "8.4pt"
+        body_leading = "0.32em"
+        comm_size = "7.2pt"
+        comm_leading = "0.26em"
+        sutra_spacing = "0.14em"
+    else:
+        est_lines = s_count * 2.1 + (trans_chars / 75.0) + (comm_chars / 95.0) + (2.5 if has_colophon else 0.0)
+        if est_lines >= 38.0 or comm_chars > 2200 or total_chars > 2600:
+            tier = 1
+            deva_size = "10.0pt"
+            body_size = "8.4pt"
+            body_leading = "0.32em"
+            comm_size = "7.2pt"
+            comm_leading = "0.26em"
+            sutra_spacing = "0.14em"
+        elif est_lines >= 30.0 or comm_chars > 1750 or total_chars > 2100:
+            tier = 2
+            deva_size = "10.5pt"
+            body_size = "8.7pt"
+            body_leading = "0.34em"
+            comm_size = "7.4pt"
+            comm_leading = "0.28em"
+            sutra_spacing = "0.20em"
+        elif est_lines >= 22.0:
+            tier = 3
+            deva_size = "11.0pt"
+            body_size = "9.1pt"
+            body_leading = "0.38em"
+            comm_size = "7.8pt"
+            comm_leading = "0.32em"
+            sutra_spacing = "0.35em"
+        else:
+            tier = 4
+            deva_size = "11.6pt"
+            body_size = "9.5pt"
+            body_leading = "0.44em"
+            comm_size = "8.2pt"
+            comm_leading = "0.36em"
+            sutra_spacing = "0.55em"
+
+    return {
+        "tier": tier,
+        "deva_size": deva_size,
+        "body_size": body_size,
+        "body_leading": body_leading,
+        "comm_size": comm_size,
+        "comm_leading": comm_leading,
+        "sutra_spacing": sutra_spacing,
+    }
 
 
 def main() -> None:
@@ -110,12 +182,15 @@ def main() -> None:
         a_num = first_s.get("adhyaya", 1)
         p_num_in_adh = first_s.get("pada", 1)
 
+        prof = calculate_profile(p_num, processed)
+
         pages_output.append({
             "page_num": p_num,
             "adh_num": a_num,
             "pada_num": p_num_in_adh,
             "header_adh_str": f"{adh_romans.get(a_num, 'I')}. Adhyāya. {p_num_in_adh}. Pāda.",
             "last_sutra_ref": f"{last_s.get('adhyaya', 1)}, {last_s.get('pada', 1)}, {last_s.get('sutra_num', 1)}.",
+            "profile": prof,
             "sutras": processed,
         })
 
@@ -123,7 +198,7 @@ def main() -> None:
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(pages_output, f, ensure_ascii=False, indent=2)
 
-    print(f"Erfolgreich {len(pages_output)} Seiten (S. 2–476) exportiert nach {out_path}")
+    print(f"Erfolgreich {len(pages_output)} Seiten (S. 2–476) mit adaptiven Profilen exportiert nach {out_path}")
 
 
 if __name__ == "__main__":
