@@ -1,16 +1,30 @@
 #!/usr/bin/env python3
 """
-scripts/build_typeset_edition.py — Builds the complete, modern, typeset edition
-of Otto von Böhtlingk's Pāṇini (1887) using Typst.
+scripts/build_typeset_edition_v2.py — Compiles the modernized, scholarly typeset
+edition (v2) of Otto von Böhtlingk's Pāṇini (1887) using Typst & PyMuPDF.
+
+Features:
+- Full Birchville Scholarly Synthesis front matter with coat of arms & imprint.
+- Classical Leipzig typography: Noto Serif Devanagari + Libertinus Serif, leading 0.46em.
+- Dynamic original page boundaries: '📖 Böhtlingk (1887) S. X'.
+- Widow/orphan prevention: Sūtra heading and translation locked together.
+- Native PDF page labels: Roman 'i'–'vi' for front matter, Arabic '1'–'...' for body.
+- 45+ hierarchical PDF bookmarks (TOC outline).
 """
 from __future__ import annotations
 
 import argparse
 import json
+import shutil
 import subprocess
 import sys
 import time
 from pathlib import Path
+
+try:
+    import pymupdf
+except ImportError:
+    import fitz as pymupdf
 
 
 def to_deva_num(n: int | str) -> str:
@@ -74,7 +88,7 @@ def prepare_data() -> None:
     with open(out_tree_path, "w", encoding="utf-8") as f:
         json.dump(tree, f, ensure_ascii=False, indent=2)
 
-    # Corrigenda aus TEI-P5 sicherstellen
+    # Ensure corrigenda.json exists
     corrigenda_path = Path("data/corrigenda.json")
     if not corrigenda_path.exists():
         tei_path = Path("data/tei/boehtlingk1887_p5.xml")
@@ -89,6 +103,67 @@ def prepare_data() -> None:
                     json.dump(corrigenda, f, ensure_ascii=False, indent=2)
 
 
+def post_process_pdf(pdf_path: Path) -> None:
+    """Inject native PDF page labels and complete hierarchical bookmarks."""
+    print("Post-Processing via PyMuPDF: Injektion von Page-Labels & TOC-Outline...")
+    doc = pymupdf.open(str(pdf_path))
+    total_pages = len(doc)
+
+    native_toc = doc.get_toc()
+
+    # Find start of body (Śiva-Sūtras)
+    shiva_idx = next((entry[2] - 1 for entry in native_toc if "Śiva" in entry[1]), 5)
+
+    # 1. Native Page Labels:
+    # Front Matter: 0..shiva_idx -> Roman i..
+    # Body: shiva_idx..end -> Arabic 1..
+    labels = [
+        {"startpage": 0, "style": "r", "firstpagenum": 1},
+        {"startpage": shiva_idx, "style": "D", "firstpagenum": 1},
+    ]
+    doc.set_page_labels(labels)
+
+    # 2. Complete hierarchical TOC Bookmarks
+    front_matter = [
+        [1, "Titelei & Bastard Title", 1],
+        [1, "Editionsvermerk & Curation Badge", 2],
+        [1, "Haupttitel (Leipzig 1887)", 3],
+        [1, "Vorwort zur digitalen Neuausgabe", 4],
+        [1, "Inhaltsübersicht", 5],
+    ]
+
+    final_toc = list(front_matter)
+    current_adh = ""
+    for lvl, title, pno in native_toc:
+        if lvl == 1 and "Adhyāya" in title:
+            current_adh = title.split()[0] + " Adhyāya"
+            final_toc.append([lvl, title, pno])
+        elif lvl == 2:
+            enhanced_title = f"{current_adh} — {title}" if current_adh else title
+            final_toc.append([lvl, enhanced_title, pno])
+        else:
+            final_toc.append([lvl, title, pno])
+
+    doc.set_toc(final_toc)
+    temp_out = pdf_path.with_name(pdf_path.stem + ".tmp.pdf")
+    doc.save(str(temp_out), garbage=3, deflate=True)
+    doc.close()
+
+    temp_out.replace(pdf_path)
+
+    # Export TOC specification file
+    toc_txt_path = pdf_path.with_suffix(".toc.txt")
+    with open(toc_txt_path, "w", encoding="utf-8") as f:
+        f.write("# Pāṇini's Grammatik (Otto von Böhtlingk 1887) — TOC Outline Specification (v2)\n")
+        f.write("# Format: [Level Indentation] Title | Page\n\n")
+        for lvl, title, page_n in final_toc:
+            indent = "  " * (lvl - 1)
+            f.write(f"{indent}{title} | {page_n}\n")
+
+    print(f"✓ TOC ({len(final_toc)} Einträge) und native Page-Labels erfolgreich injiziert.")
+    print(f"✓ TOC-Spezifikation exportiert: {toc_txt_path}")
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Compile modern typeset PDF of Boethlingk 1887")
     parser.add_argument(
@@ -101,7 +176,7 @@ def main() -> None:
 
     t0 = time.time()
     print("=" * 70)
-    print("Kompiliere vollständige typografische Neuausgabe (Methode 3)...")
+    print("Kompiliere modernisierte typografische Neuausgabe (Scholarly Synthesis)...")
     print("=" * 70)
 
     prepare_data()
@@ -119,6 +194,25 @@ def main() -> None:
     if res.returncode != 0:
         print("Fehler beim Typst-Kompilieren!", file=sys.stderr)
         sys.exit(res.returncode)
+
+    post_process_pdf(args.output)
+
+    # Mirror to v2 for backward compatibility
+    v2_pdf = args.output.parent / "boethlingk1887_typeset_edition_v2.pdf"
+    if args.output != v2_pdf:
+        shutil.copy2(args.output, v2_pdf)
+        orig_toc = args.output.with_suffix(".toc.txt")
+        v2_toc = args.output.parent / "boethlingk1887_typeset_edition_v2.toc.txt"
+        if orig_toc.exists():
+            shutil.copy2(orig_toc, v2_toc)
+        print(f"✓ Gespiegelt für v2-Kompatibilität: {v2_pdf}")
+
+    # Sync to User Indologie Panini folder if present
+    indologie_dest = Path("/Users/marco/Documents/00_Indologie/Panini")
+    if indologie_dest.exists():
+        dest_file = indologie_dest / "BOETHLINGK 1887 Panini Grammatik (Digital Typeset Neusatz v2).pdf"
+        shutil.copy2(args.output, dest_file)
+        print(f"✓ Synchronisiert nach Indologie-Arbeitsordner: {dest_file}")
 
     elapsed = time.time() - t0
     size_mb = args.output.stat().st_size / (1024 * 1024)

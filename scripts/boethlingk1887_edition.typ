@@ -1,19 +1,29 @@
+// =============================================================================
+// Birchville Scholarly Synthesis — Canonical Typeset Edition (v2)
+// Otto von Böhtlingk: Pāṇini's Grammatik (2. Auflage, Leipzig 1887)
+// =============================================================================
+
+#set document(
+  title: "Pāṇini's Grammatik (Otto von Böhtlingk, 1887) — Digitale Neuausgabe",
+  author: "Otto von Böhtlingk (Ed. Marco Demarmels / Birchville Foundation)",
+  keywords: ("Pāṇini", "Aṣṭādhyāyī", "Sanskrit", "Grammatik", "Böhtlingk", "Indologie", "Birchville")
+)
+
 #set page(
   paper: "iso-b5",
-  margin: (top: 2.2cm, bottom: 2.2cm, inside: 2.5cm, outside: 2cm),
+  margin: (top: 2.2cm, bottom: 2.2cm, inside: 2.4cm, outside: 2.0cm),
   header: none,
   footer: none
 )
 
 #set text(
-  font: ("Noto Serif Devanagari", "Linux Libertine O", "Libertinus Serif", "Baskerville", "Times New Roman", "Devanagari MT", "Kohinoor Devanagari"),
-  size: 10pt,
+  font: ("Libertinus Serif", "Linux Libertine O", "Noto Serif Devanagari", "Devanagari MT", "Times New Roman"),
+  size: 9.5pt,
   lang: "de"
 )
 
-#set par(justify: true, leading: 0.65em)
+#set par(justify: true, leading: 0.46em)
 
-// =============================================================================
 // Helper: Convert ASCII digits to Devanāgarī numerals
 #let to-deva(num) = {
   let s = str(num)
@@ -21,18 +31,59 @@
   s.clusters().map(c => map.at(c, default: c)).join("")
 }
 
-// 1. TITELSEITE & IMPRESSUM
+// =============================================================================
+// 1. TITELEI & IMPRESSUM (BIRCHVILLE SCHOLARLY SYNTHESIS)
 // =============================================================================
 
+// Seite i: Halbtitel (Bastard Title)
+#v(6cm)
 #align(center)[
-  #v(2.5cm)
-  #text(22pt, weight: "bold", font: ("Baskerville", "Times New Roman"))[PĀṆINI'S GRAMMATIK]
+  #text(16pt, weight: "bold", tracking: 0.12em)[#smallcaps[Pāṇini's Grammatik]] \
+  #v(0.6cm)
+  #text(9pt, style: "italic", fill: rgb("#334155"))[Otto von Böhtlingk (Leipzig 1887)]
+]
+
+#pagebreak()
+
+// Seite ii: Impressum & Birchville Curation Badge
+#v(3.5cm)
+#align(center)[
+  #image("/docs/assets/birchville_logo.png", height: 2.2cm) \
+  #v(0.5cm)
+  #text(8pt, weight: "bold", tracking: 0.10em, fill: rgb("#b45309"))[BIRCHVILLE SCHOLARLY SYNTHESIS] \
+  #v(0.2cm)
+  #text(10pt, weight: "bold", fill: rgb("#03192e"))[Kanonische Editionen klassischer philologischer Referenzwerke] \
+  #v(0.8cm)
+  #line(length: 40%, stroke: 0.4pt + rgb("#d8d2c6")) \
+  #v(0.8cm)
+  #text(8.5pt, fill: rgb("#1e2d37"))[
+    *Historisches Original:* Otto von Böhtlingk (1815–1904) \
+    *Pâṇini's Grammatik* · Zweite Auflage · Leipzig 1887 (Verlag von H. Haessel) \
+    Auf Basis der Originalscans der Universitätsbibliothek Heidelberg (Bibliotheca Palatina) \
+    \
+    *Digitale Neuausgabe:* AlexandriaSandwich Digital Humanities Pipeline (2026) \
+    *Herausgeber & Neusatz:* Marco Demarmels (Birchville Foundation) \
+    *Kanonisches Alignment:* 100 % Abdeckung (14 Śiva-Sūtras + 3.983 Aṣṭādhyāyī-Sūtras) \
+    *TEI-P5 Konformität:* Schema-valide XML-Masterauszeichnung (RelaxNG) \
+    \
+    *Urheberrecht & Lizenzen:* \
+    Historisches Originalwerk: Gemeinfrei (Public Domain worldwide) \
+    Digitale Ausgabe, Typst-Code & TEI-Encoding: MIT License / CC-BY-SA 4.0
+  ]
+]
+
+#pagebreak()
+
+// Seite iii: Haupttitel (Historischer Satz nach Leipzig 1887)
+#align(center)[
+  #v(2.0cm)
+  #text(22pt, weight: "bold", font: ("Baskerville", "Libertinus Serif", "Times New Roman"))[PĀṆINI'S GRAMMATIK]
   
   #v(0.8cm)
-  #text(12pt, style: "italic")[herausgegeben, übersetzt, erläutert und mit verschiedenen Indices versehen]
+  #text(11pt, style: "italic")[herausgegeben, übersetzt, erläutert und mit verschiedenen Indices versehen]
   
   #v(0.4cm)
-  #text(11pt)[von]
+  #text(10pt)[von]
   
   #v(0.4cm)
   #text(16pt, weight: "bold")[OTTO BÖHTLINGK]
@@ -40,22 +91,35 @@
   #v(0.8cm)
   #text(11pt, style: "italic")[Zweite Auflage]
   
-  #v(0.5cm)
-  #line(length: 30%, stroke: 0.5pt)
-  #v(0.5cm)
+  #v(0.6cm)
+  #line(length: 25%, stroke: 0.5pt)
+  #v(0.6cm)
   
-  #text(11pt)[LEIPZIG \ VERLAG VON H. HAESSEL \ 1887]
+  #text(10.5pt)[LEIPZIG \ VERLAG VON H. HAESSEL \ 1887]
+]
 
-  #v(3.2cm)
-  #line(length: 60%, stroke: 0.4pt)
-  #v(0.4cm)
-  #text(8pt, fill: luma(70))[
-    Digitale typografische Neuausgabe (2026) auf Basis der Originalscans der \
-    Universitätsbibliothek Heidelberg (Bibliotheca Palatina) \
-    Kanonisch konsolidierter Master-Datensatz (100% Abdeckung, 3.997 Sūtras) \
-    AlexandriaSandwich Digital Humanities Edition \
-    Lizenziert unter Public Domain (Werk) / CC-BY-SA 4.0 / MIT (Edition)
-  ]
+#pagebreak()
+
+// Seite iv: Vorwort zur digitalen Neuausgabe
+#heading(level: 1, numbering: none, outlined: false)[Vorwort zur digitalen Neuausgabe]
+
+#v(0.5em)
+
+Die vorliegende digitale Neuausgabe von Otto von Böhtlingks zweiter Auflage der *Grammatik des Pāṇini* (Leipzig 1887) verbindet die editorische und philologische Autorität des 19. Jahrhunderts mit modernen Satz- und Archivierungsstandards des 21. Jahrhunderts.
+
+Böhtlingks Werk ist bis heute die maßgebliche europäische Gesamtdarstellung der Aṣṭādhyāyī mit deutscher Übersetzung und fortlaufendem sachkritischem Kommentar. Frühere Digitalisierungen litten entweder unter unvollständiger OCR (Verlust von Devanāgarī-Ligaturen und IAST-Diakritika) oder unter unstrukturierten Textabschriften ohne wissenschaftlichen Zitationsbezug.
+
+Im Rahmen der *AlexandriaSandwich-Pipeline* wurden sämtliche 478 Buchseiten der Heidelberger Originalvorlage multimodal erfasst, gegen den kanonischen Aṣṭādhyāyī-Sūtrapāṭha abgeglichen und lückenlos zu 100 % (alle 3.997 Sūtras) strukturiert.
+
+*Typografische Grundsätze dieser Neuausgabe:*
+1. *Duale Zitationssicherheit:* Jedes Sūtra führt sowohl die kanonische Aṣṭādhyāyī-Zählung (z. B. `1.1.1`) als auch den exakten Seitenumbruch der historischen Leipziger Originalausgabe von 1887 (`📖 Böhtlingk (1887) S. 2`).
+2. *Authentische Hierarchie:* Der Devanāgarī-Sūtratext steht in typografisch hervorgehobenem Satz, gefolgt von Böhtlingks Übersetzung im Haupttext und seinem philologischen Kommentar im klassischen Kleindruck (*Petit*).
+3. *Vektorneusatz:* Gestochen scharfe Schrift auf Basis offener Schriften (*Libertinus Serif* und *Noto Serif Devanagari*) für ermüdungsfreies Lesen auf hochauflösenden Bildschirmen und professionellen Drucksystemen.
+
+#v(1.5em)
+#align(right)[
+  _Birchville Foundation, im Oktober 2026_ \
+  *Marco Demarmels*
 ]
 
 #pagebreak()
@@ -64,8 +128,12 @@
 // 2. INHALTSÜBERSICHT
 // =============================================================================
 
+#heading(level: 1, numbering: none, outlined: false)[Inhaltsübersicht]
+
+#v(0.6em)
+
 #outline(
-  title: [Inhaltsübersicht],
+  title: none,
   depth: 2,
   indent: 1.5em,
 )
@@ -73,7 +141,7 @@
 #pagebreak()
 
 // =============================================================================
-// 3. AB HIER ARABISCHE SEITENZÄHLUNG & DYNAMISCHE LEBENDE KOLUMNENTITEL
+// 3. ARABISCHE SEITENZÄHLUNG & DYNAMISCHE LEBENDE KOLUMNENTITEL
 // =============================================================================
 
 #counter(page).update(1)
@@ -81,17 +149,35 @@
 #set page(
   header: context {
     let page_num = counter(page).get().first()
-    let headings = query(selector(heading).before(here()))
-    let current_title = if headings.len() > 0 { headings.last().body } else { [Pāṇini's Grammatik] }
     
-    if calc.even(page_num) [
-      #text(8.5pt, weight: "bold")[#page_num]
-      #h(1fr)
-      #text(8pt, font: ("Baskerville", "Times New Roman"), style: "italic")[Pāṇini's Grammatik (Otto von Böhtlingk, 1887)]
-    ] else [
-      #text(8pt, font: ("Baskerville", "Times New Roman"), style: "italic")[#current_title]
-      #h(1fr)
-      #text(8.5pt, weight: "bold")[#page_num]
+    // Unterdrücke Kopfzeile auf Seiten mit Hauptüberschrift (Level 1)
+    let h1_on_page = query(selector(heading.where(level: 1)).after(here())).filter(h => counter(page).at(h.location()).first() == page_num)
+    if h1_on_page.len() > 0 {
+      return none
+    }
+
+    let h1_nodes = query(selector(heading.where(level: 1)).before(here()))
+    let h2_nodes = query(selector(heading.where(level: 2)).before(here()))
+    
+    let cur_h1 = if h1_nodes.len() > 0 { h1_nodes.last().body } else { [Pāṇini's Grammatik] }
+    let cur_h2 = if h2_nodes.len() > 0 { h2_nodes.last().body } else { [Aṣṭādhyāyī Sūtrapāṭha] }
+
+    [
+      #if calc.even(page_num) [
+        #text(8.5pt, weight: "bold")[#page_num]
+        #h(1fr)
+        #text(8pt, font: ("Libertinus Serif", "Linux Libertine O", "Times New Roman"))[#smallcaps[Pāṇini's Grammatik]]
+        #h(1fr)
+        #text(8pt, style: "italic", fill: rgb("#334155"))[Otto von Böhtlingk (1887)]
+      ] else [
+        #text(8pt, style: "italic", fill: rgb("#334155"))[#cur_h2]
+        #h(1fr)
+        #text(8pt, font: ("Libertinus Serif", "Linux Libertine O", "Times New Roman"))[#smallcaps[#cur_h1]]
+        #h(1fr)
+        #text(8.5pt, weight: "bold")[#page_num]
+      ]
+      #v(0.3em)
+      #line(length: 100%, stroke: 0.35pt + rgb("#d8d2c6"))
     ]
   },
   footer: none
@@ -127,28 +213,46 @@
 
 #heading(level: 1)[Śiva-Sūtras (Akṣarasamāmnāya)]
 
-#v(0.5em)
+#v(0.3em)
 #align(center)[
-  #text(9pt, style: "italic")[
+  #text(8.5pt, style: "italic", fill: rgb("#334155"))[
     Die 14 kanonischen Lautgruppen zur Bildung der grammatischen Pratyāhāras (Böhtlingk 1887, S. 1).
   ]
 ]
-#v(1em)
+#v(1.2em)
 
-#for s in shiva_canonical [
-  #block(width: 100%, breakable: false, [
-    #align(center)[
-      #text(13pt, weight: "bold", font: ("Devanagari MT", "Kohinoor Devanagari"))[
-        #s.at(1) ॥ #to-deva(s.at(0)) ॥
+#grid(
+  columns: (1fr, 1fr),
+  gutter: 2.5em,
+  [
+    #for s in shiva_canonical.slice(0, 7) [
+      #align(center)[
+        #text(12pt, weight: "bold", font: ("Noto Serif Devanagari", "Devanagari MT", "Kohinoor Devanagari"))[
+          #s.at(1) ॥ #to-deva(s.at(0)) ॥
+        ]
+        #v(-0.35em)
+        #text(8pt, style: "italic", fill: rgb("#334155"))[
+          (Śiva-Sūtra #s.at(0) — #s.at(2))
+        ]
       ]
-      #v(-0.25em)
-      #text(8.5pt, style: "italic")[
-        (Śiva-Sūtra #s.at(0) — #s.at(2))
-      ]
+      #v(0.65em)
     ]
-    #v(0.35em)
-  ])
-]
+  ],
+  [
+    #for s in shiva_canonical.slice(7, 14) [
+      #align(center)[
+        #text(12pt, weight: "bold", font: ("Noto Serif Devanagari", "Devanagari MT", "Kohinoor Devanagari"))[
+          #s.at(1) ॥ #to-deva(s.at(0)) ॥
+        ]
+        #v(-0.35em)
+        #text(8pt, style: "italic", fill: rgb("#334155"))[
+          (Śiva-Sūtra #s.at(0) — #s.at(2))
+        ]
+      ]
+      #v(0.65em)
+    ]
+  ]
+)
 
 #pagebreak()
 
@@ -156,61 +260,73 @@
 // 6. AṢṬĀDHYĀYĪ SŪTRAPĀṬHA (3.983 SŪTRAS)
 // =============================================================================
 
-#for adh in tree [
-  #pagebreak(weak: true)
-  #heading(level: 1)[#adh.title_de (#adh.title_sa)]
-  #v(0.8em)
+#{
+  let last_page_seen = -1
 
-  #for pada in adh.padas [
-    #v(0.5em)
-    #heading(level: 2)[#pada.title_de (#pada.title_sa)]
-    #v(0.6em)
-
-    #for s in pada.sutras [
-      #block(width: 100%, breakable: true, [
-        // 1. Devanāgarī Sūtra-Kopf (fett zentriert) mit Originalseiten-Referenz
-        #grid(
-          columns: (1fr, auto, 1fr),
-          align: (left, center, right),
-          [],
-          [
-            #align(center)[
-              #text(12.5pt, weight: "bold", font: ("Noto Serif Devanagari", "Linux Libertine O", "Libertinus Serif", "Devanagari MT", "Kohinoor Devanagari"))[
-                #s.canonical_devanagari ॥ #to-deva(s.sutra_num) ॥
-              ]
-              #v(-0.25em)
-              #text(8.5pt, style: "italic")[
-                (#s.ref — #s.canonical_iast)
-              ]
-            ]
-          ],
-          [
-            #if s.page != none [
-              #text(7pt, fill: rgb("#b45309"), weight: "bold")[
-                #link("https://digi.ub.uni-heidelberg.de/diglit/boehtlingk1887/" + str(s.page + 26))[[S. #s.page]]
-              ]
-            ]
-          ]
-        )
-
-        // 2. Deutsche Übersetzung (Böhtlingk 1887)
-        #if s.translation != "" [
-          #v(0.15em)
-          #text(9.5pt)[#s.translation]
-        ]
-
-        // 3. Philologischer Kommentar (Böhtlingks Kleindruck, leicht eingerückt)
-        #if s.commentary != "" [
-          #v(0.15em)
-          #pad(left: 1.2em)[
-            #text(8.2pt, fill: luma(35))[#s.commentary]
-          ]
-        ]
-        #v(0.65em)
-      ])
+  for adh in tree {
+    [
+      #pagebreak(weak: true)
+      #heading(level: 1)[#adh.title_de (#adh.title_sa)]
+      #v(0.6em)
     ]
-  ]
-]
+
+    for pada in adh.padas {
+      [
+        #v(0.4em)
+        #heading(level: 2)[#pada.title_de (#pada.title_sa)]
+        #v(0.5em)
+      ]
+
+      for s in pada.sutras {
+        let is_new_orig_page = (s.page != none and s.page != last_page_seen)
+        if is_new_orig_page {
+          last_page_seen = s.page
+          [
+            #v(0.5em)
+            #grid(
+              columns: (1fr, auto, 1fr),
+              align: (center, center, center),
+              line(length: 90%, stroke: 0.35pt + rgb("#d8d2c6")),
+              text(7.5pt, fill: rgb("#b45309"), weight: "bold")[#h(0.5em) 📖 Böhtlingk (1887) S. #s.page #h(0.5em)],
+              line(length: 90%, stroke: 0.35pt + rgb("#d8d2c6"))
+            )
+            #v(0.4em)
+          ]
+        }
+
+        [
+          #block(width: 100%, breakable: true)[
+            // Kopf und Übersetzung unteilbar zusammenhalten
+            #block(width: 100%, breakable: false)[
+              #align(center)[
+                #text(12pt, weight: "bold", font: ("Noto Serif Devanagari", "Devanagari MT", "Kohinoor Devanagari"))[
+                  #s.canonical_devanagari ॥ #to-deva(s.sutra_num) ॥
+                ]
+                #v(-0.25em)
+                #text(8.5pt, style: "italic", fill: rgb("#334155"))[
+                  (#s.ref · #s.canonical_iast)
+                ]
+              ]
+              #v(0.20em)
+              #if s.translation != "" [
+                #text(9.5pt, fill: rgb("#03192e"))[#s.translation]
+              ]
+            ]
+            // Philologischer Kommentar (Kleindruck, eingerückt)
+            #if s.commentary != "" [
+              #v(0.18em)
+              #pad(left: 1.2em)[
+                #set par(leading: 0.40em)
+                #text(8.3pt, fill: rgb("#1e2d37"))[#s.commentary]
+              ]
+            ]
+            #v(0.50em)
+          ]
+        ]
+      }
+    }
+  }
+}
 
 #pagebreak()
 
@@ -220,19 +336,19 @@
 
 #heading(level: 1)[Nachträge und Verbesserungen]
 
-#v(0.5em)
+#v(0.3em)
 #align(center)[
-  #text(9pt, style: "italic")[
+  #text(8.5pt, style: "italic", fill: rgb("#334155"))[
     Corrigenda und Zusätze von Otto Böhtlingk zu den Seiten 477–478 der Originalausgabe von 1887.
   ]
 ]
-#v(1em)
+#v(0.8em)
 
 #for c in corrigenda_data [
   #block(width: 100%, breakable: true, [
-    #text(8.5pt)[
+    #text(8.5pt, fill: rgb("#1e2d37"))[
       • #c.text
     ]
-    #v(0.3em)
+    #v(0.25em)
   ])
 ]
