@@ -1,0 +1,932 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Wissenschaftliche Digitalisierung, kanonisches Alignment, TEI-P5-Edition und 1:1 Sandwich-PDF (Otto von Böhtlingk, 1887).">
+      
+      
+        <meta name="author" content="Marco Demarmels">
+      
+      
+        <link rel="canonical" href="https://birchville-org.github.io/boethlingk/en/case-study/">
+      
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../qa-workflow/">
+      
+      
+        
+          <link rel="alternate" href="../../case-study/" hreflang="de">
+        
+          <link rel="alternate" href="./" hreflang="en">
+        
+      
+      
+      <link rel="icon" href="../../assets/birchville_logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+    
+    
+      
+        <title>Fallstudie - Pāṇini's Grammatik (Böhtlingk 1887)</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/birchville.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://birchville-org.github.io/boethlingk/assets/og-icon.png">
+  <meta property="og:image:width" content="128">
+  <meta property="og:image:height" content="128">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:image" content="https://birchville-org.github.io/boethlingk/assets/og-icon.png">
+  <link rel="apple-touch-icon" href="https://birchville-org.github.io/boethlingk/assets/og-icon.png">
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#case-study-paninis-grammar-otto-von-bohtlingk-1887" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../" title="Pāṇini&#39;s Grammatik (Böhtlingk 1887)" class="md-header__button md-logo" aria-label="Pāṇini's Grammatik (Böhtlingk 1887)" data-md-component="logo">
+      
+  <img src="../../assets/birchville_logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Pāṇini's Grammatik (Böhtlingk 1887)
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Fallstudie
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Zu dunklem Design wechseln"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Zu dunklem Design wechseln" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Zu hellem Design wechseln"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Zu hellem Design wechseln" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="Select language">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../../case-study/" hreflang="de" class="md-select__link">
+              Deutsch
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/birchville-org/boethlingk" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    birchville-org/boethlingk
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../" title="Pāṇini&#39;s Grammatik (Böhtlingk 1887)" class="md-nav__button md-logo" aria-label="Pāṇini's Grammatik (Böhtlingk 1887)" data-md-component="logo">
+      
+  <img src="../../assets/birchville_logo.png" alt="logo">
+
+    </a>
+    Pāṇini's Grammatik (Böhtlingk 1887)
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/birchville-org/boethlingk" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    birchville-org/boethlingk
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Startseite
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fallstudie
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Fallstudie
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-context-scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Context &amp; Scope
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-core-pipeline-vs-bohtlingk-delta" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Core Pipeline vs. Böhtlingk Delta
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-the-bohtlingk-delta-in-detail" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. The Böhtlingk Delta in Detail
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. The Böhtlingk Delta in Detail">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-delta-1-canonical-sutra-state-machine-scriptsalign_mistral_sutraspy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Delta 1: Canonical Sūtra State Machine (scripts/align_mistral_sutras.py)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-delta-2-fuzzy-canonical-matching-against-ground-truth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Delta 2: Fuzzy Canonical Matching against Ground Truth
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-delta-3-modern-typographic-edition-scriptsboethlingk1887_editiontyp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.3 Delta 3: Modern Typographic Edition (scripts/boethlingk1887_edition.typ)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-delta-4-standardized-tei-p5-xml-epub-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.4 Delta 4: Standardized TEI-P5 XML &amp; EPUB 3
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-validation-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Validation Results
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-core-artifacts-downloads" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Core Artifacts &amp; Downloads
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../qa-workflow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    QA- & Korrektur-Workflow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../copyright-and-provenance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Urheberrecht & Provenienz
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../data-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Datenarchitektur
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../conventions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Konventionen
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../wiki-home/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Wiki-Übersicht
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="case-study-paninis-grammar-otto-von-bohtlingk-1887">Case Study: Pāṇini's Grammar (Otto von Böhtlingk, 1887)</h1>
+<blockquote>
+<p><strong>Scholarly digital edition, canonical Sūtra alignment, and Typst vector typesetting for 3,997 Sūtras across 478 pages.</strong></p>
+<p>🔗 <strong>Project Repository:</strong> <a href="https://github.com/birchville-org/boethlingk">github.com/birchville-org/boethlingk</a><br />
+🔗 <strong>Core Pipeline:</strong> <a href="https://github.com/birchville-org/AlexandriaSandwich">AlexandriaSandwich</a></p>
+</blockquote>
+<hr />
+<h2 id="1-context-scope">1. Context &amp; Scope</h2>
+<p>Otto von Böhtlingk's edition <em>Pâṇini's Grammatik</em> (2nd edition, Leipzig 1887) is the definitive historical reference work for the grammatical system of the Aṣṭādhyāyī. Across 478 book pages, the work unites three distinct scripts:</p>
+<ol>
+<li><strong>Sanskrit in Devanāgarī:</strong> 19th-century metal type with complex conjunct ligatures and virāmas.</li>
+<li><strong>German in historical Antiqua:</strong> Scholarly translation and grammatical commentary.</li>
+<li><strong>IAST Transliteration:</strong> Latin script with multiple diacritics (<code>ā</code>, <code>ī</code>, <code>ū</code>, <code>ṛ</code>, <code>ṝ</code>, <code>ḷ</code>, <code>ṃ</code>, <code>ḥ</code>, <code>ṅ</code>, <code>ñ</code>, <code>ṭ</code>, <code>ḍ</code>, <code>ṇ</code>, <code>ś</code>, <code>ṣ</code>) and Vedic accent marks.</li>
+</ol>
+<p>This project serves as an end-to-end <strong>reference case study</strong> for the open-source book digitization pipeline <a href="https://github.com/birchville-org/AlexandriaSandwich">AlexandriaSandwich</a>.</p>
+<hr />
+<h2 id="2-core-pipeline-vs-bohtlingk-delta">2. Core Pipeline vs. Böhtlingk Delta</h2>
+<p>All generic document ingestion, OCR, and image-processing tasks are handled by the central <strong>AlexandriaSandwich pipeline</strong>. The <code>boethlingk</code> repository focuses strictly on the <strong>semantic and philological delta</strong>:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>┌────────────────────────────────────────────────────────────────────────┐
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>│            ALEXANDRIASANDWICH (GENERIC CORE PIPELINE)                  │
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>│  • IIIF Facsimile Ingestion (Heidelberg University Library)            │
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>│  • Multimodal AI OCR (mistral-ocr-latest) &amp; Bounding-Box Geometry      │
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>│  • Content-Aware Margin Masking (Background Tone #f0e8d6)              │
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>│  • Geometric Layout Profiling (layout.profile.json)                    │
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>│  • 1:1 Sandwich PDF Assembly &amp; QA Viewer Standard                      │
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>└───────────────────────────────────┬────────────────────────────────────┘
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>                                    │ Bounding Boxes, Layout &amp; Facsimiles
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>                                    ▼
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>┌────────────────────────────────────────────────────────────────────────┐
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>│                   THE BÖHTLINGK DELTA (EDITION LAYER)                  │
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>│  • Delta 1: Canonical 8-Adhyāya State Machine (align_mistral_sutras)   │
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>│  • Delta 2: Fuzzy SequenceMatcher against Aṣṭādhyāyī Sūtrapāṭha        │
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>│  • Delta 3: Typst Template for Devanāgarī, IAST &amp; Apparatus Layout     │
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>│  • Delta 4: RelaxNG-validated TEI-P5 XML &amp; EPUB 3 Serialization        │
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>└────────────────────────────────────────────────────────────────────────┘
+</code></pre></div>
+<hr />
+<h2 id="3-the-bohtlingk-delta-in-detail">3. The Böhtlingk Delta in Detail</h2>
+<h3 id="31-delta-1-canonical-sutra-state-machine-scriptsalign_mistral_sutraspy">3.1 Delta 1: Canonical Sūtra State Machine (<code>scripts/align_mistral_sutras.py</code>)</h3>
+<p>The work strictly follows the structural framework of the Aṣṭādhyāyī:
+* <strong>Canonical Structure:</strong> 8 Adhyāyas with exactly 4 Pādas each (32 Pādas total) comprising 3,983 Aṣṭādhyāyī Sūtras plus 14 introductory Śiva-Sūtras (3,997 Sūtras total).
+* <strong>Automatic Pāda &amp; Adhyāya Rollover:</strong> When the end of a Pāda is reached, the state machine enforces the canonical transition (<code>state["adhyaya"] += 1, state["pada"] = 1</code>), even if the printed colophon is faint or damaged.
+* <strong>Corrigenda Isolation:</strong> Böhtlingk's addenda and corrections (pp. 477–478) following the final Sūtra 8.4.68 (<code>अ अ</code>) are isolated and do not contaminate the commentary apparatus.</p>
+<h3 id="32-delta-2-fuzzy-canonical-matching-against-ground-truth">3.2 Delta 2: Fuzzy Canonical Matching against Ground Truth</h3>
+<p>Worn metal type occasionally caused OCR misidentifications in Devanāgarī numerals (e.g. ८ misread as ६, hence <code>६५</code> instead of <code>८५</code>):
+* <strong>SequenceMatcher Alignment:</strong> When a Sūtra number diverges, the normalized Devanāgarī line is matched against the expected text in <code>data/sutras.json</code>.
+* <strong>Correction Threshold:</strong> With similarity &gt;= 0.45, the Sūtra index is automatically corrected to the canonical reference.
+* <strong>Long Compounds:</strong> Sūtras spanning up to 350 characters without heading markers (e.g. 5.4.77 with 185 characters) are reliably detected via danda delimiter patterns (<code>॥...॥</code>).</p>
+<h3 id="33-delta-3-modern-typographic-edition-scriptsboethlingk1887_editiontyp">3.3 Delta 3: Modern Typographic Edition (<code>scripts/boethlingk1887_edition.typ</code>)</h3>
+<p>A specialized Typst template formats the multi-tier edition:
+* <strong>Per-Sūtra Hierarchy:</strong>
+  1. Devanāgarī heading with canonical index (<code>१.१.१</code>).
+  2. Academic IAST transliteration (Bold).
+  3. German translation (Italic).
+  4. Indented commentary apparatus with Böhtlingk abbreviations (<code>∠±</code>, <code>Kāç.</code>, <code>RV.</code>).
+* <strong>Book Design:</strong> ISO B5 (176 x 250 mm), font stack (<em>Noto Serif Devanagari</em> + <em>Libertinus Serif</em>), running headers, and 47 hierarchical PDF bookmarks.
+* <strong>Compilation:</strong> Executed via <code>python3 scripts/build_typeset_edition.py</code> in ~8.9 seconds.</p>
+<h3 id="34-delta-4-standardized-tei-p5-xml-epub-3">3.4 Delta 4: Standardized TEI-P5 XML &amp; EPUB 3</h3>
+<ul>
+<li><strong>TEI-P5 XML (<code>data/tei/boehtlingk1887_p5.xml</code>):</strong> 100% schema-valid against TEI All RelaxNG (<code>schemas/tei_all.rng</code>), featuring 3,997 <code>&lt;tei:entry&gt;</code> elements and 478 <code>&lt;tei:pb&gt;</code> page breaks linked to Heidelberg IIIF endpoints.</li>
+<li><strong>EPUB 3 (<code>boethlingk1887.epub</code>):</strong> Reflowable e-book with embedded fonts ensuring diacritic preservation on e-readers.</li>
+</ul>
+<hr />
+<h2 id="4-validation-results">4. Validation Results</h2>
+<p>All 8 Adhyāyas and the introductory Śiva-Sūtras were validated 1:1 against the canonical ground-truth database:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Section</th>
+<th style="text-align: left;">Book Pages</th>
+<th style="text-align: left;">Sūtras (Actual / Target)</th>
+<th style="text-align: left;">Duplicates</th>
+<th style="text-align: left;">Gaps</th>
+<th style="text-align: left;">Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Śiva-Sūtrāṇi</strong></td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">14 / 14</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;"><strong>100.0% Validated</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Adhyāya 1</strong></td>
+<td style="text-align: left;">2–43</td>
+<td style="text-align: left;">351 / 351</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;"><strong>100.0% Validated</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Adhyāya 2</strong></td>
+<td style="text-align: left;">43–75</td>
+<td style="text-align: left;">268 / 268</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;"><strong>100.0% Validated</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Adhyāya 3</strong></td>
+<td style="text-align: left;">75–148</td>
+<td style="text-align: left;">631 / 631</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;"><strong>100.0% Validated</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Adhyāya 4</strong></td>
+<td style="text-align: left;">149–221</td>
+<td style="text-align: left;">635 / 635</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;"><strong>100.0% Validated</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Adhyāya 5</strong></td>
+<td style="text-align: left;">221–282</td>
+<td style="text-align: left;">555 / 555</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;"><strong>100.0% Validated</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Adhyāya 6</strong></td>
+<td style="text-align: left;">283–374</td>
+<td style="text-align: left;">736 / 736</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;"><strong>100.0% Validated</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Adhyāya 7</strong></td>
+<td style="text-align: left;">375–428</td>
+<td style="text-align: left;">438 / 438</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;"><strong>100.0% Validated</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Adhyāya 8</strong></td>
+<td style="text-align: left;">429–478</td>
+<td style="text-align: left;">369 / 369</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;"><strong>100.0% Validated</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Total</strong></td>
+<td style="text-align: left;"><strong>478 Pages</strong></td>
+<td style="text-align: left;"><strong>3,997 / 3,997</strong></td>
+<td style="text-align: left;"><strong>0</strong></td>
+<td style="text-align: left;"><strong>0</strong></td>
+<td style="text-align: left;"><strong>100.0% Gap-free</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="5-core-artifacts-downloads">5. Core Artifacts &amp; Downloads</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Artifact</th>
+<th style="text-align: left;">Format / File</th>
+<th style="text-align: left;">Size</th>
+<th style="text-align: left;">Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Sandwich PDF</strong></td>
+<td style="text-align: left;"><code>boehtlingk1887.perfect_sandwich.pdf</code></td>
+<td style="text-align: left;">248.85 MB (478 pp.)</td>
+<td style="text-align: left;"><a href="https://github.com/birchville-org/boethlingk/releases/latest/download/boehtlingk1887_sandwich.pdf">Release Download</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Typeset Edition</strong></td>
+<td style="text-align: left;"><code>boethlingk1887_typeset_edition.pdf</code></td>
+<td style="text-align: left;">8.81 MB (509 pp.)</td>
+<td style="text-align: left;"><a href="https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_typeset_edition.pdf">Release Download</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Master Dataset</strong></td>
+<td style="text-align: left;"><code>data/ashtadhyayi_complete_boethlingk1887.json</code></td>
+<td style="text-align: left;">2.85 MB</td>
+<td style="text-align: left;"><a href="https://github.com/birchville-org/boethlingk/blob/main/data/ashtadhyayi_complete_boethlingk1887.json">GitHub Repository</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>TEI-P5 XML</strong></td>
+<td style="text-align: left;"><code>data/tei/boehtlingk1887_p5.xml</code></td>
+<td style="text-align: left;">2.90 MB</td>
+<td style="text-align: left;"><a href="https://github.com/birchville-org/boethlingk/blob/main/data/tei/boehtlingk1887_p5.xml">GitHub Repository</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>EPUB 3</strong></td>
+<td style="text-align: left;"><code>boethlingk1887.epub</code></td>
+<td style="text-align: left;">1.47 MB</td>
+<td style="text-align: left;"><a href="https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887.epub">Release Download</a></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>QA Viewer</strong></td>
+<td style="text-align: left;"><code>viewer.html</code></td>
+<td style="text-align: left;">39 KB</td>
+<td style="text-align: left;"><a href="https://github.com/birchville-org/boethlingk/blob/main/viewer.html">View in Browser</a></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections", "navigation.expand", "navigation.top", "toc.integrate", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
+      
+    
+  </body>
+</html>
