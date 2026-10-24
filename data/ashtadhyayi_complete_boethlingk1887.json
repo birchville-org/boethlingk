@@ -14304,7 +14304,7 @@
       "sutra_ocr": "क्याच्छन्दसि",
       "canonical_devanagari": "क्याच्छन्दसि",
       "canonical_iast": "kyācchandasi",
-      "translation": "Im Veda wird an die Denominativa auf 二य das Suffix उ gefügt.",
+      "translation": "Im Veda wird an die Denominativa auf - य das Suffix उ gefügt.",
       "commentary": "मित्रयु, संस्वेदयु, सुखयु.",
       "in_canonical_db": true,
       "sutra_num_deva": "१७०"
@@ -45459,7 +45459,7 @@
       "sutra_ocr": "अनुनासिकस्य क्रिभ्रलोः किञ्चति",
       "canonical_devanagari": "अनुनासिकस्य क्विझलोः क्ङिति",
       "canonical_iast": "anunāsikasya kvijhaloḥ kṅiti",
-      "translation": "Ein vor dem nasalen Auslaut eines Stammes stehender Vocal wird verlängert vor dem Suffix 二 व (das wieder abfällt) und vor einem consonantisch (jedoch nicht mit einem Halbvocal oder Nasal) anlautenden Suffix, welches ein stummes क् oder ड् hat.",
+      "translation": "Ein vor dem nasalen Auslaut eines Stammes stehender Vocal wird verlängert vor dem Suffix -  व (das wieder abfällt) und vor einem consonantisch (jedoch nicht mit einem Halbvocal oder Nasal) anlautenden Suffix, welches ein stummes क् oder ड् hat.",
       "commentary": "प्रशान् und प्रतान् von den Wurzeln शम् und तम् nach 8, 2, 64. शान्त (mit ऋ), शान्त-वत् (mit ऋवतु), शान्त्वा (mit त्वा), शान्ति (mit किञ्च); शशान्तः und तन्तान्तः (die Personalendung तम् ist डिऩ् nach 1, 2, 4). Es wird auch किञ्चभ्रलोः gelesen.",
       "in_canonical_db": true,
       "sutra_num_deva": "१५"
@@ -45474,7 +45474,7 @@
       "sutra_ocr": "अञ्भ्रनगमां सनि",
       "canonical_devanagari": "अज्झनगमां सनि",
       "canonical_iast": "ajjhanagamāṃ sani",
-      "translation": "In vocalisch auslautenden Wurzeln, sowie in हन् und गम् wird der Vocal verlängert vor dem Desiderativsuffix 二 स, wenn dieses nicht das Augment ड् erhält.",
+      "translation": "In vocalisch auslautenden Wurzeln, sowie in हन् und गम् wird der Vocal verlängert vor dem Desiderativsuffix -  स, wenn dieses nicht das Augment ड् erhält.",
       "commentary": "चिचीपति, तुष्टूपति, चिकीर्पति (vgl. 7, 1, 100); जिघांसति, अधि जिगांसते.",
       "in_canonical_db": true,
       "sutra_num_deva": "१६"
@@ -45504,7 +45504,7 @@
       "sutra_ocr": "क्रमश्व क्ति",
       "canonical_devanagari": "क्रमश्च क्त्वि",
       "canonical_iast": "kramaśca ktvi",
-      "translation": "Desgleichen in क्रम् vor 二 त्वा.",
+      "translation": "Desgleichen in क्रम् vor -  त्वा.",
       "commentary": "क्रान्त्वा oder क्रन्त्वा.",
       "in_canonical_db": true,
       "sutra_num_deva": "१८"
@@ -49824,7 +49824,7 @@
       "sutra_ocr": "रुष्मत्वरसंघुषास्वनाम्",
       "canonical_devanagari": "रुष्यमत्वरसंघुषास्वनाम्",
       "canonical_iast": "ruṣyamatvarasaṃghuṣāsvanām",
-      "translation": "Nach रुष्, अम्, त्वर्, nach घुष् mit सम् und nach स्वन् mit आ kann 二त das\nAugment इ erhalten.",
+      "translation": "Nach रुष्, अम्, त्वर्, nach घुष् mit सम् und nach स्वन् mit आ kann - त das\nAugment इ erhalten.",
       "commentary": "रुष्ट oder रुषित, अभ्यान्त oder अभ्यमित, तूर्णा oder त्वरित, संधुष्ट oder संधुषित, आस्वान्त\noder आस्वनित. Vgl. 7, 2, 18. 23.",
       "in_canonical_db": true,
       "sutra_num_deva": "२८"
@@ -49869,7 +49869,7 @@
       "sutra_ocr": "हू हूरेखन्दसि",
       "canonical_devanagari": "ह्रु ह्वरेश्छन्दसि",
       "canonical_iast": "hru hvareśchandasi",
-      "translation": "Für ह्वर् wird im Veda इ vor 二त substituirt.",
+      "translation": "Für ह्वर् wird im Veda इ vor - त substituirt.",
       "commentary": "हृतस्य चाहृतस्य च, अहृतमसि हविर्धानम् VS. 1, 9.",
       "in_canonical_db": true,
       "sutra_num_deva": "३१"
@@ -50229,7 +50229,7 @@
       "sutra_ocr": "जुन्नक्ष्यो: ह्नि",
       "canonical_devanagari": "जॄव्रश्च्योः क्त्वि",
       "canonical_iast": "jṝvraścyoḥ ktvi",
-      "translation": "Nach जू und वञ्च् erhält 二त्वा das Augment इ.",
+      "translation": "Nach जू und वञ्च् erhält - त्वा das Augment इ.",
       "commentary": "जरित्वा und जरीत्वा (s. 7, 2, 38), वञ्चित्वा.",
       "in_canonical_db": true,
       "sutra_num_deva": "५५"
@@ -50244,7 +50244,7 @@
       "sutra_ocr": "उदितो वा",
       "canonical_devanagari": "उदितो वा",
       "canonical_iast": "udito vā",
-      "translation": "Nach einer Wurzel mit stummem उ kann 二त्वा das Augment इ erhalten.",
+      "translation": "Nach einer Wurzel mit stummem उ kann - त्वा das Augment इ erhalten.",
       "commentary": "शमित्वा oder शान्त्वा, तमित्वा oder तान्त्वा, दमित्वा oder दान्त्वा.",
       "in_canonical_db": true,
       "sutra_num_deva": "५६"
@@ -50319,7 +50319,7 @@
       "sutra_ocr": "अचस्सारवत् भल्यनिटो नित्यम्",
       "canonical_devanagari": "अचस्तास्वत् थल्यनिटो नित्यम्",
       "canonical_iast": "acastāsvat thalyaniṭo nityam",
-      "translation": "Die Personalendung des Perfects 二थ erhält nach einer vocalisch auslautenden Wurzel nicht das Augment इ, wenn das im vorangehenden Sūtra erwähnt तास् nach eben diesen Wurzeln stets ohne dieses Augment angefügt wird.",
+      "translation": "Die Personalendung des Perfects - थ erhält nach einer vocalisch auslautenden Wurzel nicht das Augment इ, wenn das im vorangehenden Sūtra erwähnt तास् nach eben diesen Wurzeln stets ohne dieses Augment angefügt wird.",
       "commentary": "ययाथ wie याता, चिचेथ wie चेता, निनेथ wie नेता, जुहोथ wie होता.",
       "in_canonical_db": true,
       "sutra_num_deva": "६१"
@@ -56139,8 +56139,8 @@
       "sutra_ocr": "ऋषસ્ભોઘોં ડધઃ",
       "canonical_devanagari": "झषस्तथोर्धोऽधः",
       "canonical_iast": "jhaṣastathordho'dhaḥ",
-      "translation": "Für ત્ und ષ્ nach einer tönenden aspirirten Muta wird ષ્ substituirt, jedoch nicht nach der Wurzel ષા (દઙ્).",
-      "commentary": "લઙ્ઘ્, લઙ્ઘુમ્, લઙ્ઘવ્ય, ષલઙ્ઘ્ર und ષલઙ્ઘાઃ von લઙ્ઘ; દોઙ્ઘ, દોઙ્ઘુમ્, દોઙ્ઘવ્ય, ષટ્ઘુધ und ષટ્ઘુધાઃ von દુહ્ (દુઘ્ nach 8, 2, 32); લેઠ્ઘ, લેઠુમ્, લેઠવ્ય, ષલીઠ્ર und ષલીઠાઃ von લિહ્ (લિઠ્ nach 8, 2, 31); બોઠ્ઘ, બોઠ્ઘુમ્, બોઠ્ઘવ્ય, ષવુધ્ર und ષવુધ્ઘાઃ von બુધ્; dagegen ષતઃ, ષત્યઃ. Nach 8, 4, 53 wird für ઙ્ in લઙ્ ઙ્, für ઘ્ in દુહ્ ઙ્ und für ઙ્ in બુધ્ દ્ substituirt; für das ઙ્ in લેઠ્ઘ્ u. s. w. wird nach 8, 4, 41 દ્ substituirt, vor welchem das vorangehende દ્ nach 8, 3, 13 abfällt.",
+      "translation": "Für त् und थ् nach einer tönenden aspirirten Muta wird ध् substituirt, jedoch nicht nach der Wurzel धा (दध्).",
+      "commentary": "लब्ध, लब्धुम्, लब्धव्य, अलब्ध und अलब्धाः von लभ्; दोग्ध, दोग्धुम्, दोग्धव्य, अदुग्ध und अदुग्धाः von दुह् (दुघ् nach 8, 2, 32); लेढ, लेढुम्, लेढव्य, अलीढ und अलीढाः von लिह् (लिढ् nach 8, 2, 31); बोद्ध, बोद्धुम्, बोद्धव्य, अबुद्ध und अबुद्धाः von बुध्; dagegen धत्तः, धत्थः. Nach 8, 4, 53 wird für भ् in लभ् ब्, für ह् in दुह् घ् und für ध् in बुध् द् substituirt; für das ह् in लेढ u. s. w. wird nach 8, 4, 41 ढ् substituirt, vor welchem das vorangehende ढ् nach 8, 3, 13 abfällt.",
       "in_canonical_db": true,
       "sutra_num_deva": "४०"
     },
@@ -56154,8 +56154,8 @@
       "sutra_ocr": "ષઠોઃ કઃ સિ",
       "canonical_devanagari": "षढोः कः सि",
       "canonical_iast": "ṣaḍhoḥ kaḥ si",
-      "translation": "Für ઙ્ und દ્ wird ક્ vor einem મ્ substituirt.",
-      "commentary": "વેદ્યતિ, ષવેદ્યત્ und વિવિદ્યતિ von વિઙ્; લેદ્યતિ, ષલેદ્યત્ und લિલિદ્યતિ von લિહ્ (લિઠ્ nach 8, 2, 31). Für das મ્ des Suffixes wird nach 8, 3, 59 ઙ્ substituirt.",
+      "translation": "Für ष् und ढ् wird क् vor einem स् substituirt.",
+      "commentary": "वेक्ष्यति, अवेक्ष्यत् und विविक्षति von विश्; लेक्ष्यति, अलेक्ष्यत् und लिलिक्षति von लिह् (लिढ् nach 8, 2, 31). Für das स् des Suffixes wird nach 8, 3, 59 ष् substituirt.",
       "in_canonical_db": true,
       "sutra_num_deva": "४१"
     },
@@ -56169,8 +56169,8 @@
       "sutra_ocr": "રદાભ્યાં નિષ્ઠાતો નઃ પૂર્વેસ્થ ચ દઃ",
       "canonical_devanagari": "रदाभ्यां निष्ठातो नः पूर्वस्य च दः",
       "canonical_iast": "radābhyāṃ niṣṭhāto naḥ pūrvasya ca daḥ",
-      "translation": "Nach ર્ und દ્ wird für das ત્ der Participialsuffixe ત્ und તવત્ ન્ substituirt; dieselbe Substitution findet auch für das vorangehende દ્ statt.",
-      "commentary": "ઙ્માસ્તીગ્શ, વિષીગ્શ, નિગીગ્શ, ઙ્વગ્ગ્શ; ભિન્ન, ઙિન્ન.",
+      "translation": "Nach र् und द् wird für das त der Participialsuffixe त und तवत् न् substituirt; dieselbe Substitution findet auch für das vorangehende द् statt.",
+      "commentary": "स्तीर्ण, विशीर्ण, निगीर्ण, दून; भिन्न, छिन्न.",
       "in_canonical_db": true,
       "sutra_num_deva": "४२"
     },
@@ -56184,8 +56184,8 @@
       "sutra_ocr": "સંયોગાદેરાતો ધાતોયેશ્વતઃ",
       "canonical_devanagari": "संयोगादेरातो धातोर्यण्वतः",
       "canonical_iast": "saṃyogāderāto dhātoryaṇvataḥ",
-      "translation": "Für das ત્ derselben Suffixe wird ન્ ferner substituirt nach einer auf ઙા auslautenden Wurzel mit vorangehender Doppelconsonanz, wenn diese einen Halbvocal enthält.",
-      "commentary": "પ્રદાણ, જ્ઞાન; dagegen જ્ઞાત.",
+      "translation": "Für das त derselben Suffixe wird न ferner substituirt nach einer auf आ auslautenden Wurzel mit vorangehender Doppelconsonanz, wenn diese einen Halbvocal enthält.",
+      "commentary": "प्रद्राण, ग्लान; dagegen स्नात.",
       "in_canonical_db": true,
       "sutra_num_deva": "४३"
     },
@@ -56199,8 +56199,8 @@
       "sutra_ocr": "ત્વાદિભ્યઃ",
       "canonical_devanagari": "ल्वादिभ्यः",
       "canonical_iast": "lvādibhyaḥ",
-      "translation": "Desgleichen nach ત્ und den darauf folgenden Wurzeln.",
-      "commentary": "તૂન, ધૂન, ઝીન u. s. w.",
+      "translation": "Desgleichen nach लू und den darauf folgenden Wurzeln.",
+      "commentary": "लून, धून, जीन u. s. w.",
       "in_canonical_db": true,
       "sutra_num_deva": "४४"
     },
@@ -56214,8 +56214,8 @@
       "sutra_ocr": "ઞોદિતશ્ચ",
       "canonical_devanagari": "ओदितश्च",
       "canonical_iast": "oditaśca",
-      "translation": "Desgleichen nach einer Wurzel, die ein stummes ઞો hat.",
-      "commentary": "લઘ્ન, ઉદ્ગિન્ન, ઞાપીન, મૂન u. s. w. Die Wurzeln મ્ (પૂજ્) fgg. der 4ten Klasse gelten gleichfalls für ઞોદિતઃ.",
+      "translation": "Desgleichen nach einer Wurzel, die ein stummes ओ hat.",
+      "commentary": "लग्न, उद्गिन्न, प्रपीन, मून u. s. w. Die Wurzeln रध् (पूष्) fgg. der 4ten Klasse gelten gleichfalls für ओदितः.",
       "in_canonical_db": true,
       "sutra_num_deva": "४५"
     },
@@ -56229,8 +56229,8 @@
       "sutra_ocr": "હિંયો દીઘૌત્",
       "canonical_devanagari": "क्षियो दीर्घात्",
       "canonical_iast": "kṣiyo dīrghāt",
-      "translation": "Nach હિ, wenn der Wurzelvocal verlängert wird.",
-      "commentary": "હીંયાઃ ક્રોયાઃ, હીંયો જ્ઞાનઃ, હીંયાસ્તપક્ષી; dagegen ઙ્ઘિત. Vgl. 6, 4, 60.",
+      "translation": "Nach क्षि, wenn der Wurzelvocal verlängert wird.",
+      "commentary": "क्षीणाः क्रोधाः, क्षीणो मोहः, क्षीणास्तपस्वी; dagegen क्षित. Vgl. 6, 4, 60.",
       "in_canonical_db": true,
       "sutra_num_deva": "४६"
     },
