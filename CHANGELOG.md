@@ -2,6 +2,14 @@
 
 Alle wesentlichen Änderungen und Meilensteine dieses Projekts werden in dieser Datei dokumentiert.
 
+## [1.5.0] - 2026-10-24
+
+### Added
+- **AlexandriaSandwich v1.7.0 Pipeline Integration**:
+  - **Content-Aware Margin Masking**: 478 Faksimile-Seiten von Buchfalzen, Bundstegschatten und Scannerrändern außerhalb des Satzspiegels bereinigt (`boehtlingk1887.perfect_sandwich.pdf`).
+  - **Layout-Profilierung (`data/output/layout.profile.json`)**: Satzspiegel, Randproportionen und Durchschuss des bereinigten Faksimiles vermessen.
+  - **Modernisierte typografische Neuausgabe v2**: `boethlingk1887_typeset_edition_v2.pdf` (7.62 MB) mit TOC (47 Einträge) und nativer Page-Label-Injektion.
+
 ## [1.4.0] - 2026-10-16
 
 ### Added
