@@ -122,31 +122,26 @@ Dieses Projekt umfasst die vollständige historische Erschließung, multimodale 
 
 ---
 
-## 🏛️ Pipeline-Architektur
+## 🏛️ Pipeline- & Editions-Architektur
 
 ```text
-[UB Heidelberg Faksimiles] 
-       │ (Buchseiten 1 bis 478, JPG)
-       ▼
-[Schritt 1: Lokales Image Caching] ──► data/img_cache/7_3A000000XXX_...jpg
-       │
-       ▼
-[Schritt 2: Multimodale KI-OCR] ────► mistral-ocr-latest (Mistral Python SDK)
-       │                              ├── data/mistral/*.mistral.md   (Layout-Markdown)
-       │                              └── data/mistral/*.mistral.json (Bounding-Box Geometrie)
-       ▼
-[Schritt 3: Kanonisches Alignment] ──► scripts/align_mistral_sutras.py
-       │                              ├── Heuristische Sūtra-Segmentierung (#, ##, ॥...॥)
-       │                              ├── SequenceMatcher-Abgleich gegen data/sutras.json
-       │                              ├── 4-Pāda-pro-Adhyāya Statusmaschine
-       │                              └── Kolophon- und Rauschfilterung
-       ▼
-[Schritt 4: Konsolidierung] ─────────► data/ashtadhyayi_complete_boethlingk1887.json
-       │                              (3.997 Sūtras = 100,0 % lückenlos & 0 Duplikate)
-       ▼
-[Schritt 5: TEI-, Sandwich- & ───────► data/tei/boehtlingk1887_p5.xml
-            Typst-Assembly]            data/output/boehtlingk1887_sandwich.pdf
-                                       data/output/boethlingk1887_typeset_edition.pdf
+┌────────────────────────────────────────────────────────────────────────┐
+│             ALEXANDRIASANDWICH (GENERISCHE HAUPTPIPELINE)              │
+│  [UB Heidelberg IIIF] ──► [Mistral KI-OCR] ──► [Margin Masking #f0e8d6]│
+└───────────────────────────────────┬────────────────────────────────────┘
+                                    │ Bounding-Boxes, Layout & Faksimiles
+                                    ▼
+┌────────────────────────────────────────────────────────────────────────┐
+│             BÖHTLINGK-DELTA (KANONISCHE EDITIONS-SCHICHT)              │
+│  [Schritt 1: Kanonisches Alignment] ──► scripts/align_mistral_sutras.py│
+│         │                               (8-Adhyāya-Statusmaschine)     │
+│         ▼                                                              │
+│  [Schritt 2: Master-Konsolidierung] ──► ashtadhyayi_complete_...json  │
+│         │                               (3.997 Sūtras lückenlos)       │
+│         ▼                                                              │
+│  [Schritt 3: Editions-Assembly]     ──► boehtlingk1887_p5.xml (TEI)    │
+│                                         boethlingk1887_typeset_edition │
+└────────────────────────────────────────────────────────────────────────┘
 ```
 
 ---

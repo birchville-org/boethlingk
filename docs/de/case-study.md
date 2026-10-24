@@ -1,82 +1,77 @@
-# Fallstudie & Verfahrensdokumentation: Pāṇinis Grammatik (Otto von Böhtlingk, 1887)
+# Fallstudie: Pāṇinis Grammatik (Otto von Böhtlingk, 1887)
 
-> **Vollständige historische Digitalisierung, kanonischer Text-Abgleich und Erzeugung von durchsuchbarem Sandwich-Material für 3.997 Sūtras auf 478 Buchseiten.**
+> **Digitale Edition, kanonischer Sūtra-Abgleich und Typst-Vektorneusatz von 3.997 Sūtras auf 478 Buchseiten.**
 >
-> *Dieses Projekt ist eine Referenz-Fallstudie (Case Study) zur Buch-Digitalisierungs-Pipeline [AlexandriaSandwich](https://github.com/birchville-org/AlexandriaSandwich).*
+> 🔗 **Projekt-Repository:** [github.com/birchville-org/boethlingk](https://github.com/birchville-org/boethlingk)  
+> 🔗 **Hauptpipeline:** [AlexandriaSandwich](https://github.com/birchville-org/AlexandriaSandwich)
 
 ---
 
-## 1. Zweck & Problemstellung
+## 1. Ausgangslage & Einordnung
 
-### 1.1 Das Ausgangswerk
-Otto von Böhtlingks Ausgabe *Pâṇini's Grammatik, herausgegeben, übersetzt, erläutert und mit verschiedenen Indices versehen* (Leipzig, H. Haessel, 1887) ist das weltweit maßgebliche philologische Referenzwerk für das altindische grammatische System der Aṣṭādhyāyī. 
+Otto von Böhtlingks Ausgabe *Pâṇini's Grammatik* (2. Auflage, Leipzig 1887) ist das weltweit maßgebliche philologische Referenzwerk für das grammatische System der Aṣṭādhyāyī. Das Werk vereint auf 478 Buchseiten drei disparate Schriftsysteme:
 
-### 1.2 Die philologische & typografische Herausforderung
-Das Werk vereint drei völlig disparate Schriftsysteme und Sprachen auf engstem Raum:
-1. **Sanskrit in Devanagari:** Komplexer 19.-Jahrhundert-Bleisatz mit historischen Ligaturen, Halbvokalen und Virāmas.
-2. **Deutsch in historischer Antiqua:** Fachwissenschaftliche Übersetzung und grammatische Erläuterungen mit zeitspezifischer Typografie.
-3. **Wissenschaftliche Transliteration (IAST):** Lateinische Schrift mit zahlreichen kombinierten Diakritika (`ā`, `ī`, `ū`, `ṛ`, `ṝ`, `ḷ`, `ḹ`, `ṃ`, `ḥ`, `ṅ`, `ñ`, `ṭ`, `ḍ`, `ṇ`, `ś`, `ṣ`) sowie Akzentzeichen (Udātta, Svarita).
+1. **Sanskrit in Devanāgarī:** Historischer Bleisatz mit komplexen Ligaturen und Virāmas.
+2. **Deutsch in 19.-Jh.-Antiqua:** Fachübersetzung und grammatischer Erläuterungsapparat.
+3. **IAST-Transliteration:** Lateinschrift mit multiplen kombinierten Diakritika (`ā`, `ī`, `ū`, `ṛ`, `ṝ`, `ḷ`, `ṃ`, `ḥ`, `ṅ`, `ñ`, `ṭ`, `ḍ`, `ṇ`, `ś`, `ṣ`) und vedischen Akzenten.
 
-Klassische lokale OCR-Engines (Tesseract, Kraken, ABBYY) scheitern an diesem gemischten Satzbild mit extrem hohen Fehlerraten oder Script-Verwechslungen.
-
-### 1.3 Das Digitalisierungsziel
-Ziel des Projekts ist die Erzeugung eines mehrschichtigen, archivfesten Digitalisats:
-1. **1:1 Sandwich-PDF:** Visuell unberührte, hochauflösende Originalscans der Universitätsbibliothek Heidelberg (pixelgenau erhalten) mit einer unsichtbaren, geometrisch präzisen und durchsuchbaren Volltextebene.
-2. **Strukturierte Single Source of Truth (Master-JSON):** Vollständige, lückenlose Zerlegung des gesamten Werkes in strukturierte Sūtra-Objekte (Sūtra-Nummer, kanonische Devanagari, IAST, deutsche Übersetzung, philologischer Kommentar, Buchseiten-Zuordnung).
-3. **Autarker QA-Viewer:** Eine leichtgewichtige Webanwendung nach dem *Payer Global Web Editor Standard* zur visuellen Überprüfung und Korrektur mit Split-Pane-Ansicht und Silent Auto-Repair.
-4. **TEI-XML-Grundlage:** Bereitstellung eines standardisierten Korpus für die digitale Editionswissenschaft.
+Dieses Projekt dient als **Referenz-Fallstudie** für die Open-Source-Buchdigitalisierungs-Pipeline [AlexandriaSandwich](https://github.com/birchville-org/AlexandriaSandwich).
 
 ---
 
-## 2. Das implementierte Verfahren (End-to-End Pipeline)
+## 2. Hauptpipeline vs. Böhtlingk-Delta
+
+Alle generischen Aufgaben der Digitalisierung und Bildverarbeitung werden von der zentralen **AlexandriaSandwich-Hauptpipeline** bereitgestellt. Das Projekt `boethlingk` konzentriert sich ausschließlich auf das **semantische und philologische Delta**:
 
 ```text
-[UB Heidelberg Faksimiles] 
-       │ (Buchseiten 1 bis 478, JPG)
-       ▼
-[Schritt 1: Lokales Image Caching] ──► data/img_cache/7_3A000000XXX_...jpg
-       │
-       ▼
-[Schritt 2: Multimodale KI-OCR] ────► mistral-ocr-latest (Mistral Python SDK)
-       │                              ├── data/mistral/*.mistral.md   (Layout-Markdown)
-       │                              └── data/mistral/*.mistral.json (Bounding-Box Geometrie)
-       ▼
-[Schritt 3: Kanonisches Alignment] ──► scripts/align_mistral_sutras.py
-       │                              ├── Heuristische Sūtra-Segmentierung (#, ##, ॥...॥)
-       │                              ├── SequenceMatcher-Abgleich gegen data/sutras.json
-       │                              ├── 4-Pāda-pro-Adhyāya Statusmaschine
-       │                              └── Kolophon- und Rauschfilterung
-       ▼
-[Schritt 4: Konsolidierung] ─────────► data/ashtadhyayi_complete_boethlingk1887.json
-       │                              (3.997 Sūtras = 100,0 % lückenlos & 0 Duplikate)
-       ▼
-[Schritt 5: Interaktiver QA-Viewer] ──► viewer.html (Split-Pane, Zoom/Pan, Silent Auto-Repair)
+┌────────────────────────────────────────────────────────────────────────┐
+│               ALEXANDRIASANDWICH (GENERISCHE HAUPTPIPELINE)            │
+│  • IIIF-Scan-Ingestion (UB Heidelberg)                                 │
+│  • Multimodale KI-OCR (mistral-ocr-latest) & Bounding-Box-Geometrie    │
+│  • Content-Aware Margin Masking (Hintergrund-Farbton #f0e8d6)          │
+│  • Geometrisches Layout-Profiling (layout.profile.json)                │
+│  • 1:1 Sandwich-PDF Assemblierung & QA-Viewer-Bereitstellung           │
+└───────────────────────────────────┬────────────────────────────────────┘
+                                    │ Bounding-Boxes, Layout & Faksimiles
+                                    ▼
+┌────────────────────────────────────────────────────────────────────────┐
+│                   DAS BÖHTLINGK-DELTA (EDITIONS-SCHICHT)               │
+│  • Delta 1: Kanonische 8-Adhyāya-Statusmaschine (align_mistral_sutras) │
+│  • Delta 2: Fuzzy SequenceMatcher gegen Aṣṭādhyāyī Sūtrapāṭha           │
+│  • Delta 3: Typst-Satzschablone für Devanāgarī, IAST & Kommentarapparat│
+│  • Delta 4: RelaxNG-geprüfte TEI-P5-XML- und EPUB 3-Serialisierung    │
+└────────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 3. Detaillierte Verfahrensschritte
+## 3. Das Böhtlingk-Delta im Detail
 
-### Schritt 1: Primärquellen-Beschaffung & Caching
-* **Quelle:** Digitalisate der Universitätsbibliothek Heidelberg (Signatur: *Bibliotheca Palatina*, boehtlingk1887).
-* **Umfang des Haupttextes:** Buchseiten 1 bis 478 (S. 1 = Śiva-Sūtras, S. 2–476 = Aṣṭādhyāyī 1.1.1 bis 8.4.68, S. 477–478 = Nachträge).
-* **Speicherung:** 484 Scans liegen lokal unter `data/img_cache/7_3A000000XXX_jpg_full_max_0_default_jpg.jpg` vor.
+### 3.1 Delta 1: Kanonische Sūtra-Statusmaschine (`scripts/align_mistral_sutras.py`)
+Das Werk folgt der strikten kanonischen Gliederung der Aṣṭādhyāyī:
+* **Struktur:** 8 Adhyāyas zu je exakt 4 Pādas (32 Pādas gesamt) mit 3.983 Aṣṭādhyāyī-Sūtras plus 14 vorgeschalteten Śiva-Sūtras (3.997 Sūtras gesamt).
+* **Automatischer Pāda- & Adhyāya-Rollover:** Erreicht die Erkennung das Ende eines Pādas, erzwingt die Statusmaschine den deterministischen Übergang (`state["adhyaya"] += 1, state["pada"] = 1`), selbst wenn der historische Kolophon verwischt oder unvollständig erkannt wurde.
+* **Corrigenda-Isolation:** Nachträge und Korrekturen Böhtlingks (S. 477–478) nach dem Schlusssūtra 8.4.68 (`अ अ`) werden isoliert erfasst und kontaminieren nicht den Kommentarapparat.
 
-### Schritt 2: Multimodale KI-Erkennung (`mistral-ocr-latest`)
-* **Werkzeug:** Offizielles Mistral SDK mit dem Modell `mistral-ocr-latest` (`scripts/mistral_ocr.py`).
-* **Batch-Orchestrierung:** `scripts/batch_ocr_runner.py` verarbeitet Seitenbereiche automatisiert mit Übersprung bereits vorhandener Dateien und Kostenüberwachung.
-* **Erzeugte Artefakte:**
-  * `.mistral.md`: Semantisch strukturiertes Markdown mit Überschriftshierarchien und Fließtext.
-  * `.mistral.json`: Detaillierte Antwort mit Seitendimensionen, Textblöcken und Bounding-Box-Koordinaten für die spätere Sandwich-PDF-Schichtung.
-* **Kosten:** 478 Seiten x 0,004 $ = exakt **1,912 $** für das gesamte Werk.
+### 3.2 Delta 2: Fuzzy Canonical Matching gegen die Ground-Truth
+Aufgrund vergilbter Typen verwechselte die OCR gelegentlich Devanāgarī-Ziffern (z. B. ८ als ६, also `६५` statt `८५`):
+* **SequenceMatcher-Abgleich:** Weicht eine Sūtra-Nummer ab, vergleicht der Algorithmus den normalisierten Devanāgarī-Text mit dem erwarteten Sūtra aus `data/sutras.json`.
+* **Korrekturschwelle:** Bei einer Ähnlichkeit >= 0,45 wird der Sūtra-Zähler automatisch auf die kanonische Zählung korrigiert.
+* **Lange Komposita:** Sūtras mit bis zu 350 Zeichen ohne führendes `#`-Zeichen (z. B. 5.4.77 mit 185 Zeichen) werden über Danda-Muster (`॥...॥`) zuverlässig als Sūtra-Kopf erkannt.
 
-### Schritt 3: Kanonisches Alignment & Korrektur-Heuristik (`scripts/align_mistral_sutras.py`)
-Die größte technische Hürde historischer Buch-Digitalisate liegt in Scan-Artefakten, Zahlendrehern und Formatbrüchen:
-* **Fuzzy Canonical Matching:** Weicht eine erkannte Sūtra-Nummer ab (z. B. OCR liest die Devanagari-Ziffer ८ als ६, also `६५` statt `८५`), vergleicht ein `SequenceMatcher`-Algorithmus den bereinigten Devanagari-Text der Zeile mit dem erwarteten Sūtra aus `data/sutras.json`. Bei einer Ähnlichkeit >= 0,45 wird der Zähler automatisch korrigiert.
-* **Kompensierte Zeichenlänge:** Extrem lange Sanskrit-Komposita (z. B. Sūtra 5.4.77 mit 185 Zeichen ohne führendes `#`) werden über Danda-Muster (`॥...॥`) bis 350 Zeichen sicher als Sūtra-Kopfzeilen erkannt.
-* **Pāda- und Adhyāya-Rollover:** Da die Aṣṭādhyāyī strikt aus 8 Adhyāyas mit je exakt 4 Pādas besteht, erzwingt die Statusmaschine nach Pāda 4 den automatischen Übergang auf den nächsten Adhyāya (`state["adhyaya"] += 1, state["pada"] = 1`), auch wenn der gedruckte Kolophon typografisch beschädigt oder unvollständig erkannt wurde.
-* **Filterung von Störskripten:** Stray-Tokens (gelegentliche hebräische oder telugu-artige Glyphen, hervorgerufen durch abgenutzte Bleitypen) werden vor der Konsolidierung rückstandslos bereinigt.
-* **Schutz vor Nachträgen:** Nach dem Schlusssūtra 8.4.68 (`अ अ`) auftretende Textfortsetzungen (Böhtlingks *Nachträge und Verbesserungen*) werden isoliert und kontaminieren nicht den Kommentar von 8.4.68.
+### 3.3 Delta 3: Typografischer Neusatz (`scripts/boethlingk1887_edition.typ`)
+Für die typografische Neuausgabe wurde eine spezifische Typst-Schablone realisiert:
+* **Gliederung pro Sūtra:**
+  1. Devanāgarī-Kopf mit kanonischer Zählung (`१.१.१`).
+  2. Wissenschaftliche IAST-Transliteration (Halbfett).
+  3. Deutsche Übersetzung (Kursiv).
+  4. Eingerückter Kleindruck-Kommentar mit philologischem Apparat (`∠±`, `Kāç.`, `RV.`).
+* **Buchgestaltung:** ISO B5 (176 x 250 mm), Schriftenverbund (*Noto Serif Devanagari* + *Libertinus Serif*), lebende Kolumnentitel und 47 hierarchische PDF-Bookmarks.
+* **Kompilierung:** Ausführung via `python3 scripts/build_typeset_edition.py` in ~8,9 Sekunden.
+
+### 3.4 Delta 4: Standardisierte TEI-P5- und EPUB 3-Editionen
+* **TEI-P5 XML (`data/tei/boehtlingk1887_p5.xml`):** 100 % valide gegen TEI All RelaxNG (`schemas/tei_all.rng`), 3.997 `<tei:entry>`-Elemente und 478 `<tei:pb>`-Seitenumbrüche mit direkter Verlinkung zu den Heidelberger IIIF-Faksimiles.
+* **EPUB 3 (`boethlingk1887.epub`):** Reflowable E-Book mit Schrifteinbettung für vollständige diakritische Lesbarkeit auf mobilen Geräten.
 
 ---
 
@@ -84,7 +79,7 @@ Die größte technische Hürde historischer Buch-Digitalisate liegt in Scan-Arte
 
 Alle 8 Adhyāyas und die einleitenden Śiva-Sūtras wurden 1:1 gegen die kanonische Referenzdatenbank validiert:
 
-| Bereich | Buchseiten | Sūtras (Ist / Soll) | Duplikate | Fehlende Übersetzungen | Validierungsstatus |
+| Bereich | Buchseiten | Sūtras (Ist / Soll) | Duplikate | Fehlstellen | Validierungsstatus |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Śiva-Sūtrāṇi** | 1 | 14 / 14 | 0 | 0 | **100,0 % validiert** |
 | **Adhyāya 1** | 2–43 | 351 / 351 | 0 | 0 | **100,0 % validiert** |
@@ -99,52 +94,13 @@ Alle 8 Adhyāyas und die einleitenden Śiva-Sūtras wurden 1:1 gegen die kanonis
 
 ---
 
-## 5. Das Sandwich-PDF-Verfahren in AlexandriaSandwich
+## 5. Kernartefakte & Bezugsquellen
 
-Das fertige Sandwich-PDF wurde über das Skript [`scripts/build_sandwich_pdf.py`](https://github.com/birchville-org/boethlingk/blob/main/scripts/build_sandwich_pdf.py) assembliert:
-* **Zieldatei:** `data/output/boehtlingk1887.perfect_sandwich.pdf` / `boehtlingk1887_sandwich.pdf` (248,85 MB, 478 Seiten; vor Margin-Masking: 278,16 MB).
-* **Visuelle Ebene (Hintergrund):** Die 478 hochauflösenden Primärscans der UB Heidelberg werden mit Content-Aware Margin Masking eingebunden (Scanränder und Randschmutz werden mit dem Original-Hintergrundton `#f0e8d6` sauber maskiert).
-* **Unsichtbare Textebene (Vordergrund):** Mittels PDF Text Rendering Mode 3 (*Neither fill nor stroke text*) und Unicode-Font (*Arial Unicode* / *Identity-H*) wurden 14.267 Textblöcke auf ihren exakten Pixelkoordinaten platziert.
-* **Hierarchisches Inhaltsverzeichnis (PDF Bookmarks):** Alle 8 Adhyāyas, 32 Pādas, die Śiva-Sūtras und die Nachträge sind als klickbare Gliederung hinterlegt.
-* **Ergebnis:** Beim Betrachten erscheint das unveränderte historische Faksimile von 1887 in bereinigtem Lesebild. Textauswahl, Copy-Paste und Volltextsuche (Devanāgarī, IAST und Deutsch) greifen unmittelbar auf die korrekten Zeilen und Koordinaten zu.
-
----
-
-## 6. Wissenschaftliche TEI-P5-Edition
-
-Für die Langzeitarchivierung und Interoperabilität wurde die kanonisch geprüfte XML-Edition generiert:
-* **Datei:** `data/tei/boehtlingk1887_p5.xml` (2,90 MB)
-* **Validierung:** 100 % schema-valide gegen TEI All RelaxNG (`schemas/tei_all.rng`).
-* **Umfang:** 3.997 `<tei:entry>`-Elemente, 478 `<tei:pb>`-Seitenumbrüche mit Verlinkung zu den IIIF-Vollbildern der UB Heidelberg, 8 Adhyāya- und 32 Pāda-Abschnitte sowie 50 Corrigenda-Einträge in `<back>`.
-
----
-
-## 7. Neu gesetzte Vektor-Buchausgabe mit modernen Schriften (Typst-Edition)
-
-Während das 1:1 Sandwich-PDF das historische Erscheinungsbild der Leipziger Ausgabe originalgetreu bewahrt, dient die typografische Neuausgabe einer optimalen Lesbarkeit ohne Ermüdung durch verwaschenen Druck, Scan-Verzerrungen und vergilbtes Papier:
-
-* **Zieldatei:** `data/output/boethlingk1887_typeset_edition_v2.pdf` (7,62 MB, 737 Seiten; alternativ v1 mit 6,28 MB).
-* **Download:** [Release Asset v2 (`boethlingk1887_typeset_edition_v2.pdf`)](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_typeset_edition_v2.pdf) (7,62 MB) · [Release Asset v1 (`boethlingk1887_typeset_edition.pdf`)](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_typeset_edition.pdf) (6,28 MB).
-* **Format & Buchgestaltung:** ISO B5 (176 x 250 mm), Buchlayout mit lebenden Kolumnentiteln (gerade Seiten: Buchtitel; ungerade Seiten: aktueller Sūtra-Abschnitt) sowie Titelei und 47 PDF-Bookmarks.
-* **Moderne Schriftarten:**
-  * **Lateinschrift / Antiqua:** *Baskerville* (primär) und *Times New Roman* für ausgewogene Proportionen und klare Lesbarkeit des deutschen Kommentars.
-  * **Devanāgarī:** *Devanagari MT* und *Kohinoor Devanagari* für harmonische Ligaturen und gestochen scharfen Druck.
-  * **Transliteration:** Nahtlose typografische Einbettung aller IAST-Diakritika (`ā`, `ī`, `ū`, `ṛ`, `ṝ`, `ḷ`, `ṣ`, `ś`, `ñ`, `ṅ`, `ṭ`, `ḍ`, `ṇ`, `ṃ`, `ḥ`).
-* **Integrierter Korrekturapparat:** Die 50 Corrigenda-Einträge der Seiten 477–478 sind als Anhang eingebunden.
-* **Herstellung & Bauanleitung:**
-  * Benötigt das installierte Satzsystem [Typst](https://typst.app/) (`brew install typst`).
-  * Ausführung des Python-Buildskripts:
-    ```bash
-    python3 scripts/build_typeset_edition.py
-    ```
-  * Das Skript transformiert den kanonischen JSON-Master in [`data/ashtadhyayi_grouped_edition.json`](https://github.com/birchville-org/boethlingk/blob/main/data/ashtadhyayi_grouped_edition.json) und kompiliert das Typst-Template [`scripts/boethlingk1887_edition.typ`](https://github.com/birchville-org/boethlingk/blob/main/scripts/boethlingk1887_edition.typ) in ca. 1–2 Sekunden.
-
----
-
-## 8. QA-Viewer (Payer Global Web Editor Standard)
-
-Für die redaktionelle Nachprüfung und dauerhafte Nutzung wurde [`viewer.html`](https://github.com/birchville-org/boethlingk/blob/main/viewer.html) implementiert:
-* **Split-Pane:** Links der hochauflösende Originalscan mit flüssigem Zoom & Pan (Drag & Drop mit der Maus); rechts der Sūtra-Editor.
-* **Snippet-Toolbar:** Direkte Einfügemöglichkeit für Dandas (`॥`, `।`, `ऽ`, `°`), IAST-Diakritika und philologische Abkürzungen (`∠±`, `∠_`, `v. l.`, `Kāç.`, `RV.`).
-* **Silent Auto-Repair on Save:** Beim Speichern (`⌘S`) werden Pipes (`||`) stumm zu Dandas (`॥`) gewandelt, doppelte Leerzeichen normalisiert und Störzeichen entfernt; visueller Status über Farbwechsel (Gelb = Auto-Repair, Grün = Gespeichert).
-* **Local Storage & Export:** Speichert Revisionen lokal im Browser und erlaubt das direkte Zurückschreiben via File System Access API (`showSaveFilePicker`).
+| Artefakt | Format / Datei | Umfang | Bezugsquelle |
+| :--- | :--- | :--- | :--- |
+| **Sandwich-PDF** | `boehtlingk1887.perfect_sandwich.pdf` | 248,85 MB (478 S.) | [Release Download](https://github.com/birchville-org/boethlingk/releases/latest/download/boehtlingk1887_sandwich.pdf) |
+| **Typst-Buchsatz** | `boethlingk1887_typeset_edition.pdf` | 7,62 MB (737 S.) | [Release Download](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_typeset_edition_v2.pdf) |
+| **Master-Datensatz** | `data/ashtadhyayi_complete_boethlingk1887.json` | 2,85 MB | [GitHub Repository](https://github.com/birchville-org/boethlingk/blob/main/data/ashtadhyayi_complete_boethlingk1887.json) |
+| **TEI-P5 XML** | `data/tei/boehtlingk1887_p5.xml` | 2,90 MB | [GitHub Repository](https://github.com/birchville-org/boethlingk/blob/main/data/tei/boehtlingk1887_p5.xml) |
+| **EPUB 3** | `boethlingk1887.epub` | 1,47 MB | [Release Download](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887.epub) |
+| **QA-Viewer** | `viewer.html` | 39 KB | [Im Browser öffnen](https://github.com/birchville-org/boethlingk/blob/main/viewer.html) |

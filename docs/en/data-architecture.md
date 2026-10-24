@@ -24,15 +24,13 @@ boethlingk/
 │   └── en/                                      # English documentation
 │
 ├── schemas/                                     # RelaxNG Schema (tei_all.rng)
-├── scripts/                                     # Automation & pipeline scripts
-│   ├── download_scans.py                        # Batch-fetch scans from Heidelberg IIIF API
-│   ├── mistral_ocr.py                           # Mistral OCR client (mistral-ocr-latest)
-│   ├── batch_ocr_runner.py                      # Multi-page OCR orchestration
-│   ├── align_mistral_sutras.py                  # Canonical alignment & fuzzy matching
-│   ├── build_sandwich_pdf.py                    # 1:1 Sandwich PDF assembler
-│   ├── build_typeset_edition.py                 # Typst book edition compiler
+├── scripts/                                     # Edition & Build Scripts (Böhtlingk Delta)
+│   ├── download_scans.py                        # Batch download of Heidelberg UB facsimiles
+│   ├── align_mistral_sutras.py                  # Canonical alignment & fuzzy matching (8 Adhyāyas)
+│   ├── build_typeset_edition.py                 # Typst vector book compiler (incl. PyMuPDF post-processing)
+│   ├── boethlingk1887_edition.typ               # Typst book template (Scholarly Synthesis)
 │   ├── generate_tei_p5.py                       # TEI-P5 XML generator & RelaxNG validator
-│   └── export_epub.py                           # Reflowable EPUB 3 generator
+│   └── export_epub.py                           # Reflowable EPUB 3 e-book generator
 │
 ├── viewer.html                                  # Standalone QA Viewer (Payer Standard)
 ├── viewer_screenshot.png                        # Interface demonstration
