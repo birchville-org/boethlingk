@@ -102,6 +102,30 @@ def sanitize_text(text: str) -> str:
     return cleaned
 
 
+def is_header_or_footer_line(line: str) -> bool:
+    """Detect running headers, page numbers, signatures/Bogennormen, and boilerplate."""
+    s = line.strip()
+    if not s:
+        return False
+    # Standalone page number (1-3 digits)
+    if re.match(r"^\d{1,3}\.?$", s):
+        return True
+    # Running header reference (e.g. '1, 1, 55.', '3, 1, 1. 2. 3. 4, 1, 1. 76.', '6, 4, 1. 22.')
+    if re.match(r"^(?:\d{1,2}\s*[,.]\s*){2,}[\d\s.,—–-]+$", s) or re.match(r"^\d{1,2}\s*[,.]\s*\d{1,2}\s*[,.]\s*\d{1,3}\.?$", s):
+        return True
+    # Signature marks / Bogennormen: single uppercase letter, e.g. 'B', 'C', 'B*', 'D G', 'HIV', 'BGR', 'Pāṇini\'s Grammatik.'
+    if re.match(r"^[A-Z](?:\*|\s+[A-Z])?$", s) or s in ("HIV", "BGR") or "Pāṇini's Grammatik" in s:
+        return True
+    # Heidelberg boilerplate
+    if any(k in s.upper() for k in [
+        "UNIVERSITÄTS", "BIBLIOTHEK", "HEIDELBERG",
+        "BADEN-WÜRTTEMBERG", "GEFÖRDERT DURCH", "DIGI.UB",
+        "[LOGO]", "© UNIVERSITÄTSBIBLIOTHEK", "GELÖRDERT DURCH", "BEDEN-WISSENSCHAFT"
+    ]):
+        return True
+    return False
+
+
 def is_colophon_line(line: str) -> bool:
     return bool(PAT_COLOPHON.search(line) or PAT_ADHYAYA_END.search(line) or "शब्दानुशासन" in line)
 
@@ -109,38 +133,19 @@ def is_colophon_line(line: str) -> bool:
 def clean_commentary_paragraphs(text: str) -> list[str]:
     if not text:
         return []
-    lines = text.split("\n")
-    cleaned_lines = []
-    in_block = False
-
-    for l in lines:
-        l_str = l.strip()
-        if any(k in l_str.upper() for k in [
-            "UNIVERSITÄTS", "BIBLIOTHEK", "HEIDELBERG",
-            "BADEN-WÜRTTEMBERG", "GEFÖRDERT DURCH", "DIGI.UB",
-            "[LOGO]", "© UNIVERSITÄTSBIBLIOTHEK"
-        ]):
-            in_block = True
-            continue
-        elif in_block:
-            if (re.match(r"^\d+$", l_str) or 
-                re.match(r"^\d{1,2}\s*,\s*\d{1,2}\s*,\s*\d{1,3}\.?$", l_str) or 
-                l_str in ["B", "b", "[LOGO]", ""] or
-                not l_str):
-                continue
-            else:
-                in_block = False
-                cleaned_lines.append(l)
-        else:
-            cleaned_lines.append(l)
-
-    cleaned_text = "\n".join(cleaned_lines)
-    paras = [p.strip() for p in cleaned_text.split("\n\n")]
+    paras = [p.strip() for p in text.split("\n\n")]
     cleaned = []
     for p in paras:
         if not p:
             continue
-        para_lines = [sanitize_text(line.strip()) for line in p.splitlines() if line.strip() and not is_boilerplate(line) and not is_colophon_line(line)]
+        para_lines = [
+            sanitize_text(line.strip())
+            for line in p.splitlines()
+            if line.strip()
+            and not is_header_or_footer_line(line)
+            and not is_boilerplate(line)
+            and not is_colophon_line(line)
+        ]
         if para_lines:
             cleaned.append("\n".join(para_lines))
     return cleaned
@@ -169,6 +174,7 @@ def split_into_sections(md_content: str) -> list[tuple[str, str]]:
     sections = []
     curr_heading = ""
     curr_body_lines: list[str] = []
+    has_seen_first_heading = False
 
     def flush():
         nonlocal curr_heading, curr_body_lines
@@ -184,11 +190,16 @@ def split_into_sections(md_content: str) -> list[tuple[str, str]]:
                 curr_body_lines.append("")
             continue
 
+        # Skip running headers, page numbers, signatures at page top before any sutra heading
+        if not has_seen_first_heading and is_header_or_footer_line(stripped):
+            continue
+
         # Check for colophon line
         if PAT_COLOPHON.search(stripped) or PAT_ADHYAYA_END.search(stripped):
             flush()
             curr_heading = stripped
             flush()
+            has_seen_first_heading = True
             continue
 
         is_heading = stripped.startswith("#") and len(stripped) > 1 and stripped.lstrip("#").startswith(" ")
@@ -205,6 +216,7 @@ def split_into_sections(md_content: str) -> list[tuple[str, str]]:
         if is_heading or is_sutra_line:
             flush()
             curr_heading = stripped
+            has_seen_first_heading = True
         else:
             curr_body_lines.append(stripped)
 
