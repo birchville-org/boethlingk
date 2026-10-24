@@ -102,11 +102,11 @@ Alle 8 Adhyāyas und die einleitenden Śiva-Sūtras wurden 1:1 gegen die kanonis
 ## 5. Das Sandwich-PDF-Verfahren in AlexandriaSandwich
 
 Das fertige Sandwich-PDF wurde über das Skript [`scripts/build_sandwich_pdf.py`](https://github.com/birchville-org/boethlingk/blob/main/scripts/build_sandwich_pdf.py) assembliert:
-* **Zieldatei:** `data/output/boehtlingk1887_sandwich.pdf` (278,16 MB, 478 Seiten)
-* **Visuelle Ebene (Hintergrund):** Die 478 hochauflösenden Primärscans der UB Heidelberg werden verlustfrei eingebunden (1:1 Pixelauflösung).
+* **Zieldatei:** `data/output/boehtlingk1887.perfect_sandwich.pdf` / `boehtlingk1887_sandwich.pdf` (248,85 MB, 478 Seiten; vor Margin-Masking: 278,16 MB).
+* **Visuelle Ebene (Hintergrund):** Die 478 hochauflösenden Primärscans der UB Heidelberg werden mit Content-Aware Margin Masking eingebunden (Scanränder und Randschmutz werden mit dem Original-Hintergrundton `#f0e8d6` sauber maskiert).
 * **Unsichtbare Textebene (Vordergrund):** Mittels PDF Text Rendering Mode 3 (*Neither fill nor stroke text*) und Unicode-Font (*Arial Unicode* / *Identity-H*) wurden 14.267 Textblöcke auf ihren exakten Pixelkoordinaten platziert.
 * **Hierarchisches Inhaltsverzeichnis (PDF Bookmarks):** Alle 8 Adhyāyas, 32 Pādas, die Śiva-Sūtras und die Nachträge sind als klickbare Gliederung hinterlegt.
-* **Ergebnis:** Beim Betrachten erscheint das unveränderte historische Faksimile von 1887. Textauswahl, Copy-Paste und Volltextsuche (Devanāgarī, IAST und Deutsch) greifen unmittelbar auf die korrekten Zeilen und Koordinaten zu.
+* **Ergebnis:** Beim Betrachten erscheint das unveränderte historische Faksimile von 1887 in bereinigtem Lesebild. Textauswahl, Copy-Paste und Volltextsuche (Devanāgarī, IAST und Deutsch) greifen unmittelbar auf die korrekten Zeilen und Koordinaten zu.
 
 ---
 
@@ -123,9 +123,9 @@ Für die Langzeitarchivierung und Interoperabilität wurde die kanonisch geprüf
 
 Während das 1:1 Sandwich-PDF das historische Erscheinungsbild der Leipziger Ausgabe originalgetreu bewahrt, dient die typografische Neuausgabe einer optimalen Lesbarkeit ohne Ermüdung durch verwaschenen Druck, Scan-Verzerrungen und vergilbtes Papier:
 
-* **Zieldatei:** `data/output/boethlingk1887_typeset_edition.pdf` (6,28 MB, 737 Seiten).
-* **Download:** [Release Asset (`boethlingk1887_typeset_edition.pdf`)](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_typeset_edition.pdf) (6,28 MB).
-* **Format & Buchgestaltung:** ISO B5 (176 x 250 mm), Buchlayout mit lebenden Kolumnentiteln (gerade Seiten: Buchtitel; ungerade Seiten: aktueller Sūtra-Abschnitt) sowie Titelei und Inhaltsverzeichnis.
+* **Zieldatei:** `data/output/boethlingk1887_typeset_edition_v2.pdf` (7,62 MB, 737 Seiten; alternativ v1 mit 6,28 MB).
+* **Download:** [Release Asset v2 (`boethlingk1887_typeset_edition_v2.pdf`)](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_typeset_edition_v2.pdf) (7,62 MB) · [Release Asset v1 (`boethlingk1887_typeset_edition.pdf`)](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_typeset_edition.pdf) (6,28 MB).
+* **Format & Buchgestaltung:** ISO B5 (176 x 250 mm), Buchlayout mit lebenden Kolumnentiteln (gerade Seiten: Buchtitel; ungerade Seiten: aktueller Sūtra-Abschnitt) sowie Titelei und 47 PDF-Bookmarks.
 * **Moderne Schriftarten:**
   * **Lateinschrift / Antiqua:** *Baskerville* (primär) und *Times New Roman* für ausgewogene Proportionen und klare Lesbarkeit des deutschen Kommentars.
   * **Devanāgarī:** *Devanagari MT* und *Kohinoor Devanagari* für harmonische Ligaturen und gestochen scharfen Druck.

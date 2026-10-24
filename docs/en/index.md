@@ -1,5 +1,5 @@
 <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; padding: 1rem 1.25rem; background: var(--md-default-bg-color--light); border: 1px solid var(--md-default-fg-color--lightest); border-radius: 8px;">
-  <img src="assets/birchville_logo.png" alt="Birchville Coat of Arms" style="height: 2.4rem; border-radius: 4px; filter: drop-shadow(0 1px 3px rgba(0,0,0,0.18));">
+  <img src="../assets/birchville_logo.png" alt="Birchville Coat of Arms" style="height: 2.4rem; border-radius: 4px; filter: drop-shadow(0 1px 3px rgba(0,0,0,0.18));">
   <div>
     <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--md-accent-fg-color); font-weight: 700;">Birchville Scholarly Synthesis</div>
     <div style="font-size: 0.95rem; font-weight: 600; color: var(--md-default-fg-color);">Canonical Editions of Classical Indological Reference Works</div>
@@ -22,12 +22,12 @@
         <span class="quick-card-title">Sandwich PDF (1:1)</span>
       </div>
       <div class="quick-card-body">
-        478-page high-resolution scan facsimile with OCR text layer (14,267 text blocks) and 42 bookmarks.
+        478-page high-resolution scan facsimile with Content-Aware Margin Masking, OCR text layer (14,267 text blocks), and 42 bookmarks.
       </div>
     </div>
     <div class="quick-card-action">
       <a href="https://github.com/birchville-org/boethlingk/releases/latest/download/boehtlingk1887_sandwich.pdf" class="quick-btn quick-btn-primary" target="_blank" rel="noopener">
-        <span>⬇️</span> Sandwich PDF (278 MB)
+        <span>⬇️</span> Sandwich PDF (249 MB)
       </a>
     </div>
   </div>
@@ -36,15 +36,15 @@
     <div>
       <div class="quick-card-header">
         <span class="quick-card-icon">📄</span>
-        <span class="quick-card-title">Typst Vector Typeset</span>
+        <span class="quick-card-title">Typst Vector Typeset v2</span>
       </div>
       <div class="quick-card-body">
-        737-page modern vector book edition (ISO B5) with all 3,997 Sūtras, translation, commentary, and running headers.
+        Modern vector book edition (ISO B5) with all 3,997 Sūtras, translation, commentary, 47 TOC bookmarks, and running headers.
       </div>
     </div>
     <div class="quick-card-action">
-      <a href="https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_typeset_edition.pdf" class="quick-btn quick-btn-outline" target="_blank" rel="noopener">
-        <span>⬇️</span> Book Edition (6.3 MB)
+      <a href="https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_typeset_edition_v2.pdf" class="quick-btn quick-btn-outline" target="_blank" rel="noopener">
+        <span>⬇️</span> Book Edition v2 (7.6 MB)
       </a>
     </div>
   </div>
@@ -60,7 +60,7 @@
       </div>
     </div>
     <div class="quick-card-action">
-      <a href="case-study.md" class="quick-btn quick-btn-outline">
+      <a href="case-study/" class="quick-btn quick-btn-outline">
         <span>➔</span> Read Case Study
       </a>
     </div>
@@ -96,13 +96,13 @@ This project provides end-to-end historical digitization, multimodal AI OCR (`mi
 
 ## 🏛️ Project Outcomes & Core Artifacts
 
-- **Searchable 1:1 Sandwich PDF** (`boehtlingk1887_sandwich.pdf` · 278.2 MB)  
-  478-page high-resolution scan facsimile of the Heidelberg exemplar with an invisible vector text layer (14,267 text blocks placed at exact coordinates) and 42 hierarchical PDF bookmarks.  
-  [:octicons-download-16: Release Download (278 MB)](https://github.com/birchville-org/boethlingk/releases/latest/download/boehtlingk1887_sandwich.pdf) · [:octicons-tag-16: GitHub Release](https://github.com/birchville-org/boethlingk/releases/latest)
+- **Searchable 1:1 Sandwich PDF** (`boehtlingk1887.perfect_sandwich.pdf` / `boehtlingk1887_sandwich.pdf` · 249 MB)  
+  478-page high-resolution scan facsimile with Content-Aware Margin Masking, an invisible vector text layer (14,267 text blocks placed at exact coordinates), and 42 hierarchical PDF bookmarks.  
+  [:octicons-download-16: Release Download (249 MB)](https://github.com/birchville-org/boethlingk/releases/latest/download/boehtlingk1887_sandwich.pdf) · [:octicons-tag-16: GitHub Release](https://github.com/birchville-org/boethlingk/releases/latest)
 
-- **Modern Typeset Book PDF (Typst Edition)** (`boethlingk1887_typeset_edition.pdf` · 6.3 MB)  
-  737-page crisp vector book edition (ISO B5) with all 3,997 Sūtras (Devanāgarī, IAST, translation, commentary), running headers, and table of contents.  
-  [:octicons-download-16: Release Download](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_typeset_edition.pdf) · [:octicons-mark-github-16: Build Script](https://github.com/birchville-org/boethlingk/blob/main/scripts/build_typeset_edition.py)
+- **Modern Typeset Book PDF (Typst Edition v2)** (`boethlingk1887_typeset_edition_v2.pdf` · 7.6 MB)  
+  737-page crisp vector book edition (ISO B5) with all 3,997 Sūtras (Devanāgarī, IAST, translation, commentary), running headers, and 47 PDF bookmarks.  
+  [:octicons-download-16: Release Download (7.6 MB)](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_typeset_edition_v2.pdf) · [:octicons-mark-github-16: Build Script](https://github.com/birchville-org/boethlingk/blob/main/scripts/build_typeset_edition.py)
 
 - **Canonically Validated Master Dataset (JSON)** (`data/ashtadhyayi_complete_boethlingk1887.json` · 2.8 MB)  
   3,997 complete Sūtras (14 Śiva-Sūtras + 3,983 Aṣṭādhyāyī-Sūtras, 0 duplicates, 0 gaps) with Devanāgarī, academic IAST transliteration, German translation, and philological commentary.  

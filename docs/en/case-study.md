@@ -102,11 +102,11 @@ All 8 Adhyāyas and the introductory Śiva-Sūtras were validated 1:1 against th
 ## 5. Sandwich PDF Assembly in AlexandriaSandwich
 
 The complete sandwich PDF was compiled using [`scripts/build_sandwich_pdf.py`](https://github.com/birchville-org/boethlingk/blob/main/scripts/build_sandwich_pdf.py):
-* **Target File:** `data/output/boehtlingk1887_sandwich.pdf` (278.16 MB, 478 pages)
-* **Visual Layer (Background):** 478 high-resolution primary scans from Heidelberg University Library embedded losslessly (1:1 pixel resolution).
+* **Target File:** `data/output/boehtlingk1887.perfect_sandwich.pdf` / `boehtlingk1887_sandwich.pdf` (248.85 MB, 478 pages; raw scans before masking: 278.16 MB).
+* **Visual Layer (Background):** 478 high-resolution primary scans from Heidelberg University Library processed with Content-Aware Margin Masking (scanner borders, paper edge artifacts, and finger smudges cleanly masked with background tone `#f0e8d6`).
 * **Invisible Text Layer (Foreground):** PDF Text Rendering Mode 3 (*Neither fill nor stroke text*) with Unicode font mapping (*Arial Unicode* / *Identity-H*) places 14,267 text blocks at their exact bounding-box coordinates.
 * **Hierarchical Table of Contents (Bookmarks):** All 8 Adhyāyas, 32 Pādas, Śiva-Sūtras, and addenda are embedded as interactive PDF bookmarks.
-* **Result:** Readers experience the untouched visual historical 1887 facsimile, while text selection, search, and copy-paste (Devanāgarī, IAST, and German) access coordinates directly.
+* **Result:** Readers experience the authentic visual historical 1887 facsimile in a cleaned, distraction-free reading format, while text selection, search, and copy-paste (Devanāgarī, IAST, and German) access coordinates directly.
 
 ---
 
@@ -123,9 +123,9 @@ For archival preservation and digital humanities interoperability, a canonical X
 
 While the 1:1 sandwich PDF preserves the authentic historical facsimile, the typeset vector edition provides maximum readability and clarity without the eye fatigue caused by 19th-century print bleed, paper yellowing, or scanner distortion:
 
-* **Target File:** `data/output/boethlingk1887_typeset_edition.pdf` (6.28 MB, 737 pages).
-* **Download:** [Release Asset (`boethlingk1887_typeset_edition.pdf`)](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_typeset_edition.pdf) (6.28 MB).
-* **Format & Book Design:** ISO B5 (176 x 250 mm), book layout with dynamic running headers (even pages: work title; odd pages: current section), front matter, and table of contents.
+* **Target File:** `data/output/boethlingk1887_typeset_edition_v2.pdf` (7.62 MB, 737 pages; v1: 6.28 MB).
+* **Download:** [Release Asset v2 (`boethlingk1887_typeset_edition_v2.pdf`)](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_typeset_edition_v2.pdf) (7.62 MB) · [Release Asset v1 (`boethlingk1887_typeset_edition.pdf`)](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_typeset_edition.pdf) (6.28 MB).
+* **Format & Book Design:** ISO B5 (176 x 250 mm), book layout with dynamic running headers (even pages: work title; odd pages: current section), front matter, and 47 PDF bookmarks.
 * **Modern Typefaces:**
   * **Latin / Antiqua:** *Baskerville* (primary) and *Times New Roman* for balanced proportions and comfortable reading of the German commentary.
   * **Devanāgarī:** *Devanagari MT* and *Kohinoor Devanagari* for clean ligatures and sharp vector rendering.
