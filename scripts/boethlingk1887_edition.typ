@@ -148,31 +148,47 @@ Im Rahmen der *AlexandriaSandwich-Pipeline* wurden sämtliche 478 Buchseiten der
 
 #set page(
   header: context {
+    let loc = here()
     let page_num = counter(page).get().first()
     
     // Unterdrücke Kopfzeile auf Seiten mit Hauptüberschrift (Level 1)
-    let h1_on_page = query(selector(heading.where(level: 1)).after(here())).filter(h => counter(page).at(h.location()).first() == page_num)
+    let h1_on_page = query(selector(heading.where(level: 1)).after(loc)).filter(h => counter(page).at(h.location()).first() == page_num)
     if h1_on_page.len() > 0 {
       return none
     }
 
-    let h1_nodes = query(selector(heading.where(level: 1)).before(here()))
-    let h2_nodes = query(selector(heading.where(level: 2)).before(here()))
+    let h1_nodes = query(selector(heading.where(level: 1)).before(loc))
+    let h2_nodes = query(selector(heading.where(level: 2)).before(loc))
     
     let cur_h1 = if h1_nodes.len() > 0 { h1_nodes.last().body } else { [Pāṇini's Grammatik] }
     let cur_h2 = if h2_nodes.len() > 0 { h2_nodes.last().body } else { [Aṣṭādhyāyī Sūtrapāṭha] }
+
+    // Ermittle die letzte Sūtra auf der aktuellen Seite (bzw. die aktive Sūtra für Fortsetzungsseiten)
+    let sutras_on_page = query(selector(<sutra-marker>)).filter(m => counter(page).at(m.location()).first() == page_num)
+    let last_sutra_ref = if sutras_on_page.len() > 0 {
+      let v = sutras_on_page.last().value
+      str(v.adh) + ", " + str(v.pada) + ", " + str(v.snum) + "."
+    } else {
+      let prev_sutras = query(selector(<sutra-marker>).before(loc))
+      if prev_sutras.len() > 0 {
+        let v = prev_sutras.last().value
+        str(v.adh) + ", " + str(v.pada) + ", " + str(v.snum) + "."
+      } else {
+        ""
+      }
+    }
 
     [
       #if calc.even(page_num) [
         #text(8.5pt, weight: "bold")[#page_num]
         #h(1fr)
-        #text(8pt, font: ("Libertinus Serif", "Linux Libertine O", "Times New Roman"))[#smallcaps[Pāṇini's Grammatik]]
-        #h(1fr)
-        #text(8pt, style: "italic", fill: rgb("#334155"))[Otto von Böhtlingk (1887)]
-      ] else [
-        #text(8pt, style: "italic", fill: rgb("#334155"))[#cur_h2]
-        #h(1fr)
         #text(8pt, font: ("Libertinus Serif", "Linux Libertine O", "Times New Roman"))[#smallcaps[#cur_h1]]
+        #h(1fr)
+        #text(8.5pt, weight: "bold", fill: rgb("#03192e"))[#last_sutra_ref]
+      ] else [
+        #text(8.5pt, weight: "bold", fill: rgb("#03192e"))[#last_sutra_ref]
+        #h(1fr)
+        #text(8pt, style: "italic", fill: rgb("#334155"))[#cur_h2]
         #h(1fr)
         #text(8.5pt, weight: "bold")[#page_num]
       ]
@@ -295,6 +311,7 @@ Im Rahmen der *AlexandriaSandwich-Pipeline* wurden sämtliche 478 Buchseiten der
         }
 
         [
+          #metadata((adh: adh.num, pada: pada.num, snum: s.sutra_num, ref: s.ref)) <sutra-marker>
           #block(width: 100%, breakable: true)[
             // Sūtra-Kopf und Übersetzung unteilbar zusammenhalten (Original-Layout Böhtlingk 1887)
             #block(width: 100%, breakable: false)[
