@@ -3224,9 +3224,10 @@ Ausnahme zu 1, 3, 74.</note>
             <form type="transliteration" xml:lang="sa-Latn">
               <orth>naḥ kye</orth>
             </form>
-            <note type="commentary" xml:lang="de">Auch ein auf न auslautender Nominalstamm heisst vor den verschiedenen Denominativsuffixen य Pada.
-
-D. i. wird in euphonischer Beziehung wie ein fertiges Wort behandelt. Wie das न von राजन् abfällt, wenn es Pada wird, so auch vor jenen Suffixen.</note>
+            <sense xml:lang="de">
+              <def>Auch ein auf न auslautender Nominalstamm heisst vor den verschiedenen Denominativsuffixen य Pada.</def>
+            </sense>
+            <note type="commentary" xml:lang="de">D. i. wird in euphonischer Beziehung wie ein fertiges Wort behandelt. Wie das न von राजन् abfällt, wenn es Pada wird, so auch vor jenen Suffixen.</note>
           </entry>
           <entry xml:id="sutra_1.4.16" n="1.4.16">
             <form type="sutra" xml:lang="sa-Deva">
@@ -3317,9 +3318,10 @@ D. i. wird in euphonischer Beziehung wie ein fertiges Wort behandelt. Wie das �
             <form type="transliteration" xml:lang="sa-Latn">
               <orth>kārake</orth>
             </form>
-            <note type="commentary" xml:lang="de">In den nun folgenden Sūtra ist von einem Kāraka (Factor) die Rede.
-
-D. i. von einem Nomen in seiner unmittelbaren Beziehung zu einem Verbum. So passt z. B. zum folgenden Sūtra das Beispiel वृत्तापर्णी पतति, aber nicht वृत्तस्य पर्णी पतति, weil hier वृत्तस्य als zu पर्णीम् gehörig nicht Kāraka ist.</note>
+            <sense xml:lang="de">
+              <def>In den nun folgenden Sūtra ist von einem Kāraka (Factor) die Rede.</def>
+            </sense>
+            <note type="commentary" xml:lang="de">D. i. von einem Nomen in seiner unmittelbaren Beziehung zu einem Verbum. So passt z. B. zum folgenden Sūtra das Beispiel वृत्तापर्णी पतति, aber nicht वृत्तस्य पर्णी पतति, weil hier वृत्तस्य als zu पर्णीम् gehörig nicht Kāraka ist.</note>
           </entry>
           <pb n="34" facs="https://digi.ub.uni-heidelberg.de/iiif/3/boehtlingk1887%3A000000034.jpg/full/max/0/default.jpg"/>
           <entry xml:id="sutra_1.4.24" n="1.4.24">
@@ -3437,9 +3439,10 @@ D. i. von einem Nomen in seiner unmittelbaren Beziehung zu einem Verbum. So pass
             <form type="transliteration" xml:lang="sa-Latn">
               <orth>rucyarthānāṃ prīyamāṇaḥ</orth>
             </form>
-            <note type="commentary" xml:lang="de">Bei Verben in der Bedeutung „gefallen“ heisst derjenige so, der seine Freude an Etwas hat.
-
-देवदत्ताय रोचते मोदकः, यज्ञदत्ताय स्वदते पूपः.</note>
+            <sense xml:lang="de">
+              <def>Bei Verben in der Bedeutung „gefallen“ heisst derjenige so, der seine Freude an Etwas hat.</def>
+            </sense>
+            <note type="commentary" xml:lang="de">देवदत्ताय रोचते मोदकः, यज्ञदत्ताय स्वदते पूपः.</note>
           </entry>
           <entry xml:id="sutra_1.4.34" n="1.4.34">
             <form type="sutra" xml:lang="sa-Deva">
@@ -3653,9 +3656,10 @@ D. i. von einem Nomen in seiner unmittelbaren Beziehung zu einem Verbum. So pass
             <form type="transliteration" xml:lang="sa-Latn">
               <orth>akathitaṃ ca</orth>
             </form>
-            <note type="commentary" xml:lang="de">Und auch das, was bisher nicht besprochen worden ist.
-
-D. i. Alles, was bisher mit keinem andern Namen, wie Apādāna u. s. w., belegt worden ist. Durch dieses Sūtra erklärt man den Gebrauch des entfernteren Accusativs bei दूह्, याच् u. s. w.</note>
+            <sense xml:lang="de">
+              <def>Und auch das, was bisher nicht besprochen worden ist.</def>
+            </sense>
+            <note type="commentary" xml:lang="de">D. i. Alles, was bisher mit keinem andern Namen, wie Apādāna u. s. w., belegt worden ist. Durch dieses Sūtra erklärt man den Gebrauch des entfernteren Accusativs bei दूह्, याच् u. s. w.</note>
           </entry>
           <entry xml:id="sutra_1.4.52" n="1.4.52">
             <form type="sutra" xml:lang="sa-Deva">
@@ -3711,9 +3715,10 @@ D. i. Alles, was bisher mit keinem andern Namen, wie Apādāna u. s. w., belegt 
             <form type="transliteration" xml:lang="sa-Latn">
               <orth>prāgrīśvarānnipātāḥ</orth>
             </form>
-            <note type="commentary" xml:lang="de">Vor dem Worte ईश्वर in 1, 4, 97 heisst Alles Nipāta.
-
-Um einer Verwechselung mit 3, 4, 13, das mit ईश्वरे beginnt, vorzubeugen, hat Pāṇini das 1, 4, 97 gemeinte ईश्वर mit dem dort vorangehenden र् verbunden.</note>
+            <sense xml:lang="de">
+              <def>Vor dem Worte ईश्वर in 1, 4, 97 heisst Alles Nipāta.</def>
+            </sense>
+            <note type="commentary" xml:lang="de">Um einer Verwechselung mit 3, 4, 13, das mit ईश्वरे beginnt, vorzubeugen, hat Pāṇini das 1, 4, 97 gemeinte ईश्वर mit dem dort vorangehenden र् verbunden.</note>
           </entry>
           <entry xml:id="sutra_1.4.57" n="1.4.57">
             <form type="sutra" xml:lang="sa-Deva">
@@ -3890,9 +3895,10 @@ Um einer Verwechselung mit 3, 4, 13, das mit ईश्वरे beginnt, vorzube
             <form type="transliteration" xml:lang="sa-Latn">
               <orth>tiro'ntarddhau</orth>
             </form>
-            <note type="commentary" xml:lang="de">Auch तिरस in der Bedeutung „verschwinden“.
-
-तिरोभूय, aber तिरो भूत्वा स्थितः = पार्श्वतो भूत्वा.</note>
+            <sense xml:lang="de">
+              <def>Auch तिरस in der Bedeutung „verschwinden“.</def>
+            </sense>
+            <note type="commentary" xml:lang="de">तिरोभूय, aber तिरो भूत्वा स्थितः = पार्श्वतो भूत्वा.</note>
           </entry>
           <entry xml:id="sutra_1.4.72" n="1.4.72">
             <form type="sutra" xml:lang="sa-Deva">
@@ -4326,7 +4332,9 @@ Vgl. 2, 3, 9.</note>
             <form type="transliteration" xml:lang="sa-Latn">
               <orth>asmadyuttamaḥ</orth>
             </form>
-            <note type="commentary" xml:lang="de">Wenn das Pronomen अस्मद् (in irgend einem Numerus) dabeisteht oder dabeistehen könnte, dann wird unter den 1, 4, 105 angegebenen Verhältnissen die Endung der letzten (unserer ersten) Person gebraucht.</note>
+            <sense xml:lang="de">
+              <def>Wenn das Pronomen अस्मद् (in irgend einem Numerus) dabeisteht oder dabeistehen könnte, dann wird unter den 1, 4, 105 angegebenen Verhältnissen die Endung der letzten (unserer ersten) Person gebraucht.</def>
+            </sense>
           </entry>
           <entry xml:id="sutra_1.4.108" n="1.4.108">
             <form type="sutra" xml:lang="sa-Deva">
@@ -4397,7 +4405,9 @@ Vgl. 2, 3, 9.</note>
             <form type="transliteration" xml:lang="sa-Latn">
               <orth>prāk kaḍārāt samāsaḥ</orth>
             </form>
-            <note type="commentary" xml:lang="de">Was bis zum Worte कडार in 2, 2, 38 abgehandelt wird, heisst Samāsa (Compositum).</note>
+            <sense xml:lang="de">
+              <def>Was bis zum Worte कडार in 2, 2, 38 abgehandelt wird, heisst Samāsa (Compositum).</def>
+            </sense>
           </entry>
           <entry xml:id="sutra_2.1.4" n="2.1.4">
             <form type="sutra" xml:lang="sa-Deva">
@@ -4406,9 +4416,10 @@ Vgl. 2, 3, 9.</note>
             <form type="transliteration" xml:lang="sa-Latn">
               <orth>saha supā</orth>
             </form>
-            <note type="commentary" xml:lang="de">Hierbei ist „mit einem flectirten Nomen“ hinzuzudenken.
-
-Ein Compositum heisst nach 1, 2, 46 Prātipadika (Nominalstamm) und als solches wirft es nach 2, 4, 71 die Casusendungen ab. Hier und da erhalten sich diese aber auch im ersten Gliede.</note>
+            <sense xml:lang="de">
+              <def>Hierbei ist „mit einem flectirten Nomen“ hinzuzudenken.</def>
+            </sense>
+            <note type="commentary" xml:lang="de">Ein Compositum heisst nach 1, 2, 46 Prātipadika (Nominalstamm) und als solches wirft es nach 2, 4, 71 die Casusendungen ab. Hier und da erhalten sich diese aber auch im ersten Gliede.</note>
           </entry>
           <entry xml:id="sutra_2.1.5" n="2.1.5">
             <form type="sutra" xml:lang="sa-Deva">
@@ -4417,7 +4428,9 @@ Ein Compositum heisst nach 1, 2, 46 Prātipadika (Nominalstamm) und als solches 
             <form type="transliteration" xml:lang="sa-Latn">
               <orth>avyayībhāvaḥ</orth>
             </form>
-            <note type="commentary" xml:lang="de">Zunächst der Avjajibhāva.</note>
+            <sense xml:lang="de">
+              <def>Zunächst der Avjajibhāva.</def>
+            </sense>
           </entry>
           <pb n="44" facs="https://digi.ub.uni-heidelberg.de/iiif/3/boehtlingk1887%3A000000044.jpg/full/max/0/default.jpg"/>
           <entry xml:id="sutra_2.1.6" n="2.1.6">
@@ -5376,9 +5389,10 @@ dieser Wörter s. 6, 2, 2.</note>
             <form type="transliteration" xml:lang="sa-Latn">
               <orth>na nirdhāraṇe</orth>
             </form>
-            <note type="commentary" xml:lang="de">Ein Genetiv in der Bedeutung „unter“ wird nicht componirt.
-
-चत्रियो मनुष्याणां शूरतमः.</note>
+            <sense xml:lang="de">
+              <def>Ein Genetiv in der Bedeutung „unter“ wird nicht componirt.</def>
+            </sense>
+            <note type="commentary" xml:lang="de">चत्रियो मनुष्याणां शूरतमः.</note>
           </entry>
           <entry xml:id="sutra_2.2.11" n="2.2.11">
             <form type="sutra" xml:lang="sa-Deva">
@@ -5579,9 +5593,10 @@ dieser Wörter s. 6, 2, 2.</note>
             <form type="transliteration" xml:lang="sa-Latn">
               <orth>tatra tenedamiti sarūpe</orth>
             </form>
-            <note type="commentary" xml:lang="de">Zwei gleichlautende Wörter verbinden sich zu einem Bahuvrihi in der Bedeutung „daran oder damit geschieht dieses“.
-
-केशाकेशि, कचाकचि, दगडादगिड, मुसलामुसलि युद्धं वृत्तम्. Nach 5, 4, 127 erhält ein solcher Bahuvrihi das Suffix डे.</note>
+            <sense xml:lang="de">
+              <def>Zwei gleichlautende Wörter verbinden sich zu einem Bahuvrihi in der Bedeutung „daran oder damit geschieht dieses“.</def>
+            </sense>
+            <note type="commentary" xml:lang="de">केशाकेशि, कचाकचि, दगडादगिड, मुसलामुसलि युद्धं वृत्तम्. Nach 5, 4, 127 erhält ein solcher Bahuvrihi das Suffix डे.</note>
           </entry>
           <entry xml:id="sutra_2.2.28" n="2.2.28">
             <form type="sutra" xml:lang="sa-Deva">
@@ -6826,7 +6841,9 @@ Pāṇini’s Grammaik.</note>
             <form type="transliteration" xml:lang="sa-Latn">
               <orth>tatpuruṣo'nañ karmadhārayaḥ</orth>
             </form>
-            <note type="commentary" xml:lang="de">Desgleichen die nun folgenden Tatpurusha, wenn sie nicht die Negation vor sich haben und nicht Karmadhāraja sind.</note>
+            <sense xml:lang="de">
+              <def>Desgleichen die nun folgenden Tatpurusha, wenn sie nicht die Negation vor sich haben und nicht Karmadhāraja sind.</def>
+            </sense>
           </entry>
           <entry xml:id="sutra_2.4.20" n="2.4.20">
             <form type="sutra" xml:lang="sa-Deva">
@@ -7015,9 +7032,10 @@ Pāṇini’s Grammaik.</note>
             <form type="transliteration" xml:lang="sa-Latn">
               <orth>ārdhadhātuke</orth>
             </form>
-            <note type="commentary" xml:lang="de">In den folgenden Sūtra ist „vor einem śr̥dhadhātuka-Suffix“ hinzuzudenken.
-
-So heisst jedes Suffix (mit Ausnahme derer mit stummem अ), welches unmittelbar (ein Augment kommt dabei nicht in Betracht) an eine Verbalwurzel in weiterem Sinne (vgl. 3, 1, 32) angefügt wird.</note>
+            <sense xml:lang="de">
+              <def>In den folgenden Sūtra ist „vor einem śr̥dhadhātuka-Suffix“ hinzuzudenken.</def>
+            </sense>
+            <note type="commentary" xml:lang="de">So heisst jedes Suffix (mit Ausnahme derer mit stummem अ), welches unmittelbar (ein Augment kommt dabei nicht in Betracht) an eine Verbalwurzel in weiterem Sinne (vgl. 3, 1, 32) angefügt wird.</note>
           </entry>
           <entry xml:id="sutra_2.4.36" n="2.4.36">
             <form type="sutra" xml:lang="sa-Deva">
@@ -7644,7 +7662,9 @@ Pāṛini's Grammatik.</note>
             <form type="transliteration" xml:lang="sa-Latn">
               <orth>pratyayaḥ</orth>
             </form>
-            <note type="commentary" xml:lang="de">Was jetzt folgt, heisst Pratjaja (Suffix).</note>
+            <sense xml:lang="de">
+              <def>Was jetzt folgt, heisst Pratjaja (Suffix).</def>
+            </sense>
           </entry>
           <entry xml:id="sutra_3.1.2" n="3.1.2">
             <form type="sutra" xml:lang="sa-Deva">
@@ -7653,7 +7673,9 @@ Pāṛini's Grammatik.</note>
             <form type="transliteration" xml:lang="sa-Latn">
               <orth>paraśca</orth>
             </form>
-            <note type="commentary" xml:lang="de">Und wird nachgesetzt.</note>
+            <sense xml:lang="de">
+              <def>Und wird nachgesetzt.</def>
+            </sense>
           </entry>
           <entry xml:id="sutra_3.1.3" n="3.1.3">
             <form type="sutra" xml:lang="sa-Deva">
@@ -7662,9 +7684,10 @@ Pāṛini's Grammatik.</note>
             <form type="transliteration" xml:lang="sa-Latn">
               <orth>ādyudāttaśca</orth>
             </form>
-            <note type="commentary" xml:lang="de">Und hat den Acut auf der ersten Silbe.
-
-Die stummen Laute क् (in einem taddhita), च्, ज्, त्, न्, प् (s. das folgende Sūtra), र् und ल् eines Suffixes gebieten den Accent auf eine andere Silbe des Suffixes oder Stammes zu verlegen. Vgl. auch 6, 1, 162.</note>
+            <sense xml:lang="de">
+              <def>Und hat den Acut auf der ersten Silbe.</def>
+            </sense>
+            <note type="commentary" xml:lang="de">Die stummen Laute क् (in einem taddhita), च्, ज्, त्, न्, प् (s. das folgende Sūtra), र् und ल् eines Suffixes gebieten den Accent auf eine andere Silbe des Suffixes oder Stammes zu verlegen. Vgl. auch 6, 1, 162.</note>
           </entry>
           <entry xml:id="sutra_3.1.4" n="3.1.4">
             <form type="sutra" xml:lang="sa-Deva">
@@ -8782,7 +8805,9 @@ und अणू nach Abwerfung der stummen Laute gleichlautend (अ) sind. Desglei
             <form type="transliteration" xml:lang="sa-Latn">
               <orth>kṛtyāḥ</orth>
             </form>
-            <note type="commentary" xml:lang="de">Jetzt beginnen die kṛtja genannten Suffixe (zur Bildung des Partic. fut. pass.).</note>
+            <sense xml:lang="de">
+              <def>Jetzt beginnen die kṛtja genannten Suffixe (zur Bildung des Partic. fut. pass.).</def>
+            </sense>
           </entry>
           <entry xml:id="sutra_3.1.96" n="3.1.96">
             <form type="sutra" xml:lang="sa-Deva">
@@ -11088,7 +11113,9 @@ Vgl. 3, 2, 118.</note>
             <form type="transliteration" xml:lang="sa-Latn">
               <orth>ākvestacchīlataddharmatatsādhukāriṣu</orth>
             </form>
-            <note type="commentary" xml:lang="de">Bis 3, 2, 177 fg. (wo das Suffix क्विष, hier abgekürzt क्वि, erscheint), haben die Suffixe folgende Bedeutungen „dieses zu thun gewohnt“, „dieses als Obliegenheit vollbringend“ und „dieses zu Stande bringend“.</note>
+            <sense xml:lang="de">
+              <def>Bis 3, 2, 177 fg. (wo das Suffix क्विष, hier abgekürzt क्वि, erscheint), haben die Suffixe folgende Bedeutungen „dieses zu thun gewohnt“, „dieses als Obliegenheit vollbringend“ und „dieses zu Stande bringend“.</def>
+            </sense>
           </entry>
           <entry xml:id="sutra_3.2.135" n="3.2.135">
             <form type="sutra" xml:lang="sa-Deva">
@@ -15367,9 +15394,10 @@ und daher der Abfall des Causativsuffixes nach 6, 4, 51. In स्वस्त�
             <form type="transliteration" xml:lang="sa-Latn">
               <orth>ṅyāpprātipadikāt</orth>
             </form>
-            <note type="commentary" xml:lang="de">Die nun folgenden Suffixe treten an die mit [Sanskrit] oder [Sanskrit] gebildeten Feminina und an Nominalstämme.
-
-Da die Femininsuffixe [Sanskrit] und [Sanskrit] weder krī noch taddhita sind, ist der darauf ausgehende Lautcomplex kein Nominalstamm (Prātipadika); vgl. 1, 2, 45. 46.</note>
+            <sense xml:lang="de">
+              <def>Die nun folgenden Suffixe treten an die mit [Sanskrit] oder [Sanskrit] gebildeten Feminina und an Nominalstämme.</def>
+            </sense>
+            <note type="commentary" xml:lang="de">Da die Femininsuffixe [Sanskrit] und [Sanskrit] weder krī noch taddhita sind, ist der darauf ausgehende Lautcomplex kein Nominalstamm (Prātipadika); vgl. 1, 2, 45. 46.</note>
           </entry>
           <entry xml:id="sutra_4.1.2" n="4.1.2">
             <form type="sutra" xml:lang="sa-Deva">
@@ -15390,7 +15418,9 @@ Da die Femininsuffixe [Sanskrit] und [Sanskrit] weder krī noch taddhita sind, i
             <form type="transliteration" xml:lang="sa-Latn">
               <orth>striyām</orth>
             </form>
-            <note type="commentary" xml:lang="de">Die nun folgenden Suffixe bezeichnen das Femininum.</note>
+            <sense xml:lang="de">
+              <def>Die nun folgenden Suffixe bezeichnen das Femininum.</def>
+            </sense>
           </entry>
           <entry xml:id="sutra_4.1.4" n="4.1.4">
             <form type="sutra" xml:lang="sa-Deva">
@@ -16324,9 +16354,10 @@ Da die Femininsuffixe [Sanskrit] und [Sanskrit] weder krī noch taddhita sind, i
             <form type="transliteration" xml:lang="sa-Latn">
               <orth>daivayajñiśaucivṛkṣisātyamugrikāṇṭheviddhibhyo'nyatarasyām</orth>
             </form>
-            <note type="commentary" xml:lang="de">Bei देवयज्ञि u. s. w. nicht nothwendig.
-
-देवयज्ञा oder यज्ञी, श्रोचिवृच्छा oder वृक्षी, सात्यमुग्या oder यी, कारठेविज्ञा oder छ्री.</note>
+            <sense xml:lang="de">
+              <def>Bei देवयज्ञि u. s. w. nicht nothwendig.</def>
+            </sense>
+            <note type="commentary" xml:lang="de">देवयज्ञा oder यज्ञी, श्रोचिवृच्छा oder वृक्षी, सात्यमुग्या oder यी, कारठेविज्ञा oder छ्री.</note>
           </entry>
           <entry xml:id="sutra_4.1.82" n="4.1.82">
             <form type="sutra" xml:lang="sa-Deva">
@@ -16348,9 +16379,10 @@ Da die Femininsuffixe [Sanskrit] und [Sanskrit] weder krī noch taddhita sind, i
             <form type="transliteration" xml:lang="sa-Latn">
               <orth>prāgdīvyato'ṇ</orth>
             </form>
-            <note type="commentary" xml:lang="de">Bis 4, 4, 2 excl. gilt das Suffix ±_श्र.
-
-D. i. wenn kein anderes Suffix ausdrücklich vorgeschrieben wird. Die Bedeutungen dieser Suffixe werden 4, 1, 92. 2, 1. 3. 7. 10. 14 u. s. w. angegeben.</note>
+            <sense xml:lang="de">
+              <def>Bis 4, 4, 2 excl. gilt das Suffix ±_श्र.</def>
+            </sense>
+            <note type="commentary" xml:lang="de">D. i. wenn kein anderes Suffix ausdrücklich vorgeschrieben wird. Die Bedeutungen dieser Suffixe werden 4, 1, 92. 2, 1. 3. 7. 10. 14 u. s. w. angegeben.</note>
           </entry>
           <entry xml:id="sutra_4.1.84" n="4.1.84">
             <form type="sutra" xml:lang="sa-Deva">
@@ -16395,9 +16427,10 @@ D. i. wenn kein anderes Suffix ausdrücklich vorgeschrieben wird. Die Bedeutunge
             <form type="transliteration" xml:lang="sa-Latn">
               <orth>strīpuṃsābhyāṃ nañsnañau bhavanāt</orth>
             </form>
-            <note type="commentary" xml:lang="de">An स्त्री wird ±_न und an पुंस् ±_श्र gefügt in den vor 5, 2, 1 angegebenen Bedeutungen.
-
-स्त्रैगा und पौःस्व. Das स् von पुंस् fällt vor स् nach 8, 2, 23 ab. Für पुंस् musste ein neues Suffix mit स् angenommen werden, weil sonst das स् vor न् nach derselben Regel 8, 2, 23 verschwinden würde.</note>
+            <sense xml:lang="de">
+              <def>An स्त्री wird ±_न und an पुंस् ±_श्र gefügt in den vor 5, 2, 1 angegebenen Bedeutungen.</def>
+            </sense>
+            <note type="commentary" xml:lang="de">स्त्रैगा und पौःस्व. Das स् von पुंस् fällt vor स् nach 8, 2, 23 ab. Für पुंस् musste ein neues Suffix mit स् angenommen werden, weil sonst das स् vor न् nach derselben Regel 8, 2, 23 verschwinden würde.</note>
           </entry>
           <entry xml:id="sutra_4.1.88" n="4.1.88">
             <form type="sutra" xml:lang="sa-Deva">
@@ -22238,7 +22271,9 @@ ihm, zu ihm gehörig, diesem eigenthümlich“.</def>
             <form type="transliteration" xml:lang="sa-Latn">
               <orth>prāgghitādyat</orth>
             </form>
-            <note type="commentary" xml:lang="de">Bis 5, 1, 5 excl. gilt das Suffix यं oder ⇄य (s. 6, 1, 213).</note>
+            <sense xml:lang="de">
+              <def>Bis 5, 1, 5 excl. gilt das Suffix यं oder ⇄य (s. 6, 1, 213).</def>
+            </sense>
           </entry>
           <pb n="214" facs="https://digi.ub.uni-heidelberg.de/iiif/3/boehtlingk1887%3A000000214.jpg/full/max/0/default.jpg"/>
           <entry xml:id="sutra_4.4.76" n="4.4.76">
@@ -23097,7 +23132,9 @@ von nicht abgegangen, — gewichen“.</def>
             <form type="transliteration" xml:lang="sa-Latn">
               <orth>prāk krītācchaḥ</orth>
             </form>
-            <note type="commentary" xml:lang="de">Bis 5, 1, 37 (genauer 17) excl. gilt das Suffix ईप.</note>
+            <sense xml:lang="de">
+              <def>Bis 5, 1, 37 (genauer 17) excl. gilt das Suffix ईप.</def>
+            </sense>
           </entry>
           <entry xml:id="sutra_5.1.2" n="5.1.2">
             <form type="sutra" xml:lang="sa-Deva">
@@ -23301,7 +23338,9 @@ von nicht abgegangen, — gewichen“.</def>
             <form type="transliteration" xml:lang="sa-Latn">
               <orth>prāgvateṣṭhañ</orth>
             </form>
-            <note type="commentary" xml:lang="de">Bis 5, 1, 115 (genauer 110) excl. gilt das Suffix ㄣ_क oder ㄣ_इक (in den 5, 1, 37 und später angegebenen Bedeutungen).</note>
+            <sense xml:lang="de">
+              <def>Bis 5, 1, 115 (genauer 110) excl. gilt das Suffix ㄣ_क oder ㄣ_इक (in den 5, 1, 37 und später angegebenen Bedeutungen).</def>
+            </sense>
           </entry>
           <entry xml:id="sutra_5.1.19" n="5.1.19">
             <form type="sutra" xml:lang="sa-Deva">
@@ -23310,9 +23349,10 @@ von nicht abgegangen, — gewichen“.</def>
             <form type="transliteration" xml:lang="sa-Latn">
               <orth>ārhādagopucchasaṃkhyāparimāṇāṭṭhak</orth>
             </form>
-            <note type="commentary" xml:lang="de">Bis 5, 1, 63 (genauer 65) incl. gilt (in den 5, 1, 37 und später angegebenen Bedeutungen) ±_के oder ±_इके, aber nicht für गोपुच्छ, ein Zahlwort oder eine Maassbezeichnung im weitesten Sinne.
-
-नैष्किके, पाशिके nach 5, 1, 20, aber गोपुच्छिक, पौष्टिक, प्रैस्चिक nach 5, 1, 18.</note>
+            <sense xml:lang="de">
+              <def>Bis 5, 1, 63 (genauer 65) incl. gilt (in den 5, 1, 37 und später angegebenen Bedeutungen) ±_के oder ±_इके, aber nicht für गोपुच्छ, ein Zahlwort oder eine Maassbezeichnung im weitesten Sinne.</def>
+            </sense>
+            <note type="commentary" xml:lang="de">नैष्किके, पाशिके nach 5, 1, 20, aber गोपुच्छिक, पौष्टिक, प्रैस्चिक nach 5, 1, 18.</note>
           </entry>
           <entry xml:id="sutra_5.1.20" n="5.1.20">
             <form type="sutra" xml:lang="sa-Deva">
@@ -24018,7 +24058,9 @@ wenn diese auf कार्पापणा oder सहस्र auslauten.</def>
             <form type="transliteration" xml:lang="sa-Latn">
               <orth>kālāt</orth>
             </form>
-            <note type="commentary" xml:lang="de">Im Folgenden ist „an eine Zeitbenennung“ (d. i. anzufügen) zu ergänzen.</note>
+            <sense xml:lang="de">
+              <def>Im Folgenden ist „an eine Zeitbenennung“ (d. i. anzufügen) zu ergänzen.</def>
+            </sense>
           </entry>
           <pb n="230" facs="https://digi.ub.uni-heidelberg.de/iiif/3/boehtlingk1887%3A000000230.jpg/full/max/0/default.jpg"/>
           <entry xml:id="sutra_5.1.79" n="5.1.79">
@@ -26432,7 +26474,9 @@ wenn diese auf कार्पापणा oder सहस्र auslauten.</def>
             <form type="transliteration" xml:lang="sa-Latn">
               <orth>prāgdiśo vibhaktiḥ</orth>
             </form>
-            <note type="commentary" xml:lang="de">Bis 5, 3, 27 excl. heissen die Suffixe Vibhakti (Flexionsendungen).</note>
+            <sense xml:lang="de">
+              <def>Bis 5, 3, 27 excl. heissen die Suffixe Vibhakti (Flexionsendungen).</def>
+            </sense>
           </entry>
           <entry xml:id="sutra_5.3.2" n="5.3.2">
             <form type="sutra" xml:lang="sa-Deva">
@@ -29818,9 +29862,10 @@ werden.</def>
             <form type="transliteration" xml:lang="sa-Latn">
               <orth>ekāco dve prathamasya</orth>
             </form>
-            <note type="commentary" xml:lang="de">Bis 6, 1, 12 incl. ist stets hinzuzudenken: „für die erste Silbe werden zwei gesetzt, d. i. die erste Silbe wird reduplicirt“.
-
-Unter एकाच ist hier ein Wurzelvocal mit den ihn umgebenden Consonanten gemeint. Die Reduplication wird durch ein nachfolgendes Suffix hervorgerufen. पच् + _ ± अ् des Perfects ergibt पौच्; die Substitution der Vrddhi muss bei der Bildung der Reduplication nach 1, 1, 59 als nicht erfolgt betrachtet werden. Es wird also पच् zweimal gesetzt, aber das च् der Reduplication fällt nach 7, 4, 60 ab; so erhalten wir पपौच्.</note>
+            <sense xml:lang="de">
+              <def>Bis 6, 1, 12 incl. ist stets hinzuzudenken: „für die erste Silbe werden zwei gesetzt, d. i. die erste Silbe wird reduplicirt“.</def>
+            </sense>
+            <note type="commentary" xml:lang="de">Unter एकाच ist hier ein Wurzelvocal mit den ihn umgebenden Consonanten gemeint. Die Reduplication wird durch ein nachfolgendes Suffix hervorgerufen. पच् + _ ± अ् des Perfects ergibt पौच्; die Substitution der Vrddhi muss bei der Bildung der Reduplication nach 1, 1, 59 als nicht erfolgt betrachtet werden. Es wird also पच् zweimal gesetzt, aber das च् der Reduplication fällt nach 7, 4, 60 ab; so erhalten wir पपौच्.</note>
           </entry>
           <entry xml:id="sutra_6.1.2" n="6.1.2">
             <form type="sutra" xml:lang="sa-Deva">
@@ -29829,9 +29874,10 @@ Unter एकाच ist hier ein Wurzelvocal mit den ihn umgebenden Consonanten g
             <form type="transliteration" xml:lang="sa-Latn">
               <orth>ajāderdvitīyasya</orth>
             </form>
-            <note type="commentary" xml:lang="de">Und: „lautet die erste Silbe aber vocalisch an, so werden für die zweite Silbe zwei gesetzt, d. i. so wird die zweite Silbe reduplicirt“.
-
-Diese Regel betrifft selbstverständlich nur zwei- und mehrsilbige Wurzeln. Von अट् lautet das Desiderativ, das auch Wurzel heisst, vor der Reduplication अँटिय. Nach unserer Regel wird nun nicht अट्, sondern टिप् verdoppelt, das प् der ersten Silbe fällt aber nach 7, 4, 60 ab; so erhalten wir अँटिटिय als Desiderativstamm.</note>
+            <sense xml:lang="de">
+              <def>Und: „lautet die erste Silbe aber vocalisch an, so werden für die zweite Silbe zwei gesetzt, d. i. so wird die zweite Silbe reduplicirt“.</def>
+            </sense>
+            <note type="commentary" xml:lang="de">Diese Regel betrifft selbstverständlich nur zwei- und mehrsilbige Wurzeln. Von अट् lautet das Desiderativ, das auch Wurzel heisst, vor der Reduplication अँटिय. Nach unserer Regel wird nun nicht अट्, sondern टिप् verdoppelt, das प् der ersten Silbe fällt aber nach 7, 4, 60 ab; so erhalten wir अँटिटिय als Desiderativstamm.</note>
           </entry>
           <entry xml:id="sutra_6.1.3" n="6.1.3">
             <form type="sutra" xml:lang="sa-Deva">
@@ -30699,7 +30745,9 @@ abfallenden Suffix gebildetes Derivat ist ein Nominalstamm. Vgl. auch द्व�
             <form type="transliteration" xml:lang="sa-Latn">
               <orth>saṃhitāyām</orth>
             </form>
-            <note type="commentary" xml:lang="de">In den folgenden Sūtra bis 6, 1, 157 incl. ist stets संहितायाम् „in einem ununterbrochenen Verlauf der Rede“ zu ergänzen.</note>
+            <sense xml:lang="de">
+              <def>In den folgenden Sūtra bis 6, 1, 157 incl. ist stets संहितायाम् „in einem ununterbrochenen Verlauf der Rede“ zu ergänzen.</def>
+            </sense>
           </entry>
           <entry xml:id="sutra_6.1.73" n="6.1.73">
             <form type="sutra" xml:lang="sa-Deva">
@@ -30841,7 +30889,9 @@ abfallenden Suffix gebildetes Derivat ist ein Nominalstamm. Vgl. auch द्व�
             <form type="transliteration" xml:lang="sa-Latn">
               <orth>ekaḥ pūrvaparayoḥ</orth>
             </form>
-            <note type="commentary" xml:lang="de">Von hier an bis 6, 1, 111 incl. ist stets zu ergänzen „für das Vorangehende und Folgende (wird) Eines (substituirt)“.</note>
+            <sense xml:lang="de">
+              <def>Von hier an bis 6, 1, 111 incl. ist stets zu ergänzen „für das Vorangehende und Folgende (wird) Eines (substituirt)“.</def>
+            </sense>
           </entry>
           <entry xml:id="sutra_6.1.85" n="6.1.85">
             <form type="sutra" xml:lang="sa-Deva">
@@ -31717,7 +31767,9 @@ abfallenden Suffix gebildetes Derivat ist ein Nominalstamm. Vgl. auch द्व�
             <form type="transliteration" xml:lang="sa-Latn">
               <orth>pāraskaraprabhṛtīni ca saṃjñāyām</orth>
             </form>
-            <note type="commentary" xml:lang="de">Hierher gehören auch पारस्कर u. s. w. als Namen.</note>
+            <sense xml:lang="de">
+              <def>Hierher gehören auch पारस्कर u. s. w. als Namen.</def>
+            </sense>
           </entry>
           <entry xml:id="sutra_6.1.158" n="6.1.158">
             <form type="sutra" xml:lang="sa-Deva">
@@ -34969,7 +35021,9 @@ Zu *सकथ vgl. 5, 4, 113.</note>
             <form type="transliteration" xml:lang="sa-Latn">
               <orth>aluguttarapade</orth>
             </form>
-            <note type="commentary" xml:lang="de">In der Folge bis 6, 2, 24 incl. ist stets „vor dem zweiten Gliede des Compositums findet kein Schwund statt“ zu ergänzen.</note>
+            <sense xml:lang="de">
+              <def>In der Folge bis 6, 2, 24 incl. ist stets „vor dem zweiten Gliede des Compositums findet kein Schwund statt“ zu ergänzen.</def>
+            </sense>
           </entry>
           <entry xml:id="sutra_6.3.2" n="6.3.2">
             <form type="sutra" xml:lang="sa-Deva">
@@ -36680,7 +36734,9 @@ zeichnung ist.</def>
             <form type="transliteration" xml:lang="sa-Latn">
               <orth>aṅgasya</orth>
             </form>
-            <note type="commentary" xml:lang="de">Was im Folgenden bis zum Schluss des siebenten Adhjâja gelehrt werden wird, erfolgt an einem Stamme.</note>
+            <sense xml:lang="de">
+              <def>Was im Folgenden bis zum Schluss des siebenten Adhjâja gelehrt werden wird, erfolgt an einem Stamme.</def>
+            </sense>
           </entry>
           <entry xml:id="sutra_6.4.2" n="6.4.2">
             <form type="sutra" xml:lang="sa-Deva">
@@ -37224,7 +37280,9 @@ zeichnung ist.</def>
             <form type="transliteration" xml:lang="sa-Latn">
               <orth>ārdhadhātuke</orth>
             </form>
-            <note type="commentary" xml:lang="de">Bis 6, 4, 68 incl. ist stets „vor einem ârdhadhâtuka genannten Suffix (s. 3, 4, 114 fgg.)“ zu ergänzen.</note>
+            <sense xml:lang="de">
+              <def>Bis 6, 4, 68 incl. ist stets „vor einem ârdhadhâtuka genannten Suffix (s. 3, 4, 114 fgg.)“ zu ergänzen.</def>
+            </sense>
           </entry>
           <entry xml:id="sutra_6.4.47" n="6.4.47">
             <form type="sutra" xml:lang="sa-Deva">
@@ -41680,7 +41738,9 @@ Vocal des Stammes substituirt.</def>
             <form type="transliteration" xml:lang="sa-Latn">
               <orth>uttarapadasya</orth>
             </form>
-            <note type="commentary" xml:lang="de">Bis 7, 3, 31 incl. handelt es sich um die Substitution von Vrddhi für den ersten Vocal des nachfolgenden Gliedes in einem Compositum.</note>
+            <sense xml:lang="de">
+              <def>Bis 7, 3, 31 incl. handelt es sich um die Substitution von Vrddhi für den ersten Vocal des nachfolgenden Gliedes in einem Compositum.</def>
+            </sense>
           </entry>
           <entry xml:id="sutra_7.3.11" n="7.3.11">
             <form type="sutra" xml:lang="sa-Deva">
@@ -47168,7 +47228,9 @@ Vgl. 8, 2, 107.</note>
             <form type="transliteration" xml:lang="sa-Latn">
               <orth>apadāntasya mūrdhanyaḥ</orth>
             </form>
-            <note type="commentary" xml:lang="de">Von nun an bis zum Schluss des Pāda ist überall zu ergänzen „ein cerebraler Laut tritt an die Stelle von —, wenn dieser Laut nicht im Auslaut steht“.</note>
+            <sense xml:lang="de">
+              <def>Von nun an bis zum Schluss des Pāda ist überall zu ergänzen „ein cerebraler Laut tritt an die Stelle von —, wenn dieser Laut nicht im Auslaut steht“.</def>
+            </sense>
           </entry>
           <entry xml:id="sutra_8.3.56" n="8.3.56">
             <form type="sutra" xml:lang="sa-Deva">
@@ -47189,7 +47251,9 @@ Vgl. 8, 2, 107.</note>
             <form type="transliteration" xml:lang="sa-Latn">
               <orth>iṇkoḥ</orth>
             </form>
-            <note type="commentary" xml:lang="de">Von nun an bis zum Schluss des Pāda ist zu ergänzen „wenn ein Vocal, mit Ausnahme des श्र und श्रा, र् oder ein Guttural (कु) vorangeht“.</note>
+            <sense xml:lang="de">
+              <def>Von nun an bis zum Schluss des Pāda ist zu ergänzen „wenn ein Vocal, mit Ausnahme des श्र und श्रा, र् oder ein Guttural (कु) vorangeht“.</def>
+            </sense>
           </entry>
           <pb n="460" facs="https://digi.ub.uni-heidelberg.de/iiif/3/boehtlingk1887%3A000000460.jpg/full/max/0/default.jpg"/>
           <entry xml:id="sutra_8.3.58" n="8.3.58">

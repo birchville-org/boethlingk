@@ -296,18 +296,28 @@ Im Rahmen der *AlexandriaSandwich-Pipeline* wurden sämtliche 478 Buchseiten der
 
         [
           #block(width: 100%, breakable: true)[
-            // Kopf und Übersetzung unteilbar zusammenhalten
+            // Sūtra-Kopf und Übersetzung unteilbar zusammenhalten (Original-Layout Böhtlingk 1887)
             #block(width: 100%, breakable: false)[
-              #align(center)[
-                #text(12pt, weight: "bold", font: ("Noto Serif Devanagari", "Devanagari MT", "Kohinoor Devanagari"))[
-                  #s.canonical_devanagari ॥ #to-deva(s.sutra_num) ॥
+              #grid(
+                columns: (1fr, auto),
+                align: (left + bottom, right + bottom),
+                gutter: 1em,
+                [
+                  #text(12pt, weight: "bold", font: ("Noto Serif Devanagari", "Devanagari MT", "Kohinoor Devanagari"))[
+                    #s.canonical_devanagari ॥ #to-deva(s.sutra_num) ॥
+                  ]
+                  #if s.canonical_iast != "" [
+                    #h(0.6em)
+                    #text(8.5pt, style: "italic", fill: rgb("#475569"))[(#s.canonical_iast)]
+                  ]
+                ],
+                [
+                  #text(10pt, font: ("Libertinus Serif", "Linux Libertine O"), fill: rgb("#03192e"))[
+                    #str(adh.num), #str(pada.num), #str(s.sutra_num).
+                  ]
                 ]
-                #v(-0.25em)
-                #text(8.5pt, style: "italic", fill: rgb("#334155"))[
-                  (#s.ref · #s.canonical_iast)
-                ]
-              ]
-              #v(0.20em)
+              )
+              #v(0.18em)
               #if s.translation != "" [
                 #text(9.5pt, fill: rgb("#03192e"))[#s.translation]
               ]
