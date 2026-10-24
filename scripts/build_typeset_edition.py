@@ -32,6 +32,35 @@ def to_deva_num(n: int | str) -> str:
     return "".join(digits[int(c)] if c.isdigit() else c for c in str(n))
 
 
+def soft_hyphenate_long_iast(text: str, max_chunk: int = 35) -> str:
+    """Insert soft hyphens into excessively long IAST compounds so Typst can break them gracefully."""
+    words = text.split()
+    new_words = []
+    vowels = "aeiouāīūṛṝḷḹeaiāu"
+    for w in words:
+        if len(w) > max_chunk:
+            parts = []
+            curr = 0
+            while curr < len(w):
+                next_cut = curr + max_chunk
+                if next_cut >= len(w):
+                    parts.append(w[curr:])
+                    break
+                cut_pos = -1
+                for i in range(next_cut, curr + 15, -1):
+                    if i < len(w) and w[i].lower() in vowels:
+                        cut_pos = i + 1
+                        break
+                if cut_pos == -1:
+                    cut_pos = next_cut
+                parts.append(w[curr:cut_pos])
+                curr = cut_pos
+            new_words.append("\u00ad".join(parts))
+        else:
+            new_words.append(w)
+    return " ".join(new_words)
+
+
 def prepare_data() -> None:
     """Pre-group master dataset by Adhyāya and Pāda for optimal Typst typesetting."""
     master_path = Path("data/ashtadhyayi_complete_boethlingk1887.json")
@@ -61,6 +90,12 @@ def prepare_data() -> None:
     tree = []
     sutras = raw["sutras"]
 
+    hyphens_path = Path("data/original_hyphenations.json")
+    hyphens = {}
+    if hyphens_path.exists():
+        with open(hyphens_path, encoding="utf-8") as f:
+            hyphens = json.load(f)
+
     for a_num in range(1, 9):
         de_a, sa_a = adhyaya_names[a_num]
         adh_entry = {
@@ -75,6 +110,11 @@ def prepare_data() -> None:
             for s in sutras:
                 if s.get("adhyaya") == a_num and s.get("pada") == p_num:
                     s_copy = dict(s)
+                    ref = s.get("ref", "")
+                    if ref in hyphens:
+                        s_copy["canonical_devanagari"] = hyphens[ref]
+                    if "canonical_iast" in s_copy:
+                        s_copy["canonical_iast"] = soft_hyphenate_long_iast(s_copy["canonical_iast"])
                     s_copy["sutra_num_deva"] = to_deva_num(s.get("sutra_num", 0))
                     p_sutras.append(s_copy)
             adh_entry["padas"].append({
