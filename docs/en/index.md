@@ -36,15 +36,15 @@
     <div>
       <div class="quick-card-header">
         <span class="quick-card-icon">📄</span>
-        <span class="quick-card-title">Typst Vector Typeset v2</span>
+        <span class="quick-card-title">Typst Vector Typeset</span>
       </div>
       <div class="quick-card-body">
-        Modern vector book edition (ISO B5) with all 3,997 Sūtras, translation, commentary, 47 TOC bookmarks, and running headers.
+        Modern vector book edition (ISO B5) with all 3,997 Sūtras, authentic margins, marginal reference numbers, running headers, and 47 bookmarks.
       </div>
     </div>
     <div class="quick-card-action">
-      <a href="https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_typeset_edition_v2.pdf" class="quick-btn quick-btn-outline" target="_blank" rel="noopener">
-        <span>⬇️</span> Book Edition v2 (7.6 MB)
+      <a href="https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_typeset_edition.pdf" class="quick-btn quick-btn-outline" target="_blank" rel="noopener">
+        <span>⬇️</span> Book Edition (8.8 MB)
       </a>
     </div>
   </div>
@@ -100,9 +100,9 @@ This project provides end-to-end historical digitization, multimodal AI OCR (`mi
   478-page high-resolution scan facsimile with Content-Aware Margin Masking, an invisible vector text layer (14,267 text blocks placed at exact coordinates), and 42 hierarchical PDF bookmarks.  
   [:octicons-download-16: Release Download (249 MB)](https://github.com/birchville-org/boethlingk/releases/latest/download/boehtlingk1887_sandwich.pdf) · [:octicons-tag-16: GitHub Release](https://github.com/birchville-org/boethlingk/releases/latest)
 
-- **Modern Typeset Book PDF (Typst Edition v2)** (`boethlingk1887_typeset_edition_v2.pdf` · 7.6 MB)  
-  737-page crisp vector book edition (ISO B5) with all 3,997 Sūtras (Devanāgarī, IAST, translation, commentary), running headers, and 47 PDF bookmarks.  
-  [:octicons-download-16: Release Download (7.6 MB)](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_typeset_edition_v2.pdf) · [:octicons-mark-github-16: Build Script](https://github.com/birchville-org/boethlingk/blob/main/scripts/build_typeset_edition.py)
+- **Modern Typeset Book PDF (Typst Edition)** (`boethlingk1887_typeset_edition.pdf` · 8.8 MB)  
+  509-page crisp vector book edition (ISO B5) with all 3,997 Sūtras (Devanāgarī, IAST, translation, commentary), running headers, and 47 PDF bookmarks.  
+  [:octicons-download-16: Release Download (8.8 MB)](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_typeset_edition.pdf) · [:octicons-mark-github-16: Build Script](https://github.com/birchville-org/boethlingk/blob/main/scripts/build_typeset_edition.py)
 
 - **Canonically Validated Master Dataset (JSON)** (`data/ashtadhyayi_complete_boethlingk1887.json` · 2.8 MB)  
   3,997 complete Sūtras (14 Śiva-Sūtras + 3,983 Aṣṭādhyāyī-Sūtras, 0 duplicates, 0 gaps) with Devanāgarī, academic IAST transliteration, German translation, and philological commentary.  

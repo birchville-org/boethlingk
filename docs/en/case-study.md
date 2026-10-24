@@ -99,7 +99,7 @@ All 8 Adhyāyas and the introductory Śiva-Sūtras were validated 1:1 against th
 | Artifact | Format / File | Size | Link |
 | :--- | :--- | :--- | :--- |
 | **Sandwich PDF** | `boehtlingk1887.perfect_sandwich.pdf` | 248.85 MB (478 pp.) | [Release Download](https://github.com/birchville-org/boethlingk/releases/latest/download/boehtlingk1887_sandwich.pdf) |
-| **Typeset Edition** | `boethlingk1887_typeset_edition.pdf` | 7.62 MB (737 pp.) | [Release Download](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_typeset_edition_v2.pdf) |
+| **Typeset Edition** | `boethlingk1887_typeset_edition.pdf` | 8.81 MB (509 pp.) | [Release Download](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_typeset_edition.pdf) |
 | **Master Dataset** | `data/ashtadhyayi_complete_boethlingk1887.json` | 2.85 MB | [GitHub Repository](https://github.com/birchville-org/boethlingk/blob/main/data/ashtadhyayi_complete_boethlingk1887.json) |
 | **TEI-P5 XML** | `data/tei/boehtlingk1887_p5.xml` | 2.90 MB | [GitHub Repository](https://github.com/birchville-org/boethlingk/blob/main/data/tei/boehtlingk1887_p5.xml) |
 | **EPUB 3** | `boethlingk1887.epub` | 1.47 MB | [Release Download](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887.epub) |

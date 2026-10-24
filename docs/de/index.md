@@ -36,15 +36,15 @@
     <div>
       <div class="quick-card-header">
         <span class="quick-card-icon">📄</span>
-        <span class="quick-card-title">Typst-Vektorsatz v2</span>
+        <span class="quick-card-title">Typst-Buchsatz</span>
       </div>
       <div class="quick-card-body">
-        Moderner Vektorbuchsatz (ISO B5) mit allen 3.997 Sūtras, Übersetzung, Kommentar, 47 TOC-Lesezeichen und lebenden Kolumnentiteln.
+        Moderner Vektorbuchsatz (ISO B5) mit allen 3.997 Sūtras, originalgetreuem Satzspiegel, Randnummern, lebenden Kolumnentiteln und 47 Lesezeichen.
       </div>
     </div>
     <div class="quick-card-action">
-      <a href="https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_typeset_edition_v2.pdf" class="quick-btn quick-btn-outline" target="_blank" rel="noopener">
-        <span>⬇️</span> Buchausgabe v2 (7,6 MB)
+      <a href="https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_typeset_edition.pdf" class="quick-btn quick-btn-outline" target="_blank" rel="noopener">
+        <span>⬇️</span> Buchausgabe (8,8 MB)
       </a>
     </div>
   </div>
@@ -100,9 +100,9 @@ Dieses Projekt umfasst die vollständige historische Erschließung, multimodale 
   478 Seiten hochauflösendes Scan-Faksimile mit Content-Aware Margin Masking, unsichtbarer Vektor-Textebene (14.267 Textblöcke auf exakten Pixelkoordinaten) und 42 hierarchischen PDF-Bookmarks.  
   [:octicons-download-16: Release-Download (249 MB)](https://github.com/birchville-org/boethlingk/releases/latest/download/boehtlingk1887_sandwich.pdf) · [:octicons-tag-16: GitHub Release](https://github.com/birchville-org/boethlingk/releases/latest)
 
-- **Neu gesetztes Buch-PDF (Typst-Edition v2)** (`boethlingk1887_typeset_edition_v2.pdf` · 7,6 MB)  
-  737 Seiten gestochen scharfer, moderner Vektorbuchsatz (ISO B5) mit allen 3.997 Sūtras (Devanāgarī, IAST, Übersetzung, Kommentar), lebenden Kolumnentiteln und 47 PDF-Bookmarks.  
-  [:octicons-download-16: Release-Download (7,6 MB)](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_typeset_edition_v2.pdf) · [:octicons-mark-github-16: Build-Skript](https://github.com/birchville-org/boethlingk/blob/main/scripts/build_typeset_edition.py)
+- **Neu gesetztes Buch-PDF (Typst-Edition)** (`boethlingk1887_typeset_edition.pdf` · 8,8 MB)  
+  509 Seiten gestochen scharfer, moderner Vektorbuchsatz (ISO B5) mit allen 3.997 Sūtras (Devanāgarī, IAST, Übersetzung, Kommentar), Randnummern, lebenden Kolumnentiteln und 47 PDF-Bookmarks.  
+  [:octicons-download-16: Release-Download (8,8 MB)](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_typeset_edition.pdf) · [:octicons-mark-github-16: Build-Skript](https://github.com/birchville-org/boethlingk/blob/main/scripts/build_typeset_edition.py)
 
 - **Kanonisch validierter Master-Datensatz (JSON)** (`data/ashtadhyayi_complete_boethlingk1887.json` · 2,8 MB)  
   3.997 Sūtras lückenlos (14 Śiva-Sūtras + 3.983 Aṣṭādhyāyī-Sūtras, 0 Duplikate, 0 Fehlstellen) mit Devanāgarī, IAST-Transliteration, Übersetzung und fortlaufendem Kommentar.  

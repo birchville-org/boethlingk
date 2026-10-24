@@ -1,5 +1,5 @@
 // =============================================================================
-// Birchville Scholarly Synthesis — Canonical Typeset Edition (v2)
+// Birchville Scholarly Synthesis — Canonical Typeset Edition
 // Otto von Böhtlingk: Pāṇini's Grammatik (2. Auflage, Leipzig 1887)
 // =============================================================================
 

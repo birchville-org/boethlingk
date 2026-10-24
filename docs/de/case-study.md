@@ -99,7 +99,7 @@ Alle 8 Adhyāyas und die einleitenden Śiva-Sūtras wurden 1:1 gegen die kanonis
 | Artefakt | Format / Datei | Umfang | Bezugsquelle |
 | :--- | :--- | :--- | :--- |
 | **Sandwich-PDF** | `boehtlingk1887.perfect_sandwich.pdf` | 248,85 MB (478 S.) | [Release Download](https://github.com/birchville-org/boethlingk/releases/latest/download/boehtlingk1887_sandwich.pdf) |
-| **Typst-Buchsatz** | `boethlingk1887_typeset_edition.pdf` | 7,62 MB (737 S.) | [Release Download](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_typeset_edition_v2.pdf) |
+| **Typst-Buchsatz** | `boethlingk1887_typeset_edition.pdf` | 8,81 MB (509 S.) | [Release Download](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_typeset_edition.pdf) |
 | **Master-Datensatz** | `data/ashtadhyayi_complete_boethlingk1887.json` | 2,85 MB | [GitHub Repository](https://github.com/birchville-org/boethlingk/blob/main/data/ashtadhyayi_complete_boethlingk1887.json) |
 | **TEI-P5 XML** | `data/tei/boehtlingk1887_p5.xml` | 2,90 MB | [GitHub Repository](https://github.com/birchville-org/boethlingk/blob/main/data/tei/boehtlingk1887_p5.xml) |
 | **EPUB 3** | `boethlingk1887.epub` | 1,47 MB | [Release Download](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887.epub) |

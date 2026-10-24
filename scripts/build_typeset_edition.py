@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 """
-scripts/build_typeset_edition_v2.py — Compiles the modernized, scholarly typeset
-edition (v2) of Otto von Böhtlingk's Pāṇini (1887) using Typst & PyMuPDF.
+scripts/build_typeset_edition.py — Compiles the modernized, scholarly typeset
+edition of Otto von Böhtlingk's Pāṇini (1887) using Typst & PyMuPDF.
 
 Features:
 - Full Birchville Scholarly Synthesis front matter with coat of arms & imprint.
 - Classical Leipzig typography: Noto Serif Devanagari + Libertinus Serif, leading 0.46em.
+- Left-aligned Devanāgarī headings with right-margin canonical references (Adhyāya, Pāda, Sūtra).
+- Dynamic running headers displaying the last Sūtra reference of the current page.
 - Dynamic original page boundaries: '📖 Böhtlingk (1887) S. X'.
 - Widow/orphan prevention: Sūtra heading and translation locked together.
 - Native PDF page labels: Roman 'i'–'vi' for front matter, Arabic '1'–'...' for body.
@@ -194,7 +196,7 @@ def post_process_pdf(pdf_path: Path) -> None:
     # Export TOC specification file
     toc_txt_path = pdf_path.with_suffix(".toc.txt")
     with open(toc_txt_path, "w", encoding="utf-8") as f:
-        f.write("# Pāṇini's Grammatik (Otto von Böhtlingk 1887) — TOC Outline Specification (v2)\n")
+        f.write("# Pāṇini's Grammatik (Otto von Böhtlingk 1887) — TOC Outline Specification\n")
         f.write("# Format: [Level Indentation] Title | Page\n\n")
         for lvl, title, page_n in final_toc:
             indent = "  " * (lvl - 1)
@@ -237,21 +239,14 @@ def main() -> None:
 
     post_process_pdf(args.output)
 
-    # Mirror to v2 for backward compatibility
-    v2_pdf = args.output.parent / "boethlingk1887_typeset_edition_v2.pdf"
-    if args.output != v2_pdf:
-        shutil.copy2(args.output, v2_pdf)
-        orig_toc = args.output.with_suffix(".toc.txt")
-        v2_toc = args.output.parent / "boethlingk1887_typeset_edition_v2.toc.txt"
-        if orig_toc.exists():
-            shutil.copy2(orig_toc, v2_toc)
-        print(f"✓ Gespiegelt für v2-Kompatibilität: {v2_pdf}")
-
     # Sync to User Indologie Panini folder if present
     indologie_dest = Path("/Users/marco/Documents/00_Indologie/Panini")
     if indologie_dest.exists():
-        dest_file = indologie_dest / "BOETHLINGK 1887 Panini Grammatik (Digital Typeset Neusatz v2).pdf"
+        dest_file = indologie_dest / "BOETHLINGK 1887 Panini Grammatik (Digital Typeset Neusatz).pdf"
         shutil.copy2(args.output, dest_file)
+        old_v2 = indologie_dest / "BOETHLINGK 1887 Panini Grammatik (Digital Typeset Neusatz v2).pdf"
+        if old_v2.exists():
+            old_v2.unlink()
         print(f"✓ Synchronisiert nach Indologie-Arbeitsordner: {dest_file}")
 
     elapsed = time.time() - t0
