@@ -296,14 +296,24 @@ Jede Seite dieser Neuausgabe beginnt exakt mit demjenigen Sūtra, mit welchem di
   let last_page_seen = -1
 
   for adh in tree {
-    // Adhyāya-Überschrift
+    let adh_first_page = adh.padas.first().sutras.first().page
+    if last_page_seen != -1 and adh_first_page != last_page_seen {
+      [ #pagebreak() ]
+      last_page_seen = adh_first_page
+    }
+
     [
       #heading(level: 1)[#adh.title_de (#adh.title_sa)]
       #v(0.6em)
     ]
 
     for pada in adh.padas {
-      // Pāda-Überschrift
+      let pada_first_page = pada.sutras.first().page
+      if last_page_seen != -1 and pada_first_page != last_page_seen {
+        [ #pagebreak() ]
+        last_page_seen = pada_first_page
+      }
+
       [
         #v(0.4em)
         #heading(level: 2)[#pada.title_de (#pada.title_sa)]
@@ -313,18 +323,10 @@ Jede Seite dieser Neuausgabe beginnt exakt mit demjenigen Sūtra, mit welchem di
       for s in pada.sutras {
         let is_new_orig_page = (s.page != none and s.page != last_page_seen)
         if is_new_orig_page {
-          // Erster Seitenstart: S. 2 nach den Śiva-Sūtras braucht keinen doppelten Umbruch
           if last_page_seen != -1 {
             [ #pagebreak() ]
           }
           last_page_seen = s.page
-          [
-            #v(0.2em)
-            #align(center)[
-              #text(7.5pt, fill: rgb("#b45309"), weight: "bold")[📖 Böhtlingk (1887) S. #s.page]
-            ]
-            #v(0.3em)
-          ]
         }
 
         [
