@@ -1,0 +1,130 @@
+#!/usr/bin/env python3
+"""
+Prepares pre-grouped page data for the dense facsimile edition of Boethlingk 1887.
+Every page 2..476 contains exactly the sutras of the historical original page.
+Includes authentic colophons at the end of every Pada.
+"""
+from __future__ import annotations
+
+import json
+from pathlib import Path
+from build_typeset_edition import to_deva_num, soft_hyphenate_long_iast
+
+adh_ordinals = {
+    1: "प्रथमस्याध्यायस्य",
+    2: "द्वितीयस्याध्यायस्य",
+    3: "तृतीयस्याध्यायस्य",
+    4: "चतुर्थस्याध्यायस्य",
+    5: "पञ्चमस्याध्यायस्य",
+    6: "षष्ठस्याध्यायस्य",
+    7: "सप्तमस्याध्यायस्य",
+    8: "अष्टमस्याध्यायस्य",
+}
+
+pada_ordinals = {
+    1: "प्रथमः पादः",
+    2: "द्वितीयः पादः",
+    3: "तृतीयः पादः",
+    4: "चतुर्थः पादः",
+}
+
+adh_names = {
+    1: "Erster Adhyāya",
+    2: "Zweiter Adhyāya",
+    3: "Dritter Adhyāya",
+    4: "Vierter Adhyāya",
+    5: "Fünfter Adhyāya",
+    6: "Sechster Adhyāya",
+    7: "Siebenter Adhyāya",
+    8: "Achter Adhyāya",
+}
+
+pada_names = {
+    1: "Erster Pāda",
+    2: "Zweiter Pāda",
+    3: "Dritter Pāda",
+    4: "Vierter Pāda",
+}
+
+adh_romans = {1: "I", 2: "II", 3: "III", 4: "IV", 5: "V", 6: "VI", 7: "VII", 8: "VIII"}
+
+
+def get_colophon(a: int, p: int) -> str:
+    if a == 8 and p == 4:
+        return "॥ इत्यष्टमस्याध्यायस्य चतुर्थः पादः । अध्यायश्च समाप्तः ॥\n॥ इति शब्दानुशासनं समाप्तम् ॥"
+    elif p == 4:
+        return f"॥ इति {adh_ordinals[a]} चतुर्थः पादो ऽध्यायश्च समाप्तः ॥"
+    else:
+        return f"॥ इति {adh_ordinals[a]} {pada_ordinals[p]} ॥"
+
+
+def main() -> None:
+    master_path = Path("/Volumes/SanDisk1TB/proj/boethlingk/data/ashtadhyayi_complete_boethlingk1887.json")
+    with open(master_path, encoding="utf-8") as f:
+        master = json.load(f)
+
+    hyphens_path = Path("/Volumes/SanDisk1TB/proj/boethlingk/data/original_hyphenations.json")
+    hyphens = {}
+    if hyphens_path.exists():
+        with open(hyphens_path, encoding="utf-8") as f:
+            hyphens = json.load(f)
+
+    sutras = master["sutras"]
+
+    # Map last sutra of each pada
+    last_sutra_of_pada = {}
+    for s in sutras:
+        key = (s["adhyaya"], s["pada"])
+        last_sutra_of_pada[key] = s["ref"]
+
+    # Group by page
+    by_page = {}
+    for s in sutras:
+        p = s.get("page")
+        if p:
+            by_page.setdefault(p, []).append(s)
+
+    pages_output = []
+    for p_num in range(2, 477):
+        p_sutras = by_page.get(p_num, [])
+        processed = []
+        for s in p_sutras:
+            sc = dict(s)
+            ref = s.get("ref", "")
+            if ref in hyphens:
+                sc["canonical_devanagari"] = hyphens[ref]
+            if "canonical_iast" in sc:
+                sc["canonical_iast"] = soft_hyphenate_long_iast(sc["canonical_iast"])
+            sc["sutra_num_deva"] = to_deva_num(s.get("sutra_num", 0))
+
+            is_end = (ref == last_sutra_of_pada.get((s["adhyaya"], s["pada"])))
+            sc["is_pada_end"] = is_end
+            if is_end:
+                sc["colophon"] = get_colophon(s["adhyaya"], s["pada"])
+            else:
+                sc["colophon"] = ""
+            processed.append(sc)
+
+        first_s = p_sutras[0] if p_sutras else {}
+        last_s = p_sutras[-1] if p_sutras else {}
+        a_num = first_s.get("adhyaya", 1)
+        p_num_in_adh = first_s.get("pada", 1)
+
+        pages_output.append({
+            "page_num": p_num,
+            "adh_num": a_num,
+            "pada_num": p_num_in_adh,
+            "header_adh_str": f"{adh_romans.get(a_num, 'I')}. Adhyāya. {p_num_in_adh}. Pāda.",
+            "last_sutra_ref": f"{last_s.get('adhyaya', 1)}, {last_s.get('pada', 1)}, {last_s.get('sutra_num', 1)}.",
+            "sutras": processed,
+        })
+
+    out_path = Path("/Volumes/SanDisk1TB/proj/boethlingk/data/ashtadhyayi_facsimile_dense.json")
+    with open(out_path, "w", encoding="utf-8") as f:
+        json.dump(pages_output, f, ensure_ascii=False, indent=2)
+
+    print(f"Erfolgreich {len(pages_output)} Seiten (S. 2–476) exportiert nach {out_path}")
+
+
+if __name__ == "__main__":
+    main()
