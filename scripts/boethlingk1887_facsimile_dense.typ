@@ -17,7 +17,7 @@
 )
 
 #set text(
-  font: ("Libertinus Serif", "Linux Libertine O", "Noto Serif Devanagari", "Devanagari MT", "Times New Roman"),
+  font: ("STIX Two Text", "Noto Serif Devanagari", "Devanagari MT"),
   size: 9.4pt,
   lang: "de"
 )
@@ -66,7 +66,7 @@
     *Dichte Faksimile-Neuausgabe:* AlexandriaSandwich Digital Humanities Pipeline (2026) \
     *Herausgeber & Neusatz:* Marco Demarmels (Birchville Foundation) \
     *1:1-Seitenparität:* Jede Seite dieser Ausgabe entspricht exakt der entsprechenden Seite des Originaldrucks (S. 1–476). \
-    *Satzspiegel & Typografie:* Rekonstruktion des Leipziger Originalspiegels mit adaptiver Durchschuss- und Grad-Optimierung. \
+    *Satzspiegel & Typografie:* Rekonstruktion des Leipziger Originalspiegels in STIX Two Text und Noto Serif Devanagari mit adaptiver Durchschuss- und Grad-Optimierung. \
     *Alignment:* 100 % Abdeckung (14 Śiva-Sūtras + 3.983 Aṣṭādhyāyī-Sūtras) \
     \
     *Urheberrecht & Lizenzen:* \
@@ -80,7 +80,7 @@
 // Seite iii: Haupttitel
 #align(center)[
   #v(2.0cm)
-  #text(22pt, weight: "bold", font: ("Baskerville", "Libertinus Serif", "Times New Roman"))[PĀṆINI'S GRAMMATIK]
+  #text(22pt, weight: "bold", font: ("STIX Two Text", "Noto Serif Devanagari"))[PĀṆINI'S GRAMMATIK]
   
   #v(0.8cm)
   #text(11pt, style: "italic")[herausgegeben, übersetzt, erläutert und mit verschiedenen Indices versehen]
@@ -206,7 +206,7 @@ Die vorliegende Edition von Otto von Böhtlingks *Grammatik des Pāṇini* (Leip
         #if calc.even(p_num) [
           #text(8.5pt, weight: "bold")[#p_num]
           #h(1fr)
-          #text(8pt, font: ("Libertinus Serif", "Times New Roman"))[#smallcaps[Nachträge und Verbesserungen (Corrigenda)]]
+          #text(8pt, font: ("STIX Two Text", "Noto Serif Devanagari"))[#smallcaps[Nachträge und Verbesserungen (Corrigenda)]]
           #h(1fr)
           #text(8.5pt, weight: "bold", fill: rgb("#03192e"))[Böhtlingk 1887]
         ] else [
@@ -249,7 +249,7 @@ Die vorliegende Edition von Otto von Böhtlingks *Grammatik des Pāṇini* (Leip
       #if calc.even(p_num) [
         #text(8.5pt, weight: "bold")[#p_num]
         #h(1fr)
-        #text(8pt, font: ("Libertinus Serif", "Times New Roman"))[#adh_text]
+        #text(8pt, font: ("STIX Two Text", "Noto Serif Devanagari"))[#adh_text]
         #h(1fr)
         #text(8.5pt, weight: "bold", fill: rgb("#03192e"))[#last_sutra_ref]
       ] else [
@@ -360,7 +360,7 @@ Die vorliegende Edition von Otto von Böhtlingks *Grammatik des Pāṇini* (Leip
             ]
           ],
           [
-            #text(body_sz, font: ("Libertinus Serif", "Linux Libertine O"), fill: rgb("#03192e"))[
+            #text(body_sz, font: ("STIX Two Text", "Noto Serif Devanagari"), fill: rgb("#03192e"))[
               #str(s.adhyaya), #str(s.pada), #str(s.sutra_num).
             ]
           ]
