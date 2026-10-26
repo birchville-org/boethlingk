@@ -177,6 +177,12 @@ def main() -> None:
         default=Path("data/output/boethlingk1887_facsimile_dense_test.pdf"),
         help="Target PDF path",
     )
+    parser.add_argument(
+        "--sync",
+        action="store_true",
+        default=False,
+        help="Synchronize output PDF to user Indologie folder (only with explicit approval)",
+    )
     args = parser.parse_args()
 
     t0 = time.time()
@@ -208,12 +214,15 @@ def main() -> None:
     # 4. Paritäts-Check
     verify_page_parity(args.output)
 
-    # 5. Sync nach Indologie-Arbeitsordner
-    indologie_dest = Path("/Users/marco/Documents/00_Indologie/Panini")
-    if indologie_dest.exists():
-        dest_file = indologie_dest / "BOETHLINGK 1887 Panini Grammatik (Dichte Faksimile-Testausgabe).pdf"
-        shutil.copy2(args.output, dest_file)
-        print(f"✓ Synchronisiert nach Indologie-Arbeitsordner: {dest_file}")
+    # 5. Sync nach Indologie-Arbeitsordner (NUR mit explizitem --sync Flag)
+    if args.sync:
+        indologie_dest = Path("/Users/marco/Documents/00_Indologie/Panini")
+        if indologie_dest.exists():
+            dest_file = indologie_dest / "BOETHLINGK 1887 Panini Grammatik (Dichte Faksimile-Testausgabe).pdf"
+            shutil.copy2(args.output, dest_file)
+            print(f"✓ Synchronisiert nach Indologie-Arbeitsordner: {dest_file}")
+    else:
+        print("ℹ︎ Lokaler Build: Keine externe Synchronisation (Genehmigung erforderlich).")
 
     elapsed = time.time() - t0
     size_mb = args.output.stat().st_size / (1024 * 1024)
