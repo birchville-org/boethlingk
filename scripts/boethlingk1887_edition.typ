@@ -188,7 +188,7 @@ Im Rahmen der *AlexandriaSandwich-Pipeline* wurden sämtliche 478 Buchseiten der
       ] else [
         #text(8.5pt, weight: "bold", fill: rgb("#03192e"))[#last_sutra_ref]
         #h(1fr)
-        #text(8pt, style: "italic", fill: rgb("#334155"))[#cur_h2]
+        #text(8pt, font: ("STIX Two Text", "Noto Serif Devanagari"))[#cur_h2]
         #h(1fr)
         #text(8.5pt, weight: "bold")[#page_num]
       ]

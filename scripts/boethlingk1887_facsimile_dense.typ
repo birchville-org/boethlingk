@@ -212,7 +212,7 @@ Die vorliegende Edition von Otto von Böhtlingks *Grammatik des Pāṇini* (Leip
         ] else [
           #text(8.5pt, weight: "bold", fill: rgb("#03192e"))[Böhtlingk 1887]
           #h(1fr)
-          #text(8pt, style: "italic", fill: rgb("#334155"))[Nachträge und Verbesserungen (Corrigenda)]
+          #text(8pt, font: ("STIX Two Text", "Noto Serif Devanagari"))[#smallcaps[Nachträge und Verbesserungen (Corrigenda)]]
           #h(1fr)
           #text(8.5pt, weight: "bold")[#p_num]
         ]
@@ -255,7 +255,7 @@ Die vorliegende Edition von Otto von Böhtlingks *Grammatik des Pāṇini* (Leip
       ] else [
         #text(8.5pt, weight: "bold", fill: rgb("#03192e"))[#last_sutra_ref]
         #h(1fr)
-        #text(8pt, style: "italic", fill: rgb("#334155"))[#adh_text]
+        #text(8pt, font: ("STIX Two Text", "Noto Serif Devanagari"))[#adh_text]
         #h(1fr)
         #text(8.5pt, weight: "bold")[#p_num]
       ]

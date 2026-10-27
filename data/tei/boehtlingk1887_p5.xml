@@ -844,9 +844,7 @@
             <sense xml:lang="de">
               <def>Die vorangehende Regel wird aufgehoben, wenn es sich handelt 1) um den Auslaut eines Wortes, 2) um eine Lautverdoppelung, 3) um den Ausfall des Intensiv-Charakters य् vor dem Suffix वर, 4) um den Accent, 5) um einen homogenen Laut, 6) um einen Anusvâra, 7) um eine Länge, 8) um einen tönenden nicht-aspirirten Consonanten und 9) um einen tonlosen nicht-aspirirten Consonanten.</def>
             </sense>
-            <note type="commentary" xml:lang="de">Zu 1) Der Anlaut von अस् ist in सन्ति abgefallen; wenn diesem कानि vorangeht, so ist dieses abgefallene अ wirkungslos in Bezug auf das vorangehende इ, da dieses vor सन्ति nicht in य् übergeht. Zu 2) सुधीं und उपास्य giebt सुष्युपास्य; hier ist das ursprüngliche ईं in Bezug auf die Verdoppelung von ध् als nicht mehr vorhanden zu betrachten, da nach 8, 4, 47 wohl vor य्, aber nicht vor einem Vocal, ध् zu इ werden kann. Man darf also सुष्युपास्य schreiben. Zu 3) Nach 3, 2, 176 bildet man vom Intensivum von या ein Adjectiv auf वर; nach 6, 4, 48 muss das अ des Intensiv-Charakters vor व् abfallen. Wenn dieser Abfall in Bezug auf die Behandlung des nachbleibenden य् als nicht geschehen betrachtet würde, dann dürfte dieses nicht nach 6, 1, 66 ausfallen, und wir erhielten nicht यायावर. Zu 4) Der mit dem Suffix सन् von क् gebildete Desiderativstamm चिकीर्षे verliert nach 6, 4, 48 vor dem Suffix अक् (रावुल्) das schliessende अ. Wenn dieser Abfall nicht als definitiv erfolgt angesehen würde, könnte der Acut in चिकीर्षक, der in Folge des stummen ल् im Suffix रावुल् auf der diesem Suffix unmittelbar vorangehenden Silbe ruhen muss, nicht auf das ईं bezogen werden. Zu 5) und 6) Von der Wurzel श्रिय् wird der Präsensstamm श्रिन्प् gebildet. Vor gewissen Personalendungen fällt nach 6, 4, 111 das अ des Suffixes न aus; wenn nun dieser Ausfall in Bezug auf das vorangehende न् als nicht erfolgt betrachtet würde, könnte nicht श्रियन्ति nach 8, 3, 24 und nicht श्रिगिठ nach 8, 4, 58 gebildet werden. Zu 7) In प्रतिदिवन् fällt nach 6, 4, 134 vor vocalisch
-
-anlautenden Casusendungen das  aus. Wenn dieser Ausfall in Bezug auf die Verlängerung des  in der vorangehenden Silbe als nicht erfolgt betrachtet würde, könnte dieses nicht nach 8, 2, 77 verlängert werden, es bliebe प्रतिदीद्र: unerklärt. Zu 8) In der Wurzel [Sanskrit] fällt vor dem Suffix  nach 6, 4, 100 der Vocal aus und in Folge dessen auch der Auslaut nach 8, 2, 26. Das  des Suffixes geht wegen  nach 8, 2, 40 in  über. Wenn nun der Wurzelvocal als nicht ausgefallen betrachtet würde in Bezug auf das vorangehende , dann könnte dieses nicht nach 8, 4, 53 in  übergehen, und die Form [Sanskrit] bliebe unerklärt. Zu 9) Dieselbe Wurzel [Sanskrit] verliert vor den Personalendungen [Sanskrit] und [Sanskrit] des Perfects nach 6, 4, 98 ihren Vocal. Mit diesem Ausfall hört auch der Einfluss des ausgefallenen Vocals auf das vorangehende  auf, dieses geht in Folge dessen nach 8, 4, 55 in  über, worauf nach 8, 3, 60  zu  wird. Auf diese Weise erhalten wir die Formen [Sanskrit]: und [Sanskrit]:</note>
+            <note type="commentary" xml:lang="de">Zu 1) Der Anlaut von अस् ist in सन्ति abgefallen; wenn diesem कानि vorangeht, so ist dieses abgefallene अ wirkungslos in Bezug auf das vorangehende इ, da dieses vor सन्ति nicht in य् übergeht. Zu 2) सुधी und उपास्य giebt सुध्युपास्य; hier ist das ursprüngliche ई in Bezug auf die Verdoppelung von ध् als nicht mehr vorhanden zu betrachten, da nach 8, 4, 47 wohl vor य्, aber nicht vor einem Vocal, ध् zu द्ध werden kann. Man darf also सुद्ध्युपास्य schreiben. Zu 3) Nach 3, 2, 176 bildet man vom Intensivum von या ein Adjectiv auf वर; nach 6, 4, 48 muss das अ des Intensiv-Charakters vor व् abfallen. Wenn dieser Abfall in Bezug auf die Behandlung des nachbleibenden य् als nicht geschehen betrachtet würde, dann dürfte dieses nicht nach 6, 1, 66 ausfallen, und wir erhielten nicht यायावर. Zu 4) Der mit dem Suffix सन् von कृ gebildete Desiderativstamm चिकीर्ष verliert nach 6, 4, 48 vor dem Suffix अक (वुल्) das schliessende अ. Wenn dieser Abfall nicht als definitiv erfolgt angesehen würde, könnte der Acut in चिकीर्षक, der in Folge des stummen ल् im Suffix वुल् auf der diesem Suffix unmittelbar vorangehenden Silbe ruhen muss, nicht auf das ई bezogen werden. Zu 5) und 6) Von der Wurzel शिष् wird der Präsensstamm शिन्ष् gebildet. Vor gewissen Personalendungen fällt nach 6, 4, 111 das अ des Suffixes न aus; wenn nun dieser Ausfall in Bezug auf das vorangehende न् als nicht erfolgt betrachtet würde, könnte nicht शिंषन्ति nach 8, 3, 24 und nicht शिंशिष्ठ nach 8, 4, 58 gebildet werden. Zu 7) In प्रतिदिवन् fällt nach 6, 4, 134 vor vocalisch anlautenden Casusendungen das अ aus. Wenn dieser Ausfall in Bezug auf die Verlängerung des इ in der vorangehenden Silbe als nicht erfolgt betrachtet würde, könnte dieses nicht nach 8, 2, 77 verlängert werden, es bliebe प्रतिदीव्नः unerklärt. Zu 8) In der Wurzel घस् fällt vor dem Suffix ति nach 6, 4, 100 der Vocal aus und in Folge dessen auch der Auslaut nach 8, 2, 26. Das त् des Suffixes geht wegen घ् nach 8, 2, 40 in ध् über. Wenn nun der Wurzelvocal als nicht ausgefallen betrachtet würde in Bezug auf das vorangehende घ्, dann könnte dieses nicht nach 8, 4, 53 in ग् übergehen, und die Form जग्ध bliebe unerklärt. Zu 9) Dieselbe Wurzel घस् verliert vor den Personalendungen अतुस् und उस् des Perfects nach 6, 4, 98 ihren Vocal. Mit diesem Ausfall hört auch der Einfluss des ausgefallenen Vocals auf das vorangehende घ् auf, dieses geht in Folge dessen nach 8, 4, 55 in क् über, worauf nach 8, 3, 60 स् zu ष् wird. Auf diese Weise erhalten wir die Formen जक्षतुः und जक्षुः.</note>
           </entry>
           <pb n="9" facs="https://digi.ub.uni-heidelberg.de/iiif/3/boehtlingk1887%3A000000009.jpg/full/max/0/default.jpg"/>
           <entry xml:id="sutra_1.1.59" n="1.1.59">
@@ -859,7 +857,7 @@ anlautenden Casusendungen das  aus. Wenn dieser Ausfall in Bezug auf die Verlän
             <sense xml:lang="de">
               <def>Vor einem vocalisch anlautenden Suffix verhält sich das Substitut für einen Vocal in Bezug auf die Bildung der Reduplication wie der primitive Vocal.</def>
             </sense>
-            <note type="commentary" xml:lang="de">Der Wurzelvocal von  fällt vor den Personalendungen [Sanskrit] und [Sanskrit] nach 6, 4, 64 ab. Die Reduplication wird nach 6, 1, 1 und 7, 4, 59 gebildet, als wenn das  nicht abgefallen wäre.</note>
+            <note type="commentary" xml:lang="de">Der Wurzelvocal von पा fällt vor den Personalendungen अतुस् und उस् nach 6, 4, 64 ab. Die Reduplication wird nach 6, 1, 1 und 7, 4, 59 gebildet, als wenn das आ nicht abgefallen wäre.</note>
           </entry>
           <entry xml:id="sutra_1.1.60" n="1.1.60">
             <form type="sutra" xml:lang="sa-Deva">
@@ -880,7 +878,7 @@ anlautenden Casusendungen das  aus. Wenn dieser Ausfall in Bezug auf die Verlän
               <orth>pratyayasya lukślulupaḥ</orth>
             </form>
             <sense xml:lang="de">
-              <def>Das nicht zur Erscheinung Kommen eines Suffixes wird durch [Sanskrit], [Sanskrit] und [Sanskrit] bezeichnet.</def>
+              <def>Das nicht zur Erscheinung Kommen eines Suffixes wird durch लुक्, श्लु und लुप् bezeichnet.</def>
             </sense>
           </entry>
           <entry xml:id="sutra_1.1.62" n="1.1.62">
@@ -893,7 +891,7 @@ anlautenden Casusendungen das  aus. Wenn dieser Ausfall in Bezug auf die Verlän
             <sense xml:lang="de">
               <def>Wenn ein Suffix auch schwindet, so tritt doch Alles ein, was durch dasselbe bedingt ist.</def>
             </sense>
-            <note type="commentary" xml:lang="de">Nach 1, 4, 14 heisst das, was mit einer Casus- oder Personalendung versehen ist, vž „fertiges Wort“. Obgleich nun im Nomin. [Sanskrit]</note>
+            <note type="commentary" xml:lang="de">Nach 1, 4, 14 heisst das, was mit einer Casus- oder Personalendung versehen ist, पद „fertiges Wort“. Obgleich nun im Nomin. अग्निचित् die Casusendung und im Verbum finitum अहन् die Personalendung abgefallen ist, so heissen diese dennoch पद.</note>
           </entry>
           <entry xml:id="sutra_1.1.63" n="1.1.63">
             <form type="sutra" xml:lang="sa-Deva">
@@ -903,9 +901,9 @@ anlautenden Casusendungen das  aus. Wenn dieser Ausfall in Bezug auf die Verlän
               <orth>na lumatāṅgasya</orth>
             </form>
             <sense xml:lang="de">
-              <def>Wenn ein Suffix aber durch [Sanskrit], [Sanskrit] oder [Sanskrit] schwindet, so tritt das durch das Suffix in Bezug auf den Stamm Bedingte nicht ein.</def>
+              <def>Wenn ein Suffix aber durch लुक्, श्लु oder लुप् schwindet, so tritt das durch das Suffix in Bezug auf den Stamm Bedingte nicht ein.</def>
             </sense>
-            <note type="commentary" xml:lang="de">stummen  im Plural verloren ([Sanskrit]). Nach den Wurzeln der dritten Klasse verschwindet der Präsens-Charakter  ([Sanskrit]) nach 2, 4, 75 durch [Sanskrit]. [Sanskrit] erfordert nach 7, 3, 84 Substitution von Guṇa für den Wurzelvocal, diese unterbleibt aber nach unserm Sūtra in [Sanskrit]: (in [Sanskrit] ist Guṇa durch die Personalendung hervorgerufen). Zu [Sanskrit] s. 1, 2, 51.</note>
+            <note type="commentary" xml:lang="de">Nach 4, 1, 105 wird das Patronymicum von गर्ग mit dem Suffix यञ् gebildet, das aber im Plural nach 2, 4, 64 verschwindet. Das ञ् in यञ् erfordert die Substitution von Vṛddhi für den ersten Vocal des Stammes und auch Betonung desselben (गौर्ग्य). Da das Suffix durch die Bezeichnung लुक् verschwindet, geht die Wirkung des stummen ञ् im Plural verloren (गार्गाः). Nach den Wurzeln der dritten Klasse verschwindet der Präsens-Charakter शप् (शप्) nach 2, 4, 75 durch श्लु. शप् erfordert nach 7, 3, 84 Substitution von Guṇa für den Wurzelvocal, diese unterbleibt aber nach unserm Sūtra in जुहुतः (in जुहोति ist Guṇa durch die Personalendung hervorgerufen). Zu लुप् s. 1, 2, 51.</note>
           </entry>
           <pb n="10" facs="https://digi.ub.uni-heidelberg.de/iiif/3/boehtlingk1887%3A000000010.jpg/full/max/0/default.jpg"/>
           <entry xml:id="sutra_1.1.64" n="1.1.64">
@@ -940,7 +938,7 @@ anlautenden Casusendungen das  aus. Wenn dieser Ausfall in Bezug auf die Verlän
             <sense xml:lang="de">
               <def>Wenn Etwas im Locativ angegeben wird, so heisst dieses, dass an dem diesem unmittelbar Vorangehenden Etwas vorzunehmen ist.</def>
             </sense>
-            <note type="commentary" xml:lang="de">[Sanskrit] [Sanskrit] 6, 1, 77 bedeutet: an die Stelle von [Sanskrit] tritt [Sanskrit] vor einem Vocal.</note>
+            <note type="commentary" xml:lang="de">इको यणचि 6, 1, 77 bedeutet: an die Stelle von इक् tritt यण् vor einem Vocal.</note>
           </entry>
           <entry xml:id="sutra_1.1.67" n="1.1.67">
             <form type="sutra" xml:lang="sa-Deva">
@@ -952,7 +950,7 @@ anlautenden Casusendungen das  aus. Wenn dieser Ausfall in Bezug auf die Verlän
             <sense xml:lang="de">
               <def>Wenn Etwas im Ablativ angegeben wird, so heisst dieses, dass an dem auf diesen unmittelbar Folgenden Etwas vorzunehmen ist.</def>
             </sense>
-            <note type="commentary" xml:lang="de">[Sanskrit]: 8, 1, 28 bedeutet: ein [Sanskrit] (ein Verbum finitum) nach einem [Sanskrit] (nicht Verbum finitum); zu ergänzen: ist unbetont.</note>
+            <note type="commentary" xml:lang="de">तिङ्ङतिङः 8, 1, 28 bedeutet: ein तिङ् (ein Verbum finitum) nach einem अतिङ् (nicht Verbum finitum); zu ergänzen: ist unbetont.</note>
           </entry>
           <entry xml:id="sutra_1.1.68" n="1.1.68">
             <form type="sutra" xml:lang="sa-Deva">
@@ -974,7 +972,7 @@ anlautenden Casusendungen das  aus. Wenn dieser Ausfall in Bezug auf die Verlän
               <orth>aṇudit savarṇasya cāpratyayaḥ</orth>
             </form>
             <sense xml:lang="de">
-              <def>Die Vocale, die Halbvocale und ein Consonant mit stummem  (wie , , , , ) bezeichnen, wenn sie nicht Suffixe sind, zugleich ihre homogenenen Laute.</def>
+              <def>Die Vocale, die Halbvocale und ein Consonant mit stummem उ (wie कु, चु, टु, तु, पु) bezeichnen, wenn sie nicht Suffixe sind, zugleich ihre homogenenen Laute.</def>
             </sense>
           </entry>
           <entry xml:id="sutra_1.1.70" n="1.1.70">
@@ -985,9 +983,9 @@ anlautenden Casusendungen das  aus. Wenn dieser Ausfall in Bezug auf die Verlän
               <orth>taparastatkālasya</orth>
             </form>
             <sense xml:lang="de">
-              <def>Ein Vocal mit folgendem  bezeichnet nur den Vocal seiner Quantität.</def>
+              <def>Ein Vocal mit folgendem त् bezeichnet nur den Vocal seiner Quantität.</def>
             </sense>
-            <note type="commentary" xml:lang="de">[Sanskrit] nur das kurze , ,  nur das kurze  u. s. w.</note>
+            <note type="commentary" xml:lang="de">अत् nur das kurze अ, इत् nur das kurze इ u. s. w.</note>
           </entry>
           <entry xml:id="sutra_1.1.71" n="1.1.71">
             <form type="sutra" xml:lang="sa-Deva">
@@ -15395,9 +15393,9 @@ und daher der Abfall des Causativsuffixes nach 6, 4, 51. In स्वस्त�
               <orth>ṅyāpprātipadikāt</orth>
             </form>
             <sense xml:lang="de">
-              <def>Die nun folgenden Suffixe treten an die mit [Sanskrit] oder [Sanskrit] gebildeten Feminina und an Nominalstämme.</def>
+              <def>Die nun folgenden Suffixe treten an die mit ङी oder आप् gebildeten Feminina und an Nominalstämme.</def>
             </sense>
-            <note type="commentary" xml:lang="de">Da die Femininsuffixe [Sanskrit] und [Sanskrit] weder krī noch taddhita sind, ist der darauf ausgehende Lautcomplex kein Nominalstamm (Prātipadika); vgl. 1, 2, 45. 46.</note>
+            <note type="commentary" xml:lang="de">Da die Femininsuffixe ङी und आप् weder kṛt noch taddhita sind, ist der darauf ausgehende Lautcomplex kein Nominalstamm (Prātipadika); vgl. 1, 2, 45. 46.</note>
           </entry>
           <entry xml:id="sutra_4.1.2" n="4.1.2">
             <form type="sutra" xml:lang="sa-Deva">
@@ -15442,9 +15440,9 @@ und daher der Abfall des Causativsuffixes nach 6, 4, 51. In स्वस्त�
               <orth>ṛnnebhyo ṅīp</orth>
             </form>
             <sense xml:lang="de">
-              <def>An auf ऋ und न auslautende Nominalstämme tritt [Sanskrit].</def>
+              <def>An auf ऋ und न auslautende Nominalstämme tritt ङी.</def>
             </sense>
-            <note type="commentary" xml:lang="de">कर्त्री, दगिडनी.</note>
+            <note type="commentary" xml:lang="de">कर्त्री, दण्डिनी.</note>
           </entry>
           <entry xml:id="sutra_4.1.6" n="4.1.6">
             <form type="sutra" xml:lang="sa-Deva">
