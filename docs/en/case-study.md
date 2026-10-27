@@ -45,6 +45,16 @@ Otto von Böhtlingk's monumental edition *Pâṇini's Grammatik* (2nd edition, L
 └────────────────────────────────────────────────────────────────────────┘
 ```
 
+### 2.1 The Triage & Economic Model (Platform vs. Edition Satellites)
+
+The architectural division between generic platform and specialized edition is both strategic and economically sound:
+1. **Avoiding the Monolith Trap:** If `alex.birchville.org` attempted to incorporate bespoke parsers for singular monumental works (such as Böhtlingk's Pāṇini, the Rigveda, or multi-volume dictionaries), the core engine would become fragile and unmaintainable.
+2. **Economic Triage:** For 80–90% of standard books, AlexandriaSandwich delivers searchable sandwich PDFs automatically at near-zero marginal cost.
+3. **Decision Fork on Sub-Threshold Results:** When automated output is insufficient, a structured review takes place:
+   * **Path A (Generic Bug):** The core pipeline is improved; all future scans benefit.
+   * **Path B (Genuine Special Case):** Spin-off as a dedicated edition satellite (such as `boethlingk`), which consumes AlexandriaSandwich artifacts as its digital primary layer while handling domain-specific curation, 1:1 facsimile typesetting, and TEI-P5 modeling autonomously.
+4. **Full Documentation:** See [AlexandriaSandwich Triage & Economic Model](https://birchville-org.github.io/AlexandriaSandwich/en/EVOLUTION_WORKFLOW/#3-the-triage-economic-model-core-pipeline-vs-edition-satellites).
+
 ---
 
 ## 3. The Böhtlingk Delta in Detail

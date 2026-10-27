@@ -45,6 +45,16 @@ Otto von Böhtlingks monumentale Ausgabe *Pâṇini's Grammatik* (2. Auflage, Le
 └────────────────────────────────────────────────────────────────────────┘
 ```
 
+### 2.1 Das Triage- & Ökonomie-Modell (Plattform vs. Editions-Satelliten)
+
+Die Trennung zwischen generischer Plattform und spezialisiertem Projekt ist strategisch und ökonomisch geboten:
+1. **Schutz vor der Monolith-Falle:** Würde die zentrale Engine von `alex.birchville.org` versuchen, die semantischen Sonderregeln von Monumentalwerken (wie Böhtlingks Pāṇini, Grassmanns Rigveda oder mehrbändige Wörterbücher) intern zu lösen, würde das System überfrachtet und instabil.
+2. **Ökonomische Triage:** Für 80–90 % der Standardwerke liefert AlexandriaSandwich vollautomatisch bei Grenzkosten nahe null durchsuchbare Sandwich-PDFs.
+3. **Entscheidungsgabelung bei Nichterfüllung:** Reicht das automatisierte Standardergebnis nicht aus, erfolgt eine Begutachtung:
+   * **Pfad A (Generischer Bug):** Die Hauptpipeline wird verbessert; alle zukünftigen Scans profitieren.
+   * **Pfad B (Echter Spezialfall):** Ausgründung als eigenständiger Editions-Satellit (wie `boethlingk`), der auf den Rohdaten von AlexandriaSandwich aufsetzt und domänenspezifische Kuration, 1:1-Faksimile-Neusatz und TEI-P5-Modellierung autark abbildet.
+4. **Verfahrensdokumentation:** Siehe [AlexandriaSandwich Triage- & Ökonomie-Modell](https://birchville-org.github.io/AlexandriaSandwich/de/EVOLUTION_WORKFLOW/#3-das-triage-okonomie-modell-core-pipeline-vs-editions-satelliten).
+
 ---
 
 ## 3. Das Böhtlingk-Delta im Detail
