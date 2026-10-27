@@ -10,7 +10,7 @@
 
 ## 1. Rationale for a Dedicated Edition Project
 
-Why does a monumental philological work such as Otto von Böhtlingk's *Pâṇini's Grammatik* (2nd edition, Leipzig 1887) require a dedicated edition project rather than a generic pass through the [AlexandriaSandwich](https://birchville-org.github.io/AlexandriaSandwich/en/) digitization pipeline?
+Why does a complex philological work such as Otto von Böhtlingk's *Pâṇini's Grammatik* (2nd edition, Leipzig 1887) require a dedicated edition project rather than a generic pass through the [AlexandriaSandwich](https://birchville-org.github.io/AlexandriaSandwich/en/) digitization pipeline?
 
 AlexandriaSandwich is engineered as a universal, stateless processing engine: it converts historical scans into clean, searchable 1:1 sandwich PDFs and raw text layers. For landmark, multi-script reference works, however, pure generic automation reaches fundamental architectural limits.
 

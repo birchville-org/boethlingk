@@ -12,7 +12,7 @@
 
 Warum reicht für ein Werk wie Otto von Böhtlingks *Pâṇini's Grammatik* (2. Auflage, Leipzig 1887) nicht der reguläre Durchlauf durch die generische Digitalisierungs-Pipeline [AlexandriaSandwich](https://birchville-org.github.io/AlexandriaSandwich/)?
 
-AlexandriaSandwich ist als universelle, zustandslose Engine konzipiert: Sie transformiert historische Buchscans in bereinigte, durchsuchbare 1:1 Sandwich-PDFs und Rohtexte. Bei monumentalen, mehrsprachigen Referenzwerken der Philologie stößt eine rein vollautomatische Pipeline jedoch an fundamentale Systemgrenzen.
+AlexandriaSandwich ist als universelle, zustandslose Engine konzipiert: Sie transformiert historische Buchscans in bereinigte, durchsuchbare 1:1 Sandwich-PDFs und Rohtexte. Bei vielschichtigen, mehrsprachigen Referenzwerken der Philologie stößt eine rein vollautomatische Pipeline jedoch an methodische Grenzen.
 
 Die Ausgründung von `boethlingk` als **eigenständiges Editions-Projekt (Satelliten-Architektur)** stützt sich auf vier tragende Säulen:
 
