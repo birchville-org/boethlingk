@@ -59,7 +59,6 @@ Die Artefakte decken unterschiedliche Nutzungsszenarien ab – vom exakten histo
 * **Besonderheiten:** Großzügiger Zeilendurchschuss, klare optische Hierarchie zwischen Sūtra-Kopf, IAST-Transliteration, Übersetzung und Petit-Kommentar.
 * **Einsatzbereich:** Für das kontinuierliche philologische und linguistische Studium der Aṣṭādhyāyī am Bildschirm oder als Buchausdruck.
 * **Download:** [:octicons-download-16: Release-Asset](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_typeset_edition.pdf)
-* **Download:** [:octicons-download-16: Release-Asset](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_typeset_edition_v2.pdf)
 
 ---
 
