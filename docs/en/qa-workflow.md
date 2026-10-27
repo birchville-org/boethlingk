@@ -122,21 +122,21 @@ Produces the mobile e-reader book at `data/output/boethlingk1887.epub`.
 The `boethlingk` project is maintained as a **scholarly curated edition** (Curated Edition, directed by Marco Demarmels / birchville-org). To ensure the long-term canonical integrity of the 3,997 sūtras and strict compliance of the TEI-P5 XML edition, all textual corrections, philological refinements, and enhancements must be submitted via **feature branches and Pull Requests (PR)**.
 
 ### 1. Run Local Integrity Checks
-Before committing, verify that no sūtras were dropped or inadvertently modified, and that the TEI-P5 RelaxNG schema validation succeeds:
+Before committing, verify that the automated test suite (`pytest`) runs cleanly:
 
 ```bash
-# a) Check master JSON integrity (exactly 14 Shiva Sutras + 3,983 Astadhyayi Sutras = 3,997):
-python3 -c "
-import json
-with open('data/ashtadhyayi_complete_boethlingk1887.json', encoding='utf-8') as f:
-    d = json.load(f)
-assert len(d['shiva_sutras']) == 14
-assert len(d['sutras']) == 3983
-print('Integrity: 100% OK')
-"
+# Execute automated Quality Gates (text integrity, typeset symmetry, page parity):
+uv run pytest
+```
 
-# b) Regenerate and validate TEI-P5 XML against the official RelaxNG schema:
-python3 scripts/generate_tei_p5.py \
+The test suite validates:
+* **Text Integrity (`tests/test_text_integrity.py`):** Unicode script whitelist (Latin with IAST, Devanagari, Greek), exclusion of non-relevant scripts (Hebrew, Telugu, etc.), prohibition of generic placeholder tokens (`[Sanskrit]`, `[OCR]`), and detection of orphan punctuation (` , `).
+* **Typeset Symmetry (`tests/test_typeset_symmetry.py`):** Inspects the compiled PDF for uniform font family (`STIX Two Text`), upright font style, and uniform color in running headers across all pages (no alternating italic or slate-colored headers).
+* **1:1 Page Parity (`tests/test_page_parity.py`):** Exact congruence between all 476 historical text pages and the 476 PDF text pages.
+
+```bash
+# Regenerate and validate TEI-P5 XML against the official RelaxNG schema:
+uv run python scripts/generate_tei_p5.py \
   --input data/ashtadhyayi_complete_boethlingk1887.json \
   --output data/tei/boehtlingk1887_p5.xml \
   --schema schemas/tei_all.rng

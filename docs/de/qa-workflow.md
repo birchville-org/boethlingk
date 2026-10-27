@@ -122,21 +122,21 @@ Erzeugt das mobile E-Reader-Buch unter `data/output/boethlingk1887.epub`.
 Das Projekt `boethlingk` wird als **wissenschaftlich kuratierte Edition** (Curated Edition, geleitet von Marco Demarmels / birchville-org) geführt. Um die kanonische Integrität der 3.997 Sūtras und die Konformität der TEI-P5-XML-Edition dauerhaft zu gewährleisten, fließen Textkorrekturen, philologische Präzisierungen und Ergänzungen verbindlich über **Branch- und Pull-Request-Verfahren (PR)** ein.
 
 ### 1. Lokale Integritätsprüfung ausführen
-Vor jedem Commit ist sicherzustellen, dass weder Sūtras versehentlich modifiziert oder gelöscht wurden noch das TEI-P5-Schema verletzt wird:
+Vor jedem Commit ist sicherzustellen, dass die gesamte Testsuite (`pytest`) ohne Fehler durchläuft:
 
 ```bash
-# a) Master-JSON-Integrität prüfen (exakt 14 Śiva-Sūtras + 3.983 Aṣṭādhyāyī-Sūtras = 3.997):
-python3 -c "
-import json
-with open('data/ashtadhyayi_complete_boethlingk1887.json', encoding='utf-8') as f:
-    d = json.load(f)
-assert len(d['shiva_sutras']) == 14
-assert len(d['sutras']) == 3983
-print('Integrität: 100% OK')
-"
+# Automatisierte Quality Gates ausführen (Textintegrität, Schriftsymmetrie, Seitenparität):
+uv run pytest
+```
 
-# b) TEI-P5-XML neu erzeugen und gegen das offizielle RelaxNG-Schema validieren:
-python3 scripts/generate_tei_p5.py \
+Die Testsuite prüft automatisch:
+* **Textintegrität (`tests/test_text_integrity.py`):** Whitelist erlaubter Unicode-Skripte (Latein mit IAST, Devanāgarī, Griechisch), Ausschluss von Fremdskripten (Hebräisch, Telugu etc.), Verbot von Platzhalter-Tokens (`[Sanskrit]`, `[OCR]`) und Detektion verwaister Interpunktion (` , `).
+* **Typografische Symmetrie (`tests/test_typeset_symmetry.py`):** Prüfung des kompilierten PDFs auf einheitliche Schriftart (`STIX Two Text`), Schriftstil (aufrecht) und Farbe der Kolumnentitel über alle Seiten (keine unmotivierten Wechsel zwischen gerade und ungerade).
+* **1:1-Seitenparität (`tests/test_page_parity.py`):** Exakte Übereinstimmung aller 476 historischen Textseiten mit den 476 PDF-Textseiten.
+
+```bash
+# TEI-P5-XML neu erzeugen und gegen das offizielle RelaxNG-Schema validieren:
+uv run python scripts/generate_tei_p5.py \
   --input data/ashtadhyayi_complete_boethlingk1887.json \
   --output data/tei/boehtlingk1887_p5.xml \
   --schema schemas/tei_all.rng

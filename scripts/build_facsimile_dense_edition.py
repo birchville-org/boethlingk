@@ -214,7 +214,18 @@ def main() -> None:
     # 4. Paritäts-Check
     verify_page_parity(args.output)
 
-    # 5. Sync nach Indologie-Arbeitsordner (NUR mit explizitem --sync Flag)
+    # 5. Automatisches Quality Gate: Pytest Suite
+    print("=" * 70)
+    print("Führe automatisches Quality Gate (pytest tests/) aus...")
+    test_res = subprocess.run(["pytest", "-q"], capture_output=True, text=True)
+    if test_res.returncode != 0:
+        print("❌ Quality Gate fehlgeschlagen!", file=sys.stderr)
+        print(test_res.stdout, file=sys.stderr)
+        print(test_res.stderr, file=sys.stderr)
+        sys.exit(test_res.returncode)
+    print("✓ Quality Gate erfolgreich: Alle Text-, Layout- & Paritäts-Tests bestanden.")
+
+    # 6. Sync nach Indologie-Arbeitsordner (NUR mit explizitem --sync Flag)
     if args.sync:
         indologie_dest = Path("/Users/marco/Documents/00_Indologie/Panini")
         if indologie_dest.exists():

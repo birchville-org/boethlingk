@@ -50,6 +50,10 @@ jobs:
           print('>>> Master Dataset integrity check: 100% PASSED (3997 total sutras) <<<')
           "
 
+      - name: Run Text & Data Integrity Quality Gates
+        run: |
+          pytest tests/test_text_integrity.py
+
       - name: Generate TEI-P5 XML and Validate against RelaxNG Schema
         run: |
           python3 scripts/generate_tei_p5.py \
