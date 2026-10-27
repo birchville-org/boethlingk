@@ -7,7 +7,7 @@ from pathlib import Path
 from PIL import Image
 import pymupdf
 
-doc = pymupdf.open("/Volumes/SanDisk1TB/proj/boethlingk/data/output/boethlingk1887_facsimile_dense_test.pdf")
+doc = pymupdf.open("/Volumes/SanDisk1TB/proj/boethlingk/data/output/boethlingk1887_facsimile_dense.pdf")
 out_dir = Path("/Volumes/SanDisk1TB/proj/boethlingk/data/output/comparisons")
 out_dir.mkdir(parents=True, exist_ok=True)
 

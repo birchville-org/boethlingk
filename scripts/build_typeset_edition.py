@@ -5,7 +5,7 @@ edition of Otto von Böhtlingk's Pāṇini (1887) using Typst & PyMuPDF.
 
 Features:
 - Full Birchville Scholarly Synthesis front matter with coat of arms & imprint.
-- Classical Leipzig typography: Noto Serif Devanagari + Libertinus Serif, leading 0.46em.
+- Classical Leipzig typography: Noto Serif Devanagari + STIX Two Text, leading 0.46em.
 - Left-aligned Devanāgarī headings with right-margin canonical references (Adhyāya, Pāda, Sūtra).
 - Dynamic running headers displaying the last Sūtra reference of the current page.
 - Dynamic original page boundaries: '📖 Böhtlingk (1887) S. X'.
@@ -214,6 +214,12 @@ def main() -> None:
         default=Path("data/output/boethlingk1887_typeset_edition.pdf"),
         help="Target PDF path",
     )
+    parser.add_argument(
+        "--sync",
+        action="store_true",
+        default=False,
+        help="Synchronize output PDF to user Indologie folder (only with explicit approval)",
+    )
     args = parser.parse_args()
 
     t0 = time.time()
@@ -239,15 +245,18 @@ def main() -> None:
 
     post_process_pdf(args.output)
 
-    # Sync to User Indologie Panini folder if present
-    indologie_dest = Path("/Users/marco/Documents/00_Indologie/Panini")
-    if indologie_dest.exists():
-        dest_file = indologie_dest / "BOETHLINGK 1887 Panini Grammatik (Digital Typeset Neusatz).pdf"
-        shutil.copy2(args.output, dest_file)
-        old_v2 = indologie_dest / "BOETHLINGK 1887 Panini Grammatik (Digital Typeset Neusatz v2).pdf"
-        if old_v2.exists():
-            old_v2.unlink()
-        print(f"✓ Synchronisiert nach Indologie-Arbeitsordner: {dest_file}")
+    # Sync to User Indologie Panini folder if present (only with explicit --sync flag)
+    if args.sync:
+        indologie_dest = Path("/Users/marco/Documents/00_Indologie/Panini")
+        if indologie_dest.exists():
+            dest_file = indologie_dest / "BOETHLINGK 1887 Panini Grammatik (Digital Typeset Neusatz).pdf"
+            shutil.copy2(args.output, dest_file)
+            old_v2 = indologie_dest / "BOETHLINGK 1887 Panini Grammatik (Digital Typeset Neusatz v2).pdf"
+            if old_v2.exists():
+                old_v2.unlink()
+            print(f"✓ Synchronisiert nach Indologie-Arbeitsordner: {dest_file}")
+    else:
+        print("ℹ︎ Lokaler Build: Keine externe Synchronisation (Genehmigung erforderlich).")
 
     elapsed = time.time() - t0
     size_mb = args.output.stat().st_size / (1024 * 1024)

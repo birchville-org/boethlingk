@@ -4,7 +4,7 @@ Wissenschaftliche Digitalisierung, kanonisches Alignment, TEI-P5-Edition und 1:1
 
 Digitalisat-Vorlage: Universitätsbibliothek Heidelberg ([Bibliotheca Palatina](https://digi.ub.uni-heidelberg.de/diglit/boehtlingk1887)).
 
-> ℹ️ **Hinweis:** Das Projekt `boethlingk` ist eine reale, vollständige Fallstudie (*Case Study*) zur Buch-Digitalisierungs-Pipeline [AlexandriaSandwich](https://github.com/birchville-org/AlexandriaSandwich). Es demonstriert die automatisierte OCR-Verarbeitung historischer Dreischriftigkeit (Devanāgarī, Antiqua, IAST), kanonisches Alignment gegen Referenzdatenbanken sowie die Assemblierung von 1:1 Sandwich-PDFs und TEI-P5-XML-Editionen.
+> ℹ️ **Verfahrens-Verweis:** Das Projekt `boethlingk` ist eine philologische Kanon-Edition auf Basis der Buch-Digitalisierungs-Pipeline **[AlexandriaSandwich](https://github.com/birchville-org/AlexandriaSandwich)**. Für die allgemeine Pipeline-Architektur (IIIF-Scan-Ingestion, Multimodale KI-OCR, Content-Aware Margin Masking, Sandwich-PDF-Schichtung) siehe die [AlexandriaSandwich Verfahrensdokumentation](https://birchville-org.github.io/AlexandriaSandwich/de/WIKI_VERFAHREN/). Das vorliegende Repository konzentriert sich ausschließlich auf das **spezifische philologische und typografische Editions-Delta** von Böhtlingks Pāṇini. Alle fertigen Ausgabedateien stehen über die [GitHub-Releases](https://github.com/birchville-org/boethlingk/releases/latest) bereit.
 
 ---
 
@@ -21,37 +21,34 @@ Digitalisat-Vorlage: Universitätsbibliothek Heidelberg ([Bibliotheca Palatina](
   - 478 `<pb>`-Seitenumbrüche mit direkter Verknüpfung zu den IIIF-Vollbildern der UB Heidelberg.
   - 50 Corrigenda-Einträge der Seiten 477–478 in `<back>`.
 
-- **Durchsuchbares 1:1 Sandwich-PDF (278 MB, 478 Seiten):**
-  - 📥 **Download:** [Release Asset (`boehtlingk1887_sandwich.pdf`)](https://github.com/birchville-org/boethlingk/releases/latest/download/boehtlingk1887_sandwich.pdf)
-  - *(Hinweis: Da die PDF-Datei 278 MB umfasst, ist sie im Git-Repository ignoriert und wird über das GitHub-Release bereitgestellt oder kann lokal assembliert werden).*
-  - Hintergrund: Verlustfreie Originalscans der UB Heidelberg (1:1 Pixelauflösung).
-  - Vordergrund: Unsichtbare Vektor-Textebene (PDF Rendering Mode 3, Unicode / Arial Unicode) auf 14.267 Textblöcken.
-  - 42 hierarchische PDF-Bookmarks (Śiva-Sūtras, 8 Adhyāyas, 32 Pādas, Nachträge).
-
-- **Reflowable EPUB 3 eBook mit Schrifteinbettung (1,45 MB):**
-  - 📥 **Download:** [Release Asset (`boethlingk1887.epub`)](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887.epub)
-  - **Optimal für mobile E-Reader:** Standardisiertes EPUB 3 mit semantischem XHTML5, responsivem Layout und hierarchischem Inhaltsverzeichnis (8 Adhyāyas, 32 Pādas).
-  - **Schrifteinbettung:** *Noto Serif Devanagari* (Regular/Bold) und *Linux Libertine O* (Regular/Bold/Italic) garantieren die saubere Darstellung aller IAST-Diakritika und Devanāgarī-Ligaturen auf Mobilgeräten und E-Readern (Tolino, Apple Books, Kobo).
-  - **Ausgabedatei:** `data/output/boethlingk1887.epub`
-  - **Herstellung & vorhandene Skripte:**
+- **Dichte Faksimile-Neuausgabe (1:1-Seitenparität, 8,58 MB, 484 Seiten):**
+  - 📥 **Download:** [Release Asset (`boethlingk1887_facsimile_dense.pdf`)](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_facsimile_dense.pdf)
+  - **Exakte 1:1-Seitenparität:** Jede Buchseite (S. 1–476) entspricht exakt einer Neusatzseite des 1887er Originaldrucks (0 Seiten Überlauf).
+  - **Typografie:** Gestochen scharfer Satz in *STIX Two Text* und *Noto Serif Devanagari* mit nativen, fehlerfreien IAST-Kapitälchen (**PĀṆINI**, **MAHĀBHĀṢYA**, **BHAṬṬOJI DĪKṢITA**).
+  - **Adaptive Raumausnutzung:** Ein 6-Stufen-Dichtemodell skaliert Schriftgrad und Durchschuss dynamisch an die Textlast an.
+  - **Navigation:** Originale Kolumnentitel und Randzähler, 48 hierarchische PDF-Lesezeichen und native Page-Labels.
+  - **Herstellung:**
     ```bash
-    python3 scripts/export_epub.py
+    python3 scripts/build_facsimile_dense_edition.py
     ```
 
-- **Neu gesetztes Buch-PDF mit modernen Fonts (Typst-Edition, 6,28 MB, 737 Seiten):**
+- **Modernisierte Typst-Buchausgabe (8,81 MB, 512 Seiten):**
   - 📥 **Download:** [Release Asset (`boethlingk1887_typeset_edition.pdf`)](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_typeset_edition.pdf)
-  - *(Hinweis: Binäre PDF-Dateien sind im Git-Repository ignoriert und stehen über die GitHub Releases zum direkten Download bereit oder können lokal assembliert werden).*
-  - **Fokus & Lesbarkeit:** Im Gegensatz zum faksimiliebasierten 1:1 Sandwich-PDF bietet diese Neuausgabe ein gestochen scharfes, modernes Buchlayout (ISO B5) ohne Scan-Artefakte und Vergilbungen der historischen Vorlage.
-  - **Typografie & Schriften:** Klassischer Leipziger Satz mit moderner Vektortypografie – Antiqua (*Baskerville*, *Times New Roman*) kombiniert mit nativer Devanāgarī (*Devanagari MT*, *Kohinoor Devanagari*) und exaktem IAST-Diakritika-Satz.
-  - **Struktur:** 14 Śiva-Sūtras, alle 3.983 Sūtras (Devanāgarī, IAST, deutsche Übersetzung, philologischer Kommentar), dynamische lebende Kolumnentitel, Titelei, Inhaltsverzeichnis und Anhang mit Corrigenda.
-  - **Ausgabedatei:** `data/output/boethlingk1887_typeset_edition.pdf`
-  - **Herstellung & vorhandene Skripte:**
-    - Voraussetzung: [Typst CLI](https://typst.app/) (`brew install typst`).
-    - Ausführung über das Build-Skript [`scripts/build_typeset_edition.py`](scripts/build_typeset_edition.py):
-      ```bash
-      python3 scripts/build_typeset_edition.py
-      ```
-    - Das Skript strukturiert den Master-Datensatz in [`data/ashtadhyayi_grouped_edition.json`](data/ashtadhyayi_grouped_edition.json) vor und kompiliert das Typst-Template [`scripts/boethlingk1887_edition.typ`](scripts/boethlingk1887_edition.typ) in ca. 1–2 Sekunden zu einem druckreifen 737-seitigen Buch-PDF.
+  - **Fließendes Leselayout:** Modernisiertes Buchlayout (ISO B5) für das kontinuierliche Studium ohne historische Zeilenbegrenzungen.
+  - **Herstellung:**
+    ```bash
+    python3 scripts/build_typeset_edition.py
+    ```
+
+- **Durchsuchbares 1:1 Sandwich-PDF (248,8 MB, 478 Seiten):**
+  - 📥 **Download:** [Release Asset (`boehtlingk1887_sandwich.pdf`)](https://github.com/birchville-org/boethlingk/releases/latest/download/boehtlingk1887_sandwich.pdf)
+  - *(Hinweis: Große Binär-PDFs stehen über das GitHub-Release bereit oder können lokal assembliert werden).*
+  - Hintergrund: Verlustfreie Originalscans der UB Heidelberg mit Content-Aware Margin Masking (`#f0e8d6`).
+  - Vordergrund: Unsichtbare Vektor-Textebene (PDF Rendering Mode 3) auf 14.267 Textblöcken mit 42 hierarchischen Bookmarks.
+  - **Herstellung:**
+    ```bash
+    python3 scripts/build_sandwich_pdf.py
+    ```
 
 - **Interaktiver QA-Viewer:**
   - [`viewer.html`](viewer.html): Split-Pane-Editor mit Faksimile-Zoom/Pan, Snippet-Toolbar und lokalem Silent Auto-Repair beim Speichern.

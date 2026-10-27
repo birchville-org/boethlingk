@@ -1,14 +1,14 @@
 <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; padding: 1rem 1.25rem; background: var(--md-default-bg-color--light); border: 1px solid var(--md-default-fg-color--lightest); border-radius: 8px;">
-  <img src="../assets/birchville_logo.png" alt="Birchville Coat of Arms" style="height: 2.4rem; border-radius: 4px; filter: drop-shadow(0 1px 3px rgba(0,0,0,0.18));">
+  <img src="assets/birchville_logo.png" alt="Birchville Coat of Arms" style="height: 2.4rem; border-radius: 4px; filter: drop-shadow(0 1px 3px rgba(0,0,0,0.18));">
   <div>
     <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--md-accent-fg-color); font-weight: 700;">Birchville Scholarly Synthesis</div>
-    <div style="font-size: 0.95rem; font-weight: 600; color: var(--md-default-fg-color);">Canonical Editions of Classical Indological Reference Works</div>
+    <div style="font-size: 0.95rem; font-weight: 600; color: var(--md-default-fg-color);">Canonical Editions of Classical Philological Reference Works</div>
   </div>
 </div>
 
 # 📖 Pāṇini's Grammar (Otto von Böhtlingk, Leipzig 1887)
 
-**Scholarly digitization, canonical alignment, TEI-P5 edition, and 1:1 sandwich PDF of *Pāṇini's Grammar* (Otto von Böhtlingk, 2nd edition, Leipzig 1887).**
+**Scholarly digitization, canonical alignment, TEI-P5 edition, and typographical 1:1 facsimile typeset of Otto von Böhtlingk's *Pâṇini's Grammatik* (2nd edition, Leipzig 1887).**
 
 ---
 
@@ -18,15 +18,32 @@
   <div class="quick-card">
     <div>
       <div class="quick-card-header">
-        <span class="quick-card-icon">📚</span>
-        <span class="quick-card-title">Sandwich PDF (1:1)</span>
+        <span class="quick-card-icon">🏛️</span>
+        <span class="quick-card-title">1:1 Facsimile Typeset</span>
       </div>
       <div class="quick-card-body">
-        478-page high-resolution scan facsimile with Content-Aware Margin Masking, OCR text layer (14,267 text blocks), and 42 bookmarks.
+        Modern vector typeset in STIX Two Text with <strong>exact 1:1 page parity</strong> (476 text pages without overflow), adaptive typography, native IAST small caps, and 48 PDF bookmarks.
       </div>
     </div>
     <div class="quick-card-action">
-      <a href="https://github.com/birchville-org/boethlingk/releases/latest/download/boehtlingk1887_sandwich.pdf" class="quick-btn quick-btn-primary" target="_blank" rel="noopener">
+      <a href="https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_facsimile_dense.pdf" class="quick-btn quick-btn-primary" target="_blank" rel="noopener">
+        <span>⬇️</span> Facsimile PDF (8.6 MB)
+      </a>
+    </div>
+  </div>
+
+  <div class="quick-card">
+    <div>
+      <div class="quick-card-header">
+        <span class="quick-card-icon">📚</span>
+        <span class="quick-card-title">1:1 Sandwich PDF</span>
+      </div>
+      <div class="quick-card-body">
+        478-page high-resolution scan facsimile from Heidelberg University Library with Content-Aware Margin Masking (#f0e8d6), invisible OCR text layer (14,267 text blocks), and 42 bookmarks.
+      </div>
+    </div>
+    <div class="quick-card-action">
+      <a href="https://github.com/birchville-org/boethlingk/releases/latest/download/boehtlingk1887_sandwich.pdf" class="quick-btn quick-btn-outline" target="_blank" rel="noopener">
         <span>⬇️</span> Sandwich PDF (249 MB)
       </a>
     </div>
@@ -35,16 +52,16 @@
   <div class="quick-card">
     <div>
       <div class="quick-card-header">
-        <span class="quick-card-icon">📄</span>
-        <span class="quick-card-title">Typst Vector Typeset</span>
+        <span class="quick-card-icon">📦</span>
+        <span class="quick-card-title">All Artifacts & Downloads</span>
       </div>
       <div class="quick-card-body">
-        Modern vector book edition (ISO B5) with all 3,997 Sūtras, authentic margins, marginal reference numbers, running headers, and 47 bookmarks.
+        Detailed catalog of all digital edition artifacts (facsimile typeset, book edition, EPUB 3, TEI-P5 XML, master JSON, QA viewer) with format descriptions and release links.
       </div>
     </div>
     <div class="quick-card-action">
-      <a href="https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_typeset_edition.pdf" class="quick-btn quick-btn-outline" target="_blank" rel="noopener">
-        <span>⬇️</span> Book Edition (8.8 MB)
+      <a href="artifacts/" class="quick-btn quick-btn-outline">
+        <span>➔</span> Open Artifact Catalog
       </a>
     </div>
   </div>
@@ -52,33 +69,16 @@
   <div class="quick-card">
     <div>
       <div class="quick-card-header">
-        <span class="quick-card-icon">🏛️</span>
-        <span class="quick-card-title">Academic Case Study</span>
+        <span class="quick-card-icon">🔍</span>
+        <span class="quick-card-title">The Böhtlingk Delta</span>
       </div>
       <div class="quick-card-body">
-        End-to-end methodology report documenting the AlexandriaSandwich pipeline and canonical alignment.
+        Specific procedural extensions beyond the generic AlexandriaSandwich pipeline: sūtra state machine, fuzzy matching, adaptive typography, and TEI-P5 modeling.
       </div>
     </div>
     <div class="quick-card-action">
       <a href="case-study/" class="quick-btn quick-btn-outline">
-        <span>➔</span> Read Case Study
-      </a>
-    </div>
-  </div>
-
-  <div class="quick-card">
-    <div>
-      <div class="quick-card-header">
-        <span class="quick-card-icon">💻</span>
-        <span class="quick-card-title">Source Code & Pipeline</span>
-      </div>
-      <div class="quick-card-body">
-        Canonical JSON master dataset, RelaxNG-validated TEI-P5 XML, and build automation on GitHub.
-      </div>
-    </div>
-    <div class="quick-card-action">
-      <a href="https://github.com/birchville-org/boethlingk" class="quick-btn quick-btn-outline" target="_blank" rel="noopener">
-        <span>➔</span> GitHub Repository
+        <span>➔</span> Read Edition Delta
       </a>
     </div>
   </div>
@@ -86,106 +86,62 @@
 
 ---
 
-## 🌟 About the Project
+## 🌟 About the Project & Pipeline Demarcation
 
-This project provides end-to-end historical digitization, multimodal AI OCR (`mistral-ocr-latest`), seamless canonical alignment against the Aṣṭādhyāyī Sūtrapāṭha, and standards-compliant digital edition artifacts for Otto von Böhtlingk's landmark 1887 edition, based on digital facsimiles from Heidelberg University Library.
+This project encompasses the complete historical processing, multimodal AI transcription (Mistral OCR), gapless canonical alignment against the Aṣṭādhyāyī Sūtrapāṭha, and the generation of standardized digital edition artifacts for Otto von Böhtlingk's landmark 1887 Pāṇini edition based on scans from the Heidelberg University Library.
 
-> ℹ️ **Case Study:** This project serves as an end-to-end reference case study for the open-source book digitization pipeline **[AlexandriaSandwich](https://github.com/birchville-org/AlexandriaSandwich)**.
-
----
-
-## 🏛️ Project Outcomes & Core Artifacts
-
-- **Searchable 1:1 Sandwich PDF** (`boehtlingk1887.perfect_sandwich.pdf` / `boehtlingk1887_sandwich.pdf` · 249 MB)  
-  478-page high-resolution scan facsimile with Content-Aware Margin Masking, an invisible vector text layer (14,267 text blocks placed at exact coordinates), and 42 hierarchical PDF bookmarks.  
-  [:octicons-download-16: Release Download (249 MB)](https://github.com/birchville-org/boethlingk/releases/latest/download/boehtlingk1887_sandwich.pdf) · [:octicons-tag-16: GitHub Release](https://github.com/birchville-org/boethlingk/releases/latest)
-
-- **Modern Typeset Book PDF (Typst Edition)** (`boethlingk1887_typeset_edition.pdf` · 8.8 MB)  
-  509-page crisp vector book edition (ISO B5) with all 3,997 Sūtras (Devanāgarī, IAST, translation, commentary), running headers, and 47 PDF bookmarks.  
-  [:octicons-download-16: Release Download (8.8 MB)](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_typeset_edition.pdf) · [:octicons-mark-github-16: Build Script](https://github.com/birchville-org/boethlingk/blob/main/scripts/build_typeset_edition.py)
-
-- **Canonically Validated Master Dataset (JSON)** (`data/ashtadhyayi_complete_boethlingk1887.json` · 2.8 MB)  
-  3,997 complete Sūtras (14 Śiva-Sūtras + 3,983 Aṣṭādhyāyī-Sūtras, 0 duplicates, 0 gaps) with Devanāgarī, academic IAST transliteration, German translation, and philological commentary.  
-  [:octicons-mark-github-16: File on GitHub](https://github.com/birchville-org/boethlingk/blob/main/data/ashtadhyayi_complete_boethlingk1887.json)
-
-- **Schema-Valid TEI-P5 XML Edition** (`data/tei/boehtlingk1887_p5.xml` · 2.9 MB)  
-  100% valid against the official TEI All RelaxNG schema (`schemas/tei_all.rng`) with 478 `<pb>` page break elements linked directly to Heidelberg University Library IIIF image endpoints.  
-  [:octicons-mark-github-16: File on GitHub](https://github.com/birchville-org/boethlingk/blob/main/data/tei/boehtlingk1887_p5.xml)
-
-- **Reflowable EPUB 3 eBook with Font Embedding** (`boethlingk1887.epub` · 1.5 MB)  
-  Standardized EPUB 3 with semantic XHTML5, responsive layout, and embedded fonts (*Noto Serif Devanagari*, *Linux Libertine O*) ensuring complete diacritic integrity on mobile e-readers.  
-  [:octicons-download-16: Release Download](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887.epub) · [:octicons-mark-github-16: Export Script](https://github.com/birchville-org/boethlingk/blob/main/scripts/export_epub.py)
-
-- **Standalone QA Viewer** (`viewer.html`)  
-  Payer-standard split-pane editor featuring facsimile zoom/pan, snippet toolbar, and local silent auto-repair on save.  
-  [:octicons-eye-16: Viewer in Repository](https://github.com/birchville-org/boethlingk/blob/main/viewer.html)
+> ℹ️ **Relation to the AlexandriaSandwich Pipeline:**  
+> All generic steps of image processing, IIIF caching, multimodal AI OCR (`mistral-ocr-latest`), Content-Aware Margin Masking (`#f0e8d6`), and 1:1 sandwich PDF assembly are powered by the core book digitization pipeline **[AlexandriaSandwich](https://github.com/birchville-org/AlexandriaSandwich)**.  
+>  
+> For the comprehensive description of the underlying pipeline architecture, please refer to:  
+> 👉 **[AlexandriaSandwich Pipeline Documentation](https://birchville-org.github.io/AlexandriaSandwich/en/WIKI_VERFAHREN/)**  
+>  
+> This repository `boethlingk` focuses exclusively on the **specific philological and typographical edition delta** (canonical state machine, 1:1 page parity, STIX Two Text font stack, TEI-P5 encoding).
 
 ---
 
-## 🏛️ Pipeline & Edition Architecture
+## 🏛️ Digital Edition Artifacts at a Glance
 
-```text
-┌────────────────────────────────────────────────────────────────────────┐
-│             ALEXANDRIASANDWICH (GENERIC CORE PIPELINE)                 │
-│  [Heidelberg IIIF] ──► [Mistral AI OCR] ──► [Margin Masking #f0e8d6]   │
-└───────────────────────────────────┬────────────────────────────────────┘
-                                    │ Bounding Boxes, Layout & Facsimiles
-                                    ▼
-┌────────────────────────────────────────────────────────────────────────┐
-│             BÖHTLINGK DELTA (CANONICAL EDITION LAYER)                  │
-│  [Step 1: Canonical Alignment]   ──► scripts/align_mistral_sutras.py   │
-│         │                            (8-Adhyāya State Machine)         │
-│         ▼                                                              │
-│  [Step 2: Master Consolidation]  ──► ashtadhyayi_complete_...json      │
-│         │                            (3,997 Sūtras gap-free)           │
-│         ▼                                                              │
-│  [Step 3: Edition Assembly]      ──► boehtlingk1887_p5.xml (TEI-P5)    │
-│                                      boethlingk1887_typeset_edition    │
-└────────────────────────────────────────────────────────────────────────┘
-```
+All print-ready and archival release files are available on the official GitHub Releases page:
 
----
+* **1:1 Dense Facsimile Typeset (Vector PDF):** `boethlingk1887_facsimile_dense.pdf` (8.58 MB · 484 pp.)  
+  Exact 1:1 page parity with the historical 1887 Leipzig print, adaptive typography, and STIX Two Text font stack with native IAST small caps (**PĀṆINI**, **MAHĀBHĀṢYA**).  
+  [:octicons-download-16: Release Download](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_facsimile_dense.pdf)
 
-## 🚀 Quickstart
+* **Modernized Book Edition (Vector PDF):** `boethlingk1887_typeset_edition.pdf` (8.81 MB · 512 pp.)  
+  Reflowable book layout in ISO B5 format optimized for continuous study.  
+  [:octicons-download-16: Release Download](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_typeset_edition.pdf)
 
-### Generate and Validate TEI-P5 XML
-```bash
-uv run --with lxml python3 scripts/generate_tei_p5.py \
-  --input data/ashtadhyayi_complete_boethlingk1887.json \
-  --output data/tei/boehtlingk1887_p5.xml \
-  --schema schemas/tei_all.rng
-```
+* **1:1 Sandwich PDF (Scan Facsimile):** `boehtlingk1887_sandwich.pdf` (248.8 MB · 478 pp.)  
+  High-resolution Heidelberg scans with Content-Aware Margin Masking and invisible OCR text layer (14,267 text blocks).  
+  [:octicons-download-16: Release Download](https://github.com/birchville-org/boethlingk/releases/latest/download/boehtlingk1887_sandwich.pdf)
 
-### Compile 1:1 Sandwich PDF
-```bash
-python3 scripts/build_sandwich_pdf.py \
-  --img-dir data/img_cache \
-  --mistral-dir data/mistral \
-  --master-json data/ashtadhyayi_complete_boethlingk1887.json \
-  --output data/output/boehtlingk1887_sandwich.pdf
-```
+* **Canonical Master Dataset (JSON):** `data/ashtadhyayi_complete_boethlingk1887.json` (2.85 MB)  
+  3,997 sūtras complete (14 Śiva-Sūtras + 3,983 Aṣṭādhyāyī sūtras, 0 duplicates, 0 gaps) with Devanāgarī, IAST, translation, and commentary.  
+  [:octicons-mark-github-16: View on GitHub](https://github.com/birchville-org/boethlingk/blob/main/data/ashtadhyayi_complete_boethlingk1887.json)
 
-### Compile Typeset Book PDF (Typst)
-```bash
-python3 scripts/build_typeset_edition.py
-```
+* **Schema-Valid TEI-P5 XML Edition:** `data/tei/boehtlingk1887_p5.xml` (2.90 MB)  
+  100% valid against TEI All RelaxNG (`schemas/tei_all.rng`) with 478 `<pb>` tags linked to Heidelberg IIIF manifests.  
+  [:octicons-mark-github-16: View on GitHub](https://github.com/birchville-org/boethlingk/blob/main/data/tei/boehtlingk1887_p5.xml)
+
+* **Reflowable EPUB 3 eBook:** `boethlingk1887.epub` (1.47 MB)  
+  Mobile e-book with embedded fonts (*Noto Serif Devanagari*) and hierarchical table of contents.  
+  [:octicons-download-16: Release Download](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887.epub)
+
+* **Standalone QA Viewer:** `viewer.html` (39 KB)  
+  Browser-based split-pane editor conforming to the Payer standard for direct local proofreading.  
+  [:octicons-eye-16: View on GitHub](https://github.com/birchville-org/boethlingk/blob/main/viewer.html)
+
+👉 **Comprehensive Artifact Details:** [Edition Artifacts & Downloads](artifacts.md)
 
 ---
 
-## 📖 Documentation Overview
+## 📖 Documentation Directory
 
-* [Academic Case Study (Pipeline Documentation)](case-study.md)
-* [Data Architecture & Three-Layer Model](data-architecture.md)
-* [Conventions & IIIF Specification](conventions.md)
-* [Wiki Index](wiki-home.md)
-
----
-
-## 📜 License & Provenance
-
-- **Historical Original**: Otto von Böhtlingk (1815–1904), *Pâṇini's Grammatik*, 2nd edition, Leipzig 1887 (Public Domain).
-- **Digital Edition, TEI-P5 & Pipeline**: [MIT License](https://github.com/birchville-org/boethlingk/blob/main/LICENSE) (Copyright (c) 2026 Marco Demarmels / Birchville Foundation).
-- **Referenced Projects**:
-  - [AlexandriaSandwich](https://github.com/birchville-org/AlexandriaSandwich) — Hybrid OCR & Book Digitization Pipeline
-  - [macdonell](https://github.com/birchville-org/macdonell) — A Vedic Grammar for Students (1916) 1:1 Typeset Edition
-  - [sanskritkurs-payer](https://github.com/birchville-org/sanskritkurs-payer) — Digital Payer Sanskrit Course
+* [📦 Edition Artifacts & Downloads](artifacts.md) – Comprehensive catalog of all release files with direct links
+* [🔍 The Böhtlingk Delta & Case Study](case-study.md) – Specific procedural extensions beyond the main pipeline
+* [🛠️ QA & Correction Workflow](qa-workflow.md) – Single Source of Truth & local proofreading in the QA viewer
+* [🏛️ Data Architecture](data-architecture.md) – Three-layer data model
+* [📜 Copyright & Provenance](copyright-and-provenance.md) – Heidelberg University Library source credits
+* [📐 Conventions](conventions.md) – Transliteration and encoding standards
+* [📚 Wiki Overview](wiki-home.md) – Cross-references and reference architecture

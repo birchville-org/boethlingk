@@ -17,7 +17,7 @@
 )
 
 #set text(
-  font: ("Libertinus Serif", "Linux Libertine O", "Noto Serif Devanagari", "Devanagari MT", "Times New Roman"),
+  font: ("STIX Two Text", "Noto Serif Devanagari", "Devanagari MT"),
   size: 9.5pt,
   lang: "de"
 )
@@ -77,7 +77,7 @@
 // Seite iii: Haupttitel (Historischer Satz nach Leipzig 1887)
 #align(center)[
   #v(2.0cm)
-  #text(22pt, weight: "bold", font: ("Baskerville", "Libertinus Serif", "Times New Roman"))[PĀṆINI'S GRAMMATIK]
+  #text(22pt, weight: "bold", font: ("STIX Two Text", "Noto Serif Devanagari"))[PĀṆINI'S GRAMMATIK]
   
   #v(0.8cm)
   #text(11pt, style: "italic")[herausgegeben, übersetzt, erläutert und mit verschiedenen Indices versehen]
@@ -114,7 +114,7 @@ Im Rahmen der *AlexandriaSandwich-Pipeline* wurden sämtliche 478 Buchseiten der
 *Typografische Grundsätze dieser Neuausgabe:*
 1. *Duale Zitationssicherheit:* Jedes Sūtra führt sowohl die kanonische Aṣṭādhyāyī-Zählung (z. B. `1.1.1`) als auch den exakten Seitenumbruch der historischen Leipziger Originalausgabe von 1887 (`📖 Böhtlingk (1887) S. 2`).
 2. *Authentische Hierarchie:* Der Devanāgarī-Sūtratext steht in typografisch hervorgehobenem Satz, gefolgt von Böhtlingks Übersetzung im Haupttext und seinem philologischen Kommentar im klassischen Kleindruck (*Petit*).
-3. *Vektorneusatz:* Gestochen scharfe Schrift auf Basis offener Schriften (*Libertinus Serif* und *Noto Serif Devanagari*) für ermüdungsfreies Lesen auf hochauflösenden Bildschirmen und professionellen Drucksystemen.
+3. *Vektorneusatz:* Gestochen scharfe Schrift auf Basis offener Schriften (*STIX Two Text* und *Noto Serif Devanagari*) für ermüdungsfreies Lesen auf hochauflösenden Bildschirmen und professionellen Drucksystemen.
 
 #v(1.5em)
 #align(right)[
@@ -182,7 +182,7 @@ Im Rahmen der *AlexandriaSandwich-Pipeline* wurden sämtliche 478 Buchseiten der
       #if calc.even(page_num) [
         #text(8.5pt, weight: "bold")[#page_num]
         #h(1fr)
-        #text(8pt, font: ("Libertinus Serif", "Linux Libertine O", "Times New Roman"))[#smallcaps[#cur_h1]]
+        #text(8pt, font: ("STIX Two Text", "Noto Serif Devanagari"))[#smallcaps[#cur_h1]]
         #h(1fr)
         #text(8.5pt, weight: "bold", fill: rgb("#03192e"))[#last_sutra_ref]
       ] else [
@@ -329,7 +329,7 @@ Im Rahmen der *AlexandriaSandwich-Pipeline* wurden sämtliche 478 Buchseiten der
                   ]
                 ],
                 [
-                  #text(10pt, font: ("Libertinus Serif", "Linux Libertine O"), fill: rgb("#03192e"))[
+                  #text(10pt, font: ("STIX Two Text", "Noto Serif Devanagari"), fill: rgb("#03192e"))[
                     #str(adh.num), #str(pada.num), #str(s.sutra_num).
                   ]
                 ]

@@ -48,13 +48,23 @@ plugins:
         - locale: en
           name: English
           build: true
+          nav_translations:
+            Startseite: Home
+            Editions-Artefakte & Downloads: Edition Artifacts & Downloads
+            Das Böhtlingk-Delta & Fallstudie: The Böhtlingk Delta & Case Study
+            QA- & Korrektur-Workflow: QA & Correction Workflow
+            Datenarchitektur: Data Architecture
+            Urheberrecht & Provenienz: Copyright & Provenance
+            Konventionen: Conventions
+            Wiki-Übersicht: Wiki Overview
 
 nav:
   - Startseite: index.md
-  - Fallstudie: case-study.md
+  - Editions-Artefakte & Downloads: artifacts.md
+  - Das Böhtlingk-Delta & Fallstudie: case-study.md
   - QA- & Korrektur-Workflow: qa-workflow.md
-  - Urheberrecht & Provenienz: copyright-and-provenance.md
   - Datenarchitektur: data-architecture.md
+  - Urheberrecht & Provenienz: copyright-and-provenance.md
   - Konventionen: conventions.md
   - Wiki-Übersicht: wiki-home.md
 

@@ -51,6 +51,7 @@ Boethlingk_Paninis_Grammatik_comp.md
 
 # Whitelist canonical & final data files
 !data/ashtadhyayi_complete_boethlingk1887.json
+!data/calibrated_dense_profiles.json
 !data/tei/boehtlingk1887_p5.xml
 !data/mistral/
 !data/mistral/**

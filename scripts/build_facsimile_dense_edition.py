@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-scripts/build_facsimile_dense_edition.py — Compiles the dense facsimile test edition
+scripts/build_facsimile_dense_edition.py — Compiles the dense facsimile edition
 of Otto von Böhtlingk's Pāṇini (1887), achieving exact 1:1 page parity with the
 historical 1887 Leipzig edition (each of pages 1–476 corresponds to exactly 1 page).
 """
@@ -170,11 +170,11 @@ def verify_page_parity(pdf_path: Path) -> None:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Compile dense facsimile test PDF of Boethlingk 1887")
+    parser = argparse.ArgumentParser(description="Compile dense facsimile edition of Boethlingk 1887")
     parser.add_argument(
         "--output",
         type=Path,
-        default=Path("data/output/boethlingk1887_facsimile_dense_test.pdf"),
+        default=Path("data/output/boethlingk1887_facsimile_dense.pdf"),
         help="Target PDF path",
     )
     parser.add_argument(
@@ -187,7 +187,7 @@ def main() -> None:
 
     t0 = time.time()
     print("=" * 70)
-    print("Kompiliere dichte Faksimile-Testausgabe (1:1-Seitenparität mit Böhtlingk 1887)...")
+    print("Kompiliere dichte Faksimile-Ausgabe (1:1-Seitenparität mit Böhtlingk 1887)...")
     print("=" * 70)
 
     # 1. Daten vorbereiten
@@ -218,7 +218,7 @@ def main() -> None:
     if args.sync:
         indologie_dest = Path("/Users/marco/Documents/00_Indologie/Panini")
         if indologie_dest.exists():
-            dest_file = indologie_dest / "BOETHLINGK 1887 Panini Grammatik (Dichte Faksimile-Testausgabe).pdf"
+            dest_file = indologie_dest / "BOETHLINGK 1887 Panini Grammatik (Dichte Faksimile-Ausgabe).pdf"
             shutil.copy2(args.output, dest_file)
             print(f"✓ Synchronisiert nach Indologie-Arbeitsordner: {dest_file}")
     else:

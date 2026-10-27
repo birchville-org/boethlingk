@@ -1,10 +1,10 @@
 // =============================================================================
-// Birchville Scholarly Synthesis — Dichte Faksimile-Testausgabe (Böhtlingk 1887)
+// Birchville Scholarly Synthesis — Dichte Faksimile-Ausgabe (Böhtlingk 1887)
 // Exakte 1:1-Seitenparität mit adaptivem Satzspiegel & maximaler Raumausnutzung
 // =============================================================================
 
 #set document(
-  title: "Pāṇini's Grammatik (Otto von Böhtlingk, 1887) — Dichte Faksimile-Testausgabe",
+  title: "Pāṇini's Grammatik (Otto von Böhtlingk, 1887) — Dichte Faksimile-Ausgabe",
   author: "Otto von Böhtlingk (Ed. Marco Demarmels / Birchville Foundation)",
   keywords: ("Pāṇini", "Aṣṭādhyāyī", "Sanskrit", "Grammatik", "Böhtlingk", "Indologie", "Birchville")
 )
@@ -42,7 +42,7 @@
   #v(0.6cm)
   #text(9pt, style: "italic", fill: rgb("#334155"))[Otto von Böhtlingk (Leipzig 1887)] \
   #v(0.3cm)
-  #text(8.5pt, fill: rgb("#b45309"), weight: "bold")[Dichte Faksimile-Testausgabe (1:1-Seitenparität mit dem Originaldruck)]
+  #text(8.5pt, fill: rgb("#b45309"), weight: "bold")[Dichte Faksimile-Ausgabe (1:1-Seitenparität mit dem Originaldruck)]
 ]
 
 #pagebreak()
@@ -103,7 +103,7 @@
 
 #pagebreak()
 
-// Seite iv: Vorwort zur dichten Faksimile-Testausgabe
+// Seite iv: Vorwort zur dichten Faksimile-Ausgabe
 #heading(level: 1, numbering: none, outlined: false)[Vorwort zur dichten Faksimile-Ausgabe]
 
 #v(0.5em)
@@ -278,7 +278,7 @@ Die vorliegende Edition von Otto von Böhtlingks *Grammatik des Pāṇini* (Leip
 )
 
 // =============================================================================
-// 4. ŚIVA-SŪTRAS (AKṢARASAMĀMNĀYA) — BÖHTLINGK S. 1 (KLASSISCHES 2-SPALTEN-LAYOUT)
+// 4. ŚIVA-SŪTRAS (AKṢARASAMĀMNĀYA) — BÖHTLINGK S. 1 (KLASSISCHES 2-SPALTEN-LAYOUT MIT EINFÜHRUNG)
 // =============================================================================
 
 #let shiva_canonical = (
@@ -298,50 +298,64 @@ Die vorliegende Edition von Otto von Böhtlingks *Grammatik des Pāṇini* (Leip
   (14, "ह ल्", "ha l"),
 )
 
-#v(0.8cm)
+#v(0.2cm)
 
-#heading(level: 1, outlined: false)[Śiva-Sūtras (Akṣarasamāmnāya)]
+#grid(
+  columns: (auto, 1fr, auto),
+  [#text(9.5pt, weight: "bold")[1]],
+  align(center)[#text(14.5pt, weight: "bold", font: ("Noto Serif Devanagari", "Devanagari MT"))[॥ अथ शब्दानुशासनम् ॥]],
+  []
+)
 
-#v(0.4em)
+#v(-0.2em)
 #align(center)[
-  #text(8.5pt, style: "italic", fill: rgb("#334155"))[
-    Die 14 kanonischen Lautgruppen zur Bildung der grammatischen Pratyāhāras (Böhtlingk 1887, S. 1).
+  #text(8.2pt, style: "italic", fill: rgb("#334155"))[
+    Śiva-Sūtras (Akṣarasamāmnāya) — Die 14 kanonischen Lautgruppen der Pratyāhāras (Böhtlingk 1887, S. 1).
   ]
 ]
-#v(1.8em)
+#v(0.5em)
 
 #grid(
   columns: (1fr, 1fr),
-  gutter: 2.5em,
+  gutter: 1.8em,
   [
     #for s in shiva_canonical.slice(0, 7) [
       #align(center)[
-        #text(12.5pt, weight: "bold", font: ("Noto Serif Devanagari", "Devanagari MT"))[
+        #text(11.0pt, weight: "bold", font: ("Noto Serif Devanagari", "Devanagari MT"))[
           #s.at(1) ॥ #to-deva(s.at(0)) ॥
         ]
-        #v(-0.3em)
-        #text(8.5pt, style: "italic", fill: rgb("#334155"))[
+        #v(-0.35em)
+        #text(7.8pt, style: "italic", fill: rgb("#334155"))[
           (Śiva-Sūtra #s.at(0) — #s.at(2))
         ]
       ]
-      #v(0.85em)
+      #v(0.35em)
     ]
   ],
   [
     #for s in shiva_canonical.slice(7, 14) [
       #align(center)[
-        #text(12.5pt, weight: "bold", font: ("Noto Serif Devanagari", "Devanagari MT"))[
+        #text(11.0pt, weight: "bold", font: ("Noto Serif Devanagari", "Devanagari MT"))[
           #s.at(1) ॥ #to-deva(s.at(0)) ॥
         ]
-        #v(-0.3em)
-        #text(8.5pt, style: "italic", fill: rgb("#334155"))[
+        #v(-0.35em)
+        #text(7.8pt, style: "italic", fill: rgb("#334155"))[
           (Śiva-Sūtra #s.at(0) — #s.at(2))
         ]
       ]
-      #v(0.85em)
+      #v(0.35em)
     ]
   ]
 )
+
+#v(0.4em)
+#line(length: 100%, stroke: 0.35pt + rgb("#d8d2c6"))
+#v(0.3em)
+
+#text(8.6pt)[
+#set par(justify: true, leading: 0.40em)
+#h(1.2em) Die vorstehenden, das Alphabet enthaltenden Sūtra führen den Namen #text(font: ("Noto Serif Devanagari"))[प्रत्याहारसूत्राणि] oder #text(font: ("Noto Serif Devanagari"))[अक्षरसमाम्नाय], später auch #text(font: ("Noto Serif Devanagari"))[शिवसूत्राणि] oder #text(font: ("Noto Serif Devanagari"))[माहेश्वराणि सूत्राणि]. Am Ende eines jeden Sūtra steht ein Consonant mit dem Virāma, der an dieser Stelle nicht zum Alphabet gehört, sondern nur dazu dient eine Anzahl von Lauten in kürzester Form zu bezeichnen. Dieses geschieht auf die Weise, dass man den ersten Laut der zusammenzufassenden Gruppe mit dem auf den letzten Laut dieser Gruppe folgenden vocallosen Consonanten verbindet (1, 1, 71). So bezeichnet z. B. #text(font: ("Noto Serif Devanagari"))[अण्] die Vocale #text(font: ("Noto Serif Devanagari"))[अ], #text(font: ("Noto Serif Devanagari"))[इ], #text(font: ("Noto Serif Devanagari"))[उ]; #text(font: ("Noto Serif Devanagari"))[एङ्] die Diphthonge #text(font: ("Noto Serif Devanagari"))[ए], #text(font: ("Noto Serif Devanagari"))[ओ]; #text(font: ("Noto Serif Devanagari"))[एच्] alle Diphthonge; #text(font: ("Noto Serif Devanagari"))[अच्] alle Vocale, #text(font: ("Noto Serif Devanagari"))[हल्] alle Consonanten, #text(font: ("Noto Serif Devanagari"))[अल्] alle Laute. Die Consonanten sind so angeordnet, wie es die Grammatik bei der Lehre von den Lautveränderungen verlangt. #text(font: ("Noto Serif Devanagari"))[ह] erscheint zweimal, um die Sigla (प्रत्याहार) #text(font: ("Noto Serif Devanagari"))[हल्] und #text(font: ("Noto Serif Devanagari"))[हश्] bilden zu können. Um die Consonanten in der Reihenfolge, wie wir sie kennen, nach Gruppen zusammenzufassen, setzt Pāṇini an den ersten Consonanten der Gruppe den Vocal #text(font: ("Noto Serif Devanagari"))[उ]; so bezeichnet #text(font: ("Noto Serif Devanagari"))[कु] die Gutturale, #text(font: ("Noto Serif Devanagari"))[चु] die Palatale u. s. w. (1, 1, 69). Die langen Vocale fehlen im Alphabet, weil in Pāṇini's Grammatik der kurze Vocal auch die entsprechende Länge in sich begreift; soll diese ausgeschlossen werden, so wird dem kurzen Vocal #text(font: ("Noto Serif Devanagari"))[त्] angefügt (1, 1, 70). Pāṇini verwendet folgende 40 Sigla: #text(font: ("Noto Serif Devanagari"))[अक्, अच्, अट्, अण्] (als Bezeichnung zweier Gruppen), #text(font: ("Noto Serif Devanagari"))[अम्, अल्, अश्, इक्, इच्, इण्, उक्, एङ्, एच्, ऐच्, खय्, खर्, ङम्, चर्, छव्, जश्, झय्, झर्, झल्, झश्, झष्, बश्, भष्, मय्, यञ्, यण्, यम्, यय्, यर्, रल्, वल्, वश्, शर्, शल्, हल्] und #text(font: ("Noto Serif Devanagari"))[हश्].
+]
 
 #pagebreak()
 
