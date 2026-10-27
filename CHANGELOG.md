@@ -2,6 +2,29 @@
 
 Alle wesentlichen Änderungen und Meilensteine dieses Projekts werden in dieser Datei dokumentiert.
 
+## [1.6.0] - 2026-10-27
+
+### Added
+- **STIX Two Text Typografie-Stack:**
+  - Vollständige Umstellung der Primärschrift für Latein und IAST auf *STIX Two Text* mit nativer OpenType-Kapitälchen-Unterstützung für alle diakritischen Großbuchstaben (**PĀṆINI**, **MAHĀBHĀṢYA**, **BHAṬṬOJI DĪKṢITA**).
+- **Dichte Faksimile-Neuausgabe (1:1-Seitenparität, 484 Seiten):**
+  - `boethlingk1887_facsimile_dense.pdf` (8,58 MB): Vollständiger Neusatz mit exakter 1:1-Seitenparität zum historischen Original von 1887 (0 Seiten Überlauf).
+  - 6-stufiges adaptives typografisches Layoutmodell mit dynamischer Skalierung von Schriftgrad und Durchschuss je nach Textlast.
+  - Vollständige Restauration des zweispaltigen Tableaus der 14 Śiva-Sūtras auf Seite 1.
+  - Rekonstruktion und Bereinigung systemischer OCR-Artefakte und Zeilenumbrüche.
+- **Automatisiertes Quality-Gate-Framework:**
+  - `tests/test_page_parity.py`: Verifikation von 0 Überläufen über alle 476 Textseiten.
+  - `tests/test_text_integrity.py`: Vollständigkeitsprüfung aller 3.997 Sūtras und Corrigenda.
+  - `tests/test_typeset_symmetry.py`: Audit der lebenden Kolumnentitel und Pāṇini-Marginalien.
+- **Editions-Artefakte-Katalog (`docs/de/artifacts.md`, `docs/en/artifacts.md`):**
+  - Zentrale Dokumentation aller 7 Artefakte mit Format, Umfang, Einsatzprofil und direkten Download-Links.
+
+### Changed
+- **Dokumentations-Entflechtung:**
+  - Referenzierung von AlexandriaSandwich für die generische Pipeline und Fokussierung auf das spezifische philologische Editions-Delta.
+- **Nüchterne Sprachnorm:**
+  - Bereinigung aller Projektbeschreibungen und Dokumente gemäß Birchville-Standard.
+
 ## [1.5.0] - 2026-10-24
 
 ### Added
