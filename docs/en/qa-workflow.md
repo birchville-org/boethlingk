@@ -89,27 +89,31 @@ If you know the Sūtra reference (e.g., `1.1.4`):
 
 After saving your corrections, run the build scripts from the terminal:
 
-### 1. Rebuild Typst Book Edition (Build time: ~0.9 seconds)
+### 1. Rebuild 1:1 Dense Facsimile Edition (Build time: ~10 seconds)
+```bash
+python3 scripts/build_facsimile_dense_edition.py
+```
+Generates the publication-ready 1:1 facsimile typeset with exact historical page parity (0 overflows) at:  
+👉 `data/output/boethlingk1887_facsimile_dense.pdf` (484 pages)
+
+### 2. Rebuild Reflowable Book Edition (Build time: ~0.9 seconds)
 ```bash
 python3 scripts/build_typeset_edition.py
 ```
-Generates the publication-ready 737-page vector PDF:  
-👉 `data/output/boethlingk1887_typeset_edition.pdf`
+Generates the modernized study vector PDF in ISO B5 format at:  
+👉 `data/output/boethlingk1887_typeset_edition.pdf` (512 pages)
 
-### 2. Generate & Validate TEI-P5 XML Edition (Build time: ~3 seconds)
+### 3. Generate & Validate TEI-P5 XML Edition (Build time: ~3 seconds)
 ```bash
 python3 scripts/generate_tei_p5.py
 ```
 Updates `data/tei/boehtlingk1887_p5.xml` and validates it against the official TEI RelaxNG schema (`schemas/tei_all.rng`).
 
-### 3. (Optional) Rebuild 1:1 Sandwich PDF
+### 4. Generate Reflowable EPUB 3 E-Book
 ```bash
-python3 scripts/build_sandwich_pdf.py \
-  --img-dir data/img_cache \
-  --mistral-dir data/mistral \
-  --master-json data/ashtadhyayi_complete_boethlingk1887.json \
-  --output data/output/boehtlingk1887_sandwich.pdf
+python3 scripts/export_epub.py
 ```
+Produces the mobile e-reader book at `data/output/boethlingk1887.epub`.
 
 ---
 

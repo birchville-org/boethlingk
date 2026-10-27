@@ -62,30 +62,28 @@ Layer 3 — Kanonische Master-JSON & TEI-P5-XML-Edition
 
 ---
 
-## 3. End-to-End Verarbeitungs-Pipeline
+## 3. Schnittstelle zur Hauptpipeline & Verarbeitungsstufen
+
+Die Datenverarbeitung ist strikt zwischen der vorgeschalteten Hauptpipeline ([AlexandriaSandwich](https://birchville-org.github.io/AlexandriaSandwich/)) und dem Editions-Satelliten aufgeteilt:
 
 ```text
-[IIIF-Faksimiles UB Heidelberg]
-       │
-       ▼
-[Stufe 1: Lokales Image Caching] ──► data/img_cache/*.jpg
-       │
-       ▼
-[Stufe 2: Multimodale KI-OCR] ─────► data/mistral/ (*.md, *.json via mistral-ocr-latest)
-       │
-       ▼
-[Stufe 3: Kanonisches Alignment] ──► scripts/align_mistral_sutras.py
-       │                              (SequenceMatcher-Abgleich gegen data/sutras.json)
-       ▼
-[Stufe 4: Master-Konsolidierung] ──► data/ashtadhyayi_complete_boethlingk1887.json
-       │                              (Single Source of Truth, 3.997 Sūtras)
-       ▼
-[Stufe 5: Multi-Artefakt-Build]
-       ├── TEI-P5 XML:          data/tei/boehtlingk1887_p5.xml
-       ├── 1:1 Sandwich-PDF:    data/output/boehtlingk1887_sandwich.pdf
-       ├── Typst-Neuausgabe:    data/output/boethlingk1887_typeset_edition.pdf
-       ├── Reflowable EPUB 3:   data/output/boethlingk1887.epub
-       └── QA-Viewer:           viewer.html
+┌────────────────────────────────────────────────────────────┐
+│ ALEXANDRIASANDWICH (VORGESCHALTETE HAUPTPIPELINE)          │
+│ • IIIF-Ingestion & lokales Image Caching (data/img_cache/) │
+│ • Falz- und Randbereinigung (#f0e8d6)                      │
+│ • Multimodale KI-OCR via Mistral AI (data/mistral/)        │
+│ • Bounding-Boxen & unstrukturierte Layout-Geometrie        │
+└─────────────────────────────┬──────────────────────────────┘
+                              │ Übergabe von Layer 1 & 2
+                              ▼
+┌────────────────────────────────────────────────────────────┐
+│ BOETHLINGK (PHILOLOGISCHE EDITIONS-PIPELINE)               │
+│ • Stufe 1: Kanonische Statusmaschine (scripts/align_...)   │
+│ • Stufe 2: Master-JSON (ashtadhyayi_complete_...json)      │
+│ • Stufe 3: Adaptive volumetrische Typografie & 1:1-Neusatz │
+│ • Stufe 4: TEI-P5-XML & EPUB 3 Serialisierung              │
+│ • Stufe 5: Visuelle Kuration via QA-Viewer (viewer.html)   │
+└────────────────────────────────────────────────────────────┘
 ```
 
 ---
@@ -98,6 +96,6 @@ Layer 3 — Kanonische Master-JSON & TEI-P5-XML-Edition
 | **Gesamte Sūtra-Zahl** | 3.997 Sūtras | 14 Śiva-Sūtras + 3.983 Aṣṭādhyāyī-Sūtras (100,0 % lückenlos) |
 | **Duplikate / Fehlstellen** | 0 / 0 | Vollständig abgeglichen gegen kanonischen Sūtrapāṭha |
 | **Sandwich-PDF Textblöcke** | 14.267 Blöcke | Pixelgenaue unsichtbare Vektor-Textebene (PDF Render Mode 3) |
-| **Typst-Buchumfang** | 737 Seiten | Neu gesetzter Vektorsatz in ISO B5 |
+| **1:1 Faksimile-Neusatz** | 484 Seiten | Strikte 1:1-Seitenparität zu Leipzig 1887 (0 Überläufe) |
+| **Fließende Buchausgabe** | 512 Seiten | Modernisierter Lesesatz im ISO B5-Format |
 | **TEI-Validierung** | 0 Fehler | 100 % schema-konform gegen RelaxNG (`tei_all.rng`) |
-| **OCR-Gesamtkosten** | 1,912 $ | 478 Seiten x 0,004 $ via Mistral AI API |

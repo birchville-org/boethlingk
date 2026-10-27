@@ -163,9 +163,8 @@ Alle druck- und archivfertigen Ausgabedateien stehen über die offizielle GitHub
 ## 📖 Dokumentationsübersicht
 
 * [📦 Editions-Artefakte & Downloads](artifacts.md) – Alle Ausgabedateien im Detail mit Release-Links
-* [🔍 Das Böhtlingk-Delta & Fallstudie](case-study.md) – Spezifische Verfahrensunterschiede zur Hauptpipeline
+* [🔍 Das Böhtlingk-Delta & Methodik](case-study.md) – Methodische Differenzierung und Rechtfertigung des Editionsprojekts
 * [🛠️ QA- & Korrektur-Workflow](qa-workflow.md) – Single Source of Truth & lokale Korrektur im QA-Viewer
 * [🏛️ Datenarchitektur](data-architecture.md) – Das 3-Schichten-Datenmodell
 * [📜 Urheberrecht & Provenienz](copyright-and-provenance.md) – Quellennachweise der UB Heidelberg
 * [📐 Konventionen](conventions.md) – Transliterations- und Codierungsstandards
-* [📚 Wiki-Übersicht](wiki-home.md) – Querverweise und Referenzarchitektur

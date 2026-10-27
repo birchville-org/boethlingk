@@ -1,97 +1,107 @@
-# Das Böhtlingk-Delta & Philologische Fallstudie
+# Das Böhtlingk-Delta: Methodik & Rechtfertigung des Editionsprojekts
 
 > **Wissenschaftliche Edition, kanonisches Sūtra-Alignment und typografischer 1:1-Faksimile-Neusatz von Otto von Böhtlingks *Grammatik des Pāṇini* (Leipzig 1887).**
 >
 > 🔗 **Projekt-Repository:** [github.com/birchville-org/boethlingk](https://github.com/birchville-org/boethlingk)  
-> 🔗 **Zentrale Verfahrenspipeline:** [AlexandriaSandwich Verfahrensdokumentation](https://birchville-org.github.io/AlexandriaSandwich/de/WIKI_VERFAHREN/)  
+> 🔗 **Zentrale Verfahrenspipeline:** [AlexandriaSandwich](https://birchville-org.github.io/AlexandriaSandwich/)  
 > 📦 **Alle Downloads:** [Editions-Artefakte & Downloads](artifacts.md)
 
 ---
 
-## 1. Ausgangslage & Abgrenzung zur Hauptpipeline
+## 1. Rechtfertigung für ein eigenständiges Editionsprojekt
 
-Otto von Böhtlingks monumentale Ausgabe *Pâṇini's Grammatik* (2. Auflage, Leipzig 1887, Verlag von H. Haessel) ist das weltweit maßgebliche philologische Referenzwerk für das altindische grammatische System der Aṣṭādhyāyī. Das Werk vereint auf 478 Buchseiten drei Schriftsysteme:
-1. **Sanskrit in Devanāgarī:** Historischer 19.-Jh.-Bleisatz mit komplexen Ligaturen und Virāmas.
-2. **Deutsch in historischer Antiqua:** Fachwissenschaftliche Übersetzung und grammatischer Apparat.
-3. **IAST-Transliteration:** Lateinschrift mit multiplen kombinierten Diakritika (`ā`, `ī`, `ū`, `ṛ`, `ṝ`, `ḷ`, `ṃ`, `ḥ`, `ṅ`, `ñ`, `ṭ`, `ḍ`, `ṇ`, `ś`, `ṣ`) und vedischen Akzenten.
+Warum reicht für ein Werk wie Otto von Böhtlingks *Pâṇini's Grammatik* (2. Auflage, Leipzig 1887) nicht der reguläre Durchlauf durch die generische Digitalisierungs-Pipeline [AlexandriaSandwich](https://birchville-org.github.io/AlexandriaSandwich/)?
 
-> ℹ️ **Verfahrensabgrenzung:**  
-> Alle generischen Schritte der Bilddigitalisierung, des IIIF-Cachings, der multimodalen KI-OCR (`mistral-ocr-latest`), des Content-Aware Margin Maskings (`#f0e8d6`) sowie der Erzeugung von 1:1 Sandwich-PDFs werden von der übergeordneten **[AlexandriaSandwich-Hauptpipeline](https://birchville-org.github.io/AlexandriaSandwich/de/WIKI_VERFAHREN/)** bereitgestellt.  
->  
-> Dieses Dokument beschreibt **ausschließlich das spezifische Editions-Delta** des Projekts `boethlingk`: die kanonische Sūtra-Segmentierung, die philologische Korrektur, die 1:1-Seitenparität im Neusatz sowie die TEI-P5-Modellierung.
+AlexandriaSandwich ist als universelle, zustandslose Engine konzipiert: Sie transformiert historische Buchscans in bereinigte, durchsuchbare 1:1 Sandwich-PDFs und Rohtexte. Bei monumentalen, mehrsprachigen Referenzwerken der Philologie stößt eine rein vollautomatische Pipeline jedoch an fundamentale Systemgrenzen.
+
+Die Ausgründung von `boethlingk` als **eigenständiges Editions-Projekt (Satelliten-Architektur)** stützt sich auf vier tragende Säulen:
+
+### A. Schutz der Hauptpipeline vor der „Monolith-Falle“ (*YAGNI-Prinzip*)
+Würde man versuchen, die hochgradig spezifischen grammatischen Regeln der Aṣṭādhyāyī (3.997 Sūtras, 32 Pādas, historische Kolophone, zweisprachige Petit-Kommentare) direkt in die Kernskripte von AlexandriaSandwich einzubetten, würde die Plattform unwartbar überfrachtet. AlexandriaSandwich bleibt schlank, universell und robust für 90 % aller Standardbücher, während die philologische Domänenlogik vollständig im Editions-Satelliten isoliert ist.
+
+### B. Wahrung der historischen 1:1-Zitierfähigkeit (Seitenparität)
+Seit 1887 zitiert die weltweite Indologie Pāṇini nach den Original-Seitenzahlen des Leipziger Erstdrucks von Haessel („Böhtlingk S. 42“). Eine standardmäßige Neusatz-Pipeline bricht Text dynamisch um, wodurch die historische Seitenzählung sofort kollabiert. Das Projekt `boethlingk` garantiert durch ein spezielles volumetrisches Kalibrierungsverfahren **strikte 1:1-Seitenkongruenz auf allen 476 Originalseiten** bei 0 Überläufen.
+
+### C. Kanonische Struktur vs. Prosa-Fließtext
+Böhtlingks Werk ist kein fortlaufender Lesetext, sondern ein geschlossenes hierarchisches Regelsystem:
+* 14 vorangestellte Śiva-Sūtras (Lautsystem)
+* 3.983 Aṣṭādhyāyī-Sūtras in 8 Büchern (Adhyāyas) und 32 Abschnitten (Pādas)
+* Historischer dreisprachiger Schriftsatz (Devanāgarī, deutsche Antiqua, wissenschaftliche IAST-Transliteration mit vedischen Akzenten)
+* Nachträge und Berichtigungen (Corrigenda S. 477–480)
+
+Diese Struktur erfordert deterministische Übergangs-Statusmaschinen und Ground-Truth-Validierungen, die weit über generische OCR hinausgehen.
+
+### D. Dauerhafte wissenschaftliche Kuration & Versionierung
+Eine wissenschaftliche Edition ist kein Einmal-Export, sondern ein dynamisches Forschungsinstrument. Typografische Unschärfen, Devanāgarī-Ligaturen oder IAST-Diakritika müssen im Laufe der wissenschaftlichen Nutzung kollationiert, korrigiert und über ein transparentes **Branch- und Pull-Request-Verfahren** in Git versioniert werden.
 
 ---
 
-## 2. Architektur: Pipeline vs. Editions-Delta
+## 2. Architektur: AlexandriaSandwich (Plattform) vs. Böhtlingk (Edition)
+
+Die Rollenteilung zwischen der übergeordneten Verarbeitungs-Engine und dem Editions-Satelliten ist präzise definiert:
 
 ```text
 ┌────────────────────────────────────────────────────────────────────────┐
 │             ALEXANDRIASANDWICH (GENERISCHE HAUPTPIPELINE)              │
 │  • IIIF-Scan-Ingestion (UB Heidelberg: boehtlingk1887)                 │
-│  • Multimodale KI-OCR (mistral-ocr-latest) & Bounding-Box-Geometrie    │
-│  • Content-Aware Margin Masking (Falz- & Ränderbereinigung #f0e8d6)    │
-│  • Sandwich-PDF-Schichtung (unsichtbare Vektorschrift-Ebene)           │
-│  • Lokale VLM-Benchmarks & n8n-Workflow-Automatisierung                │
+│  • Falz- & Ränderbereinigung / Content-Aware Margin Masking (#f0e8d6)  │
+│  • Multimodale KI-OCR (mistral-ocr-latest) & Wort-Bounding-Boxes       │
+│  • Generische Sandwich-PDF-Schichtung (unsichtbarer Vektortext)        │
+│  🔗 Dokumentation: https://birchville-org.github.io/AlexandriaSandwich/ │
 └───────────────────────────────────┬────────────────────────────────────┘
-                                    │ Layout, Geometrie & Rohfaksimiles
+                                    │ Bounding-Boxes, Layout & Rohfaksimiles
                                     ▼
 ┌────────────────────────────────────────────────────────────────────────┐
 │                   DAS BÖHTLINGK-DELTA (EDITIONS-SCHICHT)               │
-│  • Delta 1: Kanonische 8-Adhyāya-Statusmaschine (align_mistral_sutras) │
-│  • Delta 2: Fuzzy-SequenceMatcher gegen Aṣṭādhyāyī-Ground-Truth        │
-│  • Delta 3: 1:1 Faksimile-Neusatz mit adaptiver Typografie (Typst)     │
-│  • Delta 4: STIX Two Text Fontstack für native IAST-Kapitälchen        │
-│  • Delta 5: TEI-P5-XML auf Sūtra-Ebene & reflowable EPUB 3             │
+│  1. Kanonische Sūtra-Statusmaschine (8 Adhyāyas / 32 Pādas / 3.997 S.) │
+│  2. Philologischer Abgleich gegen Aṣṭādhyāyī-Ground-Truth              │
+│  3. 1:1 Faksimile-Neusatz mit volumengesteuerter adaptiver Typografie  │
+│  4. STIX Two Text Fontstack für native IAST-Kapitälchen                │
+│  5. TEI-P5-XML auf Sūtra-Ebene & autarker Split-Pane-QA-Viewer         │
 └────────────────────────────────────────────────────────────────────────┘
 ```
 
-### 2.1 Das Triage- & Ökonomie-Modell (Plattform vs. Editions-Satelliten)
-
-Die Trennung zwischen generischer Plattform und spezialisiertem Projekt ist strategisch und ökonomisch geboten:
-1. **Schutz vor der Monolith-Falle:** Würde die zentrale Engine von `alex.birchville.org` versuchen, die semantischen Sonderregeln von Monumentalwerken (wie Böhtlingks Pāṇini, Grassmanns Rigveda oder mehrbändige Wörterbücher) intern zu lösen, würde das System überfrachtet und instabil.
-2. **Ökonomische Triage:** Für 80–90 % der Standardwerke liefert AlexandriaSandwich vollautomatisch bei Grenzkosten nahe null durchsuchbare Sandwich-PDFs.
-3. **Entscheidungsgabelung bei Nichterfüllung:** Reicht das automatisierte Standardergebnis nicht aus, erfolgt eine Begutachtung:
-   * **Pfad A (Generischer Bug):** Die Hauptpipeline wird verbessert; alle zukünftigen Scans profitieren.
-   * **Pfad B (Echter Spezialfall):** Ausgründung als eigenständiger Editions-Satellit (wie `boethlingk`), der auf den Rohdaten von AlexandriaSandwich aufsetzt und domänenspezifische Kuration, 1:1-Faksimile-Neusatz und TEI-P5-Modellierung autark abbildet.
-4. **Verfahrensdokumentation:** Siehe [AlexandriaSandwich Triage- & Ökonomie-Modell](https://birchville-org.github.io/AlexandriaSandwich/de/EVOLUTION_WORKFLOW/#3-das-triage-okonomie-modell-core-pipeline-vs-editions-satelliten).
+> ℹ️ **Verfahrens-Referenz:**  
+> Alle generischen Schritte der Bildoptimierung, OCR-Schwellenwerte und Sandwich-Assemblierung sind in der [AlexandriaSandwich Verfahrensdokumentation](https://birchville-org.github.io/AlexandriaSandwich/de/WIKI_VERFAHREN/) sowie im [Triage- und Ökonomie-Modell](https://birchville-org.github.io/AlexandriaSandwich/de/EVOLUTION_WORKFLOW/#3-das-triage-okonomie-modell-core-pipeline-vs-editions-satelliten) beschrieben.
 
 ---
 
-## 3. Das Böhtlingk-Delta im Detail
+## 3. Das Methoden-Delta im Detail
+
+Das spezifische Editions-Delta von `boethlingk` umfasst 5 wesentliche philologische und technische Entwicklungen:
 
 ### 3.1 Delta 1: Kanonische Sūtra-Statusmaschine (`scripts/align_mistral_sutras.py`)
-Das Werk folgt der strikten kanonischen Gliederung der Aṣṭādhyāyī:
-* **Kanonische Struktur:** 8 Adhyāyas zu je exakt 4 Pādas (32 Pādas gesamt) mit 3.983 Aṣṭādhyāyī-Sūtras plus 14 vorgeschalteten Śiva-Sūtras (**3.997 Sūtras gesamt**).
-* **Deterministischer Pāda- & Adhyāya-Rollover:** Erreicht die Erkennung das Ende eines Pādas, erzwingt die Statusmaschine den deterministischen Übergang (`state["adhyaya"] += 1, state["pada"] = 1`), selbst wenn der historische Kolophon im Scan verwischt oder unvollständig erkannt wurde.
-* **Corrigenda-Isolation:** Nachträge und Korrekturen Böhtlingks (S. 477–480) nach dem Schlusssūtra 8.4.68 (`अ अ`) werden isoliert erfasst und kontaminieren nicht den Kommentarapparat.
+* **Deterministischer Rollover:** Die Statusmaschine erzwingt beim Erreichen des Pāda-Endes den kanonischen Übergang (`adhyaya += 1, pada = 1`), selbst wenn historische Abschlusskolophone im Originalscan abgerieben oder beschädigt waren.
+* **Corrigenda-Isolation:** Nachträge und Berichtigungen Böhtlingks (S. 477–480) nach dem Schlusssūtra 8.4.68 (`अ अ`) werden isoliert erfasst und kontaminieren nicht den vorangehenden Kommentar.
 
-### 3.2 Delta 2: Fuzzy Canonical Matching gegen die Ground-Truth
-Aufgrund historisch vergilbter Typen verwechselte die OCR gelegentlich Devanāgarī-Ziffern (z. B. ८ als ६, also `६५` statt `८५`):
-* **SequenceMatcher-Abgleich:** Weicht eine Sūtra-Nummer ab, vergleicht der Algorithmus den normalisierten Devanāgarī-Text mit dem erwarteten Sūtra aus der Referenzdatenbank `data/sutras.json`.
-* **Korrekturschwelle:** Bei einer Ähnlichkeit >= 0,45 wird der Sūtra-Zähler automatisch auf die kanonische Zählung korrigiert.
-* **Lange Sanskrit-Komposita:** Sūtras mit bis zu 350 Zeichen ohne führendes `#`-Zeichen (z. B. 5.4.77 mit 185 Zeichen) werden über Danda-Muster (`॥...॥`) zuverlässig als Sūtra-Kopf erkannt und sauber von der Übersetzung getrennt.
+### 3.2 Delta 2: Fuzzy Ground-Truth-Matching & Komposita-Zerlegung
+* **Ziffern-Desambiguierung:** Historische Bleisatz-Ziffern in Devanāgarī werden von OCR-Modellen häufig verwechselt (z. B. ۸ als ६). Der Matcher gleicht abweichende Ziffernfolgen mit dem normalisierten Text der Aṣṭādhyāyī-Referenzdatenbank ab (Schwellenwert >= 0,45) und stellt die korrekte Sūtra-Nummerierung automatisch wieder her.
+* **Komposita-Erkennung:** Überlange Sūtras ohne Überschrifts-Tokens (bis zu 350 Zeichen, z. B. 5.4.77) werden über Danda-Muster (`॥...॥`) zuverlässig isoliert und sauber von der deutschen Übersetzung getrennt.
 
-### 3.3 Delta 3: 1:1 Faksimile-Neusatz mit adaptiver Typografie (`boethlingk1887_facsimile_dense.typ`)
-Im Unterschied zur allgemeinen Typst-Buchausgabe rekonstruiert die Faksimile-Ausgabe den historischen Leipziger Satzspiegel mit **exakter 1:1-Seitenkongruenz**:
-* **1:1-Seitenparität:** Jede Originalseite (S. 1 bis 476) beginnt und endet am selben Sūtra wie bei Böhtlingk 1887 (**0 Seiten Überlauf** bei 484 Gesamtseiten). Sämtliche Zitate nach Seitenzahlen stimmen 1:1 überein.
-* **Adaptive Typografie (6-Stufen-Modell):** Um zu verhindern, dass leichte Seiten oben zusammengequetscht wirken und textstarke Seiten überlaufen, steuert ein 6-stufiges Profil (`scripts/prepare_facsimile_dense_data.py`) Durchschuss, Schriftgrad und Sūtra-Spatien dynamisch:
-  * *Level 0 (Extremste Dichte: nur S. 282 & 286 mit 11 dichten Sūtras):* Body 8,1 pt, Petit 6,9 pt, Spatium 0,06 em.
-  * *Level 1 (Hohe Dichte: z. B. S. 3, 70, 378 mit 10–12 Sūtras):* Body 8,4 pt, Petit 7,2 pt, Spatium 0,12 em.
-  * *Level 2 (Kompakt: textstarke Seiten):* Body 8,6 pt, Petit 7,4 pt, Spatium 0,20 em.
-  * *Level 3 (Standard: 6–8 Sūtras, ~50 % des Werkes):* Body 8,9 pt, Petit 7,7 pt, Spatium 0,38 em.
-  * *Level 4 (Großzügig: z. B. S. 8 mit 3–6 Sūtras):* Body 9,3 pt, Petit 8,1 pt, Spatium 0,70 em (hoher Durchschuss, füllt den Satzspiegel zu über 80 %).
-  * *Level 5 (Maximaler Komfort: 1–4 kurze Sūtras):* Body 9,6 pt, Petit 8,4 pt, Spatium 0,95 em.
-* **Zweispaltiges Śiva-Sūtra-Tableau (Seite 1):** Die 14 kanonischen Eröffnungs-Sūtras stehen in einem großzügigen, zweispaltigen Tableau mit Devanāgarī (12,5 pt fett) und kursiver IAST-Umschrift.
-* **Originale Kolumnentitel:** Lebende Kolumnentitel im Kopf (`I. Adhyāya. 1. Pāda.` / `1, 1, 7.`) und Sūtra-Nummern am Außenrand.
+### 3.3 Delta 3: Volumengesteuerte adaptive Typografie (`boethlingk1887_facsimile_dense.typ`)
+Statt einer pauschalen Verkleinerung aller Seiten steuert eine 6-stufige typografische Leiter ([`data/calibrated_dense_profiles.json`](https://github.com/birchville-org/boethlingk/blob/main/data/calibrated_dense_profiles.json)) Schriftgrade und Zeilendurchschuss adaptiv:
+
+| Level | Seiten | Devanāgarī | Übersetzung / Durchschuss | Petit-Kommentar / Durchschuss | Sūtra-Abstand | Typische Seitentypen |
+| :---: | :---: | :---: | :---: | :---: | :---: | :--- |
+| **5** | 6 | 11,8 pt | 9,6 pt / 0,45em | 8,4 pt / 0,42em | 0,95em | 1–4 kurze Sūtras, minimaler Text |
+| **4** | 102 | 11,4 pt | 9,3 pt / 0,42em | 8,1 pt / 0,38em | 0,70em | 3–6 Sūtras (z. B. S. 8), mittlerer Text |
+| **3** | 239 | 10,8 pt | 8,9 pt / 0,37em | 7,7 pt / 0,32em | 0,38em | 6–8 Sūtras, Standarddichte (~50 %) |
+| **2** | 95 | 10,4 pt | 8,6 pt / 0,33em | 7,4 pt / 0,27em | 0,20em | 8–10 Sūtras, textstark |
+| **1** | 31 | 10,0 pt | 8,4 pt / 0,30em | 7,2 pt / 0,25em | 0,12em | 10–12 Sūtras (z. B. S. 3, 70, 378) |
+| **0** | 2 | 9,6 pt | 8,1 pt / 0,26em | 6,9 pt / 0,23em | 0,06em | Nur Extremseiten S. 282 & 286 (11 dichte Sūtras) |
+
+* **Ergebnis:** Über 73 % aller Seiten laufen auf hohem Lesekomfort (Stufe 3–5). Der Satzspiegel wird harmonisch ausgefüllt, während auf allen 476 Originalseiten **exakt 0 Überläufe** entstehen.
+* **Eröffnungs-Tableau (Seite 1):** Die 14 Śiva-Sūtras stehen in einem zweispaltigen Tableau mit Devanāgarī und IAST-Transliteration, gefolgt von Böhtlingks authentischer Einleitung.
 
 ### 3.4 Delta 4: STIX Two Text Fontstack für native IAST-Kapitälchen
-Standard-Schriften (wie *Libertinus Serif* oder *Times*) unterstützen das OpenType-Feature `smcp` nur für das Basis-Lateinalphabet. Bei IAST-Sonderzeichen (`ṇ`, `ṭ`, `ṣ`, `ṛ`) fallen sie unschön auf Minuskeln zurück (**PĀṇINI**).
-* Die Neuausgabe setzt konsequent auf **STIX Two Text** + **Noto Serif Devanagari**.
-* STIX Two Text implementiert vollwertige, handgezeichnete OpenType-Kapitälchen für alle IAST-Diakritika (**PĀṆINI**, **MAHĀBHĀṢYA**, **BHAṬṬOJI DĪKṢITA**) mit perfekter Grauwert-Balance.
+Standard-Schriften (wie *Libertinus Serif*) besitzen unvollständige OpenType-Kapitälchen (`smallcaps`) für erweiterte IAST-Diakritika (`ā`, `ī`, `ū`, `ṛ`, `ṣ`, `ś`, `ṇ`, `ṃ`, `ḥ`), was in Kolumnentiteln und Überschriften zu fehlerhaften Minuskel-Fallbacks führt (**PĀṇINI**).
+* `boethlingk` standardisiert verbindlich auf **STIX Two Text** + **Noto Serif Devanagari**.
+* Bietet echte, optisch ausbalancierte Kapitälchen für sämtliche indologischen Transliterationszeichen (**PĀṆINI**, **MAHĀBHĀṢYA**, **BHAṬṬOJI DĪKṢITA**).
 
-### 3.5 Delta 5: Standardisierte TEI-P5- und EPUB 3-Serialisierung
-* **TEI-P5 XML (`data/tei/boehtlingk1887_p5.xml`):** 100 % valide gegen TEI All RelaxNG (`schemas/tei_all.rng`), 3.997 `<tei:entry>`-Elemente und 478 `<tei:pb>`-Seitenumbrüche mit direkter Verlinkung zu den Heidelberger IIIF-Faksimiles.
-* **EPUB 3 (`boethlingk1887.epub`):** Reflowable E-Book mit Schrifteinbettung für vollständige diakritische Lesbarkeit auf mobilen Geräten.
+### 3.5 Delta 5: Strukturierte philologische Editionen & Autarker QA-Viewer
+* **Master-Datensatz:** [`data/ashtadhyayi_complete_boethlingk1887.json`](https://github.com/birchville-org/boethlingk/blob/main/data/ashtadhyayi_complete_boethlingk1887.json) als Single Source of Truth mit 3.997 vollständigen Sūtra-Objekten.
+* **TEI-P5 XML:** [`data/tei/boehtlingk1887_p5.xml`](https://github.com/birchville-org/boethlingk/blob/main/data/tei/boehtlingk1887_p5.xml) (100 % valide gegen TEI All RelaxNG) mit 478 `<pb>`-Tags zu den Heidelberger IIIF-Faksimiles.
+* **QA-Viewer ([`viewer.html`](https://github.com/birchville-org/boethlingk/blob/main/viewer.html)):** Browserbasierter Split-Pane-Editor mit IIIF-Faksimile links, editierbaren Sūtra-Feldern rechts und *Silent Auto-Repair* beim Speichern über die File System Access API.
 
 ---
 
@@ -116,7 +126,7 @@ Alle 8 Adhyāyas und die einleitenden Śiva-Sūtras wurden 1:1 gegen die kanonis
 
 ## 5. Bereitgestellte Artefakte & Download-Verweise
 
-Eine vollständige Beschreibung aller erzeugten Ausgabedateien (Faksimile-Neusatz, Typst-Buchausgabe, Sandwich-PDF, Master-JSON, TEI-P5-XML und EPUB 3) mit Zweck, Format und direkten Downloadlinks finden Sie im dedizierten Katalog:
+Eine vollständige Beschreibung aller erzeugten Ausgabedateien (Faksimile-Neusatz, Typst-Buchausgabe, Sandwich-PDF, Master-JSON, TEI-P5-XML und EPUB 3) mit Formatangaben und direkten Downloadlinks finden Sie im dedizierten Katalog:
 
 👉 **[Zur Artefakt-Übersicht & Download-Katalog (artifacts.md)](artifacts.md)**  
 👉 **[Zentrale GitHub-Release-Seite (Latest)](https://github.com/birchville-org/boethlingk/releases/latest)**

@@ -89,27 +89,31 @@ Wenn Ihnen die Sūtra-Nummer (z. B. `1.1.4`) oder eine konkrete Textstelle berei
 
 Nach dem Speichern der Korrektur führen Sie im Terminal die Build-Skripte aus:
 
-### 1. Typst-Buchausgabe neu bauen (Dauer: ca. 0,9 Sekunden)
+### 1. Dichte 1:1-Faksimile-Ausgabe neu bauen (Dauer: ca. 10 Sekunden)
+```bash
+python3 scripts/build_facsimile_dense_edition.py
+```
+Erzeugt den vollständigen, druckreifen 1:1-Faksimile-Neusatz mit exakter historischer Seitenkongruenz (0 Überläufe) unter:  
+👉 `data/output/boethlingk1887_facsimile_dense.pdf` (484 Seiten)
+
+### 2. Fließende Buchausgabe neu bauen (Dauer: ca. 0,9 Sekunden)
 ```bash
 python3 scripts/build_typeset_edition.py
 ```
-Erzeugt die vollständige, druckreife 737-seitige Vektor-Ausgabe unter:  
-👉 `data/output/boethlingk1887_typeset_edition.pdf`
+Erzeugt die modernisierte Vektor-Leseausgabe im ISO B5-Format unter:  
+👉 `data/output/boethlingk1887_typeset_edition.pdf` (512 Seiten)
 
-### 2. TEI-P5-XML-Edition generieren & validieren (Dauer: ca. 3 Sekunden)
+### 3. TEI-P5-XML-Edition generieren & validieren (Dauer: ca. 3 Sekunden)
 ```bash
 python3 scripts/generate_tei_p5.py
 ```
 Aktualisiert die XML-Edition unter `data/tei/boehtlingk1887_p5.xml` und validiert sie automatisch gegen das offizielle TEI RelaxNG-Schema (`schemas/tei_all.rng`).
 
-### 3. (Optional) 1:1 Sandwich-PDF aktualisieren
+### 4. Reflowable EPUB 3 E-Book erzeugen
 ```bash
-python3 scripts/build_sandwich_pdf.py \
-  --img-dir data/img_cache \
-  --mistral-dir data/mistral \
-  --master-json data/ashtadhyayi_complete_boethlingk1887.json \
-  --output data/output/boehtlingk1887_sandwich.pdf
+python3 scripts/export_epub.py
 ```
+Erzeugt das mobile E-Reader-Buch unter `data/output/boethlingk1887.epub`.
 
 ---
 

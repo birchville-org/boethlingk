@@ -139,9 +139,8 @@ All print-ready and archival release files are available on the official GitHub 
 ## 📖 Documentation Directory
 
 * [📦 Edition Artifacts & Downloads](artifacts.md) – Comprehensive catalog of all release files with direct links
-* [🔍 The Böhtlingk Delta & Case Study](case-study.md) – Specific procedural extensions beyond the main pipeline
+* [🔍 The Böhtlingk Delta & Methodology](case-study.md) – Methodological differentiation and edition satellite rationale
 * [🛠️ QA & Correction Workflow](qa-workflow.md) – Single Source of Truth & local proofreading in the QA viewer
 * [🏛️ Data Architecture](data-architecture.md) – Three-layer data model
 * [📜 Copyright & Provenance](copyright-and-provenance.md) – Heidelberg University Library source credits
 * [📐 Conventions](conventions.md) – Transliteration and encoding standards
-* [📚 Wiki Overview](wiki-home.md) – Cross-references and reference architecture
