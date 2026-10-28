@@ -85,6 +85,7 @@ The artifacts address diverse research workflows – ranging from exact historic
   * German translation (`translation`) and philological commentary (`commentary`).
   * Historical book page mapping (`page`).
 * **Intended Audience:** NLP developers, computational linguists, and dictionary projects.
+* **Download:** [:octicons-download-16: Release Asset (2.85 MB)](https://github.com/birchville-org/boethlingk/releases/latest/download/ashtadhyayi_complete_boethlingk1887.json)
 * **Source:** [:octicons-mark-github-16: View on GitHub](https://github.com/birchville-org/boethlingk/blob/main/data/ashtadhyayi_complete_boethlingk1887.json)
 
 ---
@@ -126,7 +127,7 @@ The artifacts address diverse research workflows – ranging from exact historic
 | **Dense Facsimile** | `boethlingk1887_facsimile_dense.pdf` | PDF (Vector) | 8.58 MB (484 pp.) | 1:1 Citation Parity (STIX Two Text) | [Download](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_facsimile_dense.pdf) |
 | **Book Typeset** | `boethlingk1887_typeset_edition.pdf` | PDF (Vector) | 8.81 MB (512 pp.) | Continuous Reading Layout | [Download](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_typeset_edition.pdf) |
 | **1:1 Sandwich PDF** | `boehtlingk1887_sandwich.pdf` | PDF (Scan+OCR) | 248.8 MB (478 pp.) | Historical Facsimile Verification | [Download](https://github.com/birchville-org/boethlingk/releases/latest/download/boehtlingk1887_sandwich.pdf) |
-| **Master Dataset** | `ashtadhyayi_complete_boethlingk1887.json` | JSON | 2.85 MB (3,997 sūtras) | Single Source of Truth / NLP | [GitHub](https://github.com/birchville-org/boethlingk/blob/main/data/ashtadhyayi_complete_boethlingk1887.json) |
+| **Master Dataset** | `ashtadhyayi_complete_boethlingk1887.json` | JSON | 2.85 MB (3,997 sūtras) | Single Source of Truth / NLP | [Download](https://github.com/birchville-org/boethlingk/releases/latest/download/ashtadhyayi_complete_boethlingk1887.json) |
 | **TEI-P5 Edition** | `boehtlingk1887_p5.xml` | XML (TEI-P5) | 2.90 MB | Digital Humanities / Archive | [GitHub](https://github.com/birchville-org/boethlingk/blob/main/data/tei/boehtlingk1887_p5.xml) |
 | **EPUB 3 eBook** | `boethlingk1887.epub` | EPUB 3 | 1.47 MB | Mobile Reading (E-Reader) | [Download](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887.epub) |
 | **QA Viewer** | `viewer.html` | HTML5 / JS | 39 KB | Local Visual Correction | [Viewer](https://github.com/birchville-org/boethlingk/blob/main/viewer.html) |
