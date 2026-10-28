@@ -145,6 +145,53 @@ def prepare_data() -> None:
                     json.dump(corrigenda, f, ensure_ascii=False, indent=2)
 
 
+CANONICAL_PADAS = {
+    (1, 1): ("वृद्धिरादैच्", "1.1.1–75"),
+    (1, 2): ("गाङ्कुटादिभ्यो ऽञ्णिन्ङित्", "1.2.1–73"),
+    (1, 3): ("भूवादयो धातवः", "1.3.1–93"),
+    (1, 4): ("आ कडारादेका संज्ञा", "1.4.1–110"),
+    (2, 1): ("समर्थः पदविधिः", "2.1.1–72"),
+    (2, 2): ("पूर्वो ऽपरो ऽधरोत्तराणि", "2.2.1–38"),
+    (2, 3): ("अनभिहिते", "2.3.1–73"),
+    (2, 4): ("द्विगुरेकवचनम्", "2.4.1–85"),
+    (3, 1): ("प्रत्ययः", "3.1.1–150"),
+    (3, 2): ("कर्मण्यण्", "3.2.1–188"),
+    (3, 3): ("उणादयो बहुलम्", "3.3.1–176"),
+    (3, 4): ("धातुसम्बन्धे प्रत्ययाः", "3.4.1–117"),
+    (4, 1): ("ङ्याप्प्रातिपदिकात्", "4.1.1–178"),
+    (4, 2): ("तेन रक्तं रागात्", "4.2.1–145"),
+    (4, 3): ("युष्मदस्मदोरन्यतरस्याम्", "4.3.1–168"),
+    (4, 4): ("प्राग्वहतेष्ठञ्", "4.4.1–144"),
+    (5, 1): ("प्राङ्क्रीताच्छः", "5.1.1–136"),
+    (5, 2): ("धान्यनां भवने क्षेत्रे खञ्", "5.2.1–140"),
+    (5, 3): ("प्राग्दिशो विभक्तिः", "5.3.1–119"),
+    (5, 4): ("पादशतस्य संख्यादेर्वीप्सायाम्", "5.4.1–160"),
+    (6, 1): ("एकाचो द्वे प्रथमस्य", "6.1.1–223"),
+    (6, 2): ("बहुव्रीहौ प्रकृत्या पूर्वपदम्", "6.2.1–199"),
+    (6, 3): ("अलुगुत्तरपदे", "6.3.1–139"),
+    (6, 4): ("अङ्गस्य", "6.4.1–175"),
+    (7, 1): ("युवोरनाकौ", "7.1.1–103"),
+    (7, 2): ("सिचि वृद्धिः परस्मैपदेषु", "7.2.1–118"),
+    (7, 3): ("लघोरुपधायाः", "7.3.1–120"),
+    (7, 4): ("णिच्युपसंख्यानम्", "7.4.1–97"),
+    (8, 1): ("सर्वस्य द्वे", "8.1.1–74"),
+    (8, 2): ("पूर्वत्रासिद्धम्", "8.2.1–108"),
+    (8, 3): ("रषाभ्यां नो णः समानपदे", "8.3.1–119"),
+    (8, 4): ("स्तोः श्चुना श्चुः", "8.4.1–68"),
+}
+
+ADH_NAMES = {
+    1: ("Erster Adhyāya", "1.1–1.4"),
+    2: ("Zweiter Adhyāya", "2.1–2.4"),
+    3: ("Dritter Adhyāya", "3.1–3.4"),
+    4: ("Vierter Adhyāya", "4.1–4.4"),
+    5: ("Fünfter Adhyāya", "5.1–5.4"),
+    6: ("Sechster Adhyāya", "6.1–6.4"),
+    7: ("Siebenter Adhyāya", "7.1–7.4"),
+    8: ("Achter Adhyāya", "8.1–8.4"),
+}
+
+
 def post_process_pdf(pdf_path: Path) -> None:
     """Inject native PDF page labels and complete hierarchical bookmarks."""
     print("Post-Processing via PyMuPDF: Injektion von Page-Labels & TOC-Outline...")
@@ -167,24 +214,32 @@ def post_process_pdf(pdf_path: Path) -> None:
 
     # 2. Complete hierarchical TOC Bookmarks
     front_matter = [
-        [1, "Titelei & Bastard Title", 1],
-        [1, "Editionsvermerk & Curation Badge", 2],
-        [1, "Haupttitel (Leipzig 1887)", 3],
-        [1, "Vorwort zur digitalen Neuausgabe", 4],
-        [1, "Inhaltsübersicht", 5],
+        [1, "Titelei & Front Matter", 1],
+        [2, "Halbtitel (Bastard Title)", 1],
+        [2, "Editionsvermerk & Curation Badge", 2],
+        [2, "Haupttitel (Leipzig 1887)", 3],
+        [2, "Vorwort zur digitalen Neuausgabe", 4],
+        [2, "Inhaltsübersicht", 5],
     ]
 
     final_toc = list(front_matter)
-    current_adh = ""
+    current_a = 0
+    current_p = 0
+
     for lvl, title, pno in native_toc:
-        if lvl == 1 and "Adhyāya" in title:
-            current_adh = title.split()[0] + " Adhyāya"
-            final_toc.append([lvl, title, pno])
-        elif lvl == 2:
-            enhanced_title = f"{current_adh} — {title}" if current_adh else title
-            final_toc.append([lvl, enhanced_title, pno])
-        else:
-            final_toc.append([lvl, title, pno])
+        if "Śiva" in title:
+            final_toc.append([1, "Śiva-Sūtras (Akṣarasamāmnāya)", pno])
+        elif lvl == 1 and "Adhyāya" in title:
+            current_a += 1
+            current_p = 0
+            name, rng = ADH_NAMES.get(current_a, (f"{current_a}. Adhyāya", ""))
+            final_toc.append([1, f"{name} ({rng})", pno])
+        elif lvl == 2 and current_a > 0:
+            current_p += 1
+            incipit, rng = CANONICAL_PADAS.get((current_a, current_p), ("", ""))
+            final_toc.append([2, f"{current_p}. Pāda: {incipit} ({rng})", pno])
+        elif "Nachträge" in title or "Verbesserungen" in title:
+            final_toc.append([1, "Nachträge und Verbesserungen (Corrigenda)", pno])
 
     doc.set_toc(final_toc)
     temp_out = pdf_path.with_name(pdf_path.stem + ".tmp.pdf")
