@@ -48,7 +48,7 @@ Die Artefakte decken unterschiedliche Nutzungsszenarien ab – vom exakten histo
   * **Śiva-Sūtras:** Die Eröffnungsseite (S. 1) präsentiert die 14 kanonischen Lautgruppen in einem wohlproportionierten zweispaltigen Tableau.
   * **Orientierung:** Authentische lebende Kolumnentitel und originale Rand-Sūtranummern. 48 hierarchische PDF-Lesezeichen und native römische/arabische Page-Labels.
 * **Einsatzbereich:** Ideal für Indologen, die historische Zitate („Böhtlingk S. X“) exakt verifizieren möchten, ohne mit vergilbten Scans arbeiten zu müssen.
-* **Download:** [:octicons-download-16: Release-Asset](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_facsimile_dense.pdf)
+* **Download:** [Release-Asset](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_facsimile_dense.pdf)
 
 ---
 
@@ -58,7 +58,7 @@ Die Artefakte decken unterschiedliche Nutzungsszenarien ab – vom exakten histo
   Eine typografisch modernisierte Buchausgabe mit fließendem Satz im ISO B5-Format, frei von den historischen Zeilen- und Seitenbegrenzungen des 19. Jahrhunderts.
 * **Besonderheiten:** Großzügiger Zeilendurchschuss, klare optische Hierarchie zwischen Sūtra-Kopf, IAST-Transliteration, Übersetzung und Petit-Kommentar.
 * **Einsatzbereich:** Für das kontinuierliche philologische und linguistische Studium der Aṣṭādhyāyī am Bildschirm oder als Buchausdruck.
-* **Download:** [:octicons-download-16: Release-Asset](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_typeset_edition.pdf)
+* **Download:** [Release-Asset](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_typeset_edition.pdf)
 
 ---
 
@@ -71,7 +71,7 @@ Die Artefakte decken unterschiedliche Nutzungsszenarien ab – vom exakten histo
   * **Unsichtbare Textebene:** 14.267 Textblöcke auf exakten Koordinaten (PDF Rendering Mode 3) für präzises Markieren, Suchen und Kopieren.
   * **Navigation:** 42 hierarchische PDF-Bookmarks für alle Adhyāyas und Pādas.
 * **Einsatzbereich:** Für Archivare und Editionsphilologen, die die originale Druckgestalt einsehen und Zitate gegen das 1887er Bild abgleichen müssen.
-* **Download:** [:octicons-download-16: Release-Asset (249 MB)](https://github.com/birchville-org/boethlingk/releases/latest/download/boehtlingk1887_sandwich.pdf)
+* **Download:** [Release-Asset (249 MB)](https://github.com/birchville-org/boethlingk/releases/latest/download/boehtlingk1887_sandwich.pdf)
 
 ---
 
@@ -85,8 +85,8 @@ Die Artefakte decken unterschiedliche Nutzungsszenarien ab – vom exakten histo
   * Deutsche Fachübersetzung (`translation`) und philologischer Kommentar (`commentary`).
   * Buchseiten-Zuordnung (`page`) zur 1887er Originalausgabe.
 * **Einsatzbereich:** Für NLP-Entwickler, Sanskrit-Korpuslinguisten und digitale Wörterbuchprojekte.
-* **Download:** [:octicons-download-16: Release-Asset (2,85 MB)](https://github.com/birchville-org/boethlingk/releases/latest/download/ashtadhyayi_complete_boethlingk1887.json)
-* **Quelle:** [:octicons-mark-github-16: Im Repository ansehen](https://github.com/birchville-org/boethlingk/blob/main/data/ashtadhyayi_complete_boethlingk1887.json)
+* **Download:** [Release-Asset (2,85 MB)](https://github.com/birchville-org/boethlingk/releases/latest/download/ashtadhyayi_complete_boethlingk1887.json)
+* **Quelle:** [Im Repository ansehen](https://github.com/birchville-org/boethlingk/blob/main/data/ashtadhyayi_complete_boethlingk1887.json)
 
 ---
 
@@ -99,7 +99,7 @@ Die Artefakte decken unterschiedliche Nutzungsszenarien ab – vom exakten histo
   * 478 `<pb>`-Tags enthalten direkte IIIF-Vollbild-Links zu den Scans der UB Heidelberg.
   * Böhtlingks originale Druckfehlerkorrekturen (S. 477–480) sind strukturiert in `<back>` erfasst.
 * **Einsatzbereich:** Langzeitarchivierung in Universitätsbibliotheken und Einspeisung in TEI-Repositorien.
-* **Quelle:** [:octicons-mark-github-16: Im Repository ansehen](https://github.com/birchville-org/boethlingk/blob/main/data/tei/boehtlingk1887_p5.xml)
+* **Quelle:** [Im Repository ansehen](https://github.com/birchville-org/boethlingk/blob/main/data/tei/boehtlingk1887_p5.xml)
 
 ---
 
@@ -111,7 +111,7 @@ Die Artefakte decken unterschiedliche Nutzungsszenarien ab – vom exakten histo
   * Schrifteinbettung (*Noto Serif Devanagari*) garantiert saubere Ligaturen und Diakritika auf allen Lesegeräten.
   * Vollständig gegliedertes Inhaltsverzeichnis (8 Adhyāyas, 32 Pādas).
 * **Einsatzbereich:** Für E-Reader (Apple Books, Tolino, Kobo) und Tablets unterwegs.
-* **Download:** [:octicons-download-16: Release-Asset](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887.epub)
+* **Download:** [Release-Asset](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887.epub)
 
 ---
 
@@ -121,7 +121,7 @@ Die Artefakte decken unterschiedliche Nutzungsszenarien ab – vom exakten histo
   Ein browserbasierter Split-Pane-Editor nach dem Birchville-Payer-Standard.
 * **Besonderheiten:** Links Zoom/Pan des Originalscans, rechts direkt editierbare Sūtra-Felder mit lokalem *Silent Auto-Repair* beim Speichern über die File System Access API.
 * **Einsatzbereich:** Für die visuelle Kollationierung und Nachkorrektur direkt auf der lokalen Festplatte ohne Cloud-Abhängigkeit.
-* **Quelle:** [:octicons-eye-16: Im Repository ansehen](https://github.com/birchville-org/boethlingk/blob/main/viewer.html)
+* **Quelle:** [Im Repository ansehen](https://github.com/birchville-org/boethlingk/blob/main/viewer.html)
 
 ---
 

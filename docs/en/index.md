@@ -106,31 +106,31 @@ All print-ready and archival release files are available on the official GitHub 
 
 * **1:1 Dense Facsimile Typeset (Vector PDF):** `boethlingk1887_facsimile_dense.pdf` (8.58 MB · 484 pp.)  
   Exact 1:1 page parity with the historical 1887 Leipzig print, adaptive typography, and STIX Two Text font stack with native IAST small caps (**PĀṆINI**, **MAHĀBHĀṢYA**).  
-  [:octicons-download-16: Release Download](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_facsimile_dense.pdf)
+  [Release Download](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_facsimile_dense.pdf)
 
 * **Modernized Book Edition (Vector PDF):** `boethlingk1887_typeset_edition.pdf` (8.81 MB · 512 pp.)  
   Reflowable book layout in ISO B5 format optimized for continuous study.  
-  [:octicons-download-16: Release Download](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_typeset_edition.pdf)
+  [Release Download](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_typeset_edition.pdf)
 
 * **1:1 Sandwich PDF (Scan Facsimile):** `boehtlingk1887_sandwich.pdf` (248.8 MB · 478 pp.)  
   High-resolution Heidelberg scans with Content-Aware Margin Masking and invisible OCR text layer (14,267 text blocks).  
-  [:octicons-download-16: Release Download](https://github.com/birchville-org/boethlingk/releases/latest/download/boehtlingk1887_sandwich.pdf)
+  [Release Download](https://github.com/birchville-org/boethlingk/releases/latest/download/boehtlingk1887_sandwich.pdf)
 
 * **Canonical Master Dataset (JSON):** `data/ashtadhyayi_complete_boethlingk1887.json` (2.85 MB)  
   3,997 sūtras complete (14 Śiva-Sūtras + 3,983 Aṣṭādhyāyī sūtras, 0 duplicates, 0 gaps) with Devanāgarī, IAST, translation, and commentary.  
-  [:octicons-mark-github-16: View on GitHub](https://github.com/birchville-org/boethlingk/blob/main/data/ashtadhyayi_complete_boethlingk1887.json)
+  [View on GitHub](https://github.com/birchville-org/boethlingk/blob/main/data/ashtadhyayi_complete_boethlingk1887.json)
 
 * **Schema-Valid TEI-P5 XML Edition:** `data/tei/boehtlingk1887_p5.xml` (2.90 MB)  
   100% valid against TEI All RelaxNG (`schemas/tei_all.rng`) with 478 `<pb>` tags linked to Heidelberg IIIF manifests.  
-  [:octicons-mark-github-16: View on GitHub](https://github.com/birchville-org/boethlingk/blob/main/data/tei/boehtlingk1887_p5.xml)
+  [View on GitHub](https://github.com/birchville-org/boethlingk/blob/main/data/tei/boehtlingk1887_p5.xml)
 
 * **Reflowable EPUB 3 eBook:** `boethlingk1887.epub` (1.47 MB)  
   Mobile e-book with embedded fonts (*Noto Serif Devanagari*) and hierarchical table of contents.  
-  [:octicons-download-16: Release Download](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887.epub)
+  [Release Download](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887.epub)
 
 * **Standalone QA Viewer:** `viewer.html` (39 KB)  
   Browser-based split-pane editor conforming to the Payer standard for direct local proofreading.  
-  [:octicons-eye-16: View on GitHub](https://github.com/birchville-org/boethlingk/blob/main/viewer.html)
+  [View on GitHub](https://github.com/birchville-org/boethlingk/blob/main/viewer.html)
 
 👉 **Comprehensive Artifact Details:** [Edition Artifacts & Downloads](artifacts.md)
 

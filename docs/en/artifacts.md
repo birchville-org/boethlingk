@@ -48,7 +48,7 @@ The artifacts address diverse research workflows – ranging from exact historic
   * **Śiva-Sūtras:** Page 1 presents the 14 canonical sound groups in a spacious 2-column layout.
   * **Navigation:** Reconstructed original running headers, outer margin reference numbers, 48 hierarchical PDF bookmarks, and native roman/arabic page labels.
 * **Intended Audience:** Indologists and Sanskrit scholars requiring exact citation parity without dealing with scan noise.
-* **Download:** [:octicons-download-16: Release Asset](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_facsimile_dense.pdf)
+* **Download:** [Release Asset](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_facsimile_dense.pdf)
 
 ---
 
@@ -58,7 +58,7 @@ The artifacts address diverse research workflows – ranging from exact historic
   A typographically modernized book edition in ISO B5 format, free from 19th-century line and page constraints.
 * **Key Features:** Generous line spacing, clear visual hierarchy between sūtra header, IAST transliteration, German translation, and commentary.
 * **Intended Audience:** Scholars and students engaging in continuous reading and linguistic study of the Aṣṭādhyāyī.
-* **Download:** [:octicons-download-16: Release Asset](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_typeset_edition.pdf)
+* **Download:** [Release Asset](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_typeset_edition.pdf)
 
 ---
 
@@ -71,7 +71,7 @@ The artifacts address diverse research workflows – ranging from exact historic
   * **Invisible Text Layer:** 14,267 text blocks on exact pixel coordinates (PDF Rendering Mode 3) for search, highlight, and copy-paste.
   * **Bookmarks:** 42 hierarchical PDF bookmarks covering all adhyāyas and pādas.
 * **Intended Audience:** Archivists and philologists verifying original 1887 print layout and physical details.
-* **Download:** [:octicons-download-16: Release Asset (249 MB)](https://github.com/birchville-org/boethlingk/releases/latest/download/boehtlingk1887_sandwich.pdf)
+* **Download:** [Release Asset (249 MB)](https://github.com/birchville-org/boethlingk/releases/latest/download/boehtlingk1887_sandwich.pdf)
 
 ---
 
@@ -85,8 +85,8 @@ The artifacts address diverse research workflows – ranging from exact historic
   * German translation (`translation`) and philological commentary (`commentary`).
   * Historical book page mapping (`page`).
 * **Intended Audience:** NLP developers, computational linguists, and dictionary projects.
-* **Download:** [:octicons-download-16: Release Asset (2.85 MB)](https://github.com/birchville-org/boethlingk/releases/latest/download/ashtadhyayi_complete_boethlingk1887.json)
-* **Source:** [:octicons-mark-github-16: View on GitHub](https://github.com/birchville-org/boethlingk/blob/main/data/ashtadhyayi_complete_boethlingk1887.json)
+* **Download:** [Release Asset (2.85 MB)](https://github.com/birchville-org/boethlingk/releases/latest/download/ashtadhyayi_complete_boethlingk1887.json)
+* **Source:** [View on GitHub](https://github.com/birchville-org/boethlingk/blob/main/data/ashtadhyayi_complete_boethlingk1887.json)
 
 ---
 
@@ -99,7 +99,7 @@ The artifacts address diverse research workflows – ranging from exact historic
   * 478 `<pb>` page break tags linking to Heidelberg University IIIF images.
   * Böhtlingk's original corrigenda (pp. 477–480) structured in `<back>`.
 * **Intended Audience:** Academic repositories and digital humanities collections.
-* **Source:** [:octicons-mark-github-16: View on GitHub](https://github.com/birchville-org/boethlingk/blob/main/data/tei/boehtlingk1887_p5.xml)
+* **Source:** [View on GitHub](https://github.com/birchville-org/boethlingk/blob/main/data/tei/boehtlingk1887_p5.xml)
 
 ---
 
@@ -108,7 +108,7 @@ The artifacts address diverse research workflows – ranging from exact historic
 * **What is it?**  
   Standardized EPUB 3 eBook for mobile reading.
 * **Key Features:** Embedded *Noto Serif Devanagari* font for proper rendering of complex ligatures and IAST diacritics on mobile e-readers (Apple Books, Tolino, Kobo).
-* **Download:** [:octicons-download-16: Release Asset](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887.epub)
+* **Download:** [Release Asset](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887.epub)
 
 ---
 
@@ -116,7 +116,7 @@ The artifacts address diverse research workflows – ranging from exact historic
 * **Filename:** `viewer.html` (39 KB)
 * **What is it?**  
   A browser-based split-pane editor conforming to the Payer standard for direct local proofreading via the File System Access API.
-* **Source:** [:octicons-eye-16: View on GitHub](https://github.com/birchville-org/boethlingk/blob/main/viewer.html)
+* **Source:** [View on GitHub](https://github.com/birchville-org/boethlingk/blob/main/viewer.html)
 
 ---
 
