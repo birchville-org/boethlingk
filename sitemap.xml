@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://docs.birchville.org/boethlingk/</loc>
+        <lastmod>2026-11-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.birchville.org/boethlingk/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.birchville.org/boethlingk/en/"/>
+    </url>
+    <url>
+        <loc>https://docs.birchville.org/boethlingk/artifacts/</loc>
+        <lastmod>2026-11-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.birchville.org/boethlingk/artifacts/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.birchville.org/boethlingk/en/artifacts/"/>
+    </url>
+    <url>
+        <loc>https://docs.birchville.org/boethlingk/case-study/</loc>
+        <lastmod>2026-11-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.birchville.org/boethlingk/case-study/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.birchville.org/boethlingk/en/case-study/"/>
+    </url>
+    <url>
+        <loc>https://docs.birchville.org/boethlingk/conventions/</loc>
+        <lastmod>2026-11-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.birchville.org/boethlingk/conventions/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.birchville.org/boethlingk/en/conventions/"/>
+    </url>
+    <url>
+        <loc>https://docs.birchville.org/boethlingk/copyright-and-provenance/</loc>
+        <lastmod>2026-11-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.birchville.org/boethlingk/copyright-and-provenance/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.birchville.org/boethlingk/en/copyright-and-provenance/"/>
+    </url>
+    <url>
+        <loc>https://docs.birchville.org/boethlingk/data-architecture/</loc>
+        <lastmod>2026-11-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.birchville.org/boethlingk/data-architecture/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.birchville.org/boethlingk/en/data-architecture/"/>
+    </url>
+    <url>
+        <loc>https://docs.birchville.org/boethlingk/qa-workflow/</loc>
+        <lastmod>2026-11-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.birchville.org/boethlingk/qa-workflow/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.birchville.org/boethlingk/en/qa-workflow/"/>
+    </url>
+    <url>
+        <loc>https://docs.birchville.org/boethlingk/en/</loc>
+        <lastmod>2026-11-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.birchville.org/boethlingk/en/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.birchville.org/boethlingk/"/>
+    </url>
+    <url>
+        <loc>https://docs.birchville.org/boethlingk/en/artifacts/</loc>
+        <lastmod>2026-11-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.birchville.org/boethlingk/en/artifacts/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.birchville.org/boethlingk/artifacts/"/>
+    </url>
+    <url>
+        <loc>https://docs.birchville.org/boethlingk/en/case-study/</loc>
+        <lastmod>2026-11-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.birchville.org/boethlingk/en/case-study/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.birchville.org/boethlingk/case-study/"/>
+    </url>
+    <url>
+        <loc>https://docs.birchville.org/boethlingk/en/conventions/</loc>
+        <lastmod>2026-11-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.birchville.org/boethlingk/en/conventions/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.birchville.org/boethlingk/conventions/"/>
+    </url>
+    <url>
+        <loc>https://docs.birchville.org/boethlingk/en/copyright-and-provenance/</loc>
+        <lastmod>2026-11-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.birchville.org/boethlingk/en/copyright-and-provenance/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.birchville.org/boethlingk/copyright-and-provenance/"/>
+    </url>
+    <url>
+        <loc>https://docs.birchville.org/boethlingk/en/data-architecture/</loc>
+        <lastmod>2026-11-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.birchville.org/boethlingk/en/data-architecture/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.birchville.org/boethlingk/data-architecture/"/>
+    </url>
+    <url>
+        <loc>https://docs.birchville.org/boethlingk/en/qa-workflow/</loc>
+        <lastmod>2026-11-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://docs.birchville.org/boethlingk/en/qa-workflow/"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://docs.birchville.org/boethlingk/qa-workflow/"/>
+    </url>
+</urlset>
