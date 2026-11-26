@@ -65,6 +65,13 @@ dev = [
     { name = "pytest" },
 ]
 
+[package.dev-dependencies]
+dev = [
+    { name = "mkdocs-material" },
+    { name = "mkdocs-static-i18n" },
+    { name = "pytest" },
+]
+
 [package.metadata]
 requires-dist = [
     { name = "lxml", specifier = ">=5.1.0" },
@@ -77,6 +84,13 @@ requires-dist = [
     { name = "urllib3", specifier = ">=2.0.0" },
 ]
 provides-extras = ["dev"]
+
+[package.metadata.requires-dev]
+dev = [
+    { name = "mkdocs-material", specifier = ">=9.5.0" },
+    { name = "mkdocs-static-i18n", specifier = ">=1.2.0" },
+    { name = "pytest", specifier = ">=8.0.0" },
+]
 
 [[package]]
 name = "certifi"

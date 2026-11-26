@@ -8,7 +8,7 @@ Alle wesentlichen Änderungen und Meilensteine dieses Projekts werden in dieser 
 - **STIX Two Text Typografie-Stack:**
   - Vollständige Umstellung der Primärschrift für Latein und IAST auf *STIX Two Text* mit nativer OpenType-Kapitälchen-Unterstützung für alle diakritischen Großbuchstaben (**PĀṆINI**, **MAHĀBHĀṢYA**, **BHAṬṬOJI DĪKṢITA**).
 - **Dichte Faksimile-Neuausgabe (1:1-Seitenparität, 484 Seiten: 5 S. Titelei i–v, 476 Textseiten S. 1–476, 3 S. Corrigenda S. 477–479):**
-  - `boethlingk1887_facsimile_dense.pdf` (8,59 MB): Vollständiger Neusatz mit exakter 1:1-Seitenparität zum historischen Original von 1887 (0 Seiten Überlauf).
+  - `boethlingk1887_facsimile_dense.pdf` (8,58 MB): Vollständiger Neusatz mit exakter 1:1-Seitenparität zum historischen Original von 1887 (0 Seiten Überlauf).
   - 6-stufiges adaptives typografisches Layoutmodell mit dynamischer Skalierung von Schriftgrad und Durchschuss je nach Textlast.
   - Vollständige Restauration des zweispaltigen Tableaus der 14 Śiva-Sūtras auf Seite 1.
   - Rekonstruktion und Bereinigung systemischer OCR-Artefakte und Zeilenumbrüche.

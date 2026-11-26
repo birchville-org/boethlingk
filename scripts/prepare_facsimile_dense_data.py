@@ -45,6 +45,26 @@ def get_colophon(a: int, p: int) -> str:
         return f"॥ इति {adh_ordinals[a]} {pada_ordinals[p]} ॥"
 
 
+_TIER_PROFILES: dict[int, dict[str, object]] = {
+    0: {"tier": 0, "deva_size": "9.8pt", "body_size": "8.2pt", "body_leading": "0.28em", "comm_size": "7.0pt", "comm_leading": "0.24em", "sutra_spacing": "0.08em"},
+    1: {"tier": 1, "deva_size": "10.0pt", "body_size": "8.4pt", "body_leading": "0.32em", "comm_size": "7.2pt", "comm_leading": "0.26em", "sutra_spacing": "0.14em"},
+    2: {"tier": 2, "deva_size": "10.4pt", "body_size": "8.7pt", "body_leading": "0.35em", "comm_size": "7.5pt", "comm_leading": "0.29em", "sutra_spacing": "0.25em"},
+    3: {"tier": 3, "deva_size": "10.8pt", "body_size": "9.0pt", "body_leading": "0.38em", "comm_size": "7.7pt", "comm_leading": "0.32em", "sutra_spacing": "0.38em"},
+    4: {"tier": 4, "deva_size": "11.2pt", "body_size": "9.3pt", "body_leading": "0.42em", "comm_size": "8.0pt", "comm_leading": "0.35em", "sutra_spacing": "0.60em"},
+    5: {"tier": 5, "deva_size": "11.8pt", "body_size": "9.6pt", "body_leading": "0.46em", "comm_size": "8.3pt", "comm_leading": "0.38em", "sutra_spacing": "0.95em"},
+}
+
+_EXTREME_TIER_0 = {
+    "tier": 0,
+    "deva_size": "9.6pt",
+    "body_size": "8.1pt",
+    "body_leading": "0.27em",
+    "comm_size": "6.9pt",
+    "comm_leading": "0.23em",
+    "sutra_spacing": "0.06em",
+}
+
+
 def calculate_profile(p_num: int, sutras: list[dict]) -> dict:
     s_count = len(sutras)
     trans_chars = sum(len(s.get("translation", "")) for s in sutras)
@@ -52,84 +72,25 @@ def calculate_profile(p_num: int, sutras: list[dict]) -> dict:
     has_colophon = any(s.get("colophon") for s in sutras)
     total_chars = trans_chars + comm_chars
 
-    if p_num in [8, 378, 438, 460]:
-        tier = 0
-        deva_size = "9.8pt"
-        body_size = "8.2pt"
-        body_leading = "0.28em"
-        comm_size = "7.0pt"
-        comm_leading = "0.24em"
-        sutra_spacing = "0.08em"
-    elif p_num in [282, 286]:
-        # Extreme 11-sutra pages
-        tier = 0
-        deva_size = "9.6pt"
-        body_size = "8.1pt"
-        body_leading = "0.27em"
-        comm_size = "6.9pt"
-        comm_leading = "0.23em"
-        sutra_spacing = "0.06em"
-    elif p_num == 70 or (s_count >= 11 and total_chars > 800):
-        # 11-sutra pages with short texts
-        tier = 1
-        deva_size = "10.0pt"
-        body_size = "8.4pt"
-        body_leading = "0.32em"
-        comm_size = "7.2pt"
-        comm_leading = "0.26em"
-        sutra_spacing = "0.14em"
-    else:
-        est_lines = s_count * 2.1 + (trans_chars / 75.0) + (comm_chars / 95.0) + (2.5 if has_colophon else 0.0)
-        if est_lines >= 38.0 or comm_chars > 2200 or total_chars > 2600:
-            tier = 1
-            deva_size = "10.0pt"
-            body_size = "8.4pt"
-            body_leading = "0.32em"
-            comm_size = "7.2pt"
-            comm_leading = "0.26em"
-            sutra_spacing = "0.14em"
-        elif est_lines >= 34.0 or comm_chars > 1900 or total_chars > 2300:
-            tier = 2
-            deva_size = "10.4pt"
-            body_size = "8.7pt"
-            body_leading = "0.35em"
-            comm_size = "7.5pt"
-            comm_leading = "0.29em"
-            sutra_spacing = "0.25em"
-        elif est_lines >= 30.0 or comm_chars > 1400:
-            tier = 3
-            deva_size = "10.8pt"
-            body_size = "9.0pt"
-            body_leading = "0.38em"
-            comm_size = "7.7pt"
-            comm_leading = "0.32em"
-            sutra_spacing = "0.38em"
-        elif est_lines >= 24.0:
-            tier = 4
-            deva_size = "11.2pt"
-            body_size = "9.3pt"
-            body_leading = "0.42em"
-            comm_size = "8.0pt"
-            comm_leading = "0.35em"
-            sutra_spacing = "0.60em"
-        else:
-            tier = 5
-            deva_size = "11.8pt"
-            body_size = "9.6pt"
-            body_leading = "0.46em"
-            comm_size = "8.3pt"
-            comm_leading = "0.38em"
-            sutra_spacing = "0.95em"
+    if p_num in (8, 378, 438, 460):
+        return dict(_TIER_PROFILES[0])
+    if p_num in (282, 286):
+        return dict(_EXTREME_TIER_0)
+    if p_num == 70 or (s_count >= 11 and total_chars > 800):
+        return dict(_TIER_PROFILES[1])
 
-    return {
-        "tier": tier,
-        "deva_size": deva_size,
-        "body_size": body_size,
-        "body_leading": body_leading,
-        "comm_size": comm_size,
-        "comm_leading": comm_leading,
-        "sutra_spacing": sutra_spacing,
-    }
+    est_lines = s_count * 2.1 + (trans_chars / 75.0) + (comm_chars / 95.0) + (2.5 if has_colophon else 0.0)
+    if est_lines >= 38.0 or comm_chars > 2200 or total_chars > 2600:
+        tier = 1
+    elif est_lines >= 34.0 or comm_chars > 1900 or total_chars > 2300:
+        tier = 2
+    elif est_lines >= 30.0 or comm_chars > 1400:
+        tier = 3
+    elif est_lines >= 24.0:
+        tier = 4
+    else:
+        tier = 5
+    return dict(_TIER_PROFILES[tier])
 
 
 def main() -> None:
@@ -192,7 +153,7 @@ def main() -> None:
         a_num = first_s.get("adhyaya", 1)
         p_num_in_adh = first_s.get("pada", 1)
 
-        prof = calibrated_profiles.get(str(p_num), calculate_profile(p_num, processed))
+        prof = calibrated_profiles[str(p_num)] if str(p_num) in calibrated_profiles else calculate_profile(p_num, processed)
 
         pages_output.append({
             "page_num": p_num,

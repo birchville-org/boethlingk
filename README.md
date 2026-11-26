@@ -21,7 +21,7 @@ Digitalisat-Vorlage: Universitätsbibliothek Heidelberg ([Bibliotheca Palatina](
   - 478 `<pb>`-Seitenumbrüche mit direkter Verknüpfung zu den IIIF-Vollbildern der UB Heidelberg.
   - 50 Corrigenda-Einträge der Seiten 477–478 in `<back>`.
 
-- **Dichte Faksimile-Neuausgabe (1:1-Seitenparität, 8,59 MB, 484 Seiten):**
+- **Dichte Faksimile-Neuausgabe (1:1-Seitenparität, 8,58 MB, 484 Seiten):**
   - 📥 **Download:** [Release Asset (`boethlingk1887_facsimile_dense.pdf`)](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_facsimile_dense.pdf)
   - **Exakte 1:1-Seitenparität:** 5 Seiten Titelei (i–v), 476 Textseiten (S. 1–476) exakt seitenidentisch mit dem 1887er Originaldruck (0 Seiten Überlauf) sowie 3 Seiten Corrigenda (S. 477–479).
   - **Typografie:** Vektorbasierter Satz in *STIX Two Text* und *Noto Serif Devanagari* mit nativen IAST-Kapitälchen (**PĀṆINI**, **MAHĀBHĀṢYA**, **BHAṬṬOJI DĪKṢITA**).
@@ -84,11 +84,15 @@ print(f"Buchseite:  {first_sutra['page']}")
 ## 3. Installation & Voraussetzungen
 
 - **Python:** `>= 3.12`
-- **Paketmanager:** `uv` (empfohlen) oder Standard-`pip`
-- **Typst (für Typst-Buchausgabe):** [Typst CLI](https://typst.app/) (`brew install typst`)
+- **Paketmanager:** `uv` (empfohlen; installiert die `dev`-Gruppe inkl. `pytest` automatisch) oder `pip install -r requirements.txt`
+- **Typst (für Typst-Buchausgaben):** [Typst CLI](https://typst.app/) (`brew install typst`)
+- **Schriften (erforderlich für 1:1-Seitenparität):**
+  - *STIX Two Text* (SIL OFL 1.1; auf macOS vorinstalliert oder z. B. via `brew install --cask font-stix-two-text`)
+  - *Noto Serif Devanagari* Regular & Bold (SIL OFL 1.1; Google Noto Fonts, lokal in `data/fonts/NotoSerifDevanagari-Regular.ttf` und `data/fonts/NotoSerifDevanagari-Bold.ttf` oder systemweit via `brew install --cask font-noto-serif-devanagari`)
+  - Optional für `scripts/export_epub.py`: *Linux Libertine O* (`LinLibertine_R.otf`, `LinLibertine_RB.otf`, `LinLibertine_RI.otf` in `data/fonts/`)
 
 ```bash
-# Mit uv (automatische venv-Verwaltung):
+# Mit uv (inkl. dev-Abhängigkeiten wie pytest):
 uv sync
 
 # Alternativ mit pip:

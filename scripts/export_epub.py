@@ -607,18 +607,19 @@ def build_epub(base_dir: Path, output_path: Path):
 
 
 def main():
+    repo_root = Path(__file__).resolve().parent.parent
     parser = argparse.ArgumentParser(description="Export Boethlingk 1887 as EPUB 3 eBook")
     parser.add_argument(
         "--dir",
         type=Path,
-        default=Path("/Volumes/SanDisk1TB/proj/boethlingk"),
+        default=repo_root,
         help="Base directory of boethlingk repo",
     )
     parser.add_argument(
         "--output",
         "-o",
         type=Path,
-        default=Path("/Volumes/SanDisk1TB/proj/boethlingk/data/output/boethlingk1887.epub"),
+        default=repo_root / "data" / "output" / "boethlingk1887.epub",
         help="Target EPUB path",
     )
     args = parser.parse_args()

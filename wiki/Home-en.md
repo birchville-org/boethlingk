@@ -31,4 +31,4 @@ The comprehensive documentation covers:
 | **Master Dataset** | [`data/ashtadhyayi_complete_boethlingk1887.json`](https://github.com/birchville-org/boethlingk/blob/main/data/ashtadhyayi_complete_boethlingk1887.json) | Structured JSON dataset covering all 3,997 Sūtras |
 | **QA Viewer** | [`viewer.html`](https://github.com/birchville-org/boethlingk/blob/main/viewer.html) | Standalone split-pane editor conforming to Payer Standard |
 | **Code Repository** | [birchville-org/boethlingk](https://github.com/birchville-org/boethlingk) | Complete pipeline scripts and documentation |
-| **Online Docs** | [birchville-org.github.io/boethlingk](https://birchville-org.github.io/boethlingk/) | Multilingual documentation (Material for MkDocs) |
+| **Online Docs** | [docs.birchville.org/boethlingk](https://docs.birchville.org/boethlingk/) | Multilingual documentation (Material for MkDocs) |

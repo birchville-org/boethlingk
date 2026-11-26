@@ -24,7 +24,7 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 if str(Path(__file__).resolve().parent) not in sys.path:
     sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from build_typeset_edition import load_edition_structure
+from build_typeset_edition import load_edition_structure, verify_required_fonts
 from prepare_facsimile_dense_data import main as prepare_dense_data
 
 
@@ -215,18 +215,17 @@ def main() -> None:
     print("Kompiliere dichte Faksimile-Ausgabe (1:1-Seitenparität mit Böhtlingk 1887)...")
     print("=" * 70)
 
-    # 1. Daten vorbereiten
+    # 1. Daten & Schriften prüfen
     prepare_dense_data()
+    verify_required_fonts(REPO_ROOT)
 
     # 2. Typst kompilieren
     args.output.parent.mkdir(parents=True, exist_ok=True)
-    typst_cmd = [
-        "typst", "compile",
-        "--root", str(REPO_ROOT),
-        "--font-path", str(REPO_ROOT / "data" / "fonts"),
-        str(REPO_ROOT / "scripts" / "boethlingk1887_facsimile_dense.typ"),
-        str(args.output),
-    ]
+    typst_cmd = ["typst", "compile", "--root", str(REPO_ROOT)]
+    fonts_dir = REPO_ROOT / "data" / "fonts"
+    if fonts_dir.is_dir():
+        typst_cmd.extend(["--font-path", str(fonts_dir)])
+    typst_cmd.extend([str(REPO_ROOT / "scripts" / "boethlingk1887_facsimile_dense.typ"), str(args.output)])
 
     res = subprocess.run(typst_cmd)
     if res.returncode != 0:

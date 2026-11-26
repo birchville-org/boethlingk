@@ -100,6 +100,33 @@ def load_edition_structure(repo_root: Path = REPO_ROOT) -> dict:
         return json.load(f)
 
 
+def verify_required_fonts(repo_root: Path = REPO_ROOT) -> None:
+    """Ensure required open-source fonts (STIX Two Text, Noto Serif Devanagari) are available to Typst."""
+    fonts_dir = repo_root / "data" / "fonts"
+    cmd = ["typst", "fonts"]
+    if fonts_dir.is_dir():
+        cmd.extend(["--font-path", str(fonts_dir)])
+
+    res = subprocess.run(cmd, capture_output=True, text=True, check=False)
+    if res.returncode != 0:
+        print(f"FEHLER: `typst fonts` fehlgeschlagen: {res.stderr.strip()}", file=sys.stderr)
+        sys.exit(1)
+
+    available = res.stdout
+    required = ("STIX Two Text", "Noto Serif Devanagari")
+    missing = [font for font in required if font not in available]
+    if missing:
+        print(
+            "FEHLER: Erforderliche Schriften fehlen für Typst: "
+            + ", ".join(missing)
+            + ".\nOhne diese Schriften verschieben sich Glyphenmetriken und die 1:1-Seitenparität bricht.\n"
+            + f"Lege NotoSerifDevanagari-Regular.ttf / NotoSerifDevanagari-Bold.ttf unter {fonts_dir} ab "
+            + "oder installiere sie systemweit (z. B. `brew install --cask font-stix-two-text font-noto-serif-devanagari`).",
+            file=sys.stderr,
+        )
+        sys.exit(1)
+
+
 def prepare_data() -> None:
     """Pre-group master dataset by Adhyāya and Pāda for optimal Typst typesetting."""
     master_path = REPO_ROOT / "data" / "ashtadhyayi_complete_boethlingk1887.json"
@@ -275,15 +302,14 @@ def main() -> None:
     print("=" * 70)
 
     prepare_data()
+    verify_required_fonts(REPO_ROOT)
 
     args.output.parent.mkdir(parents=True, exist_ok=True)
-    typst_cmd = [
-        "typst", "compile",
-        "--root", str(REPO_ROOT),
-        "--font-path", str(REPO_ROOT / "data" / "fonts"),
-        str(REPO_ROOT / "scripts" / "boethlingk1887_edition.typ"),
-        str(args.output),
-    ]
+    typst_cmd = ["typst", "compile", "--root", str(REPO_ROOT)]
+    fonts_dir = REPO_ROOT / "data" / "fonts"
+    if fonts_dir.is_dir():
+        typst_cmd.extend(["--font-path", str(fonts_dir)])
+    typst_cmd.extend([str(REPO_ROOT / "scripts" / "boethlingk1887_edition.typ"), str(args.output)])
 
     res = subprocess.run(typst_cmd)
     if res.returncode != 0:

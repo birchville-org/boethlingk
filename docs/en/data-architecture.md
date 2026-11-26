@@ -16,6 +16,7 @@ boethlingk/
 │   ├── corrigenda.json                          # 50 Corrigenda items from pages 477–478
 │   ├── mistral/                                 # 478 pages Mistral OCR Markdown (*.md) & Bounding-Box JSON (*.json)
 │   ├── tei/                                     # TEI-P5 XML Master edition (boehtlingk1887_p5.xml)
+│   ├── fonts/                                   # Open-source fonts (STIX Two Text / Noto Serif Devanagari / Linux Libertine O, untracked)
 │   ├── img_cache/                               # Local cache of 478 Heidelberg IIIF scans (book pages 1–478)
 │   └── output/                                  # Output directory for Sandwich PDF, Typst PDF, and EPUB
 │

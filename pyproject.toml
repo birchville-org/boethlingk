@@ -19,6 +19,13 @@ dev = [
     "mkdocs-static-i18n>=1.2.0",
 ]
 
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+    "mkdocs-material>=9.5.0",
+    "mkdocs-static-i18n>=1.2.0",
+]
+
 [tool.hatch.build.targets.wheel]
 packages = ["scripts"]
 
