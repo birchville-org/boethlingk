@@ -1,4 +1,6 @@
 
+#import "common.typ": parse-len
+
 #let font_name = sys.inputs.at("font", default: "Charis SIL")
 
 #set page(
@@ -115,12 +117,12 @@ Die vorstehenden, das Alphabet enthaltenden Sūtra führen den Namen #text(font:
     v(0.3em)
     
     let prof = p_info.profile
-    let deva_sz = eval(prof.deva_size)
-    let body_sz = eval(prof.body_size)
-    let body_lead = eval(prof.body_leading)
-    let comm_sz = eval(prof.comm_size)
-    let comm_lead = eval(prof.comm_leading)
-    let sutra_sp = eval(prof.sutra_spacing)
+    let deva_sz = parse-len(prof.deva_size)
+    let body_sz = parse-len(prof.body_size)
+    let body_lead = parse-len(prof.body_leading)
+    let comm_sz = parse-len(prof.comm_size)
+    let comm_lead = parse-len(prof.comm_leading)
+    let sutra_sp = parse-len(prof.sutra_spacing)
 
     for s in p_info.sutras [
       #block(width: 100%, breakable: false)[

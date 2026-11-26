@@ -4,7 +4,7 @@ Wissenschaftliche Digitalisierung, kanonisches Alignment, TEI-P5-Edition und 1:1
 
 Digitalisat-Vorlage: Universitätsbibliothek Heidelberg ([Bibliotheca Palatina](https://digi.ub.uni-heidelberg.de/diglit/boehtlingk1887)).
 
-> ℹ️ **Verfahrens-Verweis:** Das Projekt `boethlingk` ist eine philologische Kanon-Edition auf Basis der Buch-Digitalisierungs-Pipeline **[AlexandriaSandwich](https://github.com/birchville-org/AlexandriaSandwich)**. Für die allgemeine Pipeline-Architektur (IIIF-Scan-Ingestion, Multimodale KI-OCR, Content-Aware Margin Masking, Sandwich-PDF-Schichtung) siehe die [AlexandriaSandwich Verfahrensdokumentation](https://birchville-org.github.io/AlexandriaSandwich/de/WIKI_VERFAHREN/). Das vorliegende Repository konzentriert sich ausschließlich auf das **spezifische philologische und typografische Editions-Delta** von Böhtlingks Pāṇini. Alle fertigen Ausgabedateien stehen über die [GitHub-Releases](https://github.com/birchville-org/boethlingk/releases/latest) bereit.
+> ℹ️ **Verfahrens-Verweis:** Das Projekt `boethlingk` ist eine philologische Kanon-Edition auf Basis der Buch-Digitalisierungs-Pipeline **[AlexandriaSandwich](https://github.com/birchville-org/AlexandriaSandwich)**. Für die allgemeine Pipeline-Architektur (IIIF-Scan-Ingestion, Multimodale KI-OCR, Content-Aware Margin Masking, Sandwich-PDF-Schichtung) siehe die [AlexandriaSandwich Verfahrensdokumentation](https://docs.birchville.org/AlexandriaSandwich/de/WIKI_VERFAHREN/). Das vorliegende Repository konzentriert sich ausschließlich auf das **spezifische philologische und typografische Editions-Delta** von Böhtlingks Pāṇini. Alle fertigen Ausgabedateien stehen über die [GitHub-Releases](https://github.com/birchville-org/boethlingk/releases/latest) bereit.
 
 ---
 
@@ -21,10 +21,10 @@ Digitalisat-Vorlage: Universitätsbibliothek Heidelberg ([Bibliotheca Palatina](
   - 478 `<pb>`-Seitenumbrüche mit direkter Verknüpfung zu den IIIF-Vollbildern der UB Heidelberg.
   - 50 Corrigenda-Einträge der Seiten 477–478 in `<back>`.
 
-- **Dichte Faksimile-Neuausgabe (1:1-Seitenparität, 8,58 MB, 484 Seiten):**
+- **Dichte Faksimile-Neuausgabe (1:1-Seitenparität, 8,59 MB, 484 Seiten):**
   - 📥 **Download:** [Release Asset (`boethlingk1887_facsimile_dense.pdf`)](https://github.com/birchville-org/boethlingk/releases/latest/download/boethlingk1887_facsimile_dense.pdf)
-  - **Exakte 1:1-Seitenparität:** Jede Buchseite (S. 1–476) entspricht exakt einer Neusatzseite des 1887er Originaldrucks (0 Seiten Überlauf).
-  - **Typografie:** Gestochen scharfer Satz in *STIX Two Text* und *Noto Serif Devanagari* mit nativen, fehlerfreien IAST-Kapitälchen (**PĀṆINI**, **MAHĀBHĀṢYA**, **BHAṬṬOJI DĪKṢITA**).
+  - **Exakte 1:1-Seitenparität:** 5 Seiten Titelei (i–v), 476 Textseiten (S. 1–476) exakt seitenidentisch mit dem 1887er Originaldruck (0 Seiten Überlauf) sowie 3 Seiten Corrigenda (S. 477–479).
+  - **Typografie:** Vektorbasierter Satz in *STIX Two Text* und *Noto Serif Devanagari* mit nativen IAST-Kapitälchen (**PĀṆINI**, **MAHĀBHĀṢYA**, **BHAṬṬOJI DĪKṢITA**).
   - **Adaptive Raumausnutzung:** Ein 6-Stufen-Dichtemodell skaliert Schriftgrad und Durchschuss dynamisch an die Textlast an.
   - **Navigation:** Originale Kolumnentitel und Randzähler, 48 hierarchische PDF-Lesezeichen und native Page-Labels.
   - **Herstellung:**
@@ -161,10 +161,17 @@ python3 scripts/build_sandwich_pdf.py \
 ```
 
 ### Schritt 6: Neu gesetzte Typst-Buchausgabe kompilieren (Moderner Schriftsatz)
-Generiert die 737-seitige, typografisch neu gesetzte Vektor-Buchausgabe mit modernen Schriftarten:
+Generiert die 512-seitige, typografisch neu gesetzte Vektor-Buchausgabe im ISO B5-Format:
 
 ```bash
-python3 scripts/build_typeset_edition.py
+uv run python scripts/build_typeset_edition.py
+```
+
+### Schritt 7: Dichte Faksimile-Neuausgabe & Quality Gates
+Erzeugt die 484-seitige Faksimile-Neuausgabe mit strikter 1:1-Seitenparität (inkl. Pytest Quality Gate):
+
+```bash
+uv run python scripts/build_facsimile_dense_edition.py
 ```
 
 ---
@@ -180,7 +187,7 @@ python3 scripts/build_typeset_edition.py
 
 ## 6. Dokumentation
 
-- **Online-Dokumentation (GitHub Pages):** [birchville-org.github.io/boethlingk](https://birchville-org.github.io/boethlingk/)
+- **Online-Dokumentation:** [docs.birchville.org/boethlingk](https://docs.birchville.org/boethlingk/)
   - Die Markdown-Dateien unter [`docs/`](docs/) bilden den Quellbestand für MkDocs Material und die zweisprachige Web-Dokumentation.
-  - 🇩🇪 **Deutsch:** [Startseite](https://birchville-org.github.io/boethlingk/) | [Wissenschaftliche Fallstudie](https://birchville-org.github.io/boethlingk/case-study/) | [QA- & Korrektur-Workflow](https://birchville-org.github.io/boethlingk/qa-workflow/)
-  - 🇬🇧 **English:** [Home](https://birchville-org.github.io/boethlingk/en/) | [Scholarly Case Study](https://birchville-org.github.io/boethlingk/en/case-study/) | [QA and Correction Workflow](https://birchville-org.github.io/boethlingk/en/qa-workflow/)
+  - 🇩🇪 **Deutsch:** [Startseite](https://docs.birchville.org/boethlingk/) | [Das Böhtlingk-Delta & Methodik](https://docs.birchville.org/boethlingk/case-study/) | [QA- & Korrektur-Workflow](https://docs.birchville.org/boethlingk/qa-workflow/)
+  - 🇬🇧 **English:** [Home](https://docs.birchville.org/boethlingk/en/) | [The Böhtlingk Delta & Methodology](https://docs.birchville.org/boethlingk/en/case-study/) | [QA and Correction Workflow](https://docs.birchville.org/boethlingk/en/qa-workflow/)

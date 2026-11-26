@@ -16,7 +16,7 @@ boethlingk/
 │   ├── corrigenda.json                          # 50 Corrigenda-Einträge der Seiten 477–478
 │   ├── mistral/                                 # 478 Seiten Mistral OCR Markdown (*.md) & Geometrie (*.json)
 │   ├── tei/                                     # TEI-P5 XML-Master (boehtlingk1887_p5.xml)
-│   ├── img_cache/                               # Lokaler Cache der 484 Heidelberger IIIF-Originalscans
+│   ├── img_cache/                               # Lokaler Cache der 478 Heidelberger IIIF-Originalscans (Buchseiten 1–478)
 │   └── output/                                  # Generierte Zielartefakte (Sandwich-PDF, Typst-PDF, EPUB)
 │
 ├── docs/                                        # Zweisprachige MkDocs-Dokumentation
@@ -64,7 +64,7 @@ Layer 3 — Kanonische Master-JSON & TEI-P5-XML-Edition
 
 ## 3. Schnittstelle zur Hauptpipeline & Verarbeitungsstufen
 
-Die Datenverarbeitung ist strikt zwischen der vorgeschalteten Hauptpipeline ([AlexandriaSandwich](https://birchville-org.github.io/AlexandriaSandwich/)) und dem Editions-Satelliten aufgeteilt:
+Die Datenverarbeitung ist strikt zwischen der vorgeschalteten Hauptpipeline ([AlexandriaSandwich](https://docs.birchville.org/AlexandriaSandwich/)) und dem Editions-Satelliten aufgeteilt:
 
 ```text
 ┌────────────────────────────────────────────────────────────┐
@@ -96,6 +96,6 @@ Die Datenverarbeitung ist strikt zwischen der vorgeschalteten Hauptpipeline ([Al
 | **Gesamte Sūtra-Zahl** | 3.997 Sūtras | 14 Śiva-Sūtras + 3.983 Aṣṭādhyāyī-Sūtras (100,0 % lückenlos) |
 | **Duplikate / Fehlstellen** | 0 / 0 | Vollständig abgeglichen gegen kanonischen Sūtrapāṭha |
 | **Sandwich-PDF Textblöcke** | 14.267 Blöcke | Pixelgenaue unsichtbare Vektor-Textebene (PDF Render Mode 3) |
-| **1:1 Faksimile-Neusatz** | 484 Seiten | Strikte 1:1-Seitenparität zu Leipzig 1887 (0 Überläufe) |
+| **1:1 Faksimile-Neusatz** | 484 Seiten | 5 S. Titelei (i–v), 476 Textseiten (S. 1–476, 1:1-Parität, 0 Überläufe), 3 S. Corrigenda (S. 477–479) |
 | **Fließende Buchausgabe** | 512 Seiten | Modernisierter Lesesatz im ISO B5-Format |
 | **TEI-Validierung** | 0 Fehler | 100 % schema-konform gegen RelaxNG (`tei_all.rng`) |

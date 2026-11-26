@@ -94,7 +94,7 @@ This project encompasses the complete historical processing, multimodal AI trans
 > All generic steps of image processing, IIIF caching, multimodal AI OCR (`mistral-ocr-latest`), Content-Aware Margin Masking (`#f0e8d6`), and 1:1 sandwich PDF assembly are powered by the core book digitization pipeline **[AlexandriaSandwich](https://github.com/birchville-org/AlexandriaSandwich)**.  
 >  
 > For the comprehensive description of the underlying pipeline architecture, please refer to:  
-> 👉 **[AlexandriaSandwich Pipeline Documentation](https://birchville-org.github.io/AlexandriaSandwich/en/WIKI_VERFAHREN/)**  
+> 👉 **[AlexandriaSandwich Pipeline Documentation](https://docs.birchville.org/AlexandriaSandwich/en/WIKI_VERFAHREN/)**  
 >  
 > This repository `boethlingk` focuses exclusively on the **specific philological and typographical edition delta** (canonical state machine, 1:1 page parity, STIX Two Text font stack, TEI-P5 encoding).
 

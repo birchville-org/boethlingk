@@ -130,9 +130,9 @@ uv run pytest
 ```
 
 The test suite validates:
-* **Text Integrity (`tests/test_text_integrity.py`):** Unicode script whitelist (Latin with IAST, Devanagari, Greek), exclusion of non-relevant scripts (Hebrew, Telugu, etc.), prohibition of generic placeholder tokens (`[Sanskrit]`, `[OCR]`), and detection of orphan punctuation (` , `).
-* **Typeset Symmetry (`tests/test_typeset_symmetry.py`):** Inspects the compiled PDF for uniform font family (`STIX Two Text`), upright font style, and uniform color in running headers across all pages (no alternating italic or slate-colored headers).
-* **1:1 Page Parity (`tests/test_page_parity.py`):** Exact congruence between all 476 historical text pages and the 476 PDF text pages.
+* **Text Integrity (`tests/test_text_integrity.py`):** Positive Unicode script whitelist (Latin with IAST, Devanagari, Vedic, Greek) across all 14 Śiva-Sūtras, 3,983 Aṣṭādhyāyī sūtras, and 50 Corrigenda entries, completeness and uniqueness checks (3,997 sūtras + 50 corrigenda), prohibition of placeholder tokens (`[Sanskrit]`, `[OCR]`), and detection of orphan punctuation (` , `).
+* **Typeset Symmetry (`tests/test_typeset_symmetry.py`):** Inspects running headers (pp. 2–479) and outer-margin Pāṇini references (pp. 2–476) in the compiled PDF for uniform font family (`STIXTwoText`), upright style (no italic flag), approved colors (`#000000` / `#03192e`), and verso/recto mirror placement.
+* **1:1 Page Parity (`tests/test_page_parity.py`):** Verifies exactly 484 PDF pages (5 front matter pp. i–v, 476 text pp. 1–476 in strict 1:1 parity, 3 corrigenda pp. 477–479) including body placement of every margin sūtra reference.
 
 ```bash
 # Regenerate and validate TEI-P5 XML against the official RelaxNG schema:

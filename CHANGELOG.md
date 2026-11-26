@@ -7,15 +7,15 @@ Alle wesentlichen Änderungen und Meilensteine dieses Projekts werden in dieser 
 ### Added
 - **STIX Two Text Typografie-Stack:**
   - Vollständige Umstellung der Primärschrift für Latein und IAST auf *STIX Two Text* mit nativer OpenType-Kapitälchen-Unterstützung für alle diakritischen Großbuchstaben (**PĀṆINI**, **MAHĀBHĀṢYA**, **BHAṬṬOJI DĪKṢITA**).
-- **Dichte Faksimile-Neuausgabe (1:1-Seitenparität, 484 Seiten):**
-  - `boethlingk1887_facsimile_dense.pdf` (8,58 MB): Vollständiger Neusatz mit exakter 1:1-Seitenparität zum historischen Original von 1887 (0 Seiten Überlauf).
+- **Dichte Faksimile-Neuausgabe (1:1-Seitenparität, 484 Seiten: 5 S. Titelei i–v, 476 Textseiten S. 1–476, 3 S. Corrigenda S. 477–479):**
+  - `boethlingk1887_facsimile_dense.pdf` (8,59 MB): Vollständiger Neusatz mit exakter 1:1-Seitenparität zum historischen Original von 1887 (0 Seiten Überlauf).
   - 6-stufiges adaptives typografisches Layoutmodell mit dynamischer Skalierung von Schriftgrad und Durchschuss je nach Textlast.
   - Vollständige Restauration des zweispaltigen Tableaus der 14 Śiva-Sūtras auf Seite 1.
   - Rekonstruktion und Bereinigung systemischer OCR-Artefakte und Zeilenumbrüche.
 - **Automatisiertes Quality-Gate-Framework:**
-  - `tests/test_page_parity.py`: Verifikation von 0 Überläufen über alle 476 Textseiten.
-  - `tests/test_text_integrity.py`: Vollständigkeitsprüfung aller 3.997 Sūtras und Corrigenda.
-  - `tests/test_typeset_symmetry.py`: Audit der lebenden Kolumnentitel und Pāṇini-Marginalien.
+  - `tests/test_page_parity.py`: Verifikation von 484 Gesamtseiten und 0 Überläufen über alle 476 Textseiten.
+  - `tests/test_text_integrity.py`: Vollständigkeitsprüfung (14 Śiva-Sūtras, 3.983 Aṣṭādhyāyī-Sūtras, 50 Corrigenda) sowie positive Unicode-Skript-Whitelist.
+  - `tests/test_typeset_symmetry.py`: Audit der lebenden Kolumnentitel (S. 2–479) und äußeren Pāṇini-Marginalien (S. 2–476) auf Schriftfamilie, Schnitt, Farbe und Spiegelung.
 - **Editions-Artefakte-Katalog (`docs/de/artifacts.md`, `docs/en/artifacts.md`):**
   - Zentrale Dokumentation aller 7 Artefakte mit Format, Umfang, Einsatzprofil und direkten Download-Links.
 

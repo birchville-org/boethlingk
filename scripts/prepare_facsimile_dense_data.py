@@ -11,7 +11,9 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
-from build_typeset_edition import to_deva_num, soft_hyphenate_long_iast
+from build_typeset_edition import to_deva_num, soft_hyphenate_long_iast, ensure_corrigenda_json
+
+REPO_ROOT = Path(__file__).resolve().parent.parent
 
 adh_ordinals = {
     1: "प्रथमस्याध्यायस्य",
@@ -32,14 +34,6 @@ pada_ordinals = {
 }
 
 adh_romans = {1: "I", 2: "II", 3: "III", 4: "IV", 5: "V", 6: "VI", 7: "VII", 8: "VIII"}
-
-heavy_pages = {
-    8: {"tier": 0, "deva_size": "9.8pt", "body_size": "8.2pt", "body_leading": "0.28em", "comm_size": "7.0pt", "comm_leading": "0.24em", "sutra_spacing": "0.08em"},
-    282: {"tier": 0, "deva_size": "9.8pt", "body_size": "8.2pt", "body_leading": "0.28em", "comm_size": "7.0pt", "comm_leading": "0.24em", "sutra_spacing": "0.08em"},
-    286: {"tier": 0, "deva_size": "9.8pt", "body_size": "8.2pt", "body_leading": "0.28em", "comm_size": "7.0pt", "comm_leading": "0.24em", "sutra_spacing": "0.08em"},
-    378: {"tier": 0, "deva_size": "9.8pt", "body_size": "8.2pt", "body_leading": "0.28em", "comm_size": "7.0pt", "comm_leading": "0.24em", "sutra_spacing": "0.08em"},
-    460: {"tier": 0, "deva_size": "9.8pt", "body_size": "8.2pt", "body_leading": "0.28em", "comm_size": "7.0pt", "comm_leading": "0.24em", "sutra_spacing": "0.08em"},
-}
 
 
 def get_colophon(a: int, p: int) -> str:
@@ -139,15 +133,17 @@ def calculate_profile(p_num: int, sutras: list[dict]) -> dict:
 
 
 def main() -> None:
-    master_path = Path("/Volumes/SanDisk1TB/proj/boethlingk/data/ashtadhyayi_complete_boethlingk1887.json")
+    master_path = REPO_ROOT / "data" / "ashtadhyayi_complete_boethlingk1887.json"
     with open(master_path, encoding="utf-8") as f:
         master = json.load(f)
 
-    hyphens_path = Path("/Volumes/SanDisk1TB/proj/boethlingk/data/original_hyphenations.json")
+    hyphens_path = REPO_ROOT / "data" / "original_hyphenations.json"
     hyphens = {}
     if hyphens_path.exists():
         with open(hyphens_path, encoding="utf-8") as f:
             hyphens = json.load(f)
+
+    ensure_corrigenda_json(REPO_ROOT)
 
     sutras = master["sutras"]
 
@@ -164,7 +160,7 @@ def main() -> None:
         if p:
             by_page.setdefault(p, []).append(s)
 
-    calibrated_profiles_path = Path("/Volumes/SanDisk1TB/proj/boethlingk/data/calibrated_dense_profiles.json")
+    calibrated_profiles_path = REPO_ROOT / "data" / "calibrated_dense_profiles.json"
     calibrated_profiles = {}
     if calibrated_profiles_path.exists():
         with open(calibrated_profiles_path, encoding="utf-8") as f:
@@ -208,7 +204,7 @@ def main() -> None:
             "sutras": processed,
         })
 
-    out_path = Path("/Volumes/SanDisk1TB/proj/boethlingk/data/ashtadhyayi_facsimile_dense.json")
+    out_path = REPO_ROOT / "data" / "ashtadhyayi_facsimile_dense.json"
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(pages_output, f, ensure_ascii=False, indent=2)
 

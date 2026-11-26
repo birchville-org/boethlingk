@@ -1,0 +1,389 @@
+{
+  "front_matter_pages": 5,
+  "shiva_sutras_page": 1,
+  "sutrapatha_start_page": 2,
+  "sutrapatha_end_page": 476,
+  "text_pages_count": 476,
+  "original_book_pages": 478,
+  "original_corrigenda_pages": [477, 478],
+  "facsimile_corrigenda_pages": [477, 479],
+  "total_facsimile_pdf_pages": 484,
+  "front_matter_bookmarks": [
+    [1, "Titelei & Front Matter", 1],
+    [2, "Halbtitel (Bastard Title)", 1],
+    [2, "Impressum & Birchville Curation Badge", 2],
+    [2, "Haupttitel (Leipzig 1887 Neusatz)", 3],
+    [2, "Vorwort zur dichten Faksimile-Ausgabe", 4],
+    [2, "Inhaltsübersicht", 5]
+  ],
+  "adhyayas": [
+    {
+      "num": 1,
+      "title_de": "Erster Adhyāya",
+      "title_sa": "Prathamo 'dhyāyaḥ",
+      "pada_range": "1.1–1.4",
+      "start_page": 2,
+      "end_page": 43,
+      "padas": [
+        {
+          "num": 1,
+          "title_de": "Erster Pāda",
+          "title_sa": "Prathamaḥ Pādaḥ",
+          "incipit": "वृद्धिरादैच्",
+          "incipit_iast": "Vṛddhirādaic",
+          "sutra_range": "1.1.1–75",
+          "start_page": 2
+        },
+        {
+          "num": 2,
+          "title_de": "Zweiter Pāda",
+          "title_sa": "Dvitīyaḥ Pādaḥ",
+          "incipit": "गाङ्कुटादिभ्यो ऽञ्णिन्ङित्",
+          "incipit_iast": "Gāṅkuṭādibhyo",
+          "sutra_range": "1.2.1–73",
+          "start_page": 11
+        },
+        {
+          "num": 3,
+          "title_de": "Dritter Pāda",
+          "title_sa": "Tṛtīyaḥ Pādaḥ",
+          "incipit": "भूवादयो धातवः",
+          "incipit_iast": "Bhūvādayo dhātavaḥ",
+          "sutra_range": "1.3.1–93",
+          "start_page": 21
+        },
+        {
+          "num": 4,
+          "title_de": "Vierter Pāda",
+          "title_sa": "Caturthaḥ Pādaḥ",
+          "incipit": "आ कडारादेका संज्ञा",
+          "incipit_iast": "Ā kaḍārādekā saṃjñā",
+          "sutra_range": "1.4.1–110",
+          "start_page": 31
+        }
+      ]
+    },
+    {
+      "num": 2,
+      "title_de": "Zweiter Adhyāya",
+      "title_sa": "Dvitīyo 'dhyāyaḥ",
+      "pada_range": "2.1–2.4",
+      "start_page": 43,
+      "end_page": 75,
+      "padas": [
+        {
+          "num": 1,
+          "title_de": "Erster Pāda",
+          "title_sa": "Prathamaḥ Pādaḥ",
+          "incipit": "समर्थः पदविधिः",
+          "incipit_iast": "Samarthaḥ padavidhiḥ",
+          "sutra_range": "2.1.1–72",
+          "start_page": 43
+        },
+        {
+          "num": 2,
+          "title_de": "Zweiter Pāda",
+          "title_sa": "Dvitīyaḥ Pādaḥ",
+          "incipit": "पूर्वो ऽपरो ऽधरोत्तराणि",
+          "incipit_iast": "Pūrvo 'paro",
+          "sutra_range": "2.2.1–38",
+          "start_page": 52
+        },
+        {
+          "num": 3,
+          "title_de": "Dritter Pāda",
+          "title_sa": "Tṛtīyaḥ Pādaḥ",
+          "incipit": "अनभिहिते",
+          "incipit_iast": "Anabhihite",
+          "sutra_range": "2.3.1–73",
+          "start_page": 56
+        },
+        {
+          "num": 4,
+          "title_de": "Vierter Pāda",
+          "title_sa": "Caturthaḥ Pādaḥ",
+          "incipit": "द्विगुरेकवचनम्",
+          "incipit_iast": "Dvigurekavacanam",
+          "sutra_range": "2.4.1–85",
+          "start_page": 65
+        }
+      ]
+    },
+    {
+      "num": 3,
+      "title_de": "Dritter Adhyāya",
+      "title_sa": "Tṛtīyo 'dhyāyaḥ",
+      "pada_range": "3.1–3.4",
+      "start_page": 75,
+      "end_page": 148,
+      "padas": [
+        {
+          "num": 1,
+          "title_de": "Erster Pāda",
+          "title_sa": "Prathamaḥ Pādaḥ",
+          "incipit": "प्रत्ययः",
+          "incipit_iast": "Pratyayaḥ",
+          "sutra_range": "3.1.1–150",
+          "start_page": 75
+        },
+        {
+          "num": 2,
+          "title_de": "Zweiter Pāda",
+          "title_sa": "Dvitīyaḥ Pādaḥ",
+          "incipit": "कर्मण्यण्",
+          "incipit_iast": "Karmaṇyaṇ",
+          "sutra_range": "3.2.1–188",
+          "start_page": 93
+        },
+        {
+          "num": 3,
+          "title_de": "Dritter Pāda",
+          "title_sa": "Tṛtīyaḥ Pādaḥ",
+          "incipit": "उणादयो बहुलम्",
+          "incipit_iast": "Uṇādayo bahulam",
+          "sutra_range": "3.3.1–176",
+          "start_page": 114
+        },
+        {
+          "num": 4,
+          "title_de": "Vierter Pāda",
+          "title_sa": "Caturthaḥ Pādaḥ",
+          "incipit": "धातुसम्बन्धे प्रत्ययाः",
+          "incipit_iast": "Dhātusambandhe",
+          "sutra_range": "3.4.1–117",
+          "start_page": 134
+        }
+      ]
+    },
+    {
+      "num": 4,
+      "title_de": "Vierter Adhyāya",
+      "title_sa": "Caturtho 'dhyāyaḥ",
+      "pada_range": "4.1–4.4",
+      "start_page": 149,
+      "end_page": 221,
+      "padas": [
+        {
+          "num": 1,
+          "title_de": "Erster Pāda",
+          "title_sa": "Prathamaḥ Pādaḥ",
+          "incipit": "ङ्याप्प्रातिपदिकात्",
+          "incipit_iast": "Ṅyāpprātipadikāt",
+          "sutra_range": "4.1.1–178",
+          "start_page": 149
+        },
+        {
+          "num": 2,
+          "title_de": "Zweiter Pāda",
+          "title_sa": "Dvitīyaḥ Pādaḥ",
+          "incipit": "तेन रक्तं रागात्",
+          "incipit_iast": "Tena raktaṃ rāgāt",
+          "sutra_range": "4.2.1–145",
+          "start_page": 170
+        },
+        {
+          "num": 3,
+          "title_de": "Dritter Pāda",
+          "title_sa": "Tṛtīyaḥ Pādaḥ",
+          "incipit": "युष्मदस्मदोरन्यतरस्याम्",
+          "incipit_iast": "Yuṣmadasmador",
+          "sutra_range": "4.3.1–168",
+          "start_page": 187
+        },
+        {
+          "num": 4,
+          "title_de": "Vierter Pāda",
+          "title_sa": "Caturthaḥ Pādaḥ",
+          "incipit": "प्राग्वहतेष्ठञ्",
+          "incipit_iast": "Prāgvahateṣṭhañ",
+          "sutra_range": "4.4.1–144",
+          "start_page": 206
+        }
+      ]
+    },
+    {
+      "num": 5,
+      "title_de": "Fünfter Adhyāya",
+      "title_sa": "Pañcamo 'dhyāyaḥ",
+      "pada_range": "5.1–5.4",
+      "start_page": 221,
+      "end_page": 282,
+      "padas": [
+        {
+          "num": 1,
+          "title_de": "Erster Pāda",
+          "title_sa": "Prathamaḥ Pādaḥ",
+          "incipit": "प्राङ्क्रीताच्छः",
+          "incipit_iast": "Prāṅkrītācchaḥ",
+          "sutra_range": "5.1.1–136",
+          "start_page": 221
+        },
+        {
+          "num": 2,
+          "title_de": "Zweiter Pāda",
+          "title_sa": "Dvitīyaḥ Pādaḥ",
+          "incipit": "धान्यनां भवने क्षेत्रे खञ्",
+          "incipit_iast": "Dhānyānāṃ",
+          "sutra_range": "5.2.1–140",
+          "start_page": 236
+        },
+        {
+          "num": 3,
+          "title_de": "Dritter Pāda",
+          "title_sa": "Tṛtīyaḥ Pādaḥ",
+          "incipit": "प्राग्दिशो विभक्तिः",
+          "incipit_iast": "Prāgdiśo vibhaktiḥ",
+          "sutra_range": "5.3.1–119",
+          "start_page": 251
+        },
+        {
+          "num": 4,
+          "title_de": "Vierter Pāda",
+          "title_sa": "Caturthaḥ Pādaḥ",
+          "incipit": "पादशतस्य संख्यादेर्वीप्सायाम्",
+          "incipit_iast": "Pādaśatasya",
+          "sutra_range": "5.4.1–160",
+          "start_page": 264
+        }
+      ]
+    },
+    {
+      "num": 6,
+      "title_de": "Sechster Adhyāya",
+      "title_sa": "Ṣaṣṭho 'dhyāyaḥ",
+      "pada_range": "6.1–6.4",
+      "start_page": 283,
+      "end_page": 374,
+      "padas": [
+        {
+          "num": 1,
+          "title_de": "Erster Pāda",
+          "title_sa": "Prathamaḥ Pādaḥ",
+          "incipit": "एकाचो द्वे प्रथमस्य",
+          "incipit_iast": "Ekāco dve prathamasya",
+          "sutra_range": "6.1.1–223",
+          "start_page": 283
+        },
+        {
+          "num": 2,
+          "title_de": "Zweiter Pāda",
+          "title_sa": "Dvitīyaḥ Pādaḥ",
+          "incipit": "बहुव्रीहौ प्रकृत्या पूर्वपदम्",
+          "incipit_iast": "Bahuvrīhau",
+          "sutra_range": "6.2.1–199",
+          "start_page": 311
+        },
+        {
+          "num": 3,
+          "title_de": "Dritter Pāda",
+          "title_sa": "Tṛtīyaḥ Pādaḥ",
+          "incipit": "अलुगुत्तरपदे",
+          "incipit_iast": "Aluguttarapade",
+          "sutra_range": "6.3.1–139",
+          "start_page": 335
+        },
+        {
+          "num": 4,
+          "title_de": "Vierter Pāda",
+          "title_sa": "Caturthaḥ Pādaḥ",
+          "incipit": "अङ्गस्य",
+          "incipit_iast": "Aṅgasya",
+          "sutra_range": "6.4.1–175",
+          "start_page": 351
+        }
+      ]
+    },
+    {
+      "num": 7,
+      "title_de": "Siebenter Adhyāya",
+      "title_sa": "Saptamo 'dhyāyaḥ",
+      "pada_range": "7.1–7.4",
+      "start_page": 374,
+      "end_page": 428,
+      "padas": [
+        {
+          "num": 1,
+          "title_de": "Erster Pāda",
+          "title_sa": "Prathamaḥ Pādaḥ",
+          "incipit": "युवोरनाकौ",
+          "incipit_iast": "Yuvoranākau",
+          "sutra_range": "7.1.1–103",
+          "start_page": 374
+        },
+        {
+          "num": 2,
+          "title_de": "Zweiter Pāda",
+          "title_sa": "Dvitīyaḥ Pādaḥ",
+          "incipit": "सिचि वृद्धिः परस्मैपदेषु",
+          "incipit_iast": "Sici vṛddhiḥ",
+          "sutra_range": "7.2.1–118",
+          "start_page": 387
+        },
+        {
+          "num": 3,
+          "title_de": "Dritter Pāda",
+          "title_sa": "Tṛtīyaḥ Pādaḥ",
+          "incipit": "लघोरुपधायाः",
+          "incipit_iast": "Laghorupadhāyāḥ",
+          "sutra_range": "7.3.1–120",
+          "start_page": 402
+        },
+        {
+          "num": 4,
+          "title_de": "Vierter Pāda",
+          "title_sa": "Caturthaḥ Pādaḥ",
+          "incipit": "णिच्युपसंख्यानम्",
+          "incipit_iast": "Ṇicyupasaṃkhyānam",
+          "sutra_range": "7.4.1–97",
+          "start_page": 417
+        }
+      ]
+    },
+    {
+      "num": 8,
+      "title_de": "Achter Adhyāya",
+      "title_sa": "Aṣṭamo 'dhyāyaḥ",
+      "pada_range": "8.1–8.4",
+      "start_page": 428,
+      "end_page": 476,
+      "padas": [
+        {
+          "num": 1,
+          "title_de": "Erster Pāda",
+          "title_sa": "Prathamaḥ Pādaḥ",
+          "incipit": "सर्वस्य द्वे",
+          "incipit_iast": "Sarvasya dve",
+          "sutra_range": "8.1.1–74",
+          "start_page": 428
+        },
+        {
+          "num": 2,
+          "title_de": "Zweiter Pāda",
+          "title_sa": "Dvitīyaḥ Pādaḥ",
+          "incipit": "पूर्वत्रासिद्धम्",
+          "incipit_iast": "Pūrvatrāsiddham",
+          "sutra_range": "8.2.1–108",
+          "start_page": 438
+        },
+        {
+          "num": 3,
+          "title_de": "Dritter Pāda",
+          "title_sa": "Tṛtīyaḥ Pādaḥ",
+          "incipit": "रषाभ्यां नो णः समानपदे",
+          "incipit_iast": "Raṣābhyāṃ",
+          "sutra_range": "8.3.1–119",
+          "start_page": 452
+        },
+        {
+          "num": 4,
+          "title_de": "Vierter Pāda",
+          "title_sa": "Caturthaḥ Pādaḥ",
+          "incipit": "स्तोः श्चुना श्चुः",
+          "incipit_iast": "Stoḥ ścunā ścuḥ",
+          "sutra_range": "8.4.1–68",
+          "start_page": 467
+        }
+      ]
+    }
+  ]
+}

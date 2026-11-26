@@ -130,9 +130,9 @@ uv run pytest
 ```
 
 Die Testsuite prüft automatisch:
-* **Textintegrität (`tests/test_text_integrity.py`):** Whitelist erlaubter Unicode-Skripte (Latein mit IAST, Devanāgarī, Griechisch), Ausschluss von Fremdskripten (Hebräisch, Telugu etc.), Verbot von Platzhalter-Tokens (`[Sanskrit]`, `[OCR]`) und Detektion verwaister Interpunktion (` , `).
-* **Typografische Symmetrie (`tests/test_typeset_symmetry.py`):** Prüfung des kompilierten PDFs auf einheitliche Schriftart (`STIX Two Text`), Schriftstil (aufrecht) und Farbe der Kolumnentitel über alle Seiten (keine unmotivierten Wechsel zwischen gerade und ungerade).
-* **1:1-Seitenparität (`tests/test_page_parity.py`):** Exakte Übereinstimmung aller 476 historischen Textseiten mit den 476 PDF-Textseiten.
+* **Textintegrität (`tests/test_text_integrity.py`):** Positive Unicode-Skript-Whitelist (Latein mit IAST, Devanāgarī, Vedisch, Griechisch) über alle 14 Śiva-Sūtras, 3.983 Aṣṭādhyāyī-Sūtras und 50 Corrigenda, Duplikat- und Vollständigkeitsprüfung (3.997 Sūtras + 50 Corrigenda), Verbot von Platzhalter-Tokens (`[Sanskrit]`, `[OCR]`) und Detektion verwaister Interpunktion (` , `).
+* **Typografische Symmetrie (`tests/test_typeset_symmetry.py`):** Prüfung aller Kolumnentitel (S. 2–479) und äußeren Pāṇini-Marginalien (S. 2–476) im kompilierten PDF auf einheitliche Schriftfamilie (`STIXTwoText`), aufrechten Schnitt (kein Kursiv-Flag), definierte Farben (`#000000` / `#03192e`) und korrekte Spiegelung zwischen geraden und ungeraden Seiten.
+* **1:1-Seitenparität (`tests/test_page_parity.py`):** Prüfung auf exakt 484 PDF-Seiten (5 S. Titelei i–v, 476 Textseiten S. 1–476 in 1:1-Parität, 3 S. Corrigenda S. 477–479) inklusive Verifikation aller Marginal-Sūtrareferenzen im Satzspiegel.
 
 ```bash
 # TEI-P5-XML neu erzeugen und gegen das offizielle RelaxNG-Schema validieren:

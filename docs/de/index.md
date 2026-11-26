@@ -94,7 +94,7 @@ Dieses Projekt umfasst die vollständige historische Erschließung, multimodale 
 > Alle generischen Schritte der Bildverarbeitung, des IIIF-Cachings, der multimodalen KI-OCR (`mistral-ocr-latest`), des Content-Aware Margin Maskings (`#f0e8d6`) sowie der Erzeugung von 1:1 Sandwich-PDFs basieren auf der zentralen Buch-Digitalisierungs-Pipeline **[AlexandriaSandwich](https://github.com/birchville-org/AlexandriaSandwich)**.  
 >  
 > Für die detaillierte Beschreibung des allgemeinen Verfahrens verweisen wir auf die zentrale Dokumentation:  
-> 👉 **[AlexandriaSandwich Verfahrensdokumentation](https://birchville-org.github.io/AlexandriaSandwich/de/WIKI_VERFAHREN/)**  
+> 👉 **[AlexandriaSandwich Verfahrensdokumentation](https://docs.birchville.org/AlexandriaSandwich/de/WIKI_VERFAHREN/)**  
 >  
 > Das vorliegende Repository `boethlingk` konzentriert sich ausschließlich auf das **spezifische philologische und typografische Editions-Delta** (kanonische Statusmaschine, 1:1-Seitenparität, STIX Two Text Schriftstack, TEI-P5-Auszeichnung).
 

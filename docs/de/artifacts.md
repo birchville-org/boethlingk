@@ -39,9 +39,9 @@ Die Artefakte decken unterschiedliche Nutzungsszenarien ab – vom exakten histo
 ## 📄 Die Artefakte im Detail
 
 ### 1. Dichte Faksimile-Neuausgabe (1:1-Seitenparität)
-* **Dateiname:** `boethlingk1887_facsimile_dense.pdf` (8,58 MB · 484 Seiten)
+* **Dateiname:** `boethlingk1887_facsimile_dense.pdf` (8,59 MB · 484 Seiten: 5 S. Titelei i–v, 476 Textseiten S. 1–476, 3 S. Corrigenda S. 477–479)
 * **Was ist es?**  
-  Ein vollständiger, moderner Vektorneusatz (ISO B5) mit **exakter 1:1-Seitenparität** zum historischen Leipziger Originaldruck von 1887. Jede Buchseite (S. 1–476) beginnt und endet am selben Sūtra wie bei Böhtlingk (0 Seiten Überlauf).
+  Ein vollständiger, moderner Vektorneusatz (ISO B5) mit **exakter 1:1-Seitenparität** zum historischen Leipziger Originaldruck von 1887. Jede Textseite (S. 1–476) beginnt und endet am selben Sūtra wie bei Böhtlingk (0 Seiten Überlauf).
 * **Typografische Besonderheiten:**
   * **Schriftstack:** *STIX Two Text* kombiniert mit *Noto Serif Devanagari*. Bietet native, fehlerfreie OpenType-IAST-Kapitälchen (**PĀṆINI**, **MAHĀBHĀṢYA**, **BHAṬṬOJI DĪKṢITA**) mit echten Versal-Diakritika.
   * **Adaptive Typografie:** Ein 6-Stufen-Dichtemodell skaliert Schriftgrad und Durchschuss dynamisch an die Textlast an, sodass leichte Seiten den Satzspiegel füllen und textstarke Seiten (wie S. 8) ohne Überlauf stehen.
@@ -97,7 +97,7 @@ Die Artefakte decken unterschiedliche Nutzungsszenarien ab – vom exakten histo
 * **Besonderheiten:**
   * Jedes Sūtra ist als semantischer `<entry>` ausgezeichnet.
   * 478 `<pb>`-Tags enthalten direkte IIIF-Vollbild-Links zu den Scans der UB Heidelberg.
-  * Böhtlingks originale Druckfehlerkorrekturen (S. 477–480) sind strukturiert in `<back>` erfasst.
+  * Böhtlingks originale Druckfehlerkorrekturen (S. 477–478) sind strukturiert in `<back>` erfasst.
 * **Einsatzbereich:** Langzeitarchivierung in Universitätsbibliotheken und Einspeisung in TEI-Repositorien.
 * **Quelle:** [Im Repository ansehen](https://github.com/birchville-org/boethlingk/blob/main/data/tei/boehtlingk1887_p5.xml)
 

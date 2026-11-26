@@ -3,10 +3,23 @@
 venv/
 venv_kraken/
 
-# Environment secrets
+# Environment & credential secrets (Birchville Security Standard)
 .env
 .env.*
 !.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.token
+*.credentials
+credentials.json
+.credentials.json
+oauth_creds.json
+client_secrets*.json
+id_rsa*
+id_ed25519*
+secrets.json
 
 # OS / Editor artifacts
 .DS_Store
@@ -15,6 +28,7 @@ __pycache__/
 .idea/
 .vscode/
 site/
+.agents/review-status.json
 
 # Heavy training models and perplexity dumps
 models/
@@ -57,6 +71,9 @@ Boethlingk_Paninis_Grammatik_comp.md
 !data/mistral/**
 !data/sutras.json
 !data/shiva_sutras.json
+!data/corrigenda.json
+!data/original_hyphenations.json
+!data/edition_structure.json
 !data/boehtlingk1887/
 data/boehtlingk1887/iiif_manifest.json
 !data/boehtlingk1887/job.config.json

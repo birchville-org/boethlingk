@@ -39,7 +39,7 @@ The artifacts address diverse research workflows – ranging from exact historic
 ## 📄 Detailed Artifact Description
 
 ### 1. Dense Facsimile Edition (1:1 Page Parity)
-* **Filename:** `boethlingk1887_facsimile_dense.pdf` (8.58 MB · 484 pages)
+* **Filename:** `boethlingk1887_facsimile_dense.pdf` (8.59 MB · 484 pages: 5 front matter pp. i–v, 476 text pp. 1–476, 3 corrigenda pp. 477–479)
 * **What is it?**  
   A modern vector typeset edition (ISO B5) with **strict 1:1 page parity** against the historical 1887 Leipzig print by Haessel. Every text page (pp. 1–476) starts and ends on the exact same sūtras as Böhtlingk's original (0 overflow pages).
 * **Key Features:**
@@ -97,7 +97,7 @@ The artifacts address diverse research workflows – ranging from exact historic
 * **Key Features:**
   * Sūtra entries marked up as `<entry>`.
   * 478 `<pb>` page break tags linking to Heidelberg University IIIF images.
-  * Böhtlingk's original corrigenda (pp. 477–480) structured in `<back>`.
+  * Böhtlingk's original corrigenda (pp. 477–478) structured in `<back>`.
 * **Intended Audience:** Academic repositories and digital humanities collections.
 * **Source:** [View on GitHub](https://github.com/birchville-org/boethlingk/blob/main/data/tei/boehtlingk1887_p5.xml)
 

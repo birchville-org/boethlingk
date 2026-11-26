@@ -3,14 +3,14 @@
 > **Scholarly edition, canonical sūtra alignment, and 1:1 facsimile typesetting of Otto von Böhtlingk's *Pâṇini's Grammatik* (Leipzig 1887).**
 >
 > 🔗 **Project Repository:** [github.com/birchville-org/boethlingk](https://github.com/birchville-org/boethlingk)  
-> 🔗 **Central Processing Pipeline:** [AlexandriaSandwich](https://birchville-org.github.io/AlexandriaSandwich/en/)  
+> 🔗 **Central Processing Pipeline:** [AlexandriaSandwich](https://docs.birchville.org/AlexandriaSandwich/en/)  
 > 📦 **All Downloads:** [Edition Artifacts & Downloads](artifacts.md)
 
 ---
 
 ## 1. Rationale for a Dedicated Edition Project
 
-Why does a complex philological work such as Otto von Böhtlingk's *Pâṇini's Grammatik* (2nd edition, Leipzig 1887) require a dedicated edition project rather than a generic pass through the [AlexandriaSandwich](https://birchville-org.github.io/AlexandriaSandwich/en/) digitization pipeline?
+Why does a complex philological work such as Otto von Böhtlingk's *Pâṇini's Grammatik* (2nd edition, Leipzig 1887) require a dedicated edition project rather than a generic pass through the [AlexandriaSandwich](https://docs.birchville.org/AlexandriaSandwich/en/) digitization pipeline?
 
 AlexandriaSandwich is engineered as a universal, stateless processing engine: it converts historical scans into clean, searchable 1:1 sandwich PDFs and raw text layers. For landmark, multi-script reference works, however, pure generic automation reaches fundamental architectural limits.
 
@@ -27,7 +27,7 @@ Böhtlingk's grammar is not running narrative text, but a formal hierarchical ru
 * 14 introductory Śiva-Sūtras (phonological matrix)
 * 3,983 Aṣṭādhyāyī sūtras across 8 books (Adhyāyas) and 32 quarters (Pādas)
 * Historical three-script typography (Devanāgarī, German Antiqua, IAST transliteration with Vedic accents)
-* Corrigenda and appendices (pp. 477–480)
+* Corrigenda and appendices (pp. 477–478)
 
 This architecture requires deterministic state machines and ground-truth validation far beyond standard OCR.
 
@@ -47,7 +47,7 @@ The separation of concerns between the processing platform and the edition satel
 │  • Fold & margin cleaning / Content-Aware Margin Masking (#f0e8d6)     │
 │  • Multimodal AI OCR (mistral-ocr-latest) & word bounding boxes        │
 │  • Generic sandwich PDF layer assembly (invisible vector text)         │
-│  🔗 Documentation: https://birchville-org.github.io/AlexandriaSandwich/│
+│ 🔗 Documentation: https://docs.birchville.org/AlexandriaSandwich/      │
 └───────────────────────────────────┬────────────────────────────────────┘
                                     │ Bounding boxes, layout & clean scans
                                     ▼
@@ -62,7 +62,7 @@ The separation of concerns between the processing platform and the edition satel
 ```
 
 > ℹ️ **Pipeline Documentation:**  
-> All generic image optimization, OCR confidence thresholds, and sandwich assembly workflows are documented in the [AlexandriaSandwich Methodological Wiki](https://birchville-org.github.io/AlexandriaSandwich/en/WIKI_VERFAHREN/) and the [Triage & Economic Model](https://birchville-org.github.io/AlexandriaSandwich/en/EVOLUTION_WORKFLOW/#3-the-triage-economic-model-core-pipeline-vs-edition-satellites).
+> All generic image optimization, OCR confidence thresholds, and sandwich assembly workflows are documented in the [AlexandriaSandwich Methodological Wiki](https://docs.birchville.org/AlexandriaSandwich/en/WIKI_VERFAHREN/) and the [Triage & Economic Model](https://docs.birchville.org/AlexandriaSandwich/en/EVOLUTION_WORKFLOW/#3-the-triage-economic-model-core-pipeline-vs-edition-satellites).
 
 ---
 
@@ -72,7 +72,7 @@ The specific edition delta of `boethlingk` comprises 5 technical and philologica
 
 ### 3.1 Delta 1: Canonical Sūtra State Machine (`scripts/align_mistral_sutras.py`)
 * **Deterministic Rollover:** The state machine enforces canonical pāda transitions (`adhyaya += 1, pada = 1`), even when historical colophons in the scan are degraded or missing.
-* **Corrigenda Isolation:** Böhtlingk's additions and corrections (pp. 477–480) following the concluding sūtra 8.4.68 (`अ अ`) are isolated and prevented from polluting the preceding commentary.
+* **Corrigenda Isolation:** Böhtlingk's additions and corrections (pp. 477–478) following the concluding sūtra 8.4.68 (`अ अ`) are isolated and prevented from polluting the preceding commentary.
 
 ### 3.2 Delta 2: Fuzzy Ground-Truth Matching & Compound Splitting
 * **Numeral Disambiguation:** Historical lead-type Devanāgarī numerals are frequently confused by OCR models (e.g. ۸ vs. ६). The matcher resolves discrepancies against the canonical Aṣṭādhyāyī database (threshold >= 0.45), restoring correct sūtra counts automatically.
@@ -118,8 +118,9 @@ All 8 Adhyāyas and the opening Śiva-Sūtras are validated 1:1 against the cano
 | **Adhyāya 4** | 149–221 | 635 / 635 | 0 | 0 | **100.0% Validated** |
 | **Adhyāya 5** | 221–282 | 555 / 555 | 0 | 0 | **100.0% Validated** |
 | **Adhyāya 6** | 283–374 | 736 / 736 | 0 | 0 | **100.0% Validated** |
-| **Adhyāya 7** | 375–428 | 438 / 438 | 0 | 0 | **100.0% Validated** |
-| **Adhyāya 8** | 429–478 | 369 / 369 | 0 | 0 | **100.0% Validated** |
+| **Adhyāya 7** | 374–428 | 438 / 438 | 0 | 0 | **100.0% Validated** |
+| **Adhyāya 8** | 428–476 | 369 / 369 | 0 | 0 | **100.0% Validated** |
+| **Corrigenda** | 477–478 | — (50 entries) | 0 | 0 | **100.0% Validated** |
 | **Total** | **478 Pages** | **3,997 / 3,997** | **0** | **0** | **100.0% Complete** |
 
 ---

@@ -16,7 +16,7 @@ boethlingk/
 │   ├── corrigenda.json                          # 50 Corrigenda items from pages 477–478
 │   ├── mistral/                                 # 478 pages Mistral OCR Markdown (*.md) & Bounding-Box JSON (*.json)
 │   ├── tei/                                     # TEI-P5 XML Master edition (boehtlingk1887_p5.xml)
-│   ├── img_cache/                               # Local cache of 484 Heidelberg IIIF scans
+│   ├── img_cache/                               # Local cache of 478 Heidelberg IIIF scans (book pages 1–478)
 │   └── output/                                  # Output directory for Sandwich PDF, Typst PDF, and EPUB
 │
 ├── docs/                                        # Bilingual MkDocs documentation
@@ -64,7 +64,7 @@ Layer 3 — Canonical TEI/XML & Master JSON Edition
 
 ## 3. Platform Interface & Processing Stages
 
-Data processing is cleanly separated between the upstream core platform ([AlexandriaSandwich](https://birchville-org.github.io/AlexandriaSandwich/en/)) and the edition satellite:
+Data processing is cleanly separated between the upstream core platform ([AlexandriaSandwich](https://docs.birchville.org/AlexandriaSandwich/en/)) and the edition satellite:
 
 ```text
 ┌────────────────────────────────────────────────────────────┐
@@ -96,6 +96,6 @@ Data processing is cleanly separated between the upstream core platform ([Alexan
 | **Total Sūtras** | 3,997 Sūtras | 14 Śiva-Sūtras + 3,983 Aṣṭādhyāyī Sūtras (100.0% gapless) |
 | **Duplicates / Missing** | 0 / 0 | Fully verified against canonical Sūtrapāṭha |
 | **Sandwich PDF Text Blocks** | 14,267 blocks | Pixel-accurate invisible vector text layer (PDF Render Mode 3) |
-| **1:1 Facsimile Typeset** | 484 pages | Strict 1:1 page parity to Leipzig 1887 (0 overflows) |
+| **1:1 Facsimile Typeset** | 484 pages | 5 front matter pp. (i–v), 476 text pp. (1–476, 1:1 parity, 0 overflows), 3 corrigenda pp. (477–479) |
 | **Reflowable Book Edition** | 512 pages | Modernized study typeset in ISO B5 format |
 | **TEI Validation** | 0 errors | 100% schema-valid against RelaxNG (`tei_all.rng`) |

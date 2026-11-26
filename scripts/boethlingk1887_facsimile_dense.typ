@@ -24,98 +24,41 @@
 
 #set par(justify: true, leading: 0.44em)
 
-// Helper: Convert ASCII digits to Devanāgarī numerals
-#let to-deva(num) = {
-  let s = str(num)
-  let map = ("0": "०", "1": "१", "2": "२", "3": "३", "4": "४", "5": "५", "6": "६", "7": "७", "8": "८", "9": "९")
-  s.clusters().map(c => map.at(c, default: c)).join("")
-}
+#import "common.typ": to-deva, parse-len, shiva_canonical, render-front-imprint, render-main-title
+
+#let structure = json("/data/edition_structure.json")
+#let pages_data = json("/data/ashtadhyayi_facsimile_dense.json")
 
 // =============================================================================
 // 1. TITELEI & IMPRESSUM (BIRCHVILLE SCHOLARLY SYNTHESIS)
 // =============================================================================
 
-// Seite i: Halbtitel (Bastard Title)
-#v(6cm)
-#align(center)[
-  #text(16pt, weight: "bold", tracking: 0.12em)[#smallcaps[Pāṇini's Grammatik]] \
-  #v(0.6cm)
-  #text(9pt, style: "italic", fill: rgb("#334155"))[Otto von Böhtlingk (Leipzig 1887)] \
-  #v(0.3cm)
-  #text(8.5pt, fill: rgb("#b45309"), weight: "bold")[Dichte Faksimile-Ausgabe (1:1-Seitenparität mit dem Originaldruck)]
-]
+#render-front-imprint(
+  subtitle_line: "Dichte Faksimile-Ausgabe (1:1-Seitenparität mit dem Originaldruck)",
+  edition_bullets: (
+    [*Dichte Faksimile-Neuausgabe:* AlexandriaSandwich Digital Humanities Pipeline (2026)],
+    [*Herausgeber & Neusatz:* Marco Demarmels (Birchville Foundation)],
+    [*1:1-Seitenparität:* Jede Seite dieser Ausgabe entspricht exakt der entsprechenden Seite des Originaldrucks (S. 1–476).],
+    [*Satzspiegel & Typografie:* Rekonstruktion des Leipziger Originalspiegels in STIX Two Text und Noto Serif Devanagari mit adaptiver Durchschuss- und Grad-Optimierung.],
+    [*Alignment:* 100 % Abdeckung (14 Śiva-Sūtras + 3.983 Aṣṭādhyāyī-Sūtras)],
+  ),
+)
 
-#pagebreak()
-
-// Seite ii: Impressum & Birchville Curation Badge
-#v(3.5cm)
-#align(center)[
-  #image("/docs/assets/birchville_logo.png", height: 2.2cm) \
-  #v(0.5cm)
-  #text(8pt, weight: "bold", tracking: 0.10em, fill: rgb("#b45309"))[BIRCHVILLE SCHOLARLY SYNTHESIS] \
-  #v(0.2cm)
-  #text(10pt, weight: "bold", fill: rgb("#03192e"))[Kanonische Editionen klassischer philologischer Referenzwerke] \
-  #v(0.8cm)
-  #line(length: 40%, stroke: 0.4pt + rgb("#d8d2c6")) \
-  #v(0.8cm)
-  #text(8.5pt, fill: rgb("#1e2d37"))[
-    *Historisches Original:* Otto von Böhtlingk (1815–1904) \
-    *Pâṇini's Grammatik* · Zweite Auflage · Leipzig 1887 (Verlag von H. Haessel) \
-    Auf Basis der Originalscans der Universitätsbibliothek Heidelberg (Bibliotheca Palatina) \
-    \
-    *Dichte Faksimile-Neuausgabe:* AlexandriaSandwich Digital Humanities Pipeline (2026) \
-    *Herausgeber & Neusatz:* Marco Demarmels (Birchville Foundation) \
-    *1:1-Seitenparität:* Jede Seite dieser Ausgabe entspricht exakt der entsprechenden Seite des Originaldrucks (S. 1–476). \
-    *Satzspiegel & Typografie:* Rekonstruktion des Leipziger Originalspiegels in STIX Two Text und Noto Serif Devanagari mit adaptiver Durchschuss- und Grad-Optimierung. \
-    *Alignment:* 100 % Abdeckung (14 Śiva-Sūtras + 3.983 Aṣṭādhyāyī-Sūtras) \
-    \
-    *Urheberrecht & Lizenzen:* \
-    Historisches Originalwerk: Gemeinfrei (Public Domain worldwide) \
-    Digitale Ausgabe, Typst-Code & TEI-Encoding: MIT License / CC-BY-SA 4.0
-  ]
-]
-
-#pagebreak()
-
-// Seite iii: Haupttitel
-#align(center)[
-  #v(2.0cm)
-  #text(22pt, weight: "bold", font: ("STIX Two Text", "Noto Serif Devanagari"))[PĀṆINI'S GRAMMATIK]
-  
-  #v(0.8cm)
-  #text(11pt, style: "italic")[herausgegeben, übersetzt, erläutert und mit verschiedenen Indices versehen]
-  
-  #v(0.4cm)
-  #text(10pt)[von]
-  
-  #v(0.4cm)
-  #text(16pt, weight: "bold")[OTTO BÖHTLINGK]
-  
-  #v(0.8cm)
-  #text(11pt, style: "italic")[Zweite Auflage · Faksimile-Neusatz mit 1:1-Seitenparität]
-  
-  #v(0.6cm)
-  #line(length: 25%, stroke: 0.5pt)
-  #v(0.6cm)
-  
-  #text(10.5pt)[LEIPZIG \ VERLAG VON H. HAESSEL \ 1887]
-]
-
-#pagebreak()
+#render-main-title("Zweite Auflage · Faksimile-Neusatz mit 1:1-Seitenparität")
 
 // Seite iv: Vorwort zur dichten Faksimile-Ausgabe
 #heading(level: 1, numbering: none, outlined: false)[Vorwort zur dichten Faksimile-Ausgabe]
 
 #v(0.5em)
 
-Die vorliegende Edition von Otto von Böhtlingks *Grammatik des Pāṇini* (Leipzig 1887) rekonstruiert den historischen Originaldruck in einer *strengen 1:1-Seitenparität*:
+Die vorliegende Edition von Otto von Böhtlingks *Grammatik des Pāṇini* (Leipzig 1887) rekonstruiert den historischen Originaldruck in einer *strikten 1:1-Seitenparität*:
 
 *Jede Textseite dieser Neuausgabe entspricht exakt einer Seite des Leipziger Originalbandes (Seiten 1 bis 476).*
 
 *Typografische Rekonstruktion des Originals:*
-1. *Exakte Seitenidentität:* Sūtra-Bestand und Textumfang jeder Seite sind absolut identisch mit dem historischen Buch von 1887. Sämtliche philologischen Zitate („Böhtlingk S. X“) können direkt und ohne Seitenverschiebung aufgeschlagen werden.
-2. *Harmonische Raumausnutzung (Adaptive Typografie):* Statt einer pauschalen Verkleinerung aller Seiten passt sich die typografische Dichte (Schriftgrad von 8,2 bis 9,8 pt, Durchschuss 0,28 bis 0,48 em, Spatium 0,08 bis 0,85 em) feinfühlig dem jeweiligen Textumfang an. Leicht besetzte Seiten füllen den Satzspiegel großzügig und elegant aus, während textstarke Seiten sauber und überlappungsfrei auf genau einer Seite stehen.
-3. *Erhabene Śiva-Sūtras auf Seite 1:* Die 14 kanonischen Māheśvara-Sūtras sind auf der Eröffnungsseite großzügig, wohlproportioniert und in authentischem Zweiklang mit Böhtlingks historischer Einleitung gesetzt.
+1. *Exakte Seitenidentität:* Sūtra-Bestand und Textumfang jeder Seite sind identisch mit dem historischen Buch von 1887. Sämtliche philologischen Zitate („Böhtlingk S. X“) können direkt und ohne Seitenverschiebung aufgeschlagen werden.
+2. *Harmonische Raumausnutzung (Adaptive Typografie):* Statt einer pauschalen Verkleinerung aller Seiten passt sich die typografische Dichte (Schriftgrad von 8,1 bis 9,6 pt, Durchschuss 0,26 bis 0,45 em, Spatium 0,06 bis 0,95 em) dem jeweiligen Textumfang an. Leicht besetzte Seiten füllen den Satzspiegel gleichmäßig aus, während textstarke Seiten ohne Überlauf auf genau einer Seite stehen.
+3. *Eröffnungs-Tableau auf Seite 1:* Die 14 kanonischen Māheśvara-Sūtras sind auf der Eröffnungsseite zweispaltig im Zweiklang mit Böhtlingks historischer Einleitung gesetzt.
 4. *Authentische Kolophone:* Am Ende jedes Pāda ist der überlieferte Sanskrit-Abschlussvermerk (z. B. #text(font: ("Noto Serif Devanagari"))[॥ इति प्रथमस्याध्यायस्य प्रथमः पादः ॥]) gesetzt.
 5. *Originale Randverweise:* Die Sūtra-Nummern am Außenrand (#text(style: "italic")[1, 1, 1.]) und die lebenden Kolumnentitel führen wie bei Haessel 1887 durch das gesamte Werk.
 
@@ -128,59 +71,37 @@ Die vorliegende Edition von Otto von Böhtlingks *Grammatik des Pāṇini* (Leip
 #pagebreak()
 
 // =============================================================================
-// 2. INHALTSÜBERSICHT
+// 2. INHALTSÜBERSICHT (AUS EDITION_STRUCTURE.JSON)
 // =============================================================================
 
 #heading(level: 1, numbering: none, outlined: false)[Inhaltsübersicht]
 
 #v(0.6em)
 
-#grid(
-  columns: (1fr, auto),
-  row-gutter: 0.55em,
-  [#text(weight: "bold")[Śiva-Sūtras (Akṣarasamāmnāya)]], [#text(weight: "bold")[S. 1]],
-  [#text(weight: "bold")[Erster Adhyāya] (1.1–1.4)], [#text(weight: "bold")[S. 2–51]],
-  [#h(1.2em) 1. Pāda: वृद्धिरादैच् (Vṛddhirādaic, 1.1.1–75)], [S. 2],
-  [#h(1.2em) 2. Pāda: गाङ्कुटादिभ्यो ऽञ्णिन्ङित् (Gāṅkuṭādibhyo, 1.2.1–73)], [S. 11],
-  [#h(1.2em) 3. Pāda: भूवादयो धातवः (Bhūvādayo dhātavaḥ, 1.3.1–93)], [S. 21],
-  [#h(1.2em) 4. Pāda: आ कडारादेका संज्ञा (Ā kaḍārādekā saṃjñā, 1.4.1–110)], [S. 31],
-  [#text(weight: "bold")[Zweiter Adhyāya] (2.1–2.4)], [#text(weight: "bold")[S. 43–74]],
-  [#h(1.2em) 1. Pāda: समर्थः पदविधिः (Samarthaḥ padavidhiḥ, 2.1.1–72)], [S. 43],
-  [#h(1.2em) 2. Pāda: पूर्वो ऽपरो ऽधरोत्तराणि (Pūrvo 'paro, 2.2.1–38)], [S. 52],
-  [#h(1.2em) 3. Pāda: अनभिहिते (Anabhihite, 2.3.1–73)], [S. 56],
-  [#h(1.2em) 4. Pāda: द्विगुरेकवचनम् (Dvigurekavacanam, 2.4.1–85)], [S. 65],
-  [#text(weight: "bold")[Dritter Adhyāya] (3.1–3.4)], [#text(weight: "bold")[S. 75–148]],
-  [#h(1.2em) 1. Pāda: प्रत्ययः (Pratyayaḥ, 3.1.1–150)], [S. 75],
-  [#h(1.2em) 2. Pāda: कर्मण्यण् (Karmaṇyaṇ, 3.2.1–188)], [S. 93],
-  [#h(1.2em) 3. Pāda: उणादयो बहुलम् (Uṇādayo bahulam, 3.3.1–176)], [S. 114],
-  [#h(1.2em) 4. Pāda: धातुसम्बन्धे प्रत्ययाः (Dhātusambandhe, 3.4.1–117)], [S. 134],
-  [#text(weight: "bold")[Vierter Adhyāya] (4.1–4.4)], [#text(weight: "bold")[S. 149–220]],
-  [#h(1.2em) 1. Pāda: ङ्याप्प्रातिपदिकात् (Ṅyāpprātipadikāt, 4.1.1–178)], [S. 149],
-  [#h(1.2em) 2. Pāda: तेन रक्तं रागात् (Tena raktaṃ rāgāt, 4.2.1–145)], [S. 170],
-  [#h(1.2em) 3. Pāda: युष्मदस्मदोरन्यतरस्याम् (Yuşmadasmador, 4.3.1–168)], [S. 187],
-  [#h(1.2em) 4. Pāda: प्राग्वहतेष्ठञ् (Prāgvahateṣṭhañ, 4.4.1–144)], [S. 206],
-  [#text(weight: "bold")[Fünfter Adhyāya] (5.1–5.4)], [#text(weight: "bold")[S. 221–282]],
-  [#h(1.2em) 1. Pāda: प्राङ्क्रीताच्छः (Prāṅkrītācchaḥ, 5.1.1–136)], [S. 221],
-  [#h(1.2em) 2. Pāda: धान्यनां भवने क्षेत्रे खञ् (Dhānyānāṃ, 5.2.1–140)], [S. 236],
-  [#h(1.2em) 3. Pāda: प्राग्दिशो विभक्तिः (Prāgdiśo vibhaktiḥ, 5.3.1–119)], [S. 251],
-  [#h(1.2em) 4. Pāda: पादशतस्य संख्यादेर्वीप्सायाम् (Pādaśatasya, 5.4.1–160)], [S. 264],
-  [#text(weight: "bold")[Sechster Adhyāya] (6.1–6.4)], [#text(weight: "bold")[S. 283–373]],
-  [#h(1.2em) 1. Pāda: एकाचो द्वे प्रथमस्य (Ekāco dve prathamasya, 6.1.1–223)], [S. 283],
-  [#h(1.2em) 2. Pāda: बहुव्रीहौ प्रकृत्या पूर्वपदम् (Bahuvrīhau, 6.2.1–199)], [S. 311],
-  [#h(1.2em) 3. Pāda: अलुगुत्तरपदे (Aluguttarapade, 6.3.1–139)], [S. 335],
-  [#h(1.2em) 4. Pāda: अङ्गस्य (Aṅgasya, 6.4.1–175)], [S. 351],
-  [#text(weight: "bold")[Siebenter Adhyāya] (7.1–7.4)], [#text(weight: "bold")[S. 374–427]],
-  [#h(1.2em) 1. Pāda: युवोरनाकौ (Yuvoranākau, 7.1.1–103)], [S. 374],
-  [#h(1.2em) 2. Pāda: सिचि वृद्धिः परस्मैपदेषु (Sici vṛddhiḥ, 7.2.1–118)], [S. 387],
-  [#h(1.2em) 3. Pāda: लघोरुपधायाः (Laghorupadhāyāḥ, 7.3.1–120)], [S. 402],
-  [#h(1.2em) 4. Pāda: णिच्युपसंख्यानम् (Ṇicyupasaṃkhyānam, 7.4.1–97)], [S. 417],
-  [#text(weight: "bold")[Achter Adhyāya] (8.1–8.4)], [#text(weight: "bold")[S. 428–476]],
-  [#h(1.2em) 1. Pāda: सर्वस्य द्वे (Sarvasya dve, 8.1.1–74)], [S. 428],
-  [#h(1.2em) 2. Pāda: पूर्वत्रासिद्धम् (Pūrvatrāsiddham, 8.2.1–108)], [S. 438],
-  [#h(1.2em) 3. Pāda: रषाभ्यां नो णः समानपदे (Raṣābhyāṃ, 8.3.1–119)], [S. 452],
-  [#h(1.2em) 4. Pāda: स्तोः श्चुना श्चुः (Stoḥ ścunā ścuḥ, 8.4.1–68)], [S. 467],
-  [#text(weight: "bold")[Nachträge und Verbesserungen (Corrigenda)]], [#text(weight: "bold")[S. 477–480]],
-)
+#{
+  let toc_rows = (
+    [#text(weight: "bold")[Śiva-Sūtras (Akṣarasamāmnāya)]],
+    [#text(weight: "bold")[S. #structure.shiva_sutras_page]],
+  )
+  for adh in structure.adhyayas {
+    toc_rows.push([#text(weight: "bold")[#adh.title_de] (#adh.pada_range)])
+    toc_rows.push([#text(weight: "bold")[S. #adh.start_page–#adh.end_page]])
+    for p in adh.padas {
+      toc_rows.push([#h(1.2em) #p.num. Pāda: #p.incipit (#p.incipit_iast, #p.sutra_range)])
+      toc_rows.push([S. #p.start_page])
+    }
+  }
+  let corr_start = structure.facsimile_corrigenda_pages.at(0)
+  let corr_end = structure.facsimile_corrigenda_pages.at(1)
+  toc_rows.push([#text(weight: "bold")[Nachträge und Verbesserungen (Corrigenda)]])
+  toc_rows.push([#text(weight: "bold")[S. #corr_start–#corr_end]])
+
+  grid(
+    columns: (1fr, auto),
+    row-gutter: 0.55em,
+    ..toc_rows
+  )
+}
 
 #pagebreak()
 
@@ -192,16 +113,15 @@ Die vorliegende Edition von Otto von Böhtlingks *Grammatik des Pāṇini* (Leip
 
 #set page(
   header: context {
-    let loc = here()
     let p_num = counter(page).get().first()
-    
+
     // Keine Kopfzeile auf Seite 1 (Śiva-Sūtras Titel)
     if p_num == 1 {
       return none
     }
 
     // Kopfzeile für Corrigenda (ab Seite 477)
-    if p_num >= 477 {
+    if p_num >= structure.facsimile_corrigenda_pages.at(0) {
       return [
         #if calc.even(p_num) [
           #text(8.5pt, weight: "bold")[#p_num]
@@ -221,29 +141,11 @@ Die vorliegende Edition von Otto von Böhtlingks *Grammatik des Pāṇini* (Leip
       ]
     }
 
-    let sutras_on_page = query(selector(<sutra-marker>)).filter(m => counter(page).at(m.location()).first() == p_num)
-    let last_sutra_ref = if sutras_on_page.len() > 0 {
-      let v = sutras_on_page.last().value
-      str(v.adh) + ", " + str(v.pada) + ", " + str(v.snum) + "."
-    } else {
-      let prev_sutras = query(selector(<sutra-marker>).before(loc))
-      if prev_sutras.len() > 0 {
-        let v = prev_sutras.last().value
-        str(v.adh) + ", " + str(v.pada) + ", " + str(v.snum) + "."
-      } else { "" }
-    }
-    
-    let adh_roman = ("I", "II", "III", "IV", "V", "VI", "VII", "VIII")
-    let adh_text = if sutras_on_page.len() > 0 {
-      let v = sutras_on_page.first().value
-      adh_roman.at(v.adh - 1, default: "I") + ". Adhyāya. " + str(v.pada) + ". Pāda."
-    } else {
-      let prev = query(selector(<sutra-marker>).before(loc))
-      if prev.len() > 0 {
-        let v = prev.last().value
-        adh_roman.at(v.adh - 1, default: "I") + ". Adhyāya. " + str(v.pada) + ". Pāda."
-      } else { "" }
-    }
+    // O(1)-Direktzugriff statt O(N*P)-Markerabfrage
+    let p_idx = p_num - 2
+    let p_meta = if p_idx >= 0 and p_idx < pages_data.len() { pages_data.at(p_idx) } else { none }
+    let adh_text = if p_meta != none { p_meta.header_adh_str } else { "" }
+    let last_sutra_ref = if p_meta != none { p_meta.last_sutra_ref } else { "" }
 
     [
       #if calc.even(p_num) [
@@ -280,23 +182,6 @@ Die vorliegende Edition von Otto von Böhtlingks *Grammatik des Pāṇini* (Leip
 // =============================================================================
 // 4. ŚIVA-SŪTRAS (AKṢARASAMĀMNĀYA) — BÖHTLINGK S. 1 (KLASSISCHES 2-SPALTEN-LAYOUT MIT EINFÜHRUNG)
 // =============================================================================
-
-#let shiva_canonical = (
-  (1, "अ इ उ ण्", "a i u ṇ"),
-  (2, "ऋ ऌ क्", "ṛ ḷ k"),
-  (3, "ए ओ ङ्", "e o ṅ"),
-  (4, "ऐ औ च्", "ai au c"),
-  (5, "ह य व र ट्", "ha ya va ra ṭ"),
-  (6, "लँ ण्", "la ṇ"),
-  (7, "ञ म ङ ण न म्", "ña ma ṅa ṇa na m"),
-  (8, "झ भ ञ्", "jha bha ñ"),
-  (9, "घ ढ ध ष्", "gha ḍha dha ṣ"),
-  (10, "ज ब ग ड द श्", "ja ba ga ḍa da ś"),
-  (11, "ख फ छ ठ थ च ट त व्", "kha pha cha ṭha tha ca ṭa ta v"),
-  (12, "क प य्", "ka pa y"),
-  (13, "श ष स र्", "śa ṣa sa r"),
-  (14, "ह ल्", "ha l"),
-)
 
 #v(0.2cm)
 
@@ -363,19 +248,16 @@ Die vorliegende Edition von Otto von Böhtlingks *Grammatik des Pāṇini* (Leip
 // 5. AṢṬĀDHYĀYĪ SŪTRAPĀṬHA (S. 2–476) — ADAPTIVE 1:1 SEITENPARITÄT
 // =============================================================================
 
-#let pages_data = json("/data/ashtadhyayi_facsimile_dense.json")
-
 #for p_info in pages_data {
   let prof = p_info.profile
-  let deva_sz = eval(prof.deva_size)
-  let body_sz = eval(prof.body_size)
-  let body_lead = eval(prof.body_leading)
-  let comm_sz = eval(prof.comm_size)
-  let comm_lead = eval(prof.comm_leading)
-  let sutra_sp = eval(prof.sutra_spacing)
+  let deva_sz = parse-len(prof.deva_size)
+  let body_sz = parse-len(prof.body_size)
+  let body_lead = parse-len(prof.body_leading)
+  let comm_sz = parse-len(prof.comm_size)
+  let comm_lead = parse-len(prof.comm_leading)
+  let sutra_sp = parse-len(prof.sutra_spacing)
 
   for s in p_info.sutras [
-    #metadata((adh: s.adhyaya, pada: s.pada, snum: s.sutra_num, ref: s.ref)) <sutra-marker>
     #block(width: 100%, breakable: true)[
       #block(width: 100%, breakable: false)[
         #grid(
@@ -428,7 +310,7 @@ Die vorliegende Edition von Otto von Böhtlingks *Grammatik des Pāṇini* (Leip
 #pagebreak()
 
 // =============================================================================
-// 6. NACHTRÄGE UND VERBESSERUNGEN (CORRIGENDA) — BÖHTLINGK S. 477–480
+// 6. NACHTRÄGE UND VERBESSERUNGEN (CORRIGENDA) — BÖHTLINGK S. 477–478
 // =============================================================================
 
 #let corrigenda_data = json("/data/corrigenda.json")
@@ -437,7 +319,7 @@ Die vorliegende Edition von Otto von Böhtlingks *Grammatik des Pāṇini* (Leip
 
 #v(0.3em)
 #text(8.5pt, style: "italic", fill: rgb("#334155"))[
-  Otto von Böhtlingks originale Druckfehlerkorrekturen und philologische Nachträge zum Text und Kommentar (Leipzig 1887, S. 477–480).
+  Otto von Böhtlingks originale Druckfehlerkorrekturen und philologische Nachträge zum Text und Kommentar (Leipzig 1887, S. 477–478).
 ]
 #v(0.6em)
 
