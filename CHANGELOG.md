@@ -2,6 +2,25 @@
 
 Alle wesentlichen Änderungen und Meilensteine dieses Projekts werden in dieser Datei dokumentiert.
 
+## [1.6.1] - 2026-11-26
+
+### Datenintegrität & Kernfunktionen
+- Restauration von 19 durch OCR-Halluzinationen (Hebräisch, Brahmi, Bopomofo) und Regex-Sanitisierung beschädigten Sūtra-Stellen anhand der Heidelberger Originalscans in `data/ashtadhyayi_complete_boethlingk1887.json` und `data/tei/boehtlingk1887_p5.xml`.
+- Auslagerung der kanonischen Editionsstruktur (`front_matter_pages`, Adhyāyas, Pādas, Corrigenda-Seiten) nach `data/edition_structure.json` als Single Source of Truth.
+
+### Sicherheit & Sandbox
+- Vervollständigung des Birchville Security Standards in `.gitignore` (Schlüssel-, Token-, Zertifikats- und lokale JSON-Credential-Muster).
+- Entfernung von `eval()` auf JSON-Längenangaben im Typst-Template zugunsten eines deterministischen `parse-len()`-Helpers in `scripts/common.typ`.
+
+### Performance & Rendering
+- Vereinheitlichung der Verso/Recto-Kolumnentitel und Außenmarginalien (Schriftfamilie *STIX Two Text*, aufrechter Schriftschnitt, einheitliche Farbwerte).
+- Umstellung der Kopfzeilen-Ermittlung in `scripts/boethlingk1887_facsimile_dense.typ` von `O(N x P)`-DOM-Queries auf `O(1)`-Seitenindexierung sowie Deduplizierung gemeinsamer Typst-Helper in `scripts/common.typ`.
+
+### Plattform- & Backend-Stabilität
+- Ergänzung von PEP-735-`[dependency-groups] dev` in `pyproject.toml` und `uv.lock` für reproduzierbare `uv run`-Ausführung nach frischem Clone.
+- Typst-Schriften-Preflight (`verify_required_fonts`), koordinatenbasierte 1:1-Paritätsprüfung (`bbox[1] >= 45.0, bbox[0] > 350.0`) und Pytest-Quality-Gates (`tests/test_text_integrity.py`, `tests/test_typeset_symmetry.py`, `tests/test_page_parity.py`).
+- Umstellung der Dokumentations-URL auf `https://docs.birchville.org/boethlingk/` sowie Aktivierung von `pymdownx.emoji`.
+
 ## [1.6.0] - 2026-10-27
 
 ### Added

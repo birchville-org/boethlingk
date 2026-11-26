@@ -1,5 +1,5 @@
 <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; padding: 1rem 1.25rem; background: var(--md-default-bg-color--light); border: 1px solid var(--md-default-fg-color--lightest); border-radius: 8px;">
-  <img src="assets/birchville_logo.png" alt="Birchville Coat of Arms" style="height: 2.4rem; border-radius: 4px; filter: drop-shadow(0 1px 3px rgba(0,0,0,0.18));">
+  <img src="../assets/birchville_logo.png" alt="Birchville Coat of Arms" style="height: 2.4rem; border-radius: 4px; filter: drop-shadow(0 1px 3px rgba(0,0,0,0.18));">
   <div>
     <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--md-accent-fg-color); font-weight: 700;">Birchville Scholarly Synthesis</div>
     <div style="font-size: 0.95rem; font-weight: 600; color: var(--md-default-fg-color);">Canonical Editions of Classical Philological Reference Works</div>
